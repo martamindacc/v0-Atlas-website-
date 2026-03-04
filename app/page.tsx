@@ -78,7 +78,7 @@ export default function Home() {
       </div>
 
       {/* Section 1 — Full-screen video */}
-      <section className="relative w-full h-screen overflow-hidden">
+      <section className="relative w-full h-screen overflow-hidden mt-0 pt-0 -mt-[95px]">
         <video
           className="absolute inset-0 w-full h-full object-cover"
           autoPlay
