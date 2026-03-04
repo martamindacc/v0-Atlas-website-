@@ -124,17 +124,6 @@ export default function Home() {
       <section className="bg-[#fafafb] py-[160px]">
         <div className="max-w-[1200px] mx-auto px-6">
 
-          {/* Section header */}
-          <div className="mb-[100px] text-center">
-            <p className="text-[14px] uppercase tracking-[0.15em] text-neutral-500">ATLAS</p>
-            <h2
-              className="text-[48px] font-medium tracking-tight text-center mt-4"
-              style={{ color: "#1e1f2b", fontFamily: "Inter, sans-serif" }}
-            >
-              The behavioral intelligence system
-            </h2>
-          </div>
-
           {/* Module rows */}
           {[
             {
