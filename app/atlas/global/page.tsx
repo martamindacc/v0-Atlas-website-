@@ -18,7 +18,7 @@ export default function AtlasGlobal() {
         >
           <source src="/videos/atlas-global.mp4" type="video/mp4" />
         </video>
-        <div className="absolute bottom-16 left-16 z-20 pointer-events-none">
+        <div className="absolute bottom-[96px] left-[96px] z-20 pointer-events-none">
           <h1 className="font-sans text-[64px] font-medium tracking-[-0.02em] leading-[1.05] text-white">
             Atlas Global
           </h1>
