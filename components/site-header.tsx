@@ -10,10 +10,10 @@ export default function SiteHeader() {
           <img
             src="/images/mindacc_logo.png"
             alt="mindacc logo"
-            className="h-7 w-auto"
+            className="h-[22px] w-auto"
           />
           <span
-            className="text-[18px] font-medium tracking-[0.06em] text-neutral-700 uppercase"
+            className="text-[18px] font-medium tracking-[0.02em] text-neutral-700 uppercase"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
             MINDACC
