@@ -2,8 +2,7 @@ export default function SiteHeader() {
   return (
     <div className="fixed top-0 z-50 w-full pt-[14px] px-6">
       <header
-        className="flex items-center justify-between px-8 h-[67px] border border-black/[0.06] backdrop-blur-xl backdrop-saturate-150 shadow-[0_1px_3px_rgba(0,0,0,0.06)] rounded-[14px]"
-        style={{ backgroundColor: "rgba(250,250,251,0.55)" }}
+        className="flex items-center justify-between px-8 h-[67px] border border-black/[0.06] bg-white/60 backdrop-blur-md backdrop-saturate-150 shadow-[0_1px_3px_rgba(0,0,0,0.06)] rounded-[14px]"
       >
         {/* Left — Logo + wordmark */}
         <a href="/" className="flex items-center gap-2">
