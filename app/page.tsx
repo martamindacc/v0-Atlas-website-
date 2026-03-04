@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main style={{ backgroundColor: "#fafafb" }}>
       {/* ── Sticky header wrapper ── */}
-      <div className="sticky top-0 z-50 w-full pt-[14px] px-6">
+      <div className="fixed top-0 z-50 w-full pt-[14px] px-6">
         <header
           className="flex items-center justify-between px-8 h-[67px] border border-black/[0.06] backdrop-blur-xl backdrop-saturate-150 shadow-[0_1px_3px_rgba(0,0,0,0.06)] rounded-[14px]"
           style={{ backgroundColor: "rgba(250,250,251,0.55)" }}
@@ -78,7 +78,7 @@ export default function Home() {
       </div>
 
       {/* Section 1 — Full-screen video */}
-      <section className="relative w-full h-screen overflow-hidden mt-0 pt-0 -mt-[95px]">
+      <section className="relative w-full h-screen overflow-hidden">
         <video
           className="absolute inset-0 w-full h-full object-cover"
           autoPlay
