@@ -35,6 +35,11 @@ export default function AtlasTeams() {
             </p>
           </div>
         </div>
+        <div className="absolute bottom-20 left-20 z-20 pointer-events-none">
+          <h1 className="font-[Inter] text-[88px] leading-[0.98] tracking-[-0.035em] font-semibold text-white drop-shadow-[0_8px_24px_rgba(0,0,0,0.45)]">
+            Atlas Teams
+          </h1>
+        </div>
       </section>
     </div>
   );
