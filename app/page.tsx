@@ -114,9 +114,35 @@ export default function Home() {
             style={{ color: "#6b6e85" }}
           >
             Mindacc is a behavioral intelligence platform that models how people think,
-            predicts how they decide, and helps individuals and organizations
-            make better decisions at scale.
+            explains how they decide, and helps individuals and organizations
+            make better decisions — at scale.
           </p>
+        </div>
+      </section>
+
+      {/* Section 3 — Human intelligence, understood by machines */}
+      <section className="w-full bg-[#efefef] py-[140px]">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="grid grid-cols-12 gap-x-12 items-start">
+            {/* Left — headline */}
+            <div className="col-span-6">
+              <h2
+                className="text-[42px] leading-[1.15] tracking-tight font-medium text-neutral-900 max-w-[520px]"
+                style={{ fontFamily: "Inter, sans-serif" }}
+              >
+                Human intelligence,<br />understood by machines.
+              </h2>
+            </div>
+
+            {/* Right — explanatory text */}
+            <div className="col-span-5 col-start-8 text-[18px] leading-[1.6] text-neutral-600 max-w-[420px] space-y-6">
+              <p>Atlas bridges behavioral science and artificial intelligence.</p>
+              <p>
+                By modeling how people think and decide, it enables a new form
+                of collaboration between human judgment and machine reasoning.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
