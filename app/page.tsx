@@ -3,8 +3,8 @@ export default function Home() {
     <main style={{ backgroundColor: "#fafafb" }}>
       {/* ── Sticky frosted header ── */}
       <header
-        className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 h-[64px] border-b border-black/10 backdrop-blur-md"
-        style={{ backgroundColor: "rgba(250,250,251,0.85)" }}
+        className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 h-[67px] border-b border-black/[0.06] backdrop-blur-xl backdrop-saturate-150 shadow-[0_1px_3px_rgba(0,0,0,0.06)]"
+        style={{ backgroundColor: "rgba(250,250,251,0.55)" }}
       >
         {/* Left — Logo + wordmark */}
         <a href="/" className="flex items-center gap-2">
@@ -14,8 +14,8 @@ export default function Home() {
             className="h-7 w-auto"
           />
           <span
-            className="text-[15px] font-semibold tracking-tight"
-            style={{ color: "#1e1f2b", fontFamily: "Inter, sans-serif" }}
+            className="text-[22px] font-medium tracking-[0.06em] text-neutral-700 uppercase"
+            style={{ fontFamily: "Inter, sans-serif" }}
           >
             MINDACC
           </span>
@@ -25,7 +25,7 @@ export default function Home() {
         <div className="flex items-center gap-3">
           {/* Get Started CTA */}
           <button
-            className="flex items-center justify-center border border-black/30 bg-white text-[15px] font-medium tracking-tight px-6 h-[40px] hover:bg-black hover:text-white transition-colors cursor-pointer"
+            className="flex items-center justify-center border border-black/30 bg-white/80 text-[15px] font-medium tracking-tight px-6 h-[40px] hover:bg-[#1e2124] hover:text-white transition-colors cursor-pointer"
             style={{ color: "#1e1f2b" }}
           >
             Get Started
@@ -33,7 +33,7 @@ export default function Home() {
 
           {/* Search icon */}
           <button
-            className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 hover:bg-black hover:text-white transition-colors cursor-pointer"
+            className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 hover:bg-[#1e2124] hover:text-white transition-colors cursor-pointer"
             style={{ color: "#1e1f2b" }}
             aria-label="Search"
           >
@@ -55,7 +55,7 @@ export default function Home() {
 
           {/* Menu icon */}
           <button
-            className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 hover:bg-black hover:text-white transition-colors cursor-pointer"
+            className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 hover:bg-[#1e2124] hover:text-white transition-colors cursor-pointer"
             style={{ color: "#1e1f2b" }}
             aria-label="Menu"
           >
