@@ -121,7 +121,7 @@ export default function Home() {
       </section>
 
       {/* Section 4 — ATLAS system */}
-      <section className="bg-[#fafafb] py-[160px]">
+      <section className="bg-[#fafafb] pt-[80px] pb-[160px]">
         <div className="max-w-[1200px] mx-auto px-6">
 
           {/* Module rows */}
