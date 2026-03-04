@@ -113,8 +113,9 @@ export default function Home() {
             className="mt-10 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed"
             style={{ color: "#6b6e85" }}
           >
-            mindacc is a behavioral AI software platform that predicts,
-            explains, and influences human decision-making — at scale.
+            Mindacc is a behavioral intelligence platform that models how people think,
+            predicts how they decide, and helps individuals and organizations
+            make better decisions at scale.
           </p>
         </div>
       </section>
