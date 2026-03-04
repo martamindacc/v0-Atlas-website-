@@ -145,6 +145,67 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Section 4 — ATLAS system */}
+      <section className="bg-[#fafafb] py-[160px]">
+        <div className="max-w-[1200px] mx-auto px-6">
+
+          {/* Section header */}
+          <div className="mb-[100px] text-center">
+            <p className="text-[14px] uppercase tracking-[0.15em] text-neutral-500">ATLAS</p>
+            <h2
+              className="text-[48px] font-medium tracking-tight text-center mt-4"
+              style={{ color: "#1e1f2b", fontFamily: "Inter, sans-serif" }}
+            >
+              The behavioral intelligence system
+            </h2>
+          </div>
+
+          {/* Module rows */}
+          {[
+            {
+              description: "Personal behavioral intelligence\nBuild your cognitive model and work with Atlas\nas a reasoning partner for decisions and planning.",
+              title: "Atlas Professional",
+            },
+            {
+              description: "Team intelligence\nUnderstand how people think together and improve\ncommunication, coordination, and decision dynamics.",
+              title: "Atlas Teams",
+            },
+            {
+              description: "Organizational intelligence\nAnalyze behavioral patterns across the workforce\nto support leadership and strategic decision making.",
+              title: "Atlas Global",
+            },
+          ].map((module) => (
+            <div
+              key={module.title}
+              className="border-t border-black/10 py-[64px] grid grid-cols-12 gap-x-12 cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7]"
+            >
+              {/* Left — description */}
+              <div className="col-span-6">
+                <p
+                  className="text-[18px] text-neutral-600 leading-relaxed max-w-[520px] whitespace-pre-line"
+                  style={{ fontFamily: "Inter, sans-serif" }}
+                >
+                  {module.description}
+                </p>
+              </div>
+
+              {/* Right — product name */}
+              <div className="col-span-6 flex items-center justify-end">
+                <span
+                  className="text-[64px] font-medium tracking-tight text-right"
+                  style={{ color: "#1e1f2b", fontFamily: "Inter, sans-serif" }}
+                >
+                  {module.title}
+                </span>
+              </div>
+            </div>
+          ))}
+
+          {/* Last row bottom border */}
+          <div className="border-t border-black/10" />
+        </div>
+      </section>
     </main>
   );
 }
