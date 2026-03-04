@@ -7,11 +7,17 @@ export default function AtlasProfessional() {
 
       {/* Hero */}
       <section className="relative h-screen w-full overflow-hidden">
-        <img
-          src="/images/atlas-professional.jpg"
-          alt="Atlas Professional"
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster="/images/atlas-professional.jpg"
           className="absolute inset-0 w-full h-full object-cover"
-        />
+        >
+          <source src="/videos/atlas-professional.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="flex flex-col items-center text-center px-6">
