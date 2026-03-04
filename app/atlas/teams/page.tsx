@@ -18,22 +18,14 @@ export default function AtlasTeams() {
         >
           <source src="/videos/atlas-teams.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="flex flex-col items-center text-center px-6">
-            <h1
-              className="text-[64px] font-medium tracking-tight text-white"
-              style={{ fontFamily: "Inter, sans-serif" }}
-            >
-              Atlas Teams
-            </h1>
-            <p
-              className="mt-6 max-w-[640px] text-[20px] text-white/80 leading-relaxed"
-              style={{ fontFamily: "Inter, sans-serif" }}
-            >
-              Team intelligence
-            </p>
-          </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+        <div className="absolute bottom-16 left-16 z-10">
+          <h1
+            className="text-[80px] leading-[1.02] tracking-[-0.03em] font-medium text-white"
+            style={{ fontFamily: "Inter, sans-serif" }}
+          >
+            Atlas Teams
+          </h1>
         </div>
       </section>
     </div>
