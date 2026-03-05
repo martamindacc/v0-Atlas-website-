@@ -28,7 +28,7 @@ export default function AtlasProfessional() {
       {/* Section 1 — Concept hero text */}
       <section className="bg-[#fafafb] py-56 flex items-center justify-center">
         <div className="max-w-[1100px] mx-auto px-8 text-center">
-          <h2 className="font-sans text-[76px] leading-[1.05] tracking-[-0.035em] font-medium text-[#111] animate-fluidUp">
+          <h2 className="font-sans text-[96px] leading-[1.04] tracking-[-0.035em] font-medium text-[#111] opacity-0 animate-fluidUp">
             Computational model
             <br />
             of your reasoning patterns

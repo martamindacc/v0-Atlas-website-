@@ -116,16 +116,18 @@
 }
 
 @keyframes fluidUp {
-  from {
-    transform: translateY(20px);
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
   }
-  to {
+  100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
 
 @utility animate-fluidUp {
-  animation: fluidUp 900ms ease-out both;
+  animation: fluidUp 900ms ease-out forwards;
 }
 
 @layer base {
