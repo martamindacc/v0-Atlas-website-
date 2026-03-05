@@ -76,8 +76,8 @@ export default function Home() {
       </section>
 
       {/* Section 4 — ATLAS system */}
-      <section className="bg-[#fafafb] pt-[80px] pb-[160px]">
-        <div className="w-full px-6">
+      <section className="bg-[#fafafb] pt-[80px] pb-[160px] px-6">
+        <div className="w-full">
 
           {/* Module rows */}
           {[
@@ -99,7 +99,7 @@ export default function Home() {
           ].map((module) => (
             <Link href={module.href} key={module.title} className="block">
               <div
-                className="border-t border-black/10 cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7]"
+                className="border-t border-black/10 cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7] -mx-6 px-6"
               >
                 <div className="max-w-[1200px] mx-auto py-[64px] grid grid-cols-12 gap-x-12">
                   {/* Left — description */}
@@ -127,7 +127,7 @@ export default function Home() {
           ))}
 
           {/* Last row bottom border */}
-          <div className="border-t border-black/10" />
+          <div className="border-t border-black/10 -mx-6 px-6" />
         </div>
       </section>
     </main>
