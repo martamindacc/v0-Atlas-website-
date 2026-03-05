@@ -76,11 +76,11 @@ export default function Home() {
               <div
                 className="-mx-[16px] px-[16px] cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7]"
               >
-                <div className="max-w-[1200px] mx-auto py-[64px] grid grid-cols-12 gap-x-12">
+                <div className="max-w-[1200px] mx-auto py-[80px] grid grid-cols-12 gap-x-12">
                   {/* Left — description */}
                   <div className="col-span-6">
                     <p
-                      className="text-[18px] text-neutral-600 leading-relaxed max-w-[520px] whitespace-pre-line"
+                      className="text-[20px] text-neutral-600 leading-relaxed max-w-[520px] whitespace-pre-line"
                       style={{ fontFamily: "Inter, sans-serif" }}
                     >
                       {module.description}
@@ -90,7 +90,7 @@ export default function Home() {
                   {/* Right — product name */}
                   <div className="col-span-6 flex items-center justify-end">
                     <span
-                      className="text-[64px] font-medium tracking-tight text-right"
+                      className="text-[72px] font-medium tracking-tight text-right"
                       style={{ color: "#1e1f2b", fontFamily: "Inter, sans-serif" }}
                     >
                       {module.title}
