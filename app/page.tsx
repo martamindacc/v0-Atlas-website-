@@ -74,7 +74,7 @@ export default function Home() {
             <Link href={module.href} key={module.title} className="block">
               <div className="mx-4 h-px bg-black/10 opacity-60" />
               <div
-                className="-mx-[16px] px-[16px] cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7]"
+                className="group -mx-[16px] px-[16px] cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7]"
               >
                 <div className="max-w-[1200px] mx-auto py-[80px] grid grid-cols-12 gap-x-12">
                   {/* Left — description */}
@@ -90,7 +90,7 @@ export default function Home() {
                   {/* Right — product name */}
                   <div className="col-span-6 flex items-center justify-end">
                     <span
-                      className="text-[72px] font-medium tracking-tight text-right"
+                      className="text-[72px] font-medium tracking-tight text-right transition-all duration-200 ease-out group-hover:translate-x-[3px] group-hover:tracking-[0.01em]"
                       style={{ color: "#1e1f2b", fontFamily: "Inter, sans-serif" }}
                     >
                       {module.title}
