@@ -72,9 +72,9 @@ export default function Home() {
             },
           ].map((module) => (
             <Link href={module.href} key={module.title} className="block">
-              <div className="mx-4 h-px bg-black/10 opacity-80" />
+              <div className="mx-4 h-px bg-black/10 opacity-60" />
               <div
-                className="cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7]"
+                className="-mx-6 px-6 cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7]"
               >
                 <div className="max-w-[1200px] mx-auto py-[64px] grid grid-cols-12 gap-x-12">
                   {/* Left — description */}
@@ -102,7 +102,7 @@ export default function Home() {
           ))}
 
           {/* Last row bottom border */}
-          <div className="mx-4 h-px bg-black/10 opacity-80" />
+          <div className="mx-4 h-px bg-black/10 opacity-60" />
         </div>
       </section>
       {/* Section 3 — Human intelligence, understood by machines */}
