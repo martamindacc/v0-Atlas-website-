@@ -1,3 +1,5 @@
+'use client';
+
 export default function SiteHeader() {
   return (
     <div className="fixed top-0 z-50 w-full pt-[14px] px-6">
