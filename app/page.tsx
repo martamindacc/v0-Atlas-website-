@@ -51,7 +51,7 @@ export default function Home() {
 
       {/* Section 4 — ATLAS system */}
       <section className="bg-[#fafafb] pt-[80px] pb-[160px]">
-        <div className="max-w-[1200px] mx-auto px-6">
+        <div className="w-full px-6">
 
           {/* Module rows */}
           {[
@@ -73,28 +73,30 @@ export default function Home() {
           ].map((module) => (
             <Link href={module.href} key={module.title} className="block">
               <div
-                className="border-t border-black/10 py-[64px] grid grid-cols-12 gap-x-12 cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7]"
+                className="border-t border-black/10 cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7]"
               >
-              {/* Left — description */}
-              <div className="col-span-6">
-                <p
-                  className="text-[18px] text-neutral-600 leading-relaxed max-w-[520px] whitespace-pre-line"
-                  style={{ fontFamily: "Inter, sans-serif" }}
-                >
-                  {module.description}
-                </p>
-              </div>
+                <div className="max-w-[1200px] mx-auto py-[64px] grid grid-cols-12 gap-x-12">
+                  {/* Left — description */}
+                  <div className="col-span-6">
+                    <p
+                      className="text-[18px] text-neutral-600 leading-relaxed max-w-[520px] whitespace-pre-line"
+                      style={{ fontFamily: "Inter, sans-serif" }}
+                    >
+                      {module.description}
+                    </p>
+                  </div>
 
-              {/* Right — product name */}
-              <div className="col-span-6 flex items-center justify-end">
-                <span
-                  className="text-[64px] font-medium tracking-tight text-right"
-                  style={{ color: "#1e1f2b", fontFamily: "Inter, sans-serif" }}
-                >
-                  {module.title}
-                </span>
+                  {/* Right — product name */}
+                  <div className="col-span-6 flex items-center justify-end">
+                    <span
+                      className="text-[64px] font-medium tracking-tight text-right"
+                      style={{ color: "#1e1f2b", fontFamily: "Inter, sans-serif" }}
+                    >
+                      {module.title}
+                    </span>
+                  </div>
+                </div>
               </div>
-            </div>
             </Link>
           ))}
 
