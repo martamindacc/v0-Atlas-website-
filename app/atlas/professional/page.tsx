@@ -2,7 +2,7 @@ import SiteHeader from "@/components/site-header";
 
 export default function AtlasProfessional() {
   return (
-    <div className="bg-[#fafafb] min-h-screen w-full">
+    <div className="bg-[#fafafb] min-h-screen w-full overflow-x-hidden">
       <SiteHeader />
 
       {/* Hero */}
@@ -51,7 +51,7 @@ export default function AtlasProfessional() {
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
           <div className="min-h-[140vh]">
-            <div className="text-[18px] leading-[1.75] text-[#374151] space-y-6 max-w-[520px]">
+            <div className="text-[24px] leading-[1.75] text-[#374151] space-y-6 max-w-[520px]">
               <p>
                 Atlas is designed to help people think through problems that do not have obvious answers.
               </p>
@@ -87,7 +87,7 @@ export default function AtlasProfessional() {
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
           <div className="min-h-[140vh]">
-            <div className="text-[18px] leading-[1.75] text-[#374151] space-y-6 max-w-[520px]">
+            <div className="text-[24px] leading-[1.75] text-[#374151] space-y-6 max-w-[520px]">
               <p>
                 Atlas is designed to help people think through problems that do not have obvious answers.
               </p>
