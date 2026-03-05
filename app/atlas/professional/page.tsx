@@ -2,7 +2,7 @@ import SiteHeader from "@/components/site-header";
 
 export default function AtlasProfessional() {
   return (
-    <div className="bg-[#fafafb] min-h-screen w-full overflow-x-hidden">
+    <div className="bg-[#fafafb] min-h-screen w-full">
       <SiteHeader />
 
       {/* Hero */}
