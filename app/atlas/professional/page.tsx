@@ -64,7 +64,7 @@ export default function AtlasProfessional() {
               <img
                 src="/images/atlas-interface-placeholder.jpg"
                 alt="Atlas interface"
-                className="w-[900px] max-w-none"
+                className="w-full max-w-[900px]"
               />
             </div>
           </div>
