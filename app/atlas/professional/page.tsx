@@ -2,7 +2,7 @@ import SiteHeader from "@/components/site-header";
 
 export default function AtlasProfessional() {
   return (
-    <div className="bg-[#fafafb] min-h-screen w-full overflow-x-hidden">
+    <div className="bg-[#fafafb] min-h-screen w-full">
       <SiteHeader />
 
       {/* Hero */}
@@ -38,10 +38,10 @@ export default function AtlasProfessional() {
 
       {/* Section 2 — Editorial product section */}
       <section className="bg-[#fafafb] pb-[100px] pt-48">
-        <div className="max-w-[1300px] mx-auto px-8 grid grid-cols-2 gap-24">
+        <div className="max-w-[1300px] mx-auto px-8 grid grid-cols-2 gap-24 overflow-x-clip">
 
           {/* LEFT COLUMN (HEADER) */}
-          <div className="sticky top-32 self-start">
+          <div className="sticky top-32 self-start min-w-0">
             <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium text-[#111]">
               A reasoning partner
               <br />
@@ -50,7 +50,7 @@ export default function AtlasProfessional() {
           </div>
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
-          <div className="min-h-[140vh]">
+          <div className="min-h-[140vh] min-w-0">
             <div className="text-[24px] leading-[1.75] text-[#374151] space-y-6 max-w-[520px]">
               <p>
                 Atlas is designed to help people think through problems that do not have obvious answers.
@@ -74,10 +74,10 @@ export default function AtlasProfessional() {
 
       {/* Section 3 — Editorial product section */}
       <section className="bg-[#fafafb] pt-[100px] pb-48">
-        <div className="max-w-[1300px] mx-auto px-8 grid grid-cols-2 gap-24">
+        <div className="max-w-[1300px] mx-auto px-8 grid grid-cols-2 gap-24 overflow-x-clip">
 
           {/* LEFT COLUMN (HEADER) */}
-          <div className="sticky top-32 self-start">
+          <div className="sticky top-32 self-start min-w-0">
             <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium text-[#111]">
               A reasoning partner
               <br />
@@ -86,7 +86,7 @@ export default function AtlasProfessional() {
           </div>
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
-          <div className="min-h-[140vh]">
+          <div className="min-h-[140vh] min-w-0">
             <div className="text-[24px] leading-[1.75] text-[#374151] space-y-6 max-w-[520px]">
               <p>
                 Atlas is designed to help people think through problems that do not have obvious answers.
