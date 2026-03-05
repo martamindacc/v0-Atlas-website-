@@ -52,6 +52,7 @@ export default function Home() {
       {/* Section 4 — ATLAS system */}
       <section className="bg-[#fafafb] pt-[80px] pb-[160px]">
         <div className="max-w-[1200px] mx-auto px-6">
+
           {/* Module rows */}
           {[
             {
@@ -70,40 +71,35 @@ export default function Home() {
               href: "/atlas/global",
             },
           ].map((module) => (
-            <div key={module.title} className="relative w-full">
-              {/* Full width divider */}
-              <div className="w-screen relative left-1/2 -translate-x-1/2 border-t border-black/10" />
+            <Link href={module.href} key={module.title} className="block">
+              <div
+                className="border-t border-black/10 py-[64px] grid grid-cols-12 gap-x-12 cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7]"
+              >
+              {/* Left — description */}
+              <div className="col-span-6">
+                <p
+                  className="text-[18px] text-neutral-600 leading-relaxed max-w-[520px] whitespace-pre-line"
+                  style={{ fontFamily: "Inter, sans-serif" }}
+                >
+                  {module.description}
+                </p>
+              </div>
 
-              <Link href={module.href} className="block relative w-full group">
-                {/* Full viewport hover background */}
-                <div className="absolute inset-0 w-screen relative left-1/2 -translate-x-1/2 bg-[#f7f7f7] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-
-                {/* Constrained content */}
-                <div className="relative max-w-[1200px] mx-auto px-6 py-[64px] grid grid-cols-12 gap-x-12">
-                  <div className="col-span-6">
-                    <p
-                      className="text-[18px] text-neutral-600 leading-relaxed max-w-[520px] whitespace-pre-line"
-                      style={{ fontFamily: "Inter, sans-serif" }}
-                    >
-                      {module.description}
-                    </p>
-                  </div>
-
-                  <div className="col-span-6 flex items-center justify-end">
-                    <span
-                      className="text-[64px] font-medium tracking-tight text-right"
-                      style={{ color: "#1e1f2b", fontFamily: "Inter, sans-serif" }}
-                    >
-                      {module.title}
-                    </span>
-                  </div>
-                </div>
-              </Link>
+              {/* Right — product name */}
+              <div className="col-span-6 flex items-center justify-end">
+                <span
+                  className="text-[64px] font-medium tracking-tight text-right"
+                  style={{ color: "#1e1f2b", fontFamily: "Inter, sans-serif" }}
+                >
+                  {module.title}
+                </span>
+              </div>
             </div>
+            </Link>
           ))}
 
           {/* Last row bottom border */}
-          <div className="w-screen relative left-1/2 -translate-x-1/2 border-t border-black/10" />
+          <div className="border-t border-black/10" />
         </div>
       </section>
       {/* Section 3 — Human intelligence, understood by machines */}
