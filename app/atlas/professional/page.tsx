@@ -10,11 +10,9 @@ export default function AtlasProfessional() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setHeroVisible(true);
-        }
+        setHeroVisible(entry.isIntersecting);
       },
-      { threshold: 0.4 }
+      { threshold: 0.45 }
     );
 
     if (heroRef.current) observer.observe(heroRef.current);
