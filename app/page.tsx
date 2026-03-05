@@ -71,29 +71,31 @@ export default function Home() {
               href: "/atlas/global",
             },
           ].map((module) => (
-            <Link href={module.href} key={module.title} className="block relative w-full group">
+            <Link href={module.href} key={module.title} className="block relative w-screen -ml-6 group">
               {/* Full-viewport hover background */}
-              <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-screen bg-[#f3f4f6] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-              {/* Content — untouched */}
-              <div className="relative border-t border-black/10 py-[64px] grid grid-cols-12 gap-x-12">
-                {/* Left — description */}
-                <div className="col-span-6">
-                  <p
-                    className="text-[18px] text-neutral-600 leading-relaxed max-w-[520px] whitespace-pre-line"
-                    style={{ fontFamily: "Inter, sans-serif" }}
-                  >
-                    {module.description}
-                  </p>
-                </div>
+              <div className="absolute inset-y-0 left-0 w-full bg-[#f7f7f7] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+              {/* Content container — centered */}
+              <div className="relative px-6">
+                <div className="max-w-[1200px] mx-auto border-t border-black/10 py-[64px] grid grid-cols-12 gap-x-12">
+                  {/* Left — description */}
+                  <div className="col-span-6">
+                    <p
+                      className="text-[18px] text-neutral-600 leading-relaxed max-w-[520px] whitespace-pre-line"
+                      style={{ fontFamily: "Inter, sans-serif" }}
+                    >
+                      {module.description}
+                    </p>
+                  </div>
 
-                {/* Right — product name */}
-                <div className="col-span-6 flex items-center justify-end">
-                  <span
-                    className="text-[64px] font-medium tracking-tight text-right"
-                    style={{ color: "#1e1f2b", fontFamily: "Inter, sans-serif" }}
-                  >
-                    {module.title}
-                  </span>
+                  {/* Right — product name */}
+                  <div className="col-span-6 flex items-center justify-end">
+                    <span
+                      className="text-[64px] font-medium tracking-tight text-right"
+                      style={{ color: "#1e1f2b", fontFamily: "Inter, sans-serif" }}
+                    >
+                      {module.title}
+                    </span>
+                  </div>
                 </div>
               </div>
             </Link>
