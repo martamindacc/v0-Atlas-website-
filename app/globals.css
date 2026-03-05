@@ -126,8 +126,10 @@
   }
 }
 
-@utility animate-fluidUp {
-  animation: fluidUp 900ms ease-out forwards;
+@layer utilities {
+  .animate-fluidUp {
+    animation: fluidUp 900ms ease-out forwards;
+  }
 }
 
 @layer base {
