@@ -73,7 +73,7 @@ export default function Home() {
           ].map((module) => (
             <Link href={module.href} key={module.title} className="block relative w-full group">
               {/* Full-viewport hover background */}
-              <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-screen bg-[#f3f4f6] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+              <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-screen bg-[#f7f7f7] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
               {/* Content — untouched */}
               <div className="relative border-t border-black/10 py-[64px] grid grid-cols-12 gap-x-12">
                 {/* Left — description */}
