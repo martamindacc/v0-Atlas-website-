@@ -6,8 +6,6 @@ import SiteHeader from "@/components/site-header";
 export default function AtlasProfessional() {
   const [heroVisible, setHeroVisible] = useState(false);
   const heroRef = useRef(null);
-  const [visibleHeaders, setVisibleHeaders] = useState({});
-  const headerRefs = useRef([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -23,6 +21,8 @@ export default function AtlasProfessional() {
   }, []);
 
   useEffect(() => {
+    const typingState = new WeakMap();
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -30,6 +30,10 @@ export default function AtlasProfessional() {
           const fullText = el.dataset.text;
 
           if (entry.isIntersecting) {
+            if (typingState.get(el)) return; // prevent duplicate loops
+
+            typingState.set(el, true);
+
             let i = 0;
             el.textContent = "";
 
@@ -38,12 +42,15 @@ export default function AtlasProfessional() {
                 el.textContent += fullText.charAt(i);
                 i++;
                 setTimeout(type, 35);
+              } else {
+                typingState.set(el, false);
               }
             };
 
             type();
           } else {
             el.textContent = "";
+            typingState.set(el, false);
           }
         });
       },
@@ -109,7 +116,7 @@ export default function AtlasProfessional() {
               <br />
               <span
                 data-text="for complex decisions"
-                className="typed-header"
+                className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
           </div>
@@ -150,7 +157,7 @@ export default function AtlasProfessional() {
               <br />
               <span
                 data-text="for complex decisions"
-                className="typed-header"
+                className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
           </div>
