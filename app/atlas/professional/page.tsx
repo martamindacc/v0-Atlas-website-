@@ -26,18 +26,33 @@ export default function AtlasProfessional() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          const index = entry.target.dataset.index;
-          setVisibleHeaders((prev) => ({
-            ...prev,
-            [index]: entry.isIntersecting
-          }));
+          const el = entry.target;
+          const fullText = el.dataset.text;
+
+          if (entry.isIntersecting) {
+            let i = 0;
+            el.textContent = "";
+
+            const type = () => {
+              if (i < fullText.length) {
+                el.textContent += fullText.charAt(i);
+                i++;
+                setTimeout(type, 35);
+              }
+            };
+
+            type();
+          } else {
+            el.textContent = "";
+          }
         });
       },
       { threshold: 0.45 }
     );
 
-    headerRefs.current.forEach((el) => {
-      if (el) observer.observe(el);
+    const typedElements = document.querySelectorAll(".typed-header");
+    typedElements.forEach((el) => {
+      observer.observe(el);
     });
 
     return () => observer.disconnect();
@@ -87,16 +102,15 @@ export default function AtlasProfessional() {
 
           {/* LEFT COLUMN (HEADER) */}
           <div
-            ref={(el) => (headerRefs.current[0] = el)}
-            data-index="0"
-            className={`sticky top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out ${
-              visibleHeaders[0] ? "translate-y-0" : "translate-y-16"
-            }`}
+            className={`sticky top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
           >
             <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium text-[#111]">
               A reasoning partner
               <br />
-              for complex decisions
+              <span
+                data-text="for complex decisions"
+                className="typed-header"
+              ></span>
             </h3>
           </div>
 
@@ -129,16 +143,15 @@ export default function AtlasProfessional() {
 
           {/* LEFT COLUMN (HEADER) */}
           <div
-            ref={(el) => (headerRefs.current[1] = el)}
-            data-index="1"
-            className={`sticky top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out ${
-              visibleHeaders[1] ? "translate-y-0" : "translate-y-16"
-            }`}
+            className={`sticky top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
           >
             <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium text-[#111]">
               A reasoning partner
               <br />
-              for complex decisions
+              <span
+                data-text="for complex decisions"
+                className="typed-header"
+              ></span>
             </h3>
           </div>
 
