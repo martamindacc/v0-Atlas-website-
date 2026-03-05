@@ -6,6 +6,8 @@ import SiteHeader from "@/components/site-header";
 export default function AtlasProfessional() {
   const [heroVisible, setHeroVisible] = useState(false);
   const heroRef = useRef(null);
+  const [visibleHeaders, setVisibleHeaders] = useState({});
+  const headerRefs = useRef([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -16,6 +18,27 @@ export default function AtlasProfessional() {
     );
 
     if (heroRef.current) observer.observe(heroRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const index = entry.target.dataset.index;
+          setVisibleHeaders((prev) => ({
+            ...prev,
+            [index]: entry.isIntersecting
+          }));
+        });
+      },
+      { threshold: 0.45 }
+    );
+
+    headerRefs.current.forEach((el) => {
+      if (el) observer.observe(el);
+    });
 
     return () => observer.disconnect();
   }, []);
@@ -63,7 +86,13 @@ export default function AtlasProfessional() {
         <div className="max-w-[1300px] mx-auto px-8 grid grid-cols-2 gap-24 overflow-x-clip">
 
           {/* LEFT COLUMN (HEADER) */}
-          <div className="sticky top-32 self-start min-w-0">
+          <div
+            ref={(el) => (headerRefs.current[0] = el)}
+            data-index="0"
+            className={`sticky top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out ${
+              visibleHeaders[0] ? "translate-y-0" : "translate-y-16"
+            }`}
+          >
             <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium text-[#111]">
               A reasoning partner
               <br />
@@ -99,7 +128,13 @@ export default function AtlasProfessional() {
         <div className="max-w-[1300px] mx-auto px-8 grid grid-cols-2 gap-24 overflow-x-clip">
 
           {/* LEFT COLUMN (HEADER) */}
-          <div className="sticky top-32 self-start min-w-0">
+          <div
+            ref={(el) => (headerRefs.current[1] = el)}
+            data-index="1"
+            className={`sticky top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out ${
+              visibleHeaders[1] ? "translate-y-0" : "translate-y-16"
+            }`}
+          >
             <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium text-[#111]">
               A reasoning partner
               <br />
