@@ -111,6 +111,7 @@ export default function AtlasProfessional() {
           <div
             className={`sticky top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
           >
+            <div className="w-[180px] h-px bg-black/10 mb-14"></div>
             <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium text-[#111]">
               A reasoning partner
               <br />
@@ -152,6 +153,7 @@ export default function AtlasProfessional() {
           <div
             className={`sticky top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
           >
+            <div className="w-[180px] h-px bg-black/10 mb-14"></div>
             <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium text-[#111]">
               A reasoning partner
               <br />
