@@ -49,35 +49,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 3 — Human intelligence, understood by machines */}
-      <section className="w-full bg-[#efefef] py-[140px]">
-        <div className="max-w-[1200px] mx-auto px-6">
-          <div className="grid grid-cols-12 gap-x-12 items-start">
-            {/* Left — headline */}
-            <div className="col-span-6">
-              <h2
-                className="text-[42px] leading-[1.15] tracking-tight font-medium text-neutral-900 max-w-[520px]"
-                style={{ fontFamily: "Inter, sans-serif" }}
-              >
-                Human intelligence,<br />understood by machines.
-              </h2>
-            </div>
-
-            {/* Right — explanatory text */}
-            <div className="col-span-5 col-start-8 text-[18px] leading-[1.6] text-neutral-600 max-w-[420px] space-y-6">
-              <p>Atlas bridges behavioral science and artificial intelligence.</p>
-              <p>
-                By modeling how people think and decide, it enables a new form
-                of collaboration between human judgment and machine reasoning.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Section 4 — ATLAS system */}
-      <section className="bg-[#fafafb] pt-[80px] pb-[160px] px-6">
-        <div className="w-full">
+      <section className="bg-[#fafafb] pt-[80px] pb-[160px]">
+        <div className="w-full px-6">
 
           {/* Module rows */}
           {[
@@ -99,7 +73,7 @@ export default function Home() {
           ].map((module) => (
             <Link href={module.href} key={module.title} className="block">
               <div
-                className="border-t border-black/10 cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7] -mx-6 px-6"
+                className="border-t border-black/10 cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7]"
               >
                 <div className="max-w-[1200px] mx-auto py-[64px] grid grid-cols-12 gap-x-12">
                   {/* Left — description */}
@@ -127,7 +101,32 @@ export default function Home() {
           ))}
 
           {/* Last row bottom border */}
-          <div className="border-t border-black/10 -mx-6 px-6" />
+          <div className="border-t border-black/10" />
+        </div>
+      </section>
+      {/* Section 3 — Human intelligence, understood by machines */}
+      <section className="w-full bg-[#efefef] py-[140px]">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="grid grid-cols-12 gap-x-12 items-start">
+            {/* Left — headline */}
+            <div className="col-span-6">
+              <h2
+                className="text-[42px] leading-[1.15] tracking-tight font-medium text-neutral-900 max-w-[520px]"
+                style={{ fontFamily: "Inter, sans-serif" }}
+              >
+                Human intelligence,<br />understood by machines.
+              </h2>
+            </div>
+
+            {/* Right — explanatory text */}
+            <div className="col-span-5 col-start-8 text-[18px] leading-[1.6] text-neutral-600 max-w-[420px] space-y-6">
+              <p>Atlas bridges behavioral science and artificial intelligence.</p>
+              <p>
+                By modeling how people think and decide, it enables a new form
+                of collaboration between human judgment and machine reasoning.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
