@@ -37,7 +37,7 @@ export default function AtlasProfessional() {
       </section>
 
       {/* Section 2 — Editorial product section */}
-      <section className="bg-[#fafafb] py-48">
+      <section className="bg-[#fafafb] py-48 overflow-x-hidden">
         <div className="max-w-[1300px] mx-auto px-8 grid grid-cols-2 gap-24">
 
           {/* LEFT COLUMN (HEADER) */}
@@ -51,7 +51,7 @@ export default function AtlasProfessional() {
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
           <div className="min-h-[140vh]">
-            <div className="text-[32px] leading-[1.75] text-[#374151] space-y-6 max-w-[520px]">
+            <div className="text-[28px] leading-[1.75] text-[#374151] space-y-6 max-w-[520px]">
               <p>
                 Atlas is designed to help people think through problems that do not have obvious answers.
               </p>
