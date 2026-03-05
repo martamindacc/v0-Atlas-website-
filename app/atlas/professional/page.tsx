@@ -71,6 +71,38 @@ export default function AtlasProfessional() {
 
         </div>
       </section>
+      {/* 200px spacer */}
+      <div className="h-[200px]" />
+
+      {/* Section 3 — Editorial product section */}
+      <section className="bg-[#fafafb] py-48 overflow-x-hidden">
+        <div className="max-w-[1300px] mx-auto px-8 grid grid-cols-2 gap-24">
+
+          {/* LEFT COLUMN — STICKY HEADER */}
+          <div className="sticky top-32 self-start">
+            <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium text-[#111]">
+              Understanding
+              <br />
+              human reasoning
+            </h3>
+          </div>
+
+          {/* RIGHT COLUMN — SCROLL CONTENT */}
+          <div className="min-h-[140vh]">
+            <div className="text-[18px] leading-[1.75] text-[#374151] space-y-6 max-w-[520px]">
+              <p>
+                Atlas builds a behavioral model of how people reason, allowing the system to understand not only what decisions are made but how they emerge.
+              </p>
+              <p>
+                Over time the system learns patterns in thinking, helping users explore options, test ideas, and approach complex problems with greater clarity.
+              </p>
+            </div>
+
+            <div className="mt-16 w-full max-w-[900px] aspect-video bg-[#e8e8e8]" />
+          </div>
+
+        </div>
+      </section>
     </div>
   );
 }
