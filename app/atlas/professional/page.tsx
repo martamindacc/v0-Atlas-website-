@@ -74,7 +74,8 @@ export default function AtlasProfessional() {
 
       {/* Section 3 — Editorial product section */}
       <section className="bg-[#fafafb] py-48 overflow-x-hidden">
-        <div className="max-w-[1300px] mx-auto px-8 grid grid-cols-2 gap-24">
+        <div className="max-w-[1300px] mx-auto px-8 relative">
+          <div className="grid grid-cols-2 gap-24 items-start">
 
           {/* LEFT COLUMN — STICKY HEADER */}
           <div className="sticky top-32 self-start">
@@ -104,6 +105,7 @@ export default function AtlasProfessional() {
             </div>
           </div>
 
+          </div>
         </div>
       </section>
     </div>
