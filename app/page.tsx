@@ -100,7 +100,7 @@ export default function Home() {
           ))}
 
           {/* Last row bottom border */}
-          <div className="border-t border-black/10" />
+          <div className="w-screen -ml-6 border-t border-black/10" />
         </div>
       </section>
       {/* Section 3 — Human intelligence, understood by machines */}
