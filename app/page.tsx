@@ -90,7 +90,7 @@ export default function Home() {
                   {/* Right — product name */}
                   <div className="col-span-6 flex items-center justify-end">
                     <span
-                      className="text-[72px] font-medium tracking-tight text-right transition-all duration-200 ease-out group-hover:translate-x-[3px] group-hover:tracking-[0.01em]"
+                      className="text-[72px] font-medium tracking-tight text-right"
                       style={{ color: "#1e1f2b", fontFamily: "Inter, sans-serif" }}
                     >
                       {module.title}
