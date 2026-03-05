@@ -71,6 +71,41 @@ export default function AtlasProfessional() {
 
         </div>
       </section>
+
+      {/* Section 3 — Editorial product section */}
+      <section className="bg-[#fafafb] py-48 overflow-x-hidden">
+        <div className="max-w-[1300px] mx-auto px-8 grid grid-cols-2 gap-24">
+
+          {/* LEFT COLUMN — STICKY HEADER */}
+          <div className="sticky top-32 self-start">
+            <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium text-[#111]">
+              A reasoning partner
+              <br />
+              for complex decisions
+            </h3>
+          </div>
+
+          {/* RIGHT COLUMN — SCROLL CONTENT */}
+          <div className="min-h-[140vh]">
+            <div className="text-[18px] leading-[1.75] text-[#374151] space-y-6 max-w-[520px]">
+              <p>
+                Atlas is designed to help people think through problems that do not have obvious answers.
+              </p>
+              <p>
+                Because the system is grounded in your cognitive model, the dialogue evolves with the way you naturally reason.
+              </p>
+            </div>
+
+            <div className="mt-16">
+              <img
+                src="/images/atlas-interface-placeholder.png"
+                className="w-full max-w-[900px] h-auto"
+              />
+            </div>
+          </div>
+
+        </div>
+      </section>
     </div>
   );
 }
