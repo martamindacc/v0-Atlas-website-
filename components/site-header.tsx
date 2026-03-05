@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 export default function SiteHeader() {
   return (
     <div className="fixed top-0 z-50 w-full pt-[14px] px-6">
@@ -7,7 +9,7 @@ export default function SiteHeader() {
         className="flex items-center justify-between px-8 h-[67px] border border-black/[0.06] bg-white/20 backdrop-blur backdrop-saturate-150 shadow-[0_1px_3px_rgba(0,0,0,0.06)] rounded-[14px]"
       >
         {/* Left — Logo + wordmark */}
-        <a href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <img
             src="/images/mindacc_logo.png"
             alt="mindacc logo"
@@ -19,7 +21,7 @@ export default function SiteHeader() {
           >
             MINDACC
           </span>
-        </a>
+        </Link>
 
         {/* Right — Controls cluster */}
         <div className="flex items-center gap-3">
