@@ -51,60 +51,59 @@ export default function Home() {
 
       {/* Section 4 — ATLAS system */}
       <section className="bg-[#fafafb] pt-[80px] pb-[160px]">
-        <div className="w-screen relative left-1/2 -translate-x-1/2">
+        <div className="max-w-[1200px] mx-auto px-6">
           {/* Module rows */}
-          <div className="max-w-[1200px] mx-auto px-6">
-            {[
-              {
-                description: "Personal behavioral intelligence\nBuild your cognitive model and work with Atlas\nas a reasoning partner for decisions and planning.",
-                title: "Atlas Professional",
-                href: "/atlas/professional",
-              },
-              {
-                description: "Team intelligence\nUnderstand how people think together and improve\ncommunication, coordination, and decision dynamics.",
-                title: "Atlas Teams",
-                href: "/atlas/teams",
-              },
-              {
-                description: "Organizational intelligence\nAnalyze behavioral patterns across the workforce\nto support leadership and strategic decision making.",
-                title: "Atlas Global",
-                href: "/atlas/global",
-              },
-            ].map((module) => (
-              <div key={module.title}>
-                <div className="border-t border-black/10" />
-                <Link href={module.href} className="block relative w-full group">
-                  {/* Full-viewport hover background */}
-                  <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-screen bg-[#f7f7f7] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-                  {/* Content — untouched */}
-                  <div className="relative py-[64px] grid grid-cols-12 gap-x-12">
-                    {/* Left — description */}
-                    <div className="col-span-6">
-                      <p
-                        className="text-[18px] text-neutral-600 leading-relaxed max-w-[520px] whitespace-pre-line"
-                        style={{ fontFamily: "Inter, sans-serif" }}
-                      >
-                        {module.description}
-                      </p>
-                    </div>
+          {[
+            {
+              description: "Personal behavioral intelligence\nBuild your cognitive model and work with Atlas\nas a reasoning partner for decisions and planning.",
+              title: "Atlas Professional",
+              href: "/atlas/professional",
+            },
+            {
+              description: "Team intelligence\nUnderstand how people think together and improve\ncommunication, coordination, and decision dynamics.",
+              title: "Atlas Teams",
+              href: "/atlas/teams",
+            },
+            {
+              description: "Organizational intelligence\nAnalyze behavioral patterns across the workforce\nto support leadership and strategic decision making.",
+              title: "Atlas Global",
+              href: "/atlas/global",
+            },
+          ].map((module) => (
+            <div key={module.title} className="relative w-full">
+              {/* Full width divider */}
+              <div className="w-screen relative left-1/2 -translate-x-1/2 border-t border-black/10" />
 
-                    {/* Right — product name */}
-                    <div className="col-span-6 flex items-center justify-end">
-                      <span
-                        className="text-[64px] font-medium tracking-tight text-right"
-                        style={{ color: "#1e1f2b", fontFamily: "Inter, sans-serif" }}
-                      >
-                        {module.title}
-                      </span>
-                    </div>
+              <Link href={module.href} className="block relative w-full group">
+                {/* Full viewport hover background */}
+                <div className="absolute inset-0 w-screen relative left-1/2 -translate-x-1/2 bg-[#f7f7f7] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+
+                {/* Constrained content */}
+                <div className="relative max-w-[1200px] mx-auto px-6 py-[64px] grid grid-cols-12 gap-x-12">
+                  <div className="col-span-6">
+                    <p
+                      className="text-[18px] text-neutral-600 leading-relaxed max-w-[520px] whitespace-pre-line"
+                      style={{ fontFamily: "Inter, sans-serif" }}
+                    >
+                      {module.description}
+                    </p>
                   </div>
-                </Link>
-              </div>
-            ))}
 
-            {/* Last row bottom border */}
-            <div className="border-t border-black/10" />
-          </div>
+                  <div className="col-span-6 flex items-center justify-end">
+                    <span
+                      className="text-[64px] font-medium tracking-tight text-right"
+                      style={{ color: "#1e1f2b", fontFamily: "Inter, sans-serif" }}
+                    >
+                      {module.title}
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
+
+          {/* Last row bottom border */}
+          <div className="w-screen relative left-1/2 -translate-x-1/2 border-t border-black/10" />
         </div>
       </section>
       {/* Section 3 — Human intelligence, understood by machines */}
