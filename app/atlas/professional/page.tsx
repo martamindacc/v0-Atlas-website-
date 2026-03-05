@@ -25,32 +25,48 @@ export default function AtlasProfessional() {
         </div>
       </section>
 
-      {/* Content Section */}
-      <section className="bg-[#fafafb] py-40">
-        <div className="max-w-[1200px] mx-auto px-8 grid grid-cols-2 gap-24 items-start">
+      {/* Section 1 — Concept hero text */}
+      <section className="bg-[#fafafb] py-56 flex items-center justify-center">
+        <div className="max-w-[1100px] mx-auto px-8 text-center">
+          <h2 className="font-sans text-[76px] leading-[1.05] tracking-[-0.035em] font-medium text-[#111] animate-fluidUp">
+            Computational model
+            <br />
+            of your reasoning patterns
+          </h2>
+        </div>
+      </section>
 
-          {/* LEFT COLUMN */}
-          <div>
-            <h2 className="text-[48px] leading-[1.05] tracking-[-0.02em] font-medium text-[#111]">
-              Atlas Professional
-            </h2>
+      {/* Section 2 — Editorial product section */}
+      <section className="bg-[#fafafb] py-48">
+        <div className="max-w-[1300px] mx-auto px-8 grid grid-cols-2 gap-24">
 
-            <p className="text-[20px] text-[#6b7280] mt-6">
-              Personal behavioral intelligence
-            </p>
+          {/* LEFT COLUMN (HEADER) */}
+          <div className="sticky top-32 self-start">
+            <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium text-[#111]">
+              A reasoning partner
+              <br />
+              for complex decisions
+            </h3>
           </div>
 
-          {/* RIGHT COLUMN */}
-          <div className="text-[18px] leading-[1.75] text-[#374151] max-w-[520px] space-y-6">
+          {/* RIGHT COLUMN (SCROLL CONTENT) */}
+          <div className="min-h-[140vh]">
+            <div className="text-[18px] leading-[1.75] text-[#374151] space-y-6 max-w-[520px]">
+              <p>
+                Atlas is designed to help people think through problems that do not have obvious answers.
+              </p>
+              <p>
+                Because the system is grounded in your cognitive model, the dialogue evolves with the way you naturally reason.
+              </p>
+            </div>
 
-            <p>
-              Atlas Professional builds a computational model of your reasoning patterns.
-            </p>
-
-            <p>
-              It becomes the foundation for how Atlas works with you, helping you explore decisions, examine alternatives, and understand the dynamics shaping your judgment.
-            </p>
-
+            <div className="mt-16">
+              <img
+                src="/images/atlas-interface-placeholder.jpg"
+                alt="Atlas interface"
+                className="w-[900px] max-w-none"
+              />
+            </div>
           </div>
 
         </div>

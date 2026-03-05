@@ -115,6 +115,19 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+@keyframes fluidUp {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@utility animate-fluidUp {
+  animation: fluidUp 900ms ease-out both;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
