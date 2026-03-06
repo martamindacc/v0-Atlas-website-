@@ -67,36 +67,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Atlas System Cue Section */}
-      <section
-        ref={atlasSystemRef}
-        className="w-full bg-[#efefef] py-[120px]"
-      >
-        <div className="max-w-[900px] mx-auto px-6 text-center">
+      {/* Section 4 — ATLAS system */}
+      <section className="bg-[#fafafb] pt-[80px] pb-[160px]">
+        <div className="w-full px-6">
+
+          {/* Atlas System Label */}
           <div
-            className={`transition-all duration-[900ms] ease-out ${
-              atlasSystemVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"
+            ref={atlasSystemRef}
+            className={`max-w-[1200px] mx-auto mb-[48px] transition-all duration-[900ms] ease-out ${
+              atlasSystemVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
             }`}
           >
             <h3
-              className="text-[32px] font-medium tracking-tight text-neutral-900"
+              className="text-[28px] font-medium tracking-tight text-neutral-900 mb-6"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
               The Atlas System
             </h3>
-            <p
-              className="mt-6 text-[18px] text-neutral-600 leading-relaxed max-w-[620px] mx-auto"
-              style={{ fontFamily: "Inter, sans-serif" }}
-            >
-              Three layers of behavioral intelligence for individuals, teams, and organizations.
-            </p>
+            <div className="h-px bg-black/10 opacity-60" />
           </div>
-        </div>
-      </section>
-
-      {/* Section 4 — ATLAS system */}
-      <section className="bg-[#fafafb] pt-[80px] pb-[160px]">
-        <div className="w-full px-6">
 
           {/* Module rows */}
           {[
