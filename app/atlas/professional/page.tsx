@@ -70,14 +70,13 @@ export default function AtlasProfessional() {
       <SiteHeader />
 
       {/* Hero */}
-      <section className="relative h-screen w-full overflow-hidden">
+      <section className="relative h-screen w-full overflow-hidden bg-[#e5e5e5]">
         <video
           autoPlay
           muted
           loop
           playsInline
           preload="metadata"
-          poster="/images/atlas-professional.jpg"
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/videos/atlas-professional.mp4" type="video/mp4" />
