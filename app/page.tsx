@@ -1,7 +1,25 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 import SiteHeader from "@/components/site-header";
 
 export default function Home() {
+  const [atlasSystemVisible, setAtlasSystemVisible] = useState(false);
+  const atlasSystemRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setAtlasSystemVisible(entry.isIntersecting);
+      },
+      { threshold: 0.45 }
+    );
+
+    if (atlasSystemRef.current) observer.observe(atlasSystemRef.current);
+
+    return () => observer.disconnect();
+  }, []);
   return (
     <main style={{ backgroundColor: "#fafafb" }}>
       <SiteHeader />
@@ -46,6 +64,33 @@ export default function Home() {
             explains how they decide, and helps individuals and organizations
             make better decisions — at scale.
           </p>
+        </div>
+      </section>
+
+      {/* Atlas System Cue Section */}
+      <section
+        ref={atlasSystemRef}
+        className="w-full bg-[#efefef] py-[120px]"
+      >
+        <div className="max-w-[900px] mx-auto px-6 text-center">
+          <div
+            className={`transition-all duration-[900ms] ease-out ${
+              atlasSystemVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"
+            }`}
+          >
+            <h3
+              className="text-[32px] font-medium tracking-tight text-neutral-900"
+              style={{ fontFamily: "Inter, sans-serif" }}
+            >
+              The Atlas System
+            </h3>
+            <p
+              className="mt-6 text-[18px] text-neutral-600 leading-relaxed max-w-[620px] mx-auto"
+              style={{ fontFamily: "Inter, sans-serif" }}
+            >
+              Three layers of behavioral intelligence for individuals, teams, and organizations.
+            </p>
+          </div>
         </div>
       </section>
 
