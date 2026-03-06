@@ -13,7 +13,7 @@ export default function Home() {
       ([entry]) => {
         setAtlasSystemVisible(entry.isIntersecting);
       },
-      { threshold: 0.45 }
+      { threshold: 0.15 }
     );
 
     if (atlasSystemRef.current) observer.observe(atlasSystemRef.current);
@@ -74,8 +74,8 @@ export default function Home() {
           {/* Atlas System Label */}
           <div
             ref={atlasSystemRef}
-            className={`max-w-[1200px] mx-auto mb-[48px] transition-all duration-[900ms] ease-out ${
-              atlasSystemVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+            className={`max-w-[1200px] mx-auto mb-[48px] transition-all duration-[700ms] ease-out ${
+              atlasSystemVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
             }`}
           >
             <h3
@@ -84,7 +84,6 @@ export default function Home() {
             >
               The Atlas System
             </h3>
-            <div className="h-px bg-black/10 opacity-60" />
           </div>
 
           {/* Module rows */}
