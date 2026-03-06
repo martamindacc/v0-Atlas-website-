@@ -78,7 +78,7 @@ export default function Home() {
               >
                 <div className="max-w-[1200px] mx-auto py-[80px] grid grid-cols-12 gap-x-12">
                   {/* Left — description */}
-                  <div className="col-span-6">
+                  <div className="col-span-5">
                     <p
                       className="text-[20px] text-neutral-600 leading-relaxed max-w-[520px] whitespace-pre-line"
                       style={{ fontFamily: "Inter, sans-serif" }}
@@ -88,7 +88,7 @@ export default function Home() {
                   </div>
 
                   {/* Right — product name */}
-                  <div className="col-span-6 flex items-center justify-end overflow-hidden">
+                  <div className="col-span-7 flex items-center justify-end overflow-hidden">
                     <span
                       className="inline-block text-[72px] font-medium tracking-tight text-right transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em] will-change-transform"
                       style={{ color: "#1e1f2b", fontFamily: "Inter, sans-serif" }}
