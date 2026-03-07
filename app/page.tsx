@@ -84,6 +84,7 @@ export default function Home() {
             >
               The Atlas System
             </h3>
+            <div className="h-px bg-black/10 opacity-60" />
           </div>
 
           {/* Module rows */}
