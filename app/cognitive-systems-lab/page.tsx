@@ -50,10 +50,16 @@ export default function CognitiveSystemsLab() {
       >
         <div className="max-w-[1100px] mx-auto px-8 text-center">
           <h2 className={`font-sans text-[96px] leading-[1.04] tracking-[-0.035em] font-medium text-[#111] transition-all duration-[900ms] ease-out ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}>
-            Human–AI Systems
+            Research on human cognition
             <br />
-            Designing systems that augment strategic thinking.
+            and intelligent systems
           </h2>
+          <p
+            className={`mt-10 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed transition-all duration-[900ms] ease-out ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}
+            style={{ color: "#6b6e85" }}
+          >
+            Our work explores how computational systems can augment human reasoning, decision-making, and strategic thinking.
+          </p>
         </div>
       </section>
     </div>
