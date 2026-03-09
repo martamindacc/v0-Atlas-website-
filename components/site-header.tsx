@@ -49,7 +49,7 @@ export default function SiteHeader() {
           <div className="flex items-center gap-3">
             {/* Get Started CTA */}
             <button
-              className="flex items-center justify-center border border-black/30 bg-white/80 text-[#1e1f2b] text-[15px] font-medium tracking-tight px-6 h-[40px] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
+              className="flex items-center justify-center min-w-[190px] border border-black/30 bg-white/80 text-[#1e1f2b] text-[15px] font-normal tracking-tight px-8 h-[40px] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
             >
               Get Started
             </button>
@@ -78,25 +78,25 @@ export default function SiteHeader() {
             {/* Menu icon */}
             <button
               onClick={() => setIsDrawerOpen(!isDrawerOpen)}
-              className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
+              className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-black/[0.04] hover:border-black/40 transition-colors cursor-pointer"
               aria-label="Menu"
             >
               <div className="relative w-[18px] h-[14px]">
                 {/* top line */}
                 <span
-                  className={`absolute left-0 top-0 w-full h-[2px] bg-current transition-all duration-200 ${
+                  className={`absolute left-0 top-0 w-full h-px bg-current transition-[top,transform] duration-200 ${
                     isDrawerOpen ? 'top-[6px] rotate-45' : ''
                   }`}
                 />
                 {/* middle line */}
                 <span
-                  className={`absolute left-0 top-[6px] w-full h-[2px] bg-current transition-opacity duration-200 ${
+                  className={`absolute left-0 top-[6px] w-full h-px bg-current transition-opacity duration-200 ${
                     isDrawerOpen ? 'opacity-0' : 'opacity-100'
                   }`}
                 />
                 {/* bottom line */}
                 <span
-                  className={`absolute left-0 bottom-0 w-full h-[2px] bg-current transition-all duration-200 ${
+                  className={`absolute left-0 bottom-0 w-full h-px bg-current transition-[bottom,transform] duration-200 ${
                     isDrawerOpen ? 'bottom-[6px] -rotate-45' : ''
                   }`}
                 />
@@ -127,7 +127,7 @@ export default function SiteHeader() {
         <div className="flex items-center justify-end gap-3 h-[67px] px-8">
 
           <button
-            className="flex items-center justify-center border border-black/30 bg-white/80 text-[#1e1f2b] text-[15px] font-medium tracking-tight px-6 h-[40px] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
+            className="flex items-center justify-center min-w-[190px] border border-black/30 bg-white/80 text-[#1e1f2b] text-[15px] font-normal tracking-tight px-8 h-[40px] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
           >
             Get Started
           </button>
@@ -157,8 +157,8 @@ export default function SiteHeader() {
             className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
           >
             <div className="relative w-[18px] h-[14px]">
-              <span className="absolute left-0 top-[6px] w-full h-[2px] bg-current rotate-45"></span>
-              <span className="absolute left-0 top-[6px] w-full h-[2px] bg-current -rotate-45"></span>
+              <span className="absolute left-0 top-[6px] w-full h-px bg-current rotate-45"></span>
+              <span className="absolute left-0 top-[6px] w-full h-px bg-current -rotate-45"></span>
             </div>
           </button>
 
