@@ -81,20 +81,20 @@ export default function SiteHeader() {
               className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
               aria-label="Menu"
             >
-              <div className="relative w-[18px] h-[14px]">
+              <div className="relative w-[18px] h-[14px] flex items-center justify-center">
                 <span
-                  className={`absolute left-0 w-full h-[2px] bg-currentColor transition-all duration-200 ${
-                    isDrawerOpen ? 'top-[6px] rotate-45' : 'top-0 rotate-0'
+                  className={`absolute w-full h-[2px] bg-currentColor transition-all duration-300 origin-center ${
+                    isDrawerOpen ? 'translate-y-[-6px] rotate-45' : 'translate-y-0 rotate-0'
                   }`}
                 />
                 <span
-                  className={`absolute left-0 top-[6px] w-full h-[2px] bg-currentColor transition-opacity duration-200 ${
+                  className={`absolute w-full h-[2px] bg-currentColor transition-opacity duration-300 ${
                     isDrawerOpen ? 'opacity-0' : 'opacity-100'
                   }`}
                 />
                 <span
-                  className={`absolute left-0 w-full h-[2px] bg-currentColor transition-all duration-200 ${
-                    isDrawerOpen ? 'bottom-[6px] -rotate-45' : 'bottom-0 rotate-0'
+                  className={`absolute w-full h-[2px] bg-currentColor transition-all duration-300 origin-center ${
+                    isDrawerOpen ? 'translate-y-[6px] -rotate-45' : 'translate-y-0 rotate-0'
                   }`}
                 />
               </div>
