@@ -246,24 +246,6 @@ export default function SiteHeader() {
               </a>
             </div>
           </div>
-
-          {/* Contact section */}
-          <div>
-            <h3
-              className="text-[12px] font-medium tracking-[0.05em] text-neutral-500 uppercase mb-[20px]"
-              style={{ fontFamily: "Inter, sans-serif" }}
-            >
-              Contact
-            </h3>
-            <a href="#" className="block group">
-              <span
-                className="text-[20px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
-                style={{ fontFamily: "Inter, sans-serif" }}
-              >
-                Request Demo
-              </span>
-            </a>
-          </div>
         </nav>
       </div>
     </>
