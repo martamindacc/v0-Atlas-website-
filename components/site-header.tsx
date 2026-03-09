@@ -167,11 +167,10 @@ export default function SiteHeader() {
         {/* Navigation content */}
         <nav className="pt-[48px] px-[48px]">
           <div
-            className={`transform-gpu transition-[opacity,transform] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none motion-reduce:transform-none ${
-              isDrawerOpen
-                ? 'opacity-100 translate-y-0 delay-150'
-                : 'opacity-0 translate-y-[6px] delay-0 pointer-events-none'
+            className={`transition-opacity duration-500 ease-out motion-reduce:transition-none will-change-[opacity] ${
+              isDrawerOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
             }`}
+            style={{ transitionDelay: isDrawerOpen ? '180ms' : '0ms' }}
           >
             {/* Platform section */}
             <div className="mb-[56px]">
