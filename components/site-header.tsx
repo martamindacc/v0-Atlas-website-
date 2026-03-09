@@ -120,7 +120,7 @@ export default function SiteHeader() {
           isDrawerOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
         style={{
-          width: 'clamp(420px, 50vw, 560px)',
+          width: '45vw',
         }}
       >
         {/* Drawer header controls */}
@@ -183,7 +183,7 @@ export default function SiteHeader() {
               <div className="space-y-4">
                 <Link href="/atlas/professional" className="block group">
                   <span
-                    className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
+                    className="text-[24px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
                     style={{ fontFamily: "Inter, sans-serif" }}
                   >
                     Atlas Professional
@@ -191,7 +191,7 @@ export default function SiteHeader() {
                 </Link>
                 <Link href="/atlas/teams" className="block group">
                   <span
-                    className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
+                    className="text-[24px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
                     style={{ fontFamily: "Inter, sans-serif" }}
                   >
                     Atlas Teams
@@ -199,7 +199,7 @@ export default function SiteHeader() {
                 </Link>
                 <Link href="/atlas/global" className="block group">
                   <span
-                    className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
+                    className="text-[24px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
                     style={{ fontFamily: "Inter, sans-serif" }}
                   >
                     Atlas Global
@@ -219,7 +219,7 @@ export default function SiteHeader() {
               <div className="space-y-4">
                 <a href="#" className="block group">
                   <span
-                    className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
+                    className="text-[24px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
                     style={{ fontFamily: "Inter, sans-serif" }}
                   >
                     Mission
@@ -227,7 +227,7 @@ export default function SiteHeader() {
                 </a>
                 <a href="#" className="block group">
                   <span
-                    className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
+                    className="text-[24px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
                     style={{ fontFamily: "Inter, sans-serif" }}
                   >
                     Cognitive Systems Lab
