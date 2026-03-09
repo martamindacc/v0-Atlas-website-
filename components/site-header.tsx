@@ -164,12 +164,10 @@ export default function SiteHeader() {
 
         </div>
 
-        <div className="border-t border-black/[0.06]" />
-
         {/* Navigation content */}
         <nav
-          className={`pt-[48px] px-[48px] transition-opacity duration-120 ${
-            isDrawerOpen ? 'opacity-100' : 'opacity-0'
+          className={`pt-[48px] px-[48px] transition-[opacity,transform] duration-300 ease-out will-change-[opacity,transform] ${
+            isDrawerOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-1 pointer-events-none'
           }`}
         >
           {/* Platform section */}
