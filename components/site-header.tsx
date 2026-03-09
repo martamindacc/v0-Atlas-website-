@@ -83,17 +83,17 @@ export default function SiteHeader() {
             >
               <div className="relative w-[18px] h-[14px] flex items-center justify-center">
                 <span
-                  className={`absolute w-full h-[2px] bg-currentColor transition-all duration-300 origin-center ${
+                  className={`absolute w-full h-[2px] bg-current transition-all duration-300 origin-center ${
                     isDrawerOpen ? 'translate-y-[-6px] rotate-45' : 'translate-y-0 rotate-0'
                   }`}
                 />
                 <span
-                  className={`absolute w-full h-[2px] bg-currentColor transition-opacity duration-300 ${
+                  className={`absolute w-full h-[2px] bg-current transition-opacity duration-300 ${
                     isDrawerOpen ? 'opacity-0' : 'opacity-100'
                   }`}
                 />
                 <span
-                  className={`absolute w-full h-[2px] bg-currentColor transition-all duration-300 origin-center ${
+                  className={`absolute w-full h-[2px] bg-current transition-all duration-300 origin-center ${
                     isDrawerOpen ? 'translate-y-[6px] -rotate-45' : 'translate-y-0 rotate-0'
                   }`}
                 />
@@ -120,9 +120,52 @@ export default function SiteHeader() {
           width: 'clamp(420px, 50vw, 560px)',
         }}
       >
+        {/* Drawer header controls */}
+        <div className="flex items-center justify-end gap-3 h-[67px] px-8">
+
+          <button
+            className="flex items-center justify-center border border-black/30 bg-white/80 text-[#1e1f2b] text-[15px] font-medium tracking-tight px-6 h-[40px] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
+          >
+            Get Started
+          </button>
+
+          <button
+            className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
+            aria-label="Search"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+          </button>
+
+          <button
+            onClick={() => setIsDrawerOpen(false)}
+            className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
+          >
+            <div className="relative w-[18px] h-[14px]">
+              <span className="absolute left-0 top-[6px] w-full h-[2px] bg-current rotate-45"></span>
+              <span className="absolute left-0 top-[6px] w-full h-[2px] bg-current -rotate-45"></span>
+            </div>
+          </button>
+
+        </div>
+
+        <div className="border-t border-black/[0.06]" />
+
         {/* Navigation content */}
         <nav
-          className={`pt-[140px] px-[48px] transition-opacity duration-120 ${
+          className={`pt-[48px] px-[48px] transition-opacity duration-120 ${
             isDrawerOpen ? 'opacity-100' : 'opacity-0'
           }`}
         >
