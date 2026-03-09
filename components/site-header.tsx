@@ -81,38 +81,23 @@ export default function SiteHeader() {
               className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
               aria-label="Menu"
             >
-              {isDrawerOpen ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <line x1="18" y1="6" x2="6" y2="18" />
-                  <line x1="6" y1="6" x2="18" y2="18" />
-                </svg>
-              ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <line x1="3" y1="6" x2="21" y2="6" />
-                  <line x1="3" y1="12" x2="21" y2="12" />
-                  <line x1="3" y1="18" x2="21" y2="18" />
-                </svg>
-              )}
+              <div className="relative w-[18px] h-[14px]">
+                <span
+                  className={`absolute left-0 w-full h-[2px] bg-currentColor transition-all duration-200 ${
+                    isDrawerOpen ? 'top-[6px] rotate-45' : 'top-0 rotate-0'
+                  }`}
+                />
+                <span
+                  className={`absolute left-0 top-[6px] w-full h-[2px] bg-currentColor transition-opacity duration-200 ${
+                    isDrawerOpen ? 'opacity-0' : 'opacity-100'
+                  }`}
+                />
+                <span
+                  className={`absolute left-0 w-full h-[2px] bg-currentColor transition-all duration-200 ${
+                    isDrawerOpen ? 'bottom-[6px] -rotate-45' : 'bottom-0 rotate-0'
+                  }`}
+                />
+              </div>
             </button>
           </div>
         </header>
@@ -144,7 +129,7 @@ export default function SiteHeader() {
           {/* Platform section */}
           <div className="mb-[56px]">
             <h3
-              className="text-[13px] font-medium tracking-[0.05em] text-neutral-500 uppercase mb-[20px]"
+              className="text-[12px] font-medium tracking-[0.05em] text-neutral-500 uppercase mb-[20px]"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
               Platform
@@ -152,7 +137,7 @@ export default function SiteHeader() {
             <div className="space-y-4">
               <Link href="/atlas/professional" className="block group">
                 <span
-                  className="text-[20px] font-medium text-neutral-900 relative inline-block"
+                  className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   Atlas Professional
@@ -161,7 +146,7 @@ export default function SiteHeader() {
               </Link>
               <Link href="/atlas/teams" className="block group">
                 <span
-                  className="text-[20px] font-medium text-neutral-900 relative inline-block"
+                  className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   Atlas Teams
@@ -170,7 +155,7 @@ export default function SiteHeader() {
               </Link>
               <Link href="/atlas/global" className="block group">
                 <span
-                  className="text-[20px] font-medium text-neutral-900 relative inline-block"
+                  className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   Atlas Global
@@ -183,7 +168,7 @@ export default function SiteHeader() {
           {/* Company section */}
           <div className="mb-[56px]">
             <h3
-              className="text-[13px] font-medium tracking-[0.05em] text-neutral-500 uppercase mb-[20px]"
+              className="text-[12px] font-medium tracking-[0.05em] text-neutral-500 uppercase mb-[20px]"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
               Company
@@ -191,7 +176,7 @@ export default function SiteHeader() {
             <div className="space-y-4">
               <a href="#" className="block group">
                 <span
-                  className="text-[20px] font-medium text-neutral-900 relative inline-block"
+                  className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   Mission
@@ -200,7 +185,7 @@ export default function SiteHeader() {
               </a>
               <a href="#" className="block group">
                 <span
-                  className="text-[20px] font-medium text-neutral-900 relative inline-block"
+                  className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   Cognitive Systems Lab
@@ -213,7 +198,7 @@ export default function SiteHeader() {
           {/* Contact section */}
           <div>
             <h3
-              className="text-[13px] font-medium tracking-[0.05em] text-neutral-500 uppercase mb-[20px]"
+              className="text-[12px] font-medium tracking-[0.05em] text-neutral-500 uppercase mb-[20px]"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
               Contact
