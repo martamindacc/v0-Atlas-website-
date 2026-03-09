@@ -183,29 +183,26 @@ export default function SiteHeader() {
             <div className="space-y-4">
               <Link href="/atlas/professional" className="block group">
                 <span
-                  className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block"
+                  className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   Atlas Professional
-                  <span className="absolute bottom-0 left-0 w-full h-px bg-neutral-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-180 origin-left" />
                 </span>
               </Link>
               <Link href="/atlas/teams" className="block group">
                 <span
-                  className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block"
+                  className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   Atlas Teams
-                  <span className="absolute bottom-0 left-0 w-full h-px bg-neutral-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-180 origin-left" />
                 </span>
               </Link>
               <Link href="/atlas/global" className="block group">
                 <span
-                  className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block"
+                  className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   Atlas Global
-                  <span className="absolute bottom-0 left-0 w-full h-px bg-neutral-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-180 origin-left" />
                 </span>
               </Link>
             </div>
@@ -222,20 +219,18 @@ export default function SiteHeader() {
             <div className="space-y-4">
               <a href="#" className="block group">
                 <span
-                  className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block"
+                  className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   Mission
-                  <span className="absolute bottom-0 left-0 w-full h-px bg-neutral-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-180 origin-left" />
                 </span>
               </a>
               <a href="#" className="block group">
                 <span
-                  className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block"
+                  className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   Cognitive Systems Lab
-                  <span className="absolute bottom-0 left-0 w-full h-px bg-neutral-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-180 origin-left" />
                 </span>
               </a>
             </div>
@@ -251,11 +246,10 @@ export default function SiteHeader() {
             </h3>
             <a href="#" className="block group">
               <span
-                className="text-[20px] font-medium text-neutral-900 relative inline-block"
+                className="text-[20px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
                 Request Demo
-                <span className="absolute bottom-0 left-0 w-full h-px bg-neutral-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-180 origin-left" />
               </span>
             </a>
           </div>
