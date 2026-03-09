@@ -5,7 +5,6 @@ import { useState, useEffect } from 'react';
 
 export default function SiteHeader() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const [showDrawerContent, setShowDrawerContent] = useState(false);
 
   useEffect(() => {
     const handleEsc = (e) => {
@@ -23,16 +22,6 @@ export default function SiteHeader() {
       document.removeEventListener('keydown', handleEsc);
       document.body.style.overflow = '';
     };
-  }, [isDrawerOpen]);
-
-  useEffect(() => {
-    let timer;
-    if (isDrawerOpen) {
-      timer = setTimeout(() => setShowDrawerContent(true), 120);
-    } else {
-      setShowDrawerContent(false);
-    }
-    return () => clearTimeout(timer);
   }, [isDrawerOpen]);
 
   return (
@@ -176,74 +165,76 @@ export default function SiteHeader() {
         </div>
 
         {/* Navigation content */}
-        <nav
-          className={`pt-[48px] px-[48px] transition-[opacity,transform] duration-300 ease-out will-change-[opacity,transform] ${
-            showDrawerContent
-              ? 'opacity-100 translate-y-0'
-              : 'opacity-0 translate-y-2 pointer-events-none'
-          }`}
-        >
-          {/* Platform section */}
-          <div className="mb-[56px]">
-            <h3
-              className="text-[12px] font-medium tracking-[0.05em] text-neutral-500 uppercase mb-[20px]"
-              style={{ fontFamily: "Inter, sans-serif" }}
-            >
-              Platform
-            </h3>
-            <div className="space-y-4">
-              <Link href="/atlas/professional" className="block group">
-                <span
-                  className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
-                  style={{ fontFamily: "Inter, sans-serif" }}
-                >
-                  Atlas Professional
-                </span>
-              </Link>
-              <Link href="/atlas/teams" className="block group">
-                <span
-                  className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
-                  style={{ fontFamily: "Inter, sans-serif" }}
-                >
-                  Atlas Teams
-                </span>
-              </Link>
-              <Link href="/atlas/global" className="block group">
-                <span
-                  className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
-                  style={{ fontFamily: "Inter, sans-serif" }}
-                >
-                  Atlas Global
-                </span>
-              </Link>
+        <nav className="pt-[48px] px-[48px]">
+          <div
+            className={`transform-gpu transition-[opacity,transform] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none motion-reduce:transform-none ${
+              isDrawerOpen
+                ? 'opacity-100 translate-y-0 delay-150'
+                : 'opacity-0 translate-y-[6px] delay-0 pointer-events-none'
+            }`}
+          >
+            {/* Platform section */}
+            <div className="mb-[56px]">
+              <h3
+                className="text-[12px] font-medium tracking-[0.05em] text-neutral-500 uppercase mb-[20px]"
+                style={{ fontFamily: "Inter, sans-serif" }}
+              >
+                Platform
+              </h3>
+              <div className="space-y-4">
+                <Link href="/atlas/professional" className="block group">
+                  <span
+                    className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
+                    style={{ fontFamily: "Inter, sans-serif" }}
+                  >
+                    Atlas Professional
+                  </span>
+                </Link>
+                <Link href="/atlas/teams" className="block group">
+                  <span
+                    className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
+                    style={{ fontFamily: "Inter, sans-serif" }}
+                  >
+                    Atlas Teams
+                  </span>
+                </Link>
+                <Link href="/atlas/global" className="block group">
+                  <span
+                    className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
+                    style={{ fontFamily: "Inter, sans-serif" }}
+                  >
+                    Atlas Global
+                  </span>
+                </Link>
+              </div>
             </div>
-          </div>
 
-          {/* Company section */}
-          <div className="mb-[56px]">
-            <h3
-              className="text-[12px] font-medium tracking-[0.05em] text-neutral-500 uppercase mb-[20px]"
-              style={{ fontFamily: "Inter, sans-serif" }}
-            >
-              Company
-            </h3>
-            <div className="space-y-4">
-              <a href="#" className="block group">
-                <span
-                  className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
-                  style={{ fontFamily: "Inter, sans-serif" }}
-                >
-                  Mission
-                </span>
-              </a>
-              <a href="#" className="block group">
-                <span
-                  className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
-                  style={{ fontFamily: "Inter, sans-serif" }}
-                >
-                  Cognitive Systems Lab
-                </span>
-              </a>
+            {/* Company section */}
+            <div className="mb-[56px]">
+              <h3
+                className="text-[12px] font-medium tracking-[0.05em] text-neutral-500 uppercase mb-[20px]"
+                style={{ fontFamily: "Inter, sans-serif" }}
+              >
+                Company
+              </h3>
+              <div className="space-y-4">
+                <a href="#" className="block group">
+                  <span
+                    className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
+                    style={{ fontFamily: "Inter, sans-serif" }}
+                  >
+                    Mission
+                  </span>
+                </a>
+                <a href="#" className="block group">
+                  <span
+                    className="text-[22px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
+                    style={{ fontFamily: "Inter, sans-serif" }}
+                  >
+                    Cognitive Systems Lab
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </nav>
