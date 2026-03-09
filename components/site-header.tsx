@@ -1,81 +1,235 @@
 'use client';
 
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 
 export default function SiteHeader() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === 'Escape') setIsDrawerOpen(false);
+    };
+
+    if (isDrawerOpen) {
+      document.addEventListener('keydown', handleEsc);
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleEsc);
+      document.body.style.overflow = '';
+    };
+  }, [isDrawerOpen]);
+
   return (
-    <div className="fixed top-0 z-50 w-full pt-[14px] px-3">
-      <header
-        className="flex items-center justify-between px-8 h-[67px] border border-black/[0.06] bg-white/20 backdrop-blur backdrop-saturate-150 shadow-[0_1px_3px_rgba(0,0,0,0.06)] rounded-[14px]"
+    <>
+      <div className="fixed top-0 z-50 w-full pt-[14px] px-3">
+        <header
+          className="flex items-center justify-between px-8 h-[67px] border border-black/[0.06] bg-white/20 backdrop-blur backdrop-saturate-150 shadow-[0_1px_3px_rgba(0,0,0,0.06)] rounded-[14px]"
+        >
+          {/* Left — Logo + wordmark */}
+          <Link href="/" className="flex items-center gap-2">
+            <img
+              src="/images/mindacc_logo.png"
+              alt="mindacc logo"
+              className="h-[22px] w-auto"
+            />
+            <span
+              className="text-[18px] font-medium tracking-[0.02em] text-neutral-700 uppercase"
+              style={{ fontFamily: "Inter, sans-serif" }}
+            >
+              MINDACC
+            </span>
+          </Link>
+
+          {/* Right — Controls cluster */}
+          <div className="flex items-center gap-3">
+            {/* Get Started CTA */}
+            <button
+              className="flex items-center justify-center border border-black/30 bg-white/80 text-[#1e1f2b] text-[15px] font-medium tracking-tight px-6 h-[40px] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
+            >
+              Get Started
+            </button>
+
+            {/* Search icon */}
+            <button
+              className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
+              aria-label="Search"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+            </button>
+
+            {/* Menu icon */}
+            <button
+              onClick={() => setIsDrawerOpen(!isDrawerOpen)}
+              className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
+              aria-label="Menu"
+            >
+              {isDrawerOpen ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <line x1="3" y1="12" x2="21" y2="12" />
+                  <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+              )}
+            </button>
+          </div>
+        </header>
+      </div>
+
+      {/* Background overlay */}
+      {isDrawerOpen && (
+        <div
+          className="fixed inset-0 top-0 z-40 bg-black/18 transition-opacity duration-160"
+          onClick={() => setIsDrawerOpen(false)}
+        />
+      )}
+
+      {/* Navigation drawer */}
+      <div
+        className={`fixed right-0 top-0 z-50 h-screen bg-[#fafafb] shadow-[-8px_0_24px_rgba(0,0,0,0.06)] transition-transform duration-220 ease-out ${
+          isDrawerOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+        style={{
+          width: 'clamp(420px, 50vw, 560px)',
+        }}
       >
-        {/* Left — Logo + wordmark */}
-        <Link href="/" className="flex items-center gap-2">
-          <img
-            src="/images/mindacc_logo.png"
-            alt="mindacc logo"
-            className="h-[22px] w-auto"
-          />
-          <span
-            className="text-[18px] font-medium tracking-[0.02em] text-neutral-700 uppercase"
-            style={{ fontFamily: "Inter, sans-serif" }}
-          >
-            MINDACC
-          </span>
-        </Link>
-
-        {/* Right — Controls cluster */}
-        <div className="flex items-center gap-3">
-          {/* Get Started CTA */}
-          <button
-            className="flex items-center justify-center border border-black/30 bg-white/80 text-[#1e1f2b] text-[15px] font-medium tracking-tight px-6 h-[40px] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
-          >
-            Get Started
-          </button>
-
-          {/* Search icon */}
-          <button
-            className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
-            aria-label="Search"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+        {/* Navigation content */}
+        <nav
+          className={`pt-[140px] px-[48px] transition-opacity duration-120 ${
+            isDrawerOpen ? 'opacity-100' : 'opacity-0'
+          }`}
+        >
+          {/* Platform section */}
+          <div className="mb-[56px]">
+            <h3
+              className="text-[13px] font-medium tracking-[0.05em] text-neutral-500 uppercase mb-[20px]"
+              style={{ fontFamily: "Inter, sans-serif" }}
             >
-              <circle cx="11" cy="11" r="8" />
-              <line x1="21" y1="21" x2="16.65" y2="16.65" />
-            </svg>
-          </button>
+              Platform
+            </h3>
+            <div className="space-y-4">
+              <Link href="/atlas/professional" className="block group">
+                <span
+                  className="text-[20px] font-medium text-neutral-900 relative inline-block"
+                  style={{ fontFamily: "Inter, sans-serif" }}
+                >
+                  Atlas Professional
+                  <span className="absolute bottom-0 left-0 w-full h-px bg-neutral-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-180 origin-left" />
+                </span>
+              </Link>
+              <Link href="/atlas/teams" className="block group">
+                <span
+                  className="text-[20px] font-medium text-neutral-900 relative inline-block"
+                  style={{ fontFamily: "Inter, sans-serif" }}
+                >
+                  Atlas Teams
+                  <span className="absolute bottom-0 left-0 w-full h-px bg-neutral-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-180 origin-left" />
+                </span>
+              </Link>
+              <Link href="/atlas/global" className="block group">
+                <span
+                  className="text-[20px] font-medium text-neutral-900 relative inline-block"
+                  style={{ fontFamily: "Inter, sans-serif" }}
+                >
+                  Atlas Global
+                  <span className="absolute bottom-0 left-0 w-full h-px bg-neutral-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-180 origin-left" />
+                </span>
+              </Link>
+            </div>
+          </div>
 
-          {/* Menu icon */}
-          <button
-            className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
-            aria-label="Menu"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+          {/* Company section */}
+          <div className="mb-[56px]">
+            <h3
+              className="text-[13px] font-medium tracking-[0.05em] text-neutral-500 uppercase mb-[20px]"
+              style={{ fontFamily: "Inter, sans-serif" }}
             >
-              <line x1="3" y1="6" x2="21" y2="6" />
-              <line x1="3" y1="12" x2="21" y2="12" />
-              <line x1="3" y1="18" x2="21" y2="18" />
-            </svg>
-          </button>
-        </div>
-      </header>
-    </div>
+              Company
+            </h3>
+            <div className="space-y-4">
+              <a href="#" className="block group">
+                <span
+                  className="text-[20px] font-medium text-neutral-900 relative inline-block"
+                  style={{ fontFamily: "Inter, sans-serif" }}
+                >
+                  Mission
+                  <span className="absolute bottom-0 left-0 w-full h-px bg-neutral-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-180 origin-left" />
+                </span>
+              </a>
+              <a href="#" className="block group">
+                <span
+                  className="text-[20px] font-medium text-neutral-900 relative inline-block"
+                  style={{ fontFamily: "Inter, sans-serif" }}
+                >
+                  Cognitive Systems Lab
+                  <span className="absolute bottom-0 left-0 w-full h-px bg-neutral-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-180 origin-left" />
+                </span>
+              </a>
+            </div>
+          </div>
+
+          {/* Contact section */}
+          <div>
+            <h3
+              className="text-[13px] font-medium tracking-[0.05em] text-neutral-500 uppercase mb-[20px]"
+              style={{ fontFamily: "Inter, sans-serif" }}
+            >
+              Contact
+            </h3>
+            <a href="#" className="block group">
+              <span
+                className="text-[20px] font-medium text-neutral-900 relative inline-block"
+                style={{ fontFamily: "Inter, sans-serif" }}
+              >
+                Request Demo
+                <span className="absolute bottom-0 left-0 w-full h-px bg-neutral-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-180 origin-left" />
+              </span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </>
   );
 }
