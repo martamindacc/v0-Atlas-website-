@@ -225,7 +225,7 @@ export default function SiteHeader() {
                     Mission
                   </span>
                 </a>
-                <a href="#" className="block group">
+                <a href="/cognitive-systems-lab" className="block group">
                   <span
                     className="text-[24px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
                     style={{ fontFamily: "Inter, sans-serif" }}
