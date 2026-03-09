@@ -173,14 +173,14 @@ export default function SiteHeader() {
             style={{ transitionDelay: isDrawerOpen ? '180ms' : '0ms' }}
           >
             {/* Platform section */}
-            <div className="mb-[56px]">
+            <div className="mb-[64px]">
               <h3
                 className="text-[12px] font-medium tracking-[0.05em] text-neutral-500 uppercase mb-[20px]"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
                 Platform
               </h3>
-              <div className="space-y-4">
+              <div className="space-y-5">
                 <Link href="/atlas/professional" className="block group">
                   <span
                     className="text-[24px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
@@ -209,14 +209,14 @@ export default function SiteHeader() {
             </div>
 
             {/* Company section */}
-            <div className="mb-[56px]">
+            <div className="mb-[64px]">
               <h3
                 className="text-[12px] font-medium tracking-[0.05em] text-neutral-500 uppercase mb-[20px]"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
                 Company
               </h3>
-              <div className="space-y-4">
+              <div className="space-y-5">
                 <a href="#" className="block group">
                   <span
                     className="text-[24px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
