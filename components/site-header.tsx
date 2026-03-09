@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 
 export default function SiteHeader() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [showDrawerContent, setShowDrawerContent] = useState(false);
 
   useEffect(() => {
     const handleEsc = (e) => {
@@ -22,6 +23,16 @@ export default function SiteHeader() {
       document.removeEventListener('keydown', handleEsc);
       document.body.style.overflow = '';
     };
+  }, [isDrawerOpen]);
+
+  useEffect(() => {
+    let timer;
+    if (isDrawerOpen) {
+      timer = setTimeout(() => setShowDrawerContent(true), 120);
+    } else {
+      setShowDrawerContent(false);
+    }
+    return () => clearTimeout(timer);
   }, [isDrawerOpen]);
 
   return (
@@ -167,7 +178,9 @@ export default function SiteHeader() {
         {/* Navigation content */}
         <nav
           className={`pt-[48px] px-[48px] transition-[opacity,transform] duration-300 ease-out will-change-[opacity,transform] ${
-            isDrawerOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-1 pointer-events-none'
+            showDrawerContent
+              ? 'opacity-100 translate-y-0'
+              : 'opacity-0 translate-y-2 pointer-events-none'
           }`}
         >
           {/* Platform section */}
