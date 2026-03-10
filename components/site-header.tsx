@@ -577,15 +577,15 @@ export default function SiteHeader() {
                 className="w-full border border-black/45 bg-transparent outline-none px-4 py-3 resize-none"
               />
             </div>
+          </div>
 
-            <div>
+          <div className="pt-5">
               <button
                 className="flex items-center justify-center min-w-[220px] border border-black/30 bg-white/80 text-[#1e1f2b] text-[15px] tracking-tight px-8 h-[44px] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
               >
                 Submit
               </button>
             </div>
-          </div>
         </div>
       </div>
     </>
