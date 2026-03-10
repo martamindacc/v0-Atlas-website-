@@ -251,7 +251,7 @@ export default function SiteHeader() {
 
       {/* Contact Form drawer */}
       <div
-        className={`fixed right-0 top-0 z-50 h-screen bg-[#fafafb] shadow-[-8px_0_24px_rgba(0,0,0,0.06)] transition-transform duration-220 ease-out ${
+        className={`fixed right-0 top-0 z-50 h-screen overflow-y-auto bg-[#fafafb] shadow-[-8px_0_24px_rgba(0,0,0,0.06)] transition-transform duration-220 ease-out ${
           isContactOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
         style={{ width: 'clamp(460px, 45vw, 640px)' }}
@@ -265,9 +265,6 @@ export default function SiteHeader() {
             X
           </button>
         </div>
-
-        {/* Divider */}
-        <div className="border-t border-black/[0.06]" />
 
         {/* Form container */}
         <div className="px-[48px] pt-[48px]">
@@ -322,11 +319,33 @@ export default function SiteHeader() {
               <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
             </div>
 
+            <div className="pb-6 md:pb-7 border-b border-black/45">
+              <label className="block text-[12px] md:text-[13px] font-normal uppercase tracking-[0.10em] text-[#6F747B] mb-5">
+                Country
+              </label>
+              <select className="w-full bg-transparent outline-none py-1.5">
+                <option>Select...</option>
+                <option>United States</option>
+                <option>United Kingdom</option>
+                <option>Norway</option>
+                <option>Germany</option>
+                <option>France</option>
+              </select>
+            </div>
+
             <div>
               <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
                 Message
               </label>
               <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
+            </div>
+
+            <div className="pt-10">
+              <button
+                className="flex items-center justify-center min-w-[220px] border border-black/30 bg-white/80 text-[#1e1f2b] text-[15px] tracking-tight px-8 h-[44px] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
+              >
+                Submit
+              </button>
             </div>
           </div>
         </div>
