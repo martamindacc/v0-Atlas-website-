@@ -564,17 +564,9 @@ export default function SiteHeader() {
               </select>
             </div>
 
-            <div>
-              <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
-                Message
-              </label>
-              <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
-            </div>
-
-            <div className="pt-6 pb-6">
+            <div className="pb-6 md:pb-7 border-b border-black/45">
               <label className="block text-[12px] md:text-[13px] font-normal uppercase tracking-[0.10em] leading-[1.25] text-[#6F747B] mb-5">
                 Message
-                <span className="text-[#E5484D] text-[10px] ml-1 align-super">*</span>
               </label>
               <textarea
                 rows={5}
@@ -582,7 +574,7 @@ export default function SiteHeader() {
               />
             </div>
 
-            <div className="pt-10">
+            <div className="pt-4">
               <button
                 className="flex items-center justify-center min-w-[220px] border border-black/30 bg-white/80 text-[#1e1f2b] text-[15px] tracking-tight px-8 h-[44px] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
               >
