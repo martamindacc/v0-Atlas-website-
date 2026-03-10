@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 
 export default function SiteHeader() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isContactOpen, setIsContactOpen] = useState(false);
 
   useEffect(() => {
     const handleEsc = (e) => {
@@ -49,6 +50,7 @@ export default function SiteHeader() {
           <div className="flex items-center gap-3">
             {/* Get Started CTA */}
             <button
+              onClick={() => setIsContactOpen(true)}
               className="flex items-center justify-center min-w-[190px] border border-black/30 bg-white/80 text-[#1e1f2b] text-[15px] font-normal tracking-tight px-8 h-[40px] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
             >
               Get Started
@@ -111,6 +113,14 @@ export default function SiteHeader() {
         <div
           className="fixed inset-0 top-0 z-40 bg-black/18 transition-opacity duration-160"
           onClick={() => setIsDrawerOpen(false)}
+        />
+      )}
+
+      {/* Background overlay for contact drawer */}
+      {isContactOpen && (
+        <div
+          className="fixed inset-0 top-0 z-40 bg-black/18 transition-opacity duration-160"
+          onClick={() => setIsContactOpen(false)}
         />
       )}
 
@@ -237,6 +247,89 @@ export default function SiteHeader() {
             </div>
           </div>
         </nav>
+      </div>
+
+      {/* Contact Form drawer */}
+      <div
+        className={`fixed right-0 top-0 z-50 h-screen bg-[#fafafb] shadow-[-8px_0_24px_rgba(0,0,0,0.06)] transition-transform duration-220 ease-out ${
+          isContactOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+        style={{ width: 'clamp(460px, 45vw, 640px)' }}
+      >
+        {/* Drawer header controls */}
+        <div className="flex items-center justify-end gap-3 h-[67px] px-8">
+          <button
+            onClick={() => setIsContactOpen(false)}
+            className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
+          >
+            X
+          </button>
+        </div>
+
+        {/* Divider */}
+        <div className="border-t border-black/[0.06]" />
+
+        {/* Form container */}
+        <div className="px-[48px] pt-[48px]">
+          <h2
+            className="text-[34px] font-medium tracking-tight text-neutral-900 mb-[48px]"
+            style={{ fontFamily: "Inter, sans-serif" }}
+          >
+            Request a demo or get in touch
+          </h2>
+
+          {/* Form fields */}
+          <div className="space-y-10">
+            <div>
+              <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
+                First Name
+              </label>
+              <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
+            </div>
+
+            <div>
+              <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
+                Last Name
+              </label>
+              <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
+            </div>
+
+            <div>
+              <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
+                Business Email
+              </label>
+              <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
+            </div>
+
+            <div>
+              <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
+                Phone Number
+              </label>
+              <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
+            </div>
+
+            <div>
+              <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
+                Job Title
+              </label>
+              <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
+            </div>
+
+            <div>
+              <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
+                Company / Institution
+              </label>
+              <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
+            </div>
+
+            <div>
+              <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
+                Message
+              </label>
+              <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
