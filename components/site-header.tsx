@@ -467,7 +467,13 @@ export default function SiteHeader() {
         style={{ width: 'clamp(460px, 45vw, 640px)' }}
       >
         {/* Drawer header controls */}
-        <div className="flex items-center justify-end gap-3 h-[67px] px-8">
+        <div className="flex items-center justify-between h-[67px] px-8">
+          <div
+            className="text-[12px] uppercase tracking-[0.11em] text-[#7B8087]"
+            style={{ fontFamily: "Inter, sans-serif" }}
+          >
+            CONTACT / DEMO REQUEST
+          </div>
           <button
             onClick={() => setIsContactOpen(false)}
             className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
@@ -477,13 +483,7 @@ export default function SiteHeader() {
         </div>
 
         {/* Form container */}
-        <div className="px-[48px] pt-[48px]">
-          <div
-            className="text-[12px] uppercase tracking-[0.11em] text-[#7B8087] mb-10"
-            style={{ fontFamily: "Inter, sans-serif" }}
-          >
-            Contact / Demo Request
-          </div>
+        <div className="px-[48px] pt-6 md:pt-8 pb-12">
           <h2
             className="text-[34px] font-medium tracking-tight text-neutral-900 mb-[48px]"
             style={{ fontFamily: "Inter, sans-serif" }}
@@ -496,7 +496,7 @@ export default function SiteHeader() {
             <div>
               <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
                 First Name
-                <span className="text-[#E5484D] ml-1">*</span>
+                <span className="text-[#E5484D] text-[10px] ml-1 align-super">*</span>
               </label>
               <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
             </div>
@@ -504,7 +504,7 @@ export default function SiteHeader() {
             <div>
               <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
                 Last Name
-                <span className="text-[#E5484D] ml-1">*</span>
+                <span className="text-[#E5484D] text-[10px] ml-1 align-super">*</span>
               </label>
               <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
             </div>
@@ -512,7 +512,7 @@ export default function SiteHeader() {
             <div>
               <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
                 Business Email
-                <span className="text-[#E5484D] ml-1">*</span>
+                <span className="text-[#E5484D] text-[10px] ml-1 align-super">*</span>
               </label>
               <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
             </div>
@@ -520,7 +520,7 @@ export default function SiteHeader() {
             <div>
               <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
                 Phone Number
-                <span className="text-[#E5484D] ml-1">*</span>
+                <span className="text-[#E5484D] text-[10px] ml-1 align-super">*</span>
               </label>
               <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
             </div>
@@ -528,7 +528,7 @@ export default function SiteHeader() {
             <div>
               <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
                 Job Title
-                <span className="text-[#E5484D] ml-1">*</span>
+                <span className="text-[#E5484D] text-[10px] ml-1 align-super">*</span>
               </label>
               <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
             </div>
@@ -536,7 +536,7 @@ export default function SiteHeader() {
             <div>
               <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
                 Company / Institution
-                <span className="text-[#E5484D] ml-1">*</span>
+                <span className="text-[#E5484D] text-[10px] ml-1 align-super">*</span>
               </label>
               <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
             </div>
@@ -544,7 +544,7 @@ export default function SiteHeader() {
             <div className="pb-6 md:pb-7 border-b border-black/45">
               <label className="block text-[12px] md:text-[13px] font-normal uppercase tracking-[0.10em] text-[#6F747B] mb-5">
                 Country
-                <span className="text-[#E5484D] ml-1">*</span>
+                <span className="text-[#E5484D] text-[10px] ml-1 align-super">*</span>
               </label>
               <select className="w-full bg-transparent outline-none py-1.5">
                 <option value="">Select...</option>
@@ -569,6 +569,17 @@ export default function SiteHeader() {
                 Message
               </label>
               <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
+            </div>
+
+            <div className="pt-6 pb-6">
+              <label className="block text-[12px] md:text-[13px] font-normal uppercase tracking-[0.10em] leading-[1.25] text-[#6F747B] mb-5">
+                Message
+                <span className="text-[#E5484D] text-[10px] ml-1 align-super">*</span>
+              </label>
+              <textarea
+                rows={5}
+                className="w-full border border-black/45 bg-transparent outline-none px-4 py-3 resize-none"
+              />
             </div>
 
             <div className="pt-10">
