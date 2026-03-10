@@ -266,67 +266,73 @@ export default function SiteHeader() {
           </button>
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-black/[0.06]" />
-
         {/* Form container */}
-        <div className="px-[48px] pt-[48px]">
+        <div className="px-10 md:px-12 lg:px-14 pt-10 md:pt-12 pb-12">
+          {/* Eyebrow */}
+          <div
+            className="text-[12px] md:text-[13px] font-normal uppercase tracking-[0.11em] leading-[1.25] text-[#7B8087] mb-10 md:mb-12"
+            style={{ fontFamily: "Inter, sans-serif" }}
+          >
+            Contact / Demo Request
+          </div>
+
+          {/* Headline */}
           <h2
-            className="text-[34px] font-medium tracking-tight text-neutral-900 mb-[48px]"
+            className="text-[34px] font-medium tracking-tight text-neutral-900 mb-12 md:mb-14"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
             Request a demo or get in touch
           </h2>
 
           {/* Form fields */}
-          <div className="space-y-10">
-            <div>
-              <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
+          <div className="space-y-7 md:space-y-8">
+            <div className="pb-6 md:pb-7 border-b border-black/45">
+              <label className="block text-[12px] md:text-[13px] font-normal uppercase tracking-[0.10em] leading-[1.25] text-[#6F747B] mb-5">
                 First Name
               </label>
-              <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
+              <input className="w-full bg-transparent outline-none py-1.5" />
             </div>
 
-            <div>
-              <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
+            <div className="pb-6 md:pb-7 border-b border-black/45">
+              <label className="block text-[12px] md:text-[13px] font-normal uppercase tracking-[0.10em] leading-[1.25] text-[#6F747B] mb-5">
                 Last Name
               </label>
-              <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
+              <input className="w-full bg-transparent outline-none py-1.5" />
             </div>
 
-            <div>
-              <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
+            <div className="pb-6 md:pb-7 border-b border-black/45">
+              <label className="block text-[12px] md:text-[13px] font-normal uppercase tracking-[0.10em] leading-[1.25] text-[#6F747B] mb-5">
                 Business Email
               </label>
-              <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
+              <input className="w-full bg-transparent outline-none py-1.5" />
             </div>
 
-            <div>
-              <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
+            <div className="pb-6 md:pb-7 border-b border-black/45">
+              <label className="block text-[12px] md:text-[13px] font-normal uppercase tracking-[0.10em] leading-[1.25] text-[#6F747B] mb-5">
                 Phone Number
               </label>
-              <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
+              <input className="w-full bg-transparent outline-none py-1.5" />
             </div>
 
-            <div>
-              <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
+            <div className="pb-6 md:pb-7 border-b border-black/45">
+              <label className="block text-[12px] md:text-[13px] font-normal uppercase tracking-[0.10em] leading-[1.25] text-[#6F747B] mb-5">
                 Job Title
               </label>
-              <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
+              <input className="w-full bg-transparent outline-none py-1.5" />
             </div>
 
-            <div>
-              <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
+            <div className="pb-6 md:pb-7 border-b border-black/45">
+              <label className="block text-[12px] md:text-[13px] font-normal uppercase tracking-[0.10em] leading-[1.25] text-[#6F747B] mb-5">
                 Company / Institution
               </label>
-              <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
+              <input className="w-full bg-transparent outline-none py-1.5" />
             </div>
 
-            <div>
-              <label className="text-[12px] uppercase tracking-[0.05em] text-neutral-500">
+            <div className="pb-6 md:pb-7 border-b border-black/45">
+              <label className="block text-[12px] md:text-[13px] font-normal uppercase tracking-[0.10em] leading-[1.25] text-[#6F747B] mb-5">
                 Message
               </label>
-              <input className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none" />
+              <input className="w-full bg-transparent outline-none py-1.5" />
             </div>
           </div>
         </div>
