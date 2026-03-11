@@ -613,7 +613,10 @@ export default function SiteHeader() {
         {/* Drawer header */}
         <div className="flex items-center justify-end gap-3 h-[67px] px-8">
           <button
-            onClick={() => setIsContactOpen(true)}
+            onClick={() => {
+              setIsSearchOpen(false);
+              setIsContactOpen(true);
+            }}
             className="flex items-center justify-center min-w-[190px] border border-black/30 bg-white/80 text-[#1e1f2b] text-[15px] font-normal tracking-tight px-8 h-[40px] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
           >
             Get Started
@@ -638,13 +641,9 @@ export default function SiteHeader() {
 
           {/* Search results container */}
           <div className="mt-8">
-            {searchQuery ? (
+            {searchQuery && (
               <div className="text-[14px] text-neutral-500">
                 Results for "{searchQuery}"
-              </div>
-            ) : (
-              <div className="text-[14px] text-neutral-400">
-                Enter a search term
               </div>
             )}
           </div>
