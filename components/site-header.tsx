@@ -216,13 +216,18 @@ const COUNTRIES = [
 export default function SiteHeader() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isContactOpen, setIsContactOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     const handleEsc = (e) => {
-      if (e.key === 'Escape') setIsDrawerOpen(false);
+      if (e.key === 'Escape') {
+        setIsDrawerOpen(false);
+        setIsSearchOpen(false);
+      }
     };
 
-    if (isDrawerOpen) {
+    if (isDrawerOpen || isSearchOpen) {
       document.addEventListener('keydown', handleEsc);
       document.body.style.overflow = 'hidden';
     } else {
@@ -233,7 +238,7 @@ export default function SiteHeader() {
       document.removeEventListener('keydown', handleEsc);
       document.body.style.overflow = '';
     };
-  }, [isDrawerOpen]);
+  }, [isDrawerOpen, isSearchOpen]);
 
   return (
     <>
@@ -268,6 +273,7 @@ export default function SiteHeader() {
 
             {/* Search icon */}
             <button
+              onClick={() => setIsSearchOpen(true)}
               className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
               aria-label="Search"
             >
@@ -331,6 +337,14 @@ export default function SiteHeader() {
         <div
           className="fixed inset-0 top-0 z-40 bg-black/18 transition-opacity duration-160"
           onClick={() => setIsContactOpen(false)}
+        />
+      )}
+
+      {/* Background overlay for search drawer */}
+      {isSearchOpen && (
+        <div
+          className="fixed inset-0 top-0 z-40 bg-black/18 transition-opacity duration-160"
+          onClick={() => setIsSearchOpen(false)}
         />
       )}
 
@@ -586,6 +600,54 @@ export default function SiteHeader() {
                 Submit
               </button>
             </div>
+        </div>
+      </div>
+
+      {/* Search drawer */}
+      <div
+        className={`fixed right-0 top-0 z-50 h-screen bg-[#fafafb] shadow-[-8px_0_24px_rgba(0,0,0,0.06)] transition-transform duration-220 ease-out ${
+          isSearchOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+        style={{ width: 'clamp(460px, 45vw, 640px)' }}
+      >
+        {/* Drawer header */}
+        <div className="flex items-center justify-between h-[67px] px-8">
+          <div
+            className="text-[12px] uppercase tracking-[0.11em] text-[#7B8087]"
+            style={{ fontFamily: "Inter, sans-serif" }}
+          >
+            SEARCH
+          </div>
+          <button
+            onClick={() => setIsSearchOpen(false)}
+            className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
+          >
+            X
+          </button>
+        </div>
+
+        {/* Search content */}
+        <div className="px-[48px] pt-6 pb-12">
+          <input
+            type="text"
+            placeholder="Search..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none placeholder-neutral-400"
+          />
+
+          {/* Search results container */}
+          <div className="mt-8">
+            {searchQuery ? (
+              <div className="text-[14px] text-neutral-500">
+                Results for "{searchQuery}"
+              </div>
+            ) : (
+              <div className="text-[14px] text-neutral-400">
+                Enter a search term
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </>
