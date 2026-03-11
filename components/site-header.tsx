@@ -611,13 +611,13 @@ export default function SiteHeader() {
         style={{ width: 'clamp(460px, 45vw, 640px)' }}
       >
         {/* Drawer header */}
-        <div className="flex items-center justify-between h-[67px] px-8">
-          <div
-            className="text-[12px] uppercase tracking-[0.11em] text-[#7B8087]"
-            style={{ fontFamily: "Inter, sans-serif" }}
+        <div className="flex items-center justify-end gap-3 h-[67px] px-8">
+          <button
+            onClick={() => setIsContactOpen(true)}
+            className="flex items-center justify-center min-w-[190px] border border-black/30 bg-white/80 text-[#1e1f2b] text-[15px] font-normal tracking-tight px-8 h-[40px] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
           >
-            SEARCH
-          </div>
+            Get Started
+          </button>
           <button
             onClick={() => setIsSearchOpen(false)}
             className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
