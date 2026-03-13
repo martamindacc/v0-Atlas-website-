@@ -33,8 +33,7 @@ export default function Home() {
           loop
           playsInline
         >
-          {/* Replace src with your actual video file */}
-          <source src="/hero.mp4" type="video/mp4" />
+          <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/vvid-i42tSdGD2TCvkbvcPPapKXyobgSixb.mp4" type="video/mp4" />
         </video>
         {/* Subtle overlay so logo stays readable */}
         <div className="absolute inset-0 bg-black/10" />
