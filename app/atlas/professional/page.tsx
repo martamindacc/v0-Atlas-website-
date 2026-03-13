@@ -79,7 +79,7 @@ export default function AtlasProfessional() {
           preload="metadata"
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/videos/atlas-professional.mp4" type="video/mp4" />
+          <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/product_pro-ijCm9qkPopmgIfPyr8zbDEWDSnZLFR.mp4" type="video/mp4" />
         </video>
         <div className="absolute bottom-16 left-16 z-20 pointer-events-none">
           <h1 className="font-sans text-[88px] leading-[0.95] tracking-[-0.035em] font-semibold text-white">
