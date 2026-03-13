@@ -79,7 +79,7 @@ export default function AtlasGlobal() {
           preload="auto"
           className="absolute inset-0 w-full h-full object-cover z-0"
         >
-          <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/global-tFfwVBnizTgpJOOuBk58j0ik2jJu7m.mp4" type="video/mp4" />
+          <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/sky_-sP9TlOn9AsuNoYNihsXQjpGrfN6kck.mp4" type="video/mp4" />
         </video>
         <div className="absolute bottom-16 left-16 z-10 pointer-events-none">
           <h1 className="font-sans text-[88px] leading-[0.95] tracking-[-0.035em] font-semibold text-white">
