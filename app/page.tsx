@@ -24,20 +24,8 @@ export default function Home() {
     <main style={{ backgroundColor: "#fafafb" }}>
       <SiteHeader />
 
-      {/* Section 1 — Full-screen video */}
-      <section className="relative w-full h-screen overflow-hidden">
-        <video
-          className="absolute inset-0 w-full h-full object-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/vvid-i42tSdGD2TCvkbvcPPapKXyobgSixb.mp4" type="video/mp4" />
-        </video>
-        {/* Subtle overlay so logo stays readable */}
-        <div className="absolute inset-0 bg-black/10" />
-      </section>
+      {/* Section 1 — Full-screen hero */}
+      <section className="relative w-full h-screen overflow-hidden bg-white">
 
       {/* Section 2 — Big central statement */}
       <section
