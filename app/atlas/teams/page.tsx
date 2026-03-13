@@ -79,7 +79,7 @@ export default function AtlasTeams() {
           preload="metadata"
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pro_te-KDkVyfgcFmw1ej31mKjUQVFHU1uHw4.mp4" type="video/mp4" />
+          <source src="/videos/atlas-teams-hero.mp4" type="video/mp4" />
         </video>
         <div className="absolute bottom-16 left-16 z-20 pointer-events-none">
           <h1 className="font-sans text-[88px] leading-[0.95] tracking-[-0.035em] font-semibold text-white">
