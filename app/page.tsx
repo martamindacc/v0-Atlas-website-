@@ -25,7 +25,7 @@ export default function Home() {
       <SiteHeader />
 
       {/* Section 1 — Full-screen hero */}
-      <section className="relative w-full h-screen overflow-hidden bg-white">
+      <section className="relative w-full h-screen overflow-hidden bg-white"></section>
 
       {/* Section 2 — Big central statement */}
       <section
