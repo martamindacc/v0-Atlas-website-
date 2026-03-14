@@ -5,7 +5,9 @@ import SiteHeader from '@/components/site-header';
 
 export default function AtlasMission() {
   const [heroVisible, setHeroVisible] = useState(false);
+  const [parallaxOffset, setParallaxOffset] = useState(0);
   const heroRef = useRef(null);
+  const heroImageRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -19,6 +21,22 @@ export default function AtlasMission() {
 
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      setParallaxOffset(scrollY * 0.2);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (heroImageRef.current) {
+      heroImageRef.current.style.transform = `translateY(${parallaxOffset}px)`;
+    }
+  }, [parallaxOffset]);
 
   useEffect(() => {
     const typingState = new WeakMap();
@@ -72,7 +90,8 @@ export default function AtlasMission() {
       {/* Hero */}
       <section className="relative h-screen w-full overflow-hidden bg-[#e5e5e5]">
         <img
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mission-99w9ZKc7axAKIuSGaKNwiSSArBvB8C.jpg"
+          ref={heroImageRef}
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mindacc-yDatawKHE2b8kyxljOsZMJuK6sbhPl.jpg"
           alt="Mission"
           className="absolute inset-0 w-full h-full object-cover"
         />
