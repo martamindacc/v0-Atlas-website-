@@ -455,14 +455,14 @@ export default function SiteHeader() {
                 Company
               </h3>
               <div className="space-y-8">
-                <a href="#" className="block group">
+                <Link href="/atlas/mission" className="block group">
                   <span
                     className="text-[32px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
                     style={{ fontFamily: "Inter, sans-serif" }}
                   >
                     Mission
                   </span>
-                </a>
+                </Link>
                 <a href="/cognitive-systems-lab" className="block group">
                   <span
                     className="text-[32px] font-medium tracking-tight text-neutral-900 relative inline-block transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em]"
