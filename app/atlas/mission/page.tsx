@@ -25,7 +25,7 @@ export default function AtlasMission() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      setParallaxOffset(scrollY * 0.2);
+      setParallaxOffset(scrollY * 0.5);
     };
 
     window.addEventListener('scroll', handleScroll);
