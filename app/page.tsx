@@ -25,7 +25,18 @@ export default function Home() {
       <SiteHeader />
 
       {/* Section 1 — Full-screen hero */}
-      <section className="relative w-full h-screen overflow-hidden bg-white"></section>
+      <section className="relative w-full h-screen overflow-hidden bg-white">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover z-0"
+        >
+          <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lab2-clHgZLrMMSnhN74l5uBc6aD5TzadMu.mp4" type="video/mp4" />
+        </video>
+      </section>
 
       {/* Section 2 — Big central statement */}
       <section
