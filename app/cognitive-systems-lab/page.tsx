@@ -26,16 +26,11 @@ export default function CognitiveSystemsLab() {
 
       {/* Hero */}
       <section className="relative h-screen w-full overflow-hidden bg-[#e5e5e5]">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
+        <img
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cog1-f6WFrce5rff43mP4y5KraAyCixOJ2U.jpg"
+          alt="Cognitive Systems Lab"
           className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/videos/cognitive-systems-lab.mp4" type="video/mp4" />
-        </video>
+        />
         <div className="absolute bottom-16 left-16 z-20 pointer-events-none">
           <h1 className="font-sans text-[88px] leading-[0.95] tracking-[-0.035em] font-semibold text-white">
             Cognitive Systems Lab
