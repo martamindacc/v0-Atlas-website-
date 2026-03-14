@@ -98,78 +98,64 @@ export default function AtlasMission() {
       </section>
 
       {/* Mission Editorial Section */}
-      <section className="bg-[#fafafb] py-40">
-        <div className="max-w-[900px] mx-auto px-8 space-y-12 text-[#374151]">
+      <section className="bg-[#fafafb] py-32">
+        <div className="max-w-[800px] mx-auto px-8 space-y-8 text-[#374151]">
 
-          <h2 className="text-[40px] font-semibold text-[#111]">Mission</h2>
-
-          <p className="text-[24px] leading-[1.7]">
+          <p className="text-[20px] leading-[1.8] font-light">
             The problems shaping our future are no longer simple.
           </p>
 
-          <p className="text-[24px] leading-[1.7]">
+          <p className="text-[20px] leading-[1.8] font-light">
             They unfold across networks of people, incentives, information, and time. Decisions ripple outward, influencing systems that extend far beyond the moment in which they are made.
           </p>
 
-          <p className="text-[24px] leading-[1.7]">
+          <p className="text-[20px] leading-[1.8] font-light">
             Yet the tools we rely on were designed for a different world — a world where problems were smaller, slower, and easier to isolate.
           </p>
 
-          <p className="text-[24px] leading-[1.7]">
-            Our mission is to help people see complexity more clearly.
+          <p className="text-[20px] leading-[1.8] font-light">
+            We help people see complexity more clearly. Not by reducing it, but by understanding it.
           </p>
 
-          <p className="text-[24px] leading-[1.7]">
-            Not by reducing it, but by understanding it.
-          </p>
+          <div className="pt-8">
+            <h3 className="text-[24px] font-medium text-[#111] mb-6">From Tools to Systems</h3>
 
-          <h3 className="text-[32px] font-semibold text-[#111] mt-16">From Tools to Systems</h3>
+            <p className="text-[20px] leading-[1.8] font-light">
+              For centuries, human progress has been driven by tools that extend our physical abilities: engines that multiply our strength, machines that amplify our reach, computers that accelerate calculation.
+            </p>
 
-          <p className="text-[24px] leading-[1.7]">
-            For centuries, human progress has been driven by tools that extend our physical abilities: engines that multiply our strength, machines that amplify our reach, computers that accelerate calculation.
-          </p>
+            <p className="text-[20px] leading-[1.8] font-light mt-6">
+              But the defining challenge of our era is not physical. It is cognitive.
+            </p>
 
-          <p className="text-[24px] leading-[1.7]">
-            But the defining challenge of our era is not physical.
-          </p>
+            <p className="text-[20px] leading-[1.8] font-light mt-6">
+              We are surrounded by information, yet the structure beneath it often remains invisible — the relationships between signals, incentives, and outcomes that shape how the world actually behaves.
+            </p>
 
-          <p className="text-[24px] leading-[1.7]">
-            It is cognitive.
-          </p>
+            <p className="text-[20px] leading-[1.8] font-light mt-6">
+              What is needed now are systems that help people reason. Systems that illuminate connections, reveal patterns, and allow ideas to evolve through dialogue.
+            </p>
+          </div>
 
-          <p className="text-[24px] leading-[1.7]">
-            We are surrounded by information, yet the structure beneath it often remains invisible — the relationships between signals, incentives, and outcomes that shape how the world actually behaves.
-          </p>
+          <div className="pt-8">
+            <h3 className="text-[24px] font-medium text-[#111] mb-6">Designing for Thinking</h3>
 
-          <p className="text-[24px] leading-[1.7]">
-            What is needed now are systems that help people reason.
-          </p>
+            <p className="text-[20px] leading-[1.8] font-light">
+              Just as architecture shapes how people inhabit space, intellectual systems shape how people think.
+            </p>
 
-          <p className="text-[24px] leading-[1.7]">
-            Systems that illuminate connections, reveal patterns, and allow ideas to evolve through dialogue.
-          </p>
+            <p className="text-[20px] leading-[1.8] font-light mt-6">
+              Designing such systems requires more than engineering alone. It requires the integration of disciplines that rarely meet: computation, behavioral science, philosophy, decision theory, and design.
+            </p>
 
-          <h3 className="text-[32px] font-semibold text-[#111] mt-16">Designing for Thinking</h3>
+            <p className="text-[20px] leading-[1.8] font-light mt-6">
+              The goal is not to automate judgment. It is to augment it.
+            </p>
 
-          <p className="text-[24px] leading-[1.7]">
-            Just as architecture shapes how people inhabit space, intellectual systems shape how people think.
-          </p>
-
-          <p className="text-[24px] leading-[1.7]">
-            Designing such systems requires more than engineering alone. It requires the integration of disciplines that rarely meet: computation, behavioral science, philosophy, decision theory, and design.
-          </p>
-
-          <p className="text-[24px] leading-[1.7]">
-            The goal is not to automate judgment.
-          </p>
-
-          <p className="text-[24px] leading-[1.7]">
-            It is to augment it.
-          </p>
-
-          <p className="text-[24px] leading-[1.7]">
-            To create environments where ideas can be explored more deeply, trade-offs understood more clearly, and decisions made with greater awareness of their consequences.
-          </p>
+            <p className="text-[20px] leading-[1.8] font-light mt-6">
+              To create environments where ideas can be explored more deeply, trade-offs understood more clearly, and decisions made with greater awareness of their consequences.
+            </p>
+          </div>
 
         </div>
       </section>
