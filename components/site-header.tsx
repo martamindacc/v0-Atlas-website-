@@ -403,7 +403,7 @@ export default function SiteHeader() {
         </div>
 
         {/* Navigation content */}
-        <nav className="pt-[48px] px-[48px]">
+        <nav className="pt-[48px] px-[48px] pb-32">
           <div
             className={`transition-all duration-700 ease-out will-change-[opacity,transform] ${
               isDrawerOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-4 pointer-events-none'
