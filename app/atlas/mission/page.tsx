@@ -90,12 +90,12 @@ export default function AtlasMission() {
       {/* Hero */}
       <section className="relative h-screen w-full overflow-hidden bg-[#e5e5e5]">
         {/* Parallax background image layer */}
-        <div className="absolute inset-0 w-full h-full overflow-hidden">
+        <div className="absolute inset-0 w-full h-[120%] overflow-hidden">
           <img
             ref={heroImageRef}
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lol-Ga9ZXiWAHbGWNiiseim7aEiZthkL2L.jpg"
             alt="Mission"
-            className="w-full h-full object-cover transform-gpu"
+            className="w-full h-full object-cover"
           />
         </div>
         
