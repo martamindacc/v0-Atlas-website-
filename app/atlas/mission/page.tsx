@@ -89,17 +89,12 @@ export default function AtlasMission() {
 
       {/* Hero */}
       <section className="relative h-screen w-full overflow-hidden bg-[#e5e5e5]">
-        {/* Parallax background image layer */}
-        <div className="absolute inset-0 w-full h-[120%] overflow-hidden">
-          <img
-            ref={heroImageRef}
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lol-Ga9ZXiWAHbGWNiiseim7aEiZthkL2L.jpg"
-            alt="Mission"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        
-        {/* Fixed title overlay */}
+        <img
+          ref={heroImageRef}
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lol-Ga9ZXiWAHbGWNiiseim7aEiZthkL2L.jpg"
+          alt="Mission"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <div className="absolute bottom-16 left-16 z-10 pointer-events-none">
           <h1 className="font-sans text-[88px] leading-[0.95] tracking-[-0.035em] font-semibold text-white">
             Mission
