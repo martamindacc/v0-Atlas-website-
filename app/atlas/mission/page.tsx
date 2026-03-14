@@ -91,7 +91,7 @@ export default function AtlasMission() {
       <section className="relative h-screen w-full overflow-hidden bg-[#e5e5e5]">
         <img
           ref={heroImageRef}
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lol-Ga9ZXiWAHbGWNiiseim7aEiZthkL2L.jpg"
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mission-99w9ZKc7axAKIuSGaKNwiSSArBvB8C.jpg"
           alt="Mission"
           className="absolute inset-0 w-full h-full object-cover"
         />
