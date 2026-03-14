@@ -6,10 +6,8 @@ import SiteHeader from '@/components/site-header';
 export default function AtlasMission() {
   const [heroVisible, setHeroVisible] = useState(false);
   const [parallaxOffset, setParallaxOffset] = useState(0);
-  const [titleColor, setTitleColor] = useState('text-white');
   const heroRef = useRef(null);
   const heroImageRef = useRef(null);
-  const heroSectionRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -28,13 +26,6 @@ export default function AtlasMission() {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       setParallaxOffset(scrollY * 0.5);
-      
-      // Check if we've scrolled past the hero section (h-screen = 100vh)
-      if (scrollY > window.innerHeight) {
-        setTitleColor('text-neutral-900');
-      } else {
-        setTitleColor('text-white');
-      }
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -97,16 +88,18 @@ export default function AtlasMission() {
       <SiteHeader />
 
       {/* Hero */}
-      <section ref={heroSectionRef} className="relative h-screen w-full overflow-hidden bg-[#e5e5e5]">
+      <section className="relative h-screen w-full overflow-hidden bg-[#e5e5e5]">
         <img
           ref={heroImageRef}
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lol-Ga9ZXiWAHbGWNiiseim7aEiZthkL2L.jpg"
           alt="Mission"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <h1 className={`fixed bottom-16 left-16 z-10 pointer-events-none font-sans text-[88px] leading-[0.95] tracking-[-0.035em] font-semibold transition-colors duration-300 ease ${titleColor}`}>
-          Mission
-        </h1>
+        <div className="absolute bottom-16 left-16 z-10 pointer-events-none">
+          <h1 className="font-sans text-[88px] leading-[0.95] tracking-[-0.035em] font-semibold text-white">
+            Mission
+          </h1>
+        </div>
       </section>
 
       {/* Section 1 — Concept hero text */}
