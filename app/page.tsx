@@ -25,7 +25,13 @@ export default function Home() {
       <SiteHeader />
 
       {/* Section 1 — Full-screen hero */}
-      <section className="relative w-full h-screen overflow-hidden bg-white"></section>
+      <section className="relative w-full h-screen overflow-hidden bg-white">
+        <img
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mission-99w9ZKc7axAKIuSGaKNwiSSArBvB8C.jpg"
+          alt="Mission"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      </section>
 
       {/* Section 2 — Big central statement */}
       <section
