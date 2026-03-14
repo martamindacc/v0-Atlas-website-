@@ -5,7 +5,9 @@ import SiteHeader from "@/components/site-header";
 
 export default function CognitiveSystemsLab() {
   const [heroVisible, setHeroVisible] = useState(false);
+  const [parallaxOffset, setParallaxOffset] = useState(0);
   const heroRef = useRef(null);
+  const heroImageRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -20,6 +22,22 @@ export default function CognitiveSystemsLab() {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      setParallaxOffset(scrollY * 0.5);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (heroImageRef.current) {
+      heroImageRef.current.style.transform = `translateY(${parallaxOffset}px)`;
+    }
+  }, [parallaxOffset]);
+
   return (
     <div className="bg-[#fafafb] min-h-screen w-full">
       <SiteHeader />
@@ -27,6 +45,7 @@ export default function CognitiveSystemsLab() {
       {/* Hero */}
       <section className="relative h-screen w-full overflow-hidden bg-[#e5e5e5]">
         <img
+          ref={heroImageRef}
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cog1-f6WFrce5rff43mP4y5KraAyCixOJ2U.jpg"
           alt="Cognitive Systems Lab"
           className="absolute inset-0 w-full h-full object-cover"

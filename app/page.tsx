@@ -6,7 +6,9 @@ import SiteHeader from "@/components/site-header";
 
 export default function Home() {
   const [atlasSystemVisible, setAtlasSystemVisible] = useState(false);
+  const [parallaxOffset, setParallaxOffset] = useState(0);
   const atlasSystemRef = useRef(null);
+  const heroImageRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -20,6 +22,22 @@ export default function Home() {
 
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      setParallaxOffset(scrollY * 0.5);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (heroImageRef.current) {
+      heroImageRef.current.style.transform = `translateY(${parallaxOffset}px)`;
+    }
+  }, [parallaxOffset]);
   return (
     <main style={{ backgroundColor: "#fafafb" }}>
       <SiteHeader />
@@ -27,6 +45,7 @@ export default function Home() {
       {/* Section 1 — Full-screen hero */}
       <section className="relative w-full h-screen overflow-hidden bg-white">
         <img
+          ref={heroImageRef}
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mission-99w9ZKc7axAKIuSGaKNwiSSArBvB8C.jpg"
           alt="Mission"
           className="absolute inset-0 w-full h-full object-cover"
