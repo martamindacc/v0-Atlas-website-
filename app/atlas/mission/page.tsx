@@ -97,84 +97,79 @@ export default function AtlasMission() {
         </div>
       </section>
 
-      {/* Section 2 — Editorial product section */}
-      <section className="bg-[#fafafb] pb-[100px] pt-24">
-        <div className="max-w-[1300px] mx-auto px-8 grid grid-cols-2 gap-24 overflow-x-clip">
+      {/* Mission Editorial Section */}
+      <section className="bg-[#fafafb] py-40">
+        <div className="max-w-[900px] mx-auto px-8 space-y-12 text-[#374151]">
 
-          {/* LEFT COLUMN (HEADER) */}
-          <div
-            className={`sticky top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
-          >
-            <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium text-[#111]">
-              Advancing
-              <br />
-              <span
-                data-text="cognitive systems"
-                className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
-              ></span>
-            </h3>
-          </div>
+          <h2 className="text-[40px] font-semibold text-[#111]">Mission</h2>
 
-          {/* RIGHT COLUMN (SCROLL CONTENT) */}
-          <div className="min-h-[140vh] min-w-0">
-            <div className="text-[24px] leading-[1.75] text-[#374151] space-y-6 max-w-[520px]">
-              <p>
-                We believe that better thinking leads to better decisions and better outcomes.
-              </p>
-              <p>
-                Our mission is to build systems that enhance human reasoning and unlock the potential in every person and organization.
-              </p>
-            </div>
+          <p className="text-[24px] leading-[1.7]">
+            The problems shaping our future are no longer simple.
+          </p>
 
-            <div className="mt-16">
-              <img
-                src="/images/atlas-interface-placeholder.jpg"
-                alt="Atlas interface"
-                className="w-full max-w-[900px]"
-              />
-            </div>
-          </div>
+          <p className="text-[24px] leading-[1.7]">
+            They unfold across networks of people, incentives, information, and time. Decisions ripple outward, influencing systems that extend far beyond the moment in which they are made.
+          </p>
 
-        </div>
-      </section>
+          <p className="text-[24px] leading-[1.7]">
+            Yet the tools we rely on were designed for a different world — a world where problems were smaller, slower, and easier to isolate.
+          </p>
 
-      {/* Section 3 — Editorial product section */}
-      <section className="bg-[#fafafb] pt-[100px] pb-48">
-        <div className="max-w-[1300px] mx-auto px-8 grid grid-cols-2 gap-24 overflow-x-clip">
+          <p className="text-[24px] leading-[1.7]">
+            Our mission is to help people see complexity more clearly.
+          </p>
 
-          {/* LEFT COLUMN (HEADER) */}
-          <div
-            className={`sticky top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
-          >
-            <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium text-[#111]">
-              Building for
-              <br />
-              <span
-                data-text="the future"
-                className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
-              ></span>
-            </h3>
-          </div>
+          <p className="text-[24px] leading-[1.7]">
+            Not by reducing it, but by understanding it.
+          </p>
 
-          {/* RIGHT COLUMN (SCROLL CONTENT) */}
-          <div className="min-h-[140vh] min-w-0">
-            <div className="text-[24px] leading-[1.75] text-[#374151] space-y-6 max-w-[520px]">
-              <p>
-                We invest in research and development to create cognitive technologies that are accessible to everyone.
-              </p>
-              <p>
-                Through partnerships and innovation, we aim to democratize advanced reasoning capabilities and support human progress.
-              </p>
-            </div>
+          <h3 className="text-[32px] font-semibold text-[#111] mt-16">From Tools to Systems</h3>
 
-            <div className="mt-16">
-              <img
-                src="/images/atlas-interface-placeholder.png"
-                alt="Atlas interface"
-                className="w-full max-w-[900px]"
-              />
-            </div>
-          </div>
+          <p className="text-[24px] leading-[1.7]">
+            For centuries, human progress has been driven by tools that extend our physical abilities: engines that multiply our strength, machines that amplify our reach, computers that accelerate calculation.
+          </p>
+
+          <p className="text-[24px] leading-[1.7]">
+            But the defining challenge of our era is not physical.
+          </p>
+
+          <p className="text-[24px] leading-[1.7]">
+            It is cognitive.
+          </p>
+
+          <p className="text-[24px] leading-[1.7]">
+            We are surrounded by information, yet the structure beneath it often remains invisible — the relationships between signals, incentives, and outcomes that shape how the world actually behaves.
+          </p>
+
+          <p className="text-[24px] leading-[1.7]">
+            What is needed now are systems that help people reason.
+          </p>
+
+          <p className="text-[24px] leading-[1.7]">
+            Systems that illuminate connections, reveal patterns, and allow ideas to evolve through dialogue.
+          </p>
+
+          <h3 className="text-[32px] font-semibold text-[#111] mt-16">Designing for Thinking</h3>
+
+          <p className="text-[24px] leading-[1.7]">
+            Just as architecture shapes how people inhabit space, intellectual systems shape how people think.
+          </p>
+
+          <p className="text-[24px] leading-[1.7]">
+            Designing such systems requires more than engineering alone. It requires the integration of disciplines that rarely meet: computation, behavioral science, philosophy, decision theory, and design.
+          </p>
+
+          <p className="text-[24px] leading-[1.7]">
+            The goal is not to automate judgment.
+          </p>
+
+          <p className="text-[24px] leading-[1.7]">
+            It is to augment it.
+          </p>
+
+          <p className="text-[24px] leading-[1.7]">
+            To create environments where ideas can be explored more deeply, trade-offs understood more clearly, and decisions made with greater awareness of their consequences.
+          </p>
 
         </div>
       </section>
