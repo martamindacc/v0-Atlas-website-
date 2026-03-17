@@ -55,6 +55,18 @@ export default function Home() {
         >
           <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gprod-yEdnnDREclP1h7D6ESUIMsD8Tp2I8V.mp4" type="video/mp4" />
         </video>
+        
+        {/* Text overlay */}
+        <div className="absolute inset-0 flex items-center justify-center z-10">
+          <div className="text-center max-w-3xl px-6">
+            <h1 className="text-[clamp(2.5rem,6vw,5rem)] font-semibold leading-[1.1] tracking-tight text-white mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
+              People Intelligence for Every Decision
+            </h1>
+            <p className="text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-2xl mx-auto" style={{ fontFamily: "Inter, sans-serif" }}>
+              Map how people think, decide, and collaborate — and turn those patterns into strategic advantage.
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* Section 2 — Big central statement */}
