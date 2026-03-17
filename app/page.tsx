@@ -63,7 +63,7 @@ export default function Home() {
               People Intelligence for Every Decision
             </h1>
             <p className="text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-2xl mx-auto" style={{ fontFamily: "Inter, sans-serif" }}>
-              Map how people think, decide, and collaborate — and turn those patterns into strategic advantage.
+              AI that maps how people think, decide, and collaborate — turning those patterns into strategic advantage.
             </p>
           </div>
         </div>
