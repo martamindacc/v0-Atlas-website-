@@ -44,12 +44,17 @@ export default function Home() {
 
       {/* Section 1 — Full-screen hero */}
       <section className="relative w-full h-screen overflow-hidden bg-white">
-        <img
+        <video
           ref={heroImageRef}
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mission-99w9ZKc7axAKIuSGaKNwiSSArBvB8C.jpg"
-          alt="Mission"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
           className="absolute inset-0 w-full h-full object-cover"
-        />
+        >
+          <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gprod-yEdnnDREclP1h7D6ESUIMsD8Tp2I8V.mp4" type="video/mp4" />
+        </video>
       </section>
 
       {/* Section 2 — Big central statement */}
