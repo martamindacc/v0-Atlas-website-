@@ -96,7 +96,7 @@ export default function Home() {
           }`}
         >
           <h2
-            className="font-sans text-[52px] md:text-[68px] lg:text-[92px] leading-[1.02] tracking-[-0.03em] font-light"
+            className="text-[68px] leading-[1.04] tracking-[-0.035em] font-medium"
             style={{
               color: "#1d1f2b",
               fontFamily: "Inter, sans-serif",
@@ -194,17 +194,16 @@ export default function Home() {
                 className="text-[42px] leading-[1.15] tracking-tight font-medium text-neutral-900 max-w-[520px]"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
-                Human intelligence,<br />understood by machines.
+                Human intelligence,<br />amplified.
               </h2>
             </div>
 
             {/* Right — explanatory text */}
             <div className="col-span-5 col-start-8 text-[18px] leading-[1.6] text-neutral-600 max-w-[420px] space-y-6">
-              <p>Atlas bridges behavioral science and artificial intelligence.</p>
-              <p>
-                By modeling how people think and decide, it enables a new form
-                of collaboration between human judgment and machine reasoning.
-              </p>
+              <p>Atlas — a new layer for how organizations operate.</p>
+              <p>Always on.</p>
+              <p>Always in context.</p>
+              <p>Built to support how work actually unfolds.</p>
             </div>
           </div>
         </div>
