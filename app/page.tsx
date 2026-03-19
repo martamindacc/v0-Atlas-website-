@@ -74,24 +74,21 @@ export default function Home() {
         className="w-full min-h-screen flex items-center justify-center px-6 py-24"
         style={{ backgroundColor: "#fafafb" }}
       >
-        <div className="max-w-6xl w-full text-center">
+        <div className="max-w-[900px] w-full text-center mt-12 md:mt-16 mx-auto">
           <h2
-            className="text-[clamp(2.5rem,7vw,6.5rem)] font-bold leading-[1.08] tracking-tight text-balance"
+            className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight text-balance"
             style={{
-              color: "#1e1f2b",
+              color: "#0F172A",
               fontFamily: "Inter, sans-serif",
             }}
           >
-            Behavioral AI that understands{" "}
-            <span style={{ color: "#a0a3b1" }}>why</span> people do what they do.
+            Better decisions start with better inputs
           </h2>
           <p
-            className="mt-10 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed"
-            style={{ color: "#6b6e85" }}
+            className="mt-4 text-base md:text-lg text-[#475569] max-w-2xl mx-auto leading-relaxed"
+            style={{ fontFamily: "Inter, sans-serif" }}
           >
-            Mindacc is a behavioral intelligence platform that models how people think,
-            explains how they decide, and helps individuals and organizations
-            make better decisions — at scale.
+            Atlas powers real-time, AI-driven people decisions across your organization — from strategic planning to day-to-day execution.
           </p>
         </div>
       </section>
