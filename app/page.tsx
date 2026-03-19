@@ -96,7 +96,7 @@ export default function Home() {
           }`}
         >
           <h2
-            className="text-[68px] leading-[1.04] tracking-[-0.035em] font-medium"
+            className="text-[68px] leading-[1.03] tracking-[-0.04em] font-medium"
             style={{
               color: "#1d1f2b",
               fontFamily: "Inter, sans-serif",
@@ -145,7 +145,7 @@ export default function Home() {
               href: "/atlas/teams",
             },
             {
-              description: "Organizational Intelligence\nA continuous view of how your organization is operating — spot risk, align faster, and act with precision. Scale intelligence everywhere",
+              description: "Organizational Intelligence\nA continous view of how your organization operates — spot risk patterns, align faster, act with precision",
               title: "Atlas Global",
               href: "/atlas/global",
             },
