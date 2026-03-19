@@ -96,7 +96,7 @@ export default function Home() {
           }`}
         >
           <h2
-            className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight text-balance"
+            className="font-sans text-[52px] md:text-[68px] lg:text-[92px] leading-[1.02] tracking-[-0.03em] font-light"
             style={{
               color: "#1d1f2b",
               fontFamily: "Inter, sans-serif",
@@ -140,7 +140,7 @@ export default function Home() {
               href: "/atlas/professional",
             },
             {
-              description: "Team Intelligence\nUnderstand how people think together and improve communication, coordination, and decision dynamics",
+              description: "Team Intelligence\nUnderstand how people work together and improve communication, coordination, and decision dynamics",
               title: "Atlas Teams",
               href: "/atlas/teams",
             },
