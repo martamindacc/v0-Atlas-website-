@@ -135,17 +135,17 @@ export default function Home() {
           {/* Module rows */}
           {[
             {
-              description: "Individual Intelligence\nElevate every decision. A reasoning partner tuned to how you actually think — so you lead with unmatched clarity.",
+              description: "Individual Intelligence\nLead sharper. Think clearer. Your reasoning partner — tuned precisely to how you think",
               title: "Atlas Professional",
               href: "/atlas/professional",
             },
             {
-              description: "Make synergy real.\nSee the hidden dynamics of how perspectives merge and alignment forms — so your team moves with precision and unstoppable momentum.",
+              description: "Team Intelligence\nUnderstand how people think together and improve communication, coordination, and decision dynamics",
               title: "Atlas Teams",
               href: "/atlas/teams",
             },
             {
-              description: "Align leadership at scale —\nso global teams stay coordinated and execution doesn't drift.",
+              description: "Organizational Intelligence\nA continuous view of how your organization is operating — spot risk, align faster, and act with precision. Scale intelligence everywhere",
               title: "Atlas Global",
               href: "/atlas/global",
             },
