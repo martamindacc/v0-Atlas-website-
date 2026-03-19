@@ -98,7 +98,7 @@ export default function Home() {
           <h2
             className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight text-balance"
             style={{
-              color: "#0F172A",
+              color: "#1d1f2b",
               fontFamily: "Inter, sans-serif",
             }}
           >
@@ -135,17 +135,17 @@ export default function Home() {
           {/* Module rows */}
           {[
             {
-              description: "Personal behavioral intelligence\nBuild your cognitive model and work with Atlas\nas a reasoning partner for decisions and planning.",
+              description: "Individual Intelligence\nElevate every decision. A reasoning partner tuned to how you actually think — so you lead with unmatched clarity.",
               title: "Atlas Professional",
               href: "/atlas/professional",
             },
             {
-              description: "Team intelligence\nUnderstand how people think together and improve\ncommunication, coordination, and decision dynamics.",
+              description: "Make synergy real.\nSee the hidden dynamics of how perspectives merge and alignment forms — so your team moves with precision and unstoppable momentum.",
               title: "Atlas Teams",
               href: "/atlas/teams",
             },
             {
-              description: "Organizational intelligence\nAnalyze behavioral patterns across the workforce\nto support leadership and strategic decision making.",
+              description: "Align leadership at scale —\nso global teams stay coordinated and execution doesn't drift.",
               title: "Atlas Global",
               href: "/atlas/global",
             },
