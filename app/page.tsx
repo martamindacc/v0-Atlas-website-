@@ -74,7 +74,7 @@ export default function Home() {
         {/* Text overlay */}
         <div className="absolute inset-0 flex items-center justify-center z-10">
           <div className="text-center max-w-3xl px-6">
-            <h1 className="font-sans text-[56px] md:text-[72px] lg:text-[96px] leading-[1.02] tracking-[-0.03em] font-light text-white mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
+            <h1 className="text-[clamp(2.5rem,6vw,5rem)] font-semibold leading-[1.1] tracking-tight text-white mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
               People Intelligence for Every Decision
             </h1>
             <p className="text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-2xl mx-auto" style={{ fontFamily: "Inter, sans-serif" }}>
