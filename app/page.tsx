@@ -6,8 +6,10 @@ import SiteHeader from "@/components/site-header";
 
 export default function Home() {
   const [atlasSystemVisible, setAtlasSystemVisible] = useState(false);
+  const [section2Visible, setSection2Visible] = useState(false);
   const [parallaxOffset, setParallaxOffset] = useState(0);
   const atlasSystemRef = useRef(null);
+  const section2Ref = useRef(null);
   const heroImageRef = useRef(null);
 
   useEffect(() => {
@@ -19,6 +21,19 @@ export default function Home() {
     );
 
     if (atlasSystemRef.current) observer.observe(atlasSystemRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setSection2Visible(entry.isIntersecting);
+      },
+      { threshold: 0.15 }
+    );
+
+    if (section2Ref.current) observer.observe(section2Ref.current);
 
     return () => observer.disconnect();
   }, []);
@@ -71,10 +86,15 @@ export default function Home() {
 
       {/* Section 2 — Big central statement */}
       <section
-        className="w-full min-h-screen flex items-center justify-center px-6 py-24"
+        className="w-full flex items-center justify-center px-6 py-32"
         style={{ backgroundColor: "#fafafb" }}
       >
-        <div className="max-w-[900px] w-full text-center mt-12 md:mt-16 mx-auto">
+        <div
+          ref={section2Ref}
+          className={`max-w-[900px] w-full text-center transition-all duration-[700ms] ease-out ${
+            section2Visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+          }`}
+        >
           <h2
             className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight text-balance"
             style={{
@@ -85,7 +105,7 @@ export default function Home() {
             Better decisions start with better inputs
           </h2>
           <p
-            className="mt-4 text-base md:text-lg text-[#475569] max-w-2xl mx-auto leading-relaxed"
+            className="mt-6 text-lg md:text-xl text-[#475569] max-w-2xl mx-auto leading-relaxed"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
             Atlas powers real-time, AI-driven people decisions across your organization — from strategic planning to day-to-day execution.
