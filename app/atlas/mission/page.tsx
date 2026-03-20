@@ -180,13 +180,14 @@ export default function AtlasMission() {
       </section>
 
       {/* Divider */}
-      <div className="w-full bg-[#fafafb] py-12 md:py-16 lg:py-20">
+      <div className="w-full bg-[#fafafb] py-16 md:py-20 lg:py-24">
         <div className="max-w-[1300px] mx-auto px-8">
-          <div className="relative flex items-center justify-center">
+          <div className="relative flex items-center justify-between">
             <div className="absolute inset-x-0 h-px bg-neutral-300/40"></div>
-            <div className="relative flex justify-center gap-16 px-0 text-xs text-neutral-400">
+            <div className="relative flex justify-between w-full px-0 text-xs text-neutral-400">
               <span>0.1</span>
               <span>[0.2]</span>
+              <span>0.3</span>
             </div>
           </div>
         </div>
