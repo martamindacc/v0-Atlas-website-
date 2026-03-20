@@ -100,10 +100,8 @@ export default function AtlasProfessional() {
             className={`sticky top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
           >
             <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium text-[#111]">
-              A reasoning partner
-              <br />
               <span
-                data-text="for complex decisions"
+                data-text="Meet your thinking partner"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
