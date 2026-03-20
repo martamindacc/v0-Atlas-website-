@@ -140,7 +140,7 @@ export default function Home() {
               href: "/atlas/professional",
             },
             {
-              description: "Team Intelligence\nUnderstand how people work together and improve communication, coordination, and decision dynamics",
+              description: "Team Intelligence\nUnderstand how people work together — improve communication, coordination, and decision dynamics",
               title: "Atlas Teams",
               href: "/atlas/teams",
             },
