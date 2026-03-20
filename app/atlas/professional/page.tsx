@@ -103,7 +103,7 @@ export default function AtlasProfessional() {
               A reasoning partner
               <br />
               <span
-                data-text="Atlas surfaces  competetive advantage  — in the moments that matter most "
+                data-text="for complex decisions"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
