@@ -212,8 +212,9 @@ export default function Home() {
             </div>
 
             {/* Right — explanatory text */}
-            <div className="col-span-5 col-start-8 text-[18px] leading-[1.6] text-neutral-600 max-w-[420px] space-y-6">
-              <p>Atlas understands how people think and work across your organization — anticipating patterns, revealing misalignment, and helping you act with precision when it matters. Always on. Always in context.</p>
+            <div className="col-span-5 col-start-8 text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-6">
+              <p>Atlas understands how people think and work across your organization — anticipating patterns, revealing misalignment, and helping you act with precision when it matters.</p>
+              <p>Always on. Always in context.</p>
             </div>
           </div>
         </div>
