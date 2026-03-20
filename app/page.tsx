@@ -78,7 +78,7 @@ export default function Home() {
               People Intelligence for Every Decision
             </h1>
             <p className="text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-2xl mx-auto" style={{ fontFamily: "Inter, sans-serif" }}>
-              AI that models how people think, decide, and collaborate — supporting teamwork and organizational change at scale.
+              Atlas models how people think, decide, and collaborate — supporting teamwork and organizational change at scale.
             </p>
           </div>
         </div>
@@ -124,18 +124,18 @@ export default function Home() {
               atlasSystemVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
             }`}
           >
-            <div className="w-full flex flex-wrap justify-center items-center gap-x-3 gap-y-2 mt-0 mb-38 text-[14px] tracking-[-0.01em] text-[#383838] opacity-90 font-medium">
-              <span className="px-2.5 py-[4px] border border-[#E5E7EB] rounded-md bg-white">Leadership Modeling</span>
+            <div className="w-full flex flex-wrap justify-center items-center gap-x-3 gap-y-2 mt-6 mb-14 text-[15px] tracking-[-0.01em] text-[#374151] font-medium">
+              <span className="px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Leadership Modeling</span>
               <span className="text-[#D1D5DB]">—</span>
-              <span className="px-2.5 py-[4px] border border-[#E5E7EB] rounded-md bg-white">Team Dynamics</span>
+              <span className="px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Team Dynamics</span>
               <span className="text-[#D1D5DB]">—</span>
-              <span className="px-2.5 py-[4px] border border-[#E5E7EB] rounded-md bg-white">Execution Support</span>
+              <span className="px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Execution Support</span>
               <span className="text-[#D1D5DB]">—</span>
-              <span className="px-2.5 py-[4px] border border-[#E5E7EB] rounded-md bg-white">Development Plans</span>
+              <span className="px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Development Plans</span>
               <span className="text-[#D1D5DB]">—</span>
-              <span className="px-2.5 py-[4px] border border-[#E5E7EB] rounded-md bg-white">Talent Composition</span>
+              <span className="px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Talent Composition</span>
               <span className="text-[#D1D5DB]">—</span>
-              <span className="px-2.5 py-[4px] border border-[#E5E7EB] rounded-md bg-white">Decision Flow</span>
+              <span className="px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Decision Flow</span>
             </div>
             <h3
               className="text-[28px] font-medium tracking-tight text-neutral-900 mb-6"
