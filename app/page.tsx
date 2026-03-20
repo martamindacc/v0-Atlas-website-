@@ -105,7 +105,7 @@ export default function Home() {
             Better decisions start with better inputs
           </h2>
           <p
-            className="mt-6 pb-4 text-lg md:text-xl text-[#475569] max-w-2xl mx-auto leading-relaxed"
+            className="mt-6 text-lg md:text-xl text-[#475569] max-w-2xl mx-auto leading-relaxed"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
             Atlas powers real-time, AI-driven people decisions across your organization — from strategic planning to day-to-day execution.
@@ -120,7 +120,7 @@ export default function Home() {
           {/* Atlas System Label */}
           <div
             ref={atlasSystemRef}
-            className={`max-w-[1200px] mx-auto mb-[48px] transition-all duration-[700ms] ease-out ${
+            className={`max-w-[1200px] mx-auto mb-[24px] transition-all duration-[700ms] ease-out ${
               atlasSystemVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
             }`}
           >
