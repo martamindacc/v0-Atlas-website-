@@ -117,9 +117,9 @@ export default function AtlasTeams() {
 
             <div className="mt-16">
               <img
-                src="/images/atlas-interface-placeholder.jpg"
-                alt="Atlas interface"
-                className="w-full max-w-[900px]"
+                src="/images/atlas_team_workstyles.svg"
+                alt="Team work styles visualization"
+                className="w-full"
               />
             </div>
           </div>
@@ -176,9 +176,9 @@ export default function AtlasTeams() {
 
             <div className="mt-16">
               <img
-                src="/images/atlas-interface-placeholder.png"
-                alt="Atlas interface"
-                className="w-full max-w-[900px]"
+                src="/images/atlas_early_signal.svg"
+                alt="Early signal detection"
+                className="w-full"
               />
             </div>
           </div>
