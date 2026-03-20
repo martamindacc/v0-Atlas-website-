@@ -200,7 +200,8 @@ export default function Home() {
 
             {/* Right — explanatory text */}
             <div className="col-span-5 col-start-8 text-[18px] leading-[1.6] text-neutral-600 max-w-[420px] space-y-6">
-              <p>Atlas — a new layer for how organizations operate.</p>
+              <p>Atlas bridges behavioral science and artificial intelligence.</p>
+              <p>It enables a new form of collaboration between human judgment and machine reasoning.</p>
               <p>Always on.</p>
               <p>Always in context.</p>
               <p>Built to support how work actually unfolds.</p>
