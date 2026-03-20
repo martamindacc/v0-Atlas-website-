@@ -159,7 +159,7 @@ export default function AtlasProfessional() {
           >
             <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium text-[#111]">
               <span
-                data-text="Atlas surfaces competetive advantage — in the moments that matter most"
+                data-text="Surface your competitive edge — in the moments that matter most"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
@@ -169,15 +169,15 @@ export default function AtlasProfessional() {
           <div className="min-h-[140vh] min-w-0">
             <div className="text-[24px] leading-[1.75] text-[#374151] space-y-6 max-w-[520px]">
               <p>
-                Break down complexity. See what matters.
+                Atlas helps you:
               </p>
               <ul className="space-y-2">
-                <li>Prepare for high-stakes meetings</li>
-                <li>Navigate difficult decisions</li>
-                <li>Handle conflict and feedback with clarity</li>
+                <li>Prepare for critical meetings with real insight into others' work style</li>
+                <li>Navigate tough choices with clearer visibility into responses and dynamics</li>
+                <li>Resolve conflict and feedback with confidence</li>
               </ul>
               <p>
-                Move faster with greater confidence
+                Decide faster and better — every time
               </p>
             </div>
 
