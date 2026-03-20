@@ -150,10 +150,8 @@ export default function AtlasGlobal() {
             className={`sticky top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
           >
             <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
-              A reasoning partner
-              <br />
               <span
-                data-text="for complex decisions"
+                data-text="See what's forming — before it becomes a problem"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
@@ -163,10 +161,19 @@ export default function AtlasGlobal() {
           <div className="min-h-[140vh] min-w-0">
             <div className="text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas is designed to help people think through problems that do not have obvious answers.
+                Atlas surfaces patterns in how people work, interpret situations, and make decisions across teams, regions, and levels — so leaders catch misalignment, risk, and bottlenecks early, before they cascade into enterprise-wide problems.
               </p>
+              <p className="font-medium">
+                This means:
+              </p>
+              <ul className="space-y-3 list-none">
+                <li>Spot risks early — identify where thinking diverges or leadership gaps emerge before they scale</li>
+                <li>Align faster — turn fragmented perspectives into coherent organization-wide understanding</li>
+                <li>Execute at speed — reduce delays, rework, and hidden friction across global operations</li>
+                <li>Build resilience — strengthen leadership pipelines and decision quality so the enterprise moves as one powerful system</li>
+              </ul>
               <p>
-                Because the system is grounded in your cognitive model, the dialogue evolves with the way you naturally reason.
+                Always in context. Always up to date. Built for how large organizations actually work — so scale becomes your greatest advantage, not your biggest liability.
               </p>
             </div>
 
