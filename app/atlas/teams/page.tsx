@@ -92,7 +92,7 @@ export default function AtlasTeams() {
       </section>
 
       {/* Section 2 — Editorial product section */}
-      <section className="bg-[#fafafb] pb-[100px] pt-24">
+      <section className="bg-[#fafafb] pb-[100px] pt-24 md:pt-32 lg:pt-36">
         <div className="max-w-[1300px] mx-auto px-8 grid grid-cols-2 gap-24 overflow-x-clip">
 
           {/* LEFT COLUMN (HEADER) */}
