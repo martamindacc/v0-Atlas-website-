@@ -139,7 +139,7 @@ export default function AtlasProfessional() {
 
             <div className="mt-16">
               <img
-                src="/images/atlas_hero_individual.svg"
+                src="/images/atlas_individual_outcomes.svg"
                 alt="Atlas thinking partner"
                 className="w-full"
               />
@@ -196,7 +196,7 @@ export default function AtlasProfessional() {
 
             <div className="mt-16">
               <img
-                src="/images/atlas_competitive_edge.svg"
+                src="/images/atlas_capability_colleagues.svg"
                 alt="Atlas competitive edge"
                 className="w-full"
               />
