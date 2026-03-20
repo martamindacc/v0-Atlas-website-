@@ -124,7 +124,7 @@ export default function Home() {
               atlasSystemVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
             }`}
           >
-            <div className="w-full flex flex-wrap justify-center items-center gap-x-3 gap-y-2 mt-0 mb-28 text-[14px] tracking-[-0.01em] text-[#383838] opacity-90 font-medium">
+            <div className="w-full flex flex-wrap justify-center items-center gap-x-3 gap-y-2 mt-0 mb-32 text-[14px] tracking-[-0.01em] text-[#383838] opacity-90 font-medium">
               <span className="px-2.5 py-[4px] border border-[#E5E7EB] rounded-md bg-white">Leadership Modeling</span>
               <span className="text-[#D1D5DB]">—</span>
               <span className="px-2.5 py-[4px] border border-[#E5E7EB] rounded-md bg-white">Team Dynamics</span>
