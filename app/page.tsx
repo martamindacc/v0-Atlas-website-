@@ -96,7 +96,7 @@ export default function Home() {
           }`}
         >
           <h2
-            className="text-[68px] leading-[1.03] tracking-[-0.04em] font-medium"
+            className="font-sans text-[86px] leading-[1.02] tracking-[-0.045em] font-semibold"
             style={{
               color: "#1d1f2b",
               fontFamily: "Inter, sans-serif",
