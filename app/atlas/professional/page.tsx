@@ -118,7 +118,7 @@ export default function AtlasProfessional() {
           <div
             className={`sticky top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
           >
-            <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium text-[#111]">
+            <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#1e1f2b'}}>
               <span
                 data-text="Meet your thinking partner"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
@@ -128,7 +128,7 @@ export default function AtlasProfessional() {
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
           <div className="min-h-[140vh] min-w-0">
-            <div className="text-[24px] leading-[1.75] text-[#374151] space-y-6 max-w-[520px]">
+            <div className="text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
                 Atlas helps people think through problems that do not have obvious answers.
               </p>
@@ -157,7 +157,7 @@ export default function AtlasProfessional() {
           <div
             className={`sticky top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
           >
-            <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium text-[#111]">
+            <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#1e1f2b'}}>
               <span
                 data-text="Surface your competitive edge — in the moments that matter most"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
@@ -167,7 +167,7 @@ export default function AtlasProfessional() {
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
           <div className="min-h-[140vh] min-w-0">
-            <div className="text-[24px] leading-[1.75] text-[#374151] space-y-6 max-w-[520px]">
+            <div className="text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
                 Atlas helps you:
               </p>
