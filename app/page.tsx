@@ -105,7 +105,7 @@ export default function Home() {
             Better decisions start with better inputs
           </h2>
           <p
-            className="mt-6 text-lg md:text-xl text-[#475569] max-w-2xl mx-auto leading-relaxed"
+            className="mt-6 pb-4 text-lg md:text-xl text-[#475569] max-w-2xl mx-auto leading-relaxed"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
             Atlas powers real-time, AI-driven people decisions across your organization — from strategic planning to day-to-day execution.
