@@ -136,6 +136,8 @@ export default function Home() {
               <span className="px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Talent Composition</span>
               <span className="text-[#D1D5DB]">—</span>
               <span className="px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Decision Flow</span>
+              <span className="text-[#D1D5DB]">—</span>
+              <span className="px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Succession Planning</span>
             </div>
             <h3
               className="text-[28px] font-medium tracking-tight text-neutral-900 mb-6"
