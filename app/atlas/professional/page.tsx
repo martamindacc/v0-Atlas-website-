@@ -214,7 +214,7 @@ export default function AtlasProfessional() {
             Start making better people decisions
           </h2>
           <p className="text-[20px] leading-[1.6] text-[#4f4f4f] max-w-[600px] mb-12">
-            Atlas helps you think through complexity, navigate people dynamics, and act with clarity when it matters most.
+            Orient. Adapt. Act — with clarity.
           </p>
           <a
             href="/get-started"

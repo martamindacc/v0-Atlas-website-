@@ -117,9 +117,9 @@ export default function AtlasGlobal() {
 
             <div className="mt-16">
               <img
-                src="/images/atlas-interface-placeholder.jpg"
+                src="/images/atlas_org_scale.svg"
                 alt="Atlas interface"
-                className="w-full max-w-[900px]"
+                className="w-full"
               />
             </div>
           </div>
@@ -179,9 +179,9 @@ export default function AtlasGlobal() {
 
             <div className="mt-16">
               <img
-                src="/images/atlas-interface-placeholder.png"
+                src="/images/atlas_enterprise_signal.svg"
                 alt="Atlas interface"
-                className="w-full max-w-[900px]"
+                className="w-full"
               />
             </div>
           </div>
@@ -196,7 +196,7 @@ export default function AtlasGlobal() {
             Start making better people decisions
           </h2>
           <p className="text-[20px] leading-[1.6] text-[#4f4f4f] max-w-[600px] mb-12">
-            Atlas helps you think through complexity, navigate people dynamics, and act with clarity when it matters most.
+            Orient. Adapt. Act — with clarity.
           </p>
           <a
             href="/get-started"
