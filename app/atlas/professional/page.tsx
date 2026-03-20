@@ -149,6 +149,20 @@ export default function AtlasProfessional() {
         </div>
       </section>
 
+      {/* Divider */}
+      <div className="w-full bg-[#fafafb] py-16 md:py-20 lg:py-24">
+        <div className="max-w-[1300px] mx-auto px-8">
+          <div className="relative flex items-center justify-between">
+            <div className="absolute inset-x-0 h-px bg-neutral-300/40"></div>
+            <div className="relative flex justify-between w-full px-0 text-xs text-neutral-400">
+              <span>0.1</span>
+              <span>[0.2]</span>
+              <span>0.3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Section 3 — Editorial product section */}
       <section className="bg-[#fafafb] pt-[100px] pb-48">
         <div className="max-w-[1300px] mx-auto px-8 grid grid-cols-2 gap-24 overflow-x-clip">
@@ -192,6 +206,20 @@ export default function AtlasProfessional() {
 
         </div>
       </section>
+
+      {/* Divider */}
+      <div className="w-full bg-[#fafafb] py-16 md:py-20 lg:py-24">
+        <div className="max-w-[1300px] mx-auto px-8">
+          <div className="relative flex items-center justify-between">
+            <div className="absolute inset-x-0 h-px bg-neutral-300/40"></div>
+            <div className="relative flex justify-between w-full px-0 text-xs text-neutral-400">
+              <span>0.1</span>
+              <span>[0.2]</span>
+              <span>0.3</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Footer */}
       <section className="w-full bg-[#efefef] py-[140px]">
