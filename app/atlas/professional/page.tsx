@@ -5,7 +5,9 @@ import SiteHeader from "@/components/site-header";
 
 export default function AtlasProfessional() {
   const [heroVisible, setHeroVisible] = useState(false);
+  const [parallaxOffset, setParallaxOffset] = useState(0);
   const heroRef = useRef(null);
+  const heroVideoRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -19,6 +21,22 @@ export default function AtlasProfessional() {
 
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      setParallaxOffset(scrollY * 0.5);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (heroVideoRef.current) {
+      heroVideoRef.current.style.transform = `translateY(${parallaxOffset}px)`;
+    }
+  }, [parallaxOffset]);
 
   useEffect(() => {
     const typingState = new WeakMap();
@@ -72,6 +90,7 @@ export default function AtlasProfessional() {
       {/* Hero */}
       <section className="relative h-screen w-full overflow-hidden bg-[#e5e5e5]">
         <video
+          ref={heroVideoRef}
           autoPlay
           muted
           loop
