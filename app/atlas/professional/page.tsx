@@ -141,7 +141,7 @@ export default function AtlasProfessional() {
               <img
                 src="/images/atlas_hero_individual.svg"
                 alt="Atlas thinking partner"
-                className="w-full max-w-[900px]"
+                className="w-full"
               />
             </div>
           </div>
@@ -185,7 +185,7 @@ export default function AtlasProfessional() {
               <img
                 src="/images/atlas_competitive_edge.svg"
                 alt="Atlas competitive edge"
-                className="w-full max-w-[900px]"
+                className="w-full"
               />
             </div>
           </div>
