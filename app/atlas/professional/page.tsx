@@ -100,8 +100,6 @@ export default function AtlasProfessional() {
             className={`sticky top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
           >
             <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium text-[#111]">
-              A reasoning partner
-              <br />
               <span
                 data-text="for complex decisions"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
@@ -111,12 +109,26 @@ export default function AtlasProfessional() {
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
           <div className="min-h-[140vh] min-w-0">
-            <div className="text-[24px] leading-[1.75] text-[#374151] space-y-6 max-w-[520px]">
-              <p>
-                Atlas helps people think through problems that do not have obvious answers.
-              </p>
-              <p>
-                Because the system is grounded in your cognitive model, the dialogue evolves with the way you naturally reason.
+            <div className="space-y-6 max-w-[520px]">
+              <h2 className="text-[24px] leading-[1.75] text-[#111] font-medium">
+                Break down complexity. See what matters.
+              </h2>
+              <ul className="text-[18px] leading-[1.75] text-[#374151] space-y-4">
+                <li className="flex gap-3">
+                  <span className="text-[#111] font-medium">•</span>
+                  <span>Prepare for high-stakes meetings</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-[#111] font-medium">•</span>
+                  <span>Navigate difficult decisions</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-[#111] font-medium">•</span>
+                  <span>Handle conflict and feedback with clarity</span>
+                </li>
+              </ul>
+              <p className="text-[18px] leading-[1.75] text-[#374151]">
+                Move faster with greater confidence. All tuned exactly to how you think.
               </p>
             </div>
 
