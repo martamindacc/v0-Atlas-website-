@@ -100,7 +100,12 @@ export default function AtlasProfessional() {
             className={`sticky top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
           >
             <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium text-[#111]">
-              Atlas turns ambiguity into clarity — in the moments that matter most.
+              A reasoning partner
+              <br />
+              <span
+                data-text="for complex decisions"
+                className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
+              ></span>
             </h3>
           </div>
 
@@ -108,10 +113,10 @@ export default function AtlasProfessional() {
           <div className="min-h-[140vh] min-w-0">
             <div className="text-[24px] leading-[1.75] text-[#374151] space-y-6 max-w-[520px]">
               <p>
-                It preps you for high-stakes meetings, stress-tests your options before you commit, sharpens feedback conversations, and helps you navigate tough trade-offs with confidence.
+                Atlas is designed to help people think through problems that do not have obvious answers.
               </p>
               <p>
-                Always on, always in your context — so you make better calls, faster, and with less second-guessing.
+                Because the system is grounded in your cognitive model, the dialogue evolves with the way you naturally reason.
               </p>
             </div>
 
