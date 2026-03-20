@@ -76,6 +76,31 @@ export default function CognitiveSystemsLab() {
           </p>
         </div>
       </section>
+
+      {/* Footer */}
+      <section className="w-full bg-[#efefef] py-[140px]">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="grid grid-cols-12 gap-x-12 items-start">
+            {/* Left — headline */}
+            <div className="col-span-6 flex flex-col justify-between">
+              <h2
+                className="text-[52px] font-medium tracking-tight text-neutral-900 max-w-[520px]"
+                style={{ fontFamily: "Inter, sans-serif" }}
+              >
+                Human intelligence,<br />amplified.
+              </h2>
+              <p className="text-[12px] text-[#6B7280]">© 2026 Mindacc. All rights reserved.</p>
+            </div>
+
+            {/* Right — explanatory text */}
+            <div className="col-span-5 col-start-8 text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-6">
+              <p>Atlas understands how people think and work across your organization — anticipating patterns, revealing misalignment, and helping you act with precision when it matters.</p>
+              <p>Always on. Always in context.</p>
+              <p>Built to support how work actually unfolds.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
