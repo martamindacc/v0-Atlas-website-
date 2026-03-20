@@ -86,7 +86,7 @@ export default function AtlasGlobal() {
             Atlas Global
           </h1>
           <p className="text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-2xl" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
-            Support teamwork and change — across teams, roles, and regions.
+            Support teamwork and organizational change at enterprise scale.
           </p>
         </div>
       </section>
@@ -100,10 +100,8 @@ export default function AtlasGlobal() {
             className={`sticky top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
           >
             <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
-              A reasoning partner
-              <br />
               <span
-                data-text="for complex decisions"
+                data-text="Understand your organization at scale"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
@@ -113,10 +111,7 @@ export default function AtlasGlobal() {
           <div className="min-h-[140vh] min-w-0">
             <div className="text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas is designed to help people think through problems that do not have obvious answers.
-              </p>
-              <p>
-                Because the system is grounded in your cognitive model, the dialogue evolves with the way you naturally reason.
+                Atlas makes patterns across teams visible — from how decisions form and leadership emerges to where alignment breaks down at enterprise level.
               </p>
             </div>
 
