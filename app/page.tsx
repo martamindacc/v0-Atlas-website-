@@ -124,18 +124,18 @@ export default function Home() {
               atlasSystemVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
             }`}
           >
-            <div className="w-full flex flex-wrap justify-center items-center gap-x-5 gap-y-3 mt-0 mb-2 text-[14px] tracking-[-0.01em] text-[#4B5563]">
-              <span className="px-3 py-1 border border-[#D1D5DB] rounded-full bg-white">Leadership Modeling</span>
+            <div className="w-full flex flex-wrap justify-center items-center gap-x-3 gap-y-2 mt-0 mb-10 text-[14px] tracking-[-0.01em] text-[#4B5563] font-medium">
+              <span className="px-2.5 py-[4px] border border-[#E5E7EB] rounded-md bg-white">Leadership Modeling</span>
               <span className="text-[#D1D5DB]">—</span>
-              <span className="px-3 py-1 border border-[#D1D5DB] rounded-full bg-white">Team Dynamics</span>
+              <span className="px-2.5 py-[4px] border border-[#E5E7EB] rounded-md bg-white">Team Dynamics</span>
               <span className="text-[#D1D5DB]">—</span>
-              <span className="px-3 py-1 border border-[#D1D5DB] rounded-full bg-white">Execution Support</span>
+              <span className="px-2.5 py-[4px] border border-[#E5E7EB] rounded-md bg-white">Execution Support</span>
               <span className="text-[#D1D5DB]">—</span>
-              <span className="px-3 py-1 border border-[#D1D5DB] rounded-full bg-white">Development Plans</span>
+              <span className="px-2.5 py-[4px] border border-[#E5E7EB] rounded-md bg-white">Development Plans</span>
               <span className="text-[#D1D5DB]">—</span>
-              <span className="px-3 py-1 border border-[#D1D5DB] rounded-full bg-white">Talent Composition</span>
+              <span className="px-2.5 py-[4px] border border-[#E5E7EB] rounded-md bg-white">Talent Composition</span>
               <span className="text-[#D1D5DB]">—</span>
-              <span className="px-3 py-1 border border-[#D1D5DB] rounded-full bg-white">Decision Flow</span>
+              <span className="px-2.5 py-[4px] border border-[#E5E7EB] rounded-md bg-white">Decision Flow</span>
             </div>
             <h3
               className="text-[28px] font-medium tracking-tight text-neutral-900 mb-6"
