@@ -112,7 +112,7 @@ export default function AtlasProfessional() {
 
       {/* Section 2 — Editorial product section */}
       <section className="bg-[#fafafb] pb-[100px] pt-24 md:pt-32 lg:pt-36">
-        <div className="max-w-[1440px] mx-auto px-8 grid grid-cols-2 gap-28 overflow-x-clip">
+        <div className="max-w-[1300px] mx-auto px-8 grid grid-cols-2 gap-24 overflow-x-clip">
 
           {/* LEFT COLUMN (HEADER) */}
           <div
@@ -151,7 +151,7 @@ export default function AtlasProfessional() {
 
       {/* Divider */}
       <div className="w-full bg-[#fafafb] py-16 md:py-20 lg:py-24">
-        <div className="max-w-[1440px] mx-auto px-8">
+        <div className="max-w-[1300px] mx-auto px-8">
           <div className="relative flex items-center">
             <div className="absolute left-0 right-1/2 h-px bg-neutral-300/40"></div>
             <div className="relative flex w-1/2 justify-between px-0 text-xs text-neutral-400">
@@ -164,7 +164,7 @@ export default function AtlasProfessional() {
 
       {/* Section 3 — Editorial product section */}
       <section className="bg-[#fafafb] pt-[100px] pb-48">
-        <div className="max-w-[1440px] mx-auto px-8 grid grid-cols-2 gap-28 overflow-x-clip">
+        <div className="max-w-[1300px] mx-auto px-8 grid grid-cols-2 gap-24 overflow-x-clip">
 
           {/* LEFT COLUMN (HEADER) */}
           <div
