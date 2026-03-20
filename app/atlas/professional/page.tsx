@@ -113,7 +113,7 @@ export default function AtlasProfessional() {
           <div className="min-h-[140vh] min-w-0">
             <div className="text-[24px] leading-[1.75] text-[#374151] space-y-6 max-w-[520px]">
               <p>
-                Atlas is designed to help people think through problems that do not have obvious answers.
+                Atlas helps people think through problems that do not have obvious answers.
               </p>
               <p>
                 Because the system is grounded in your cognitive model, the dialogue evolves with the way you naturally reason.
@@ -144,7 +144,7 @@ export default function AtlasProfessional() {
               A reasoning partner
               <br />
               <span
-                data-text="for complex decisions"
+                data-text="Atlas surfaces  competetive advantage  — in the moments that matter most "
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
@@ -154,7 +154,7 @@ export default function AtlasProfessional() {
           <div className="min-h-[140vh] min-w-0">
             <div className="text-[24px] leading-[1.75] text-[#374151] space-y-6 max-w-[520px]">
               <p>
-                Atlas is designed to help people think through problems that do not have obvious answers.
+                Atlas helps people think through problems that do not have obvious answers.
               </p>
               <p>
                 Because the system is grounded in your cognitive model, the dialogue evolves with the way you naturally reason.
