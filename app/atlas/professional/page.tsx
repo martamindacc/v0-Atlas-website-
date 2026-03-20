@@ -142,7 +142,7 @@ export default function AtlasProfessional() {
           >
             <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium text-[#111]">
               <span
-                data-text="Atlas surfaces  competetive advantage  — in the moments that matter most "
+                data-text="Atlas surfaces competetive advantage — in the moments that matter most"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
