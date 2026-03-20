@@ -131,8 +131,6 @@ export default function Home() {
               <span className="text-[#D1D5DB]">—</span>
               <span className="px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Execution Support</span>
               <span className="text-[#D1D5DB]">—</span>
-              <span className="px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Development Plans</span>
-              <span className="text-[#D1D5DB]">—</span>
               <span className="px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Talent Composition</span>
               <span className="text-[#D1D5DB]">—</span>
               <span className="px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Decision Flow</span>
@@ -215,9 +213,7 @@ export default function Home() {
 
             {/* Right — explanatory text */}
             <div className="col-span-5 col-start-8 text-[18px] leading-[1.6] text-neutral-600 max-w-[420px] space-y-6">
-              <p>Atlas bridges behavioral science and artificial intelligence. It enables a new form of collaboration between human judgment and machine reasoning.</p>
-              <p>Always on. Always in context.</p>
-              <p>Built to support how work actually unfolds.</p>
+              <p>Atlas understands how people think and work across your organization — anticipating patterns, revealing misalignment, and helping you act with precision when it matters. Always on. Always in context.</p>
             </div>
           </div>
         </div>
