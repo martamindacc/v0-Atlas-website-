@@ -159,8 +159,8 @@ export default function Home() {
                   {/* Left — description */}
                   <div className="col-span-5">
                     <p
-                      className="text-[20px] text-neutral-600 leading-relaxed max-w-[520px] whitespace-pre-line"
-                      style={{ fontFamily: "Inter, sans-serif" }}
+                      className="text-[20px] leading-relaxed max-w-[520px] whitespace-pre-line"
+                      style={{ fontFamily: "Inter, sans-serif", color: "#383838" }}
                     >
                       {module.description}
                     </p>
