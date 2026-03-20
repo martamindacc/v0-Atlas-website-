@@ -132,9 +132,6 @@ export default function AtlasProfessional() {
               <p>
                 Atlas helps you think through high-stakes problems that don't have obvious answers — from strategic choices and tough trade-offs to difficult conversations and career-defining moves.
               </p>
-              <p>
-                It adapts to how you naturally reason, anticipate your next question, surface blind spots, and sharpen your judgment — so every decision lands with greater clarity, confidence, and speed.
-              </p>
             </div>
 
             <div className="mt-16">
@@ -181,6 +178,9 @@ export default function AtlasProfessional() {
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
           <div className="min-h-[140vh] min-w-0">
             <div className="text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
+              <p>
+                Atlas adapts to how you naturally reason, anticipate your next question, and sharpen your judgment — so every decision lands with greater clarity, confidence, and speed.
+              </p>
               <p className="font-medium">
                 Atlas helps you:
               </p>
