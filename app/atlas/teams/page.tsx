@@ -91,20 +91,6 @@ export default function AtlasTeams() {
         </div>
       </section>
 
-      {/* Section 1 — Concept hero text */}
-      <section
-        ref={heroRef}
-        className="bg-[#fafafb] py-40 flex items-center justify-center"
-      >
-        <div className="max-w-[1100px] mx-auto px-8 text-center">
-          <h2 className={`font-sans text-[68px] leading-[1.03] tracking-[-0.04em] font-medium text-[#111] transition-all duration-[900ms] ease-out ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}>
-            Computational model
-            <br />
-            of your reasoning patterns
-          </h2>
-        </div>
-      </section>
-
       {/* Section 2 — Editorial product section */}
       <section className="bg-[#fafafb] pb-[100px] pt-24">
         <div className="max-w-[1300px] mx-auto px-8 grid grid-cols-2 gap-24 overflow-x-clip">
