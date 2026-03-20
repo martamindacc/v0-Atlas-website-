@@ -85,6 +85,9 @@ export default function AtlasProfessional() {
           <h1 className="font-sans text-[88px] leading-[0.95] tracking-[-0.035em] font-semibold text-white">
             Atlas Professional
           </h1>
+          <p className="text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-2xl" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
+            Make better people decisions — with clarity on how others think, respond, and work.
+          </p>
         </div>
       </section>
 
