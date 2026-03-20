@@ -130,10 +130,7 @@ export default function AtlasProfessional() {
           <div className="min-h-[140vh] min-w-0">
             <div className="text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas helps people think through problems that do not have obvious answers.
-              </p>
-              <p>
-                Because the system is grounded in your cognitive model, the dialogue evolves with the way you naturally reason.
+                Atlas helps you think through high-stakes problems that don't have obvious answers — from strategic choices and tough trade-offs to difficult conversations and career-defining moves.
               </p>
             </div>
 
@@ -182,15 +179,19 @@ export default function AtlasProfessional() {
           <div className="min-h-[140vh] min-w-0">
             <div className="text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas helps you:
+                Atlas adapts to how you naturally reason, anticipate your next question, surface blind spots, and sharpen your judgment — so every decision lands with greater clarity, confidence, and speed.
+              </p>
+              <p className="font-medium">
+                This means you:
               </p>
               <ul className="space-y-2">
-                <li>Prepare for critical meetings with real insight into others' work style</li>
-                <li>Navigate tough choices with clearer visibility into responses and dynamics</li>
-                <li>Resolve conflict and feedback with confidence</li>
+                <li>Prepare for critical meetings with precise insight into stakeholders</li>
+                <li>Navigate hard choices without second-guessing</li>
+                <li>Handle feedback and conflict with calm precision</li>
+                <li>Move forward faster, knowing you've seen the full picture</li>
               </ul>
               <p>
-                Decide faster and better — every time
+                Always on. Always in your context. Built for the way real work — and real thinking — actually happens.
               </p>
             </div>
 
