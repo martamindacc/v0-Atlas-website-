@@ -191,7 +191,7 @@ export default function Home() {
             {/* Left — headline */}
             <div className="col-span-6">
               <h2
-                className="text-[72px] font-medium tracking-tight text-neutral-900 max-w-[520px]"
+                className="text-[52px] font-medium tracking-tight text-neutral-900 max-w-[520px]"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
                 Human intelligence,<br />amplified.
