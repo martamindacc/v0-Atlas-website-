@@ -54,7 +54,7 @@ export default function AtlasProfessional() {
           }
         });
       },
-      { threshold: 0.45 }
+      { threshold: 0.1, rootMargin: "0px 0px -80px 0px" }
     );
 
     const typedElements = document.querySelectorAll(".typed-header");
