@@ -86,7 +86,7 @@ export default function Home() {
 
       {/* Section 2 — Big central statement */}
       <section
-        className="w-full flex items-center justify-center px-6 py-32"
+        className="w-full flex items-center justify-center px-6 pt-24 pb-6"
         style={{ backgroundColor: "#fafafb" }}
       >
         <div
@@ -114,7 +114,7 @@ export default function Home() {
       </section>
 
       {/* Section 4 — ATLAS system */}
-      <section className="bg-[#fafafb] pt-[80px] pb-[160px]">
+      <section className="bg-[#fafafb] pt-0 pb-[160px]">
         <div className="w-full px-6">
 
           {/* Atlas System Label */}
