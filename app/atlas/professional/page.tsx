@@ -206,6 +206,24 @@ export default function AtlasProfessional() {
         </div>
       </section>
 
+      {/* CTA Section */}
+      <section className="w-full bg-[#fafafb] py-[100px] md:py-[140px]">
+        <div className="max-w-[1300px] mx-auto px-8 flex flex-col items-center text-center">
+          <h2 className="font-sans text-[56px] md:text-[64px] leading-[1.1] tracking-[-0.03em] font-medium text-[#202426] mb-6">
+            Start making better people decisions
+          </h2>
+          <p className="text-[20px] leading-[1.6] text-[#4f4f4f] max-w-[600px] mb-12">
+            Atlas helps you think through complexity, navigate people dynamics, and act with clarity when it matters most.
+          </p>
+          <a
+            href="/get-started"
+            className="inline-block px-8 py-4 bg-[#202426] text-white font-medium rounded-md hover:bg-[#1a1b22] transition-colors"
+          >
+            Get started
+          </a>
+        </div>
+      </section>
+
       <section className="w-full bg-[#efefef] py-[140px]">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="grid grid-cols-12 gap-x-12 items-start">

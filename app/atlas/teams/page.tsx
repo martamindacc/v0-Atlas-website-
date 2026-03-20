@@ -187,19 +187,25 @@ export default function AtlasTeams() {
         </div>
       </section>
 
-      {/* Divider */}
-      <div className="w-full bg-[#fafafb] py-16 md:py-20 lg:py-24">
-        <div className="max-w-[1300px] mx-auto px-8">
-          <div className="relative flex items-center justify-between">
-            <div className="absolute inset-x-0 h-px bg-neutral-300/40"></div>
-            <div className="relative flex justify-between w-full px-0 text-xs text-neutral-400">
-              <span>0.1</span>
-              <span>[0.2]</span>
-              <span>0.3</span>
-            </div>
-          </div>
+      {/* CTA Section */}
+      <section className="w-full bg-[#fafafb] py-[100px] md:py-[140px]">
+        <div className="max-w-[1300px] mx-auto px-8 flex flex-col items-center text-center">
+          <h2 className="font-sans text-[56px] md:text-[64px] leading-[1.1] tracking-[-0.03em] font-medium text-[#202426] mb-6">
+            Start making better people decisions
+          </h2>
+          <p className="text-[20px] leading-[1.6] text-[#4f4f4f] max-w-[600px] mb-12">
+            Atlas helps you think through complexity, navigate people dynamics, and act with clarity when it matters most.
+          </p>
+          <a
+            href="/get-started"
+            className="inline-block px-8 py-4 bg-[#202426] text-white font-medium rounded-md hover:bg-[#1a1b22] transition-colors"
+          >
+            Get started
+          </a>
         </div>
-      </div>
+      </section>
+
+      {/* Footer */}
       <section className="w-full bg-[#efefef] py-[140px]">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="grid grid-cols-12 gap-x-12 items-start">
