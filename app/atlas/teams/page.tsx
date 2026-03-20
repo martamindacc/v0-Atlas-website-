@@ -100,10 +100,8 @@ export default function AtlasTeams() {
             className={`sticky top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
           >
             <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
-              A reasoning partner
-              <br />
               <span
-                data-text="for complex decisions"
+                data-text="A shared reasoning layer for teams"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
@@ -113,10 +111,7 @@ export default function AtlasTeams() {
           <div className="min-h-[140vh] min-w-0">
             <div className="text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas is designed to help people think through problems that do not have obvious answers.
-              </p>
-              <p>
-                Because the system is grounded in your cognitive model, the dialogue evolves with the way you naturally reason.
+                Atlas creates a shared layer that surfaces how perspectives converge — or clash — across a team.
               </p>
             </div>
 
