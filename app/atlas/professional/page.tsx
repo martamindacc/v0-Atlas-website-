@@ -152,12 +152,11 @@ export default function AtlasProfessional() {
       {/* Divider */}
       <div className="w-full bg-[#fafafb] py-16 md:py-20 lg:py-24">
         <div className="max-w-[1300px] mx-auto px-8">
-          <div className="relative flex items-center justify-between">
-            <div className="absolute inset-x-0 h-px bg-neutral-300/40"></div>
-            <div className="relative flex justify-between w-full px-0 text-xs text-neutral-400">
+          <div className="relative flex items-center">
+            <div className="absolute left-0 right-1/2 h-px bg-neutral-300/40"></div>
+            <div className="relative flex w-1/2 justify-between px-0 text-xs text-neutral-400">
               <span>0.1</span>
               <span>[0.2]</span>
-              <span>0.3</span>
             </div>
           </div>
         </div>
@@ -207,19 +206,6 @@ export default function AtlasProfessional() {
         </div>
       </section>
 
-      {/* Divider */}
-      <div className="w-full bg-[#fafafb] py-16 md:py-20 lg:py-24">
-        <div className="max-w-[1300px] mx-auto px-8">
-          <div className="relative flex items-center justify-between">
-            <div className="absolute inset-x-0 h-px bg-neutral-300/40"></div>
-            <div className="relative flex justify-between w-full px-0 text-xs text-neutral-400">
-              <span>0.1</span>
-              <span>[0.2]</span>
-              <span>0.3</span>
-            </div>
-          </div>
-        </div>
-      </div>
       <section className="w-full bg-[#efefef] py-[140px]">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="grid grid-cols-12 gap-x-12 items-start">
