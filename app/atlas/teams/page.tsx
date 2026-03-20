@@ -85,6 +85,9 @@ export default function AtlasTeams() {
           <h1 className="font-sans text-[88px] leading-[0.95] tracking-[-0.035em] font-semibold text-white">
             Atlas Teams
           </h1>
+          <p className="text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-2xl" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
+            Align how teams think, decide, and work — with clarity across roles, dynamics, and execution.
+          </p>
         </div>
       </section>
 
