@@ -124,6 +124,19 @@ export default function Home() {
               atlasSystemVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
             }`}
           >
+            <div className="w-full flex flex-wrap justify-center items-center gap-x-5 gap-y-3 mt-8 mb-14 text-[13px] tracking-[-0.01em] text-[#6B7280]">
+              <span className="px-3 py-1 border border-[#E5E7EB] rounded-full bg-white">Leadership Modeling</span>
+              <span className="text-[#D1D5DB]">—</span>
+              <span className="px-3 py-1 border border-[#E5E7EB] rounded-full bg-white">Team Dynamics</span>
+              <span className="text-[#D1D5DB]">—</span>
+              <span className="px-3 py-1 border border-[#E5E7EB] rounded-full bg-white">Execution Support</span>
+              <span className="text-[#D1D5DB]">—</span>
+              <span className="px-3 py-1 border border-[#E5E7EB] rounded-full bg-white">Development Plans</span>
+              <span className="text-[#D1D5DB]">—</span>
+              <span className="px-3 py-1 border border-[#E5E7EB] rounded-full bg-white">Talent Composition</span>
+              <span className="text-[#D1D5DB]">—</span>
+              <span className="px-3 py-1 border border-[#E5E7EB] rounded-full bg-white">Decision Flow</span>
+            </div>
             <h3
               className="text-[28px] font-medium tracking-tight text-neutral-900 mb-6"
               style={{ fontFamily: "Inter, sans-serif" }}
