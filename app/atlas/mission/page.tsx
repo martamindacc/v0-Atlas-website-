@@ -1,55 +1,32 @@
-"use client";
-
-import { useEffect, useRef } from "react";
-import SiteHeader from "@/components/site-header";
-import MissionGlobeVisual from "@/components/mission-globe-visual";
+import { useEffect, useState, useRef } from 'react';
+import SiteHeader from '@/components/site-header';
+import MissionGlobeScroll from '@/components/mission-globe-scroll';
 
 export default function AtlasMission() {
-  const heroTextRef = useRef<HTMLDivElement | null>(null);
-  const globeSectionRef = useRef<HTMLElement | null>(null);
-  const globeWrapRef = useRef<HTMLDivElement | null>(null);
+  const [heroVisible, setHeroVisible] = useState(true);
+  const heroRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    let raf = 0;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setHeroVisible(entry.isIntersecting);
+      },
+      { threshold: 0.5 }
+    );
 
-    const update = () => {
-      const section = globeSectionRef.current;
-      const heroText = heroTextRef.current;
-      const globeWrap = globeWrapRef.current;
-      if (!section || !heroText || !globeWrap) return;
-
-      const rect = section.getBoundingClientRect();
-      const vh = window.innerHeight;
-
-      const start = vh * 0.95;
-      const end = -vh * 0.2;
-      const p = Math.min(1, Math.max(0, (start - rect.top) / (start - end)));
-
-      const translateY = (1 - p) * 14; // starts slightly below viewport
-      const scale = 1 + p * 0.1; // 1 -> 1.1
-
-      globeWrap.style.transform = `translate3d(0, ${translateY}vh, 0) scale(${scale})`;
-      heroText.style.opacity = String(1 - Math.min(1, p * 1.25));
-    };
-
-    const onScroll = () => {
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(update);
-    };
-
-    update();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onScroll);
+    if (heroRef.current) {
+      observer.observe(heroRef.current);
+    }
 
     return () => {
-      cancelAnimationFrame(raf);
-      window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onScroll);
+      if (heroRef.current) {
+        observer.unobserve(heroRef.current);
+      }
     };
   }, []);
 
   return (
-    <div className="bg-[#fafafb] min-h-screen w-full">
+    <div className="bg-[#fafafb]">
       <SiteHeader />
 
       {/* Hero image */}
@@ -66,13 +43,13 @@ export default function AtlasMission() {
         </div>
       </section>
 
-      {/* Hero statement (calm, static, slight bottom breathing space) */}
-      <section className="relative z-20 bg-[#fafafb] min-h-[90vh] pb-24 flex items-center justify-center">
-        <div
-          ref={heroTextRef}
-          className="max-w-[1100px] mx-auto px-8 text-center transition-opacity duration-500 ease-out"
-        >
-          <h2 className="font-sans text-[68px] leading-[1.03] tracking-[-0.04em] font-medium text-[#111]">
+      {/* Section 1 — Concept hero text */}
+      <section
+        ref={heroRef}
+        className="bg-[#fafafb] py-40 flex items-center justify-center"
+      >
+        <div className="max-w-[1100px] mx-auto px-8 text-center">
+          <h2 className={`font-sans text-[68px] leading-[1.03] tracking-[-0.04em] font-medium text-[#111] transition-all duration-[900ms] ease-out ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}>
             Transforming how
             <br />
             people think and decide
@@ -80,23 +57,11 @@ export default function AtlasMission() {
         </div>
       </section>
 
-      {/* Globe rises under hero */}
-      <section
-        ref={globeSectionRef}
-        className="relative z-10 -mt-[22vh] min-h-[120vh] bg-[#fafafb]"
-      >
-        <div className="sticky top-0 h-screen overflow-hidden flex items-center justify-center">
-          <div
-            ref={globeWrapRef}
-            className="will-change-transform transition-transform duration-500 ease-out"
-          >
-            <MissionGlobeVisual className="w-[min(82vh,90vw)]" />
-          </div>
-        </div>
-      </section>
+      {/* Mission Globe Scroll */}
+      <MissionGlobeScroll />
 
-      {/* Mission text section (static) */}
-      <section className="relative z-20 bg-[#fafafb] py-32">
+      {/* Mission Editorial Section */}
+      <section className="bg-[#fafafb] py-32">
         <div className="max-w-[800px] mx-auto px-8 space-y-8 text-[#374151]">
           <p className="text-[20px] leading-[1.8] font-light">
             The problems shaping our future are no longer simple.
