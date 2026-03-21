@@ -47,14 +47,10 @@ function gaussian(rand: () => number) {
   return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
 }
 
-function clamp(n: number, min: number, max: number) {
-  return Math.max(min, Math.min(max, n));
-}
-
 export default function MissionGlobeScroll() {
   const [countries, setCountries] = useState<Feature<Geometry>[]>([]);
-  const sectionRef = useRef<HTMLElement | null>(null);
-  const cardRefs = useRef<(HTMLArticleElement | null)[]>([]);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   const projection = useMemo(
     () =>
@@ -80,9 +76,7 @@ export default function MissionGlobeScroll() {
       { lon: 26, lat: -29, spreadLon: 13, spreadLat: 9, weight: 0.7 },
     ];
 
-    const weighted = clusters.flatMap((c) =>
-      Array.from({ length: Math.round(c.weight * 10) }, () => c)
-    );
+    const weighted = clusters.flatMap((c) => Array.from({ length: Math.round(c.weight * 10) }, () => c));
     const out: Dot[] = [];
     let attempts = 0;
 
@@ -126,7 +120,9 @@ export default function MissionGlobeScroll() {
           const fc = feature(topo, topo.objects.countries) as { features: Feature<Geometry>[] };
           if (mounted) setCountries(fc.features);
           return;
-        } catch {}
+        } catch {
+          // try next source
+        }
       }
     }
 
@@ -137,68 +133,25 @@ export default function MissionGlobeScroll() {
   }, []);
 
   useEffect(() => {
-    let raf = 0;
-
-    const update = () => {
-      const section = sectionRef.current;
-      if (!section) return;
-
-      const rect = section.getBoundingClientRect();
-      const vh = window.innerHeight;
-      const scrollable = section.offsetHeight - vh;
-      if (scrollable <= 0) return;
-
-      const progressed = clamp(-rect.top, 0, scrollable);
-      const progress = progressed / scrollable; // 0..1 across whole section
-      const n = stories.length;
-      const segment = 1 / n;
-
-      for (let i = 0; i < n; i++) {
-        const el = cardRefs.current[i];
-        if (!el) continue;
-
-        const start = i * segment;
-        const local = clamp((progress - start) / segment, 0, 1);
-
-        const y = 38 - local * 52; // bottom -> over globe -> slightly above
-        const scale = 0.985 + local * 0.03;
-
-        let opacity = 0;
-        if (local > 0 && local < 1) {
-          if (local < 0.18) opacity = local / 0.18;
-          else if (local > 0.82) opacity = (1 - local) / 0.18;
-          else opacity = 1;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          const idx = Number((entry.target as HTMLElement).dataset.index);
+          if (!Number.isNaN(idx)) setActiveIndex(idx);
         }
+      },
+      { threshold: 0.62 }
+    );
 
-        el.style.transform = `translate(-50%, ${y}vh) scale(${scale})`;
-        el.style.opacity = String(clamp(opacity, 0, 1));
-      }
-    };
-
-    const onScroll = () => {
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(update);
-    };
-
-    update();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onScroll);
-
-    return () => {
-      cancelAnimationFrame(raf);
-      window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onScroll);
-    };
+    stepRefs.current.forEach((el) => el && observer.observe(el));
+    return () => observer.disconnect();
   }, []);
 
   return (
-    <section
-      ref={sectionRef}
-      className="relative w-full bg-[#fafafb]"
-      style={{ height: `${stories.length * 110}vh` }}
-    >
-      <div className="sticky top-0 z-0 flex h-screen items-center justify-center overflow-hidden">
-        <div className="relative aspect-square w-[min(82vw,1080px)]">
+    <section className="relative w-full bg-[#fafafb]">
+      <div className="sticky top-0 z-0 flex h-screen items-center justify-center">
+        <div className="relative aspect-square w-[min(78vw,980px)]">
           <svg viewBox="0 0 1000 1000" className="h-full w-full" aria-hidden="true">
             <defs>
               <clipPath id="globeClip">
@@ -230,14 +183,7 @@ export default function MissionGlobeScroll() {
                 />
               ))}
               {dots.map((d, i) => (
-                <circle
-                  key={i}
-                  cx={d.x}
-                  cy={d.y}
-                  r={d.r}
-                  fill="#73b424"
-                  fillOpacity={Math.min(0.82, d.o)}
-                />
+                <circle key={i} cx={d.x} cy={d.y} r={d.r} fill="#73b424" fillOpacity={Math.min(0.82, d.o)} />
               ))}
             </g>
 
@@ -245,26 +191,40 @@ export default function MissionGlobeScroll() {
             <circle cx="500" cy="500" r="440" fill="none" stroke="#d0d0cb" strokeWidth="2" />
           </svg>
 
-          <div className="pointer-events-none absolute inset-0">
-            {stories.map((story, i) => (
-              <article
-                key={story.title}
-                ref={(el) => {
-                  cardRefs.current[i] = el;
-                }}
-                className="absolute left-1/2 top-0 w-[min(92%,760px)] text-center opacity-0 will-change-transform"
-                style={{ transform: "translate(-50%, 38vh) scale(0.985)" }}
-              >
-                <h3 className="mb-4 font-sans text-sm font-semibold uppercase tracking-[0.18em] text-[#1a1a1a]/80">
-                  {story.title}
-                </h3>
-                <p className="text-[24px] leading-[1.75]" style={{ color: "#202426" }}>
-                  {story.body}
-                </p>
-              </article>
-            ))}
+          <div className="pointer-events-none absolute inset-0 flex items-center justify-center px-7 md:px-16">
+            {stories.map((story, i) => {
+              const active = i === activeIndex;
+              return (
+                <article
+                  key={story.title}
+                  className={`absolute max-w-[760px] text-center transition-all duration-500 ease-out ${
+                    active ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-6 scale-[0.985]"
+                  }`}
+                >
+                  <h3 className="mb-4 font-sans text-sm font-semibold uppercase tracking-[0.18em] text-[#1a1a1a]/80">
+                    {story.title}
+                  </h3>
+                  <p className="text-[24px] leading-[1.75]" style={{color: '#202426'}}>
+                    {story.body}
+                  </p>
+                </article>
+              );
+            })}
           </div>
         </div>
+      </div>
+
+      <div className="relative z-10">
+        {stories.map((_, i) => (
+          <div
+            key={i}
+            ref={(el) => {
+              stepRefs.current[i] = el;
+            }}
+            data-index={i}
+            className="h-[88vh] w-full"
+          />
+        ))}
       </div>
     </section>
   );
