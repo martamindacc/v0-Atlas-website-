@@ -1,37 +1,97 @@
+'use client';
+
 import { useEffect, useState, useRef } from 'react';
 import SiteHeader from '@/components/site-header';
 import MissionGlobeScroll from '@/components/mission-globe-scroll';
 
 export default function AtlasMission() {
-  const [heroVisible, setHeroVisible] = useState(true);
-  const heroRef = useRef<HTMLElement>(null);
+  const [heroVisible, setHeroVisible] = useState(false);
+  const [parallaxOffset, setParallaxOffset] = useState(0);
+  const heroRef = useRef(null);
+  const heroImageRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         setHeroVisible(entry.isIntersecting);
       },
-      { threshold: 0.5 }
+      { threshold: 0.45 }
     );
 
-    if (heroRef.current) {
-      observer.observe(heroRef.current);
-    }
+    if (heroRef.current) observer.observe(heroRef.current);
 
-    return () => {
-      if (heroRef.current) {
-        observer.unobserve(heroRef.current);
-      }
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      setParallaxOffset(scrollY * 0.5);
     };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (heroImageRef.current) {
+      heroImageRef.current.style.transform = `translateY(${parallaxOffset}px)`;
+    }
+  }, [parallaxOffset]);
+
+  useEffect(() => {
+    const typingState = new WeakMap();
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const el = entry.target;
+          const fullText = el.dataset.text;
+
+          if (entry.isIntersecting) {
+            if (typingState.get(el)) return;
+
+            typingState.set(el, true);
+
+            let i = 0;
+            el.textContent = '';
+
+            const type = () => {
+              if (i < fullText.length) {
+                el.textContent += fullText.charAt(i);
+                i++;
+                setTimeout(type, 35);
+              } else {
+                typingState.set(el, false);
+              }
+            };
+
+            type();
+          } else {
+            el.textContent = '';
+            typingState.set(el, false);
+          }
+        });
+      },
+      { threshold: 0.45 }
+    );
+
+    const typedElements = document.querySelectorAll('.typed-header');
+    typedElements.forEach((el) => {
+      observer.observe(el);
+    });
+
+    return () => observer.disconnect();
   }, []);
 
   return (
-    <div className="bg-[#fafafb]">
+    <div className="bg-[#fafafb] min-h-screen w-full">
       <SiteHeader />
 
-      {/* Hero image */}
+      {/* Hero */}
       <section className="relative h-screen w-full overflow-hidden bg-[#e5e5e5]">
         <img
+          ref={heroImageRef}
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mission-99w9ZKc7axAKIuSGaKNwiSSArBvB8C.jpg"
           alt="Mission"
           className="absolute inset-0 w-full h-full object-cover"
@@ -63,18 +123,102 @@ export default function AtlasMission() {
       {/* Mission Editorial Section */}
       <section className="bg-[#fafafb] py-32">
         <div className="max-w-[800px] mx-auto px-8 space-y-8 text-[#374151]">
+
           <p className="text-[20px] leading-[1.8] font-light">
             The problems shaping our future are no longer simple.
           </p>
+
           <p className="text-[20px] leading-[1.8] font-light">
             They unfold across networks of people, incentives, information, and time. Decisions ripple outward, influencing systems that extend far beyond the moment in which they are made.
           </p>
+
           <p className="text-[20px] leading-[1.8] font-light">
-            Yet the tools we rely on were designed for a different world - a world where problems were smaller, slower, and easier to isolate.
+            Yet the tools we rely on were designed for a different world — a world where problems were smaller, slower, and easier to isolate.
           </p>
+
           <p className="text-[20px] leading-[1.8] font-light">
             We help people see complexity more clearly. Not by reducing it, but by understanding it.
           </p>
+
+          <div className="pt-8">
+            <h3 className="text-[24px] font-medium text-[#111] mb-6">From Tools to Systems</h3>
+
+            <p className="text-[20px] leading-[1.8] font-light">
+              For centuries, human progress has been driven by tools that extend our physical abilities: engines that multiply our strength, machines that amplify our reach, computers that accelerate calculation.
+            </p>
+
+            <p className="text-[20px] leading-[1.8] font-light mt-6">
+              But the defining challenge of our era is not physical. It is cognitive.
+            </p>
+
+            <p className="text-[20px] leading-[1.8] font-light mt-6">
+              We are surrounded by information, yet the structure beneath it often remains invisible — the relationships between signals, incentives, and outcomes that shape how the world actually behaves.
+            </p>
+
+            <p className="text-[20px] leading-[1.8] font-light mt-6">
+              What is needed now are systems that help people reason. Systems that illuminate connections, reveal patterns, and allow ideas to evolve through dialogue.
+            </p>
+          </div>
+
+          <div className="pt-8">
+            <h3 className="text-[24px] font-medium text-[#111] mb-6">Designing for Thinking</h3>
+
+            <p className="text-[20px] leading-[1.8] font-light">
+              Just as architecture shapes how people inhabit space, intellectual systems shape how people think.
+            </p>
+
+            <p className="text-[20px] leading-[1.8] font-light mt-6">
+              Designing such systems requires more than engineering alone. It requires the integration of disciplines that rarely meet: computation, behavioral science, philosophy, decision theory, and design.
+            </p>
+
+            <p className="text-[20px] leading-[1.8] font-light mt-6">
+              The goal is not to automate judgment. It is to augment it.
+            </p>
+
+            <p className="text-[20px] leading-[1.8] font-light mt-6">
+              To create environments where ideas can be explored more deeply, trade-offs understood more clearly, and decisions made with greater awareness of their consequences.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="w-full bg-[#fafafb] py-16 md:py-20 lg:py-24">
+        <div className="max-w-[1300px] mx-auto px-8">
+          <div className="relative flex items-center justify-between">
+            <div className="absolute inset-x-0 h-px bg-neutral-300/40"></div>
+            <div className="relative flex justify-between w-full px-0 text-xs text-neutral-400">
+              <span>0.1</span>
+              <span>[0.2]</span>
+              <span>0.3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <section className="w-full bg-[#efefef] py-[140px]">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="grid grid-cols-12 gap-x-12 items-start">
+            {/* Left — headline */}
+            <div className="col-span-6 flex flex-col justify-between">
+              <h2
+                className="text-[52px] font-medium tracking-tight text-neutral-900 max-w-[520px]"
+                style={{ fontFamily: "Inter, sans-serif" }}
+              >
+                Human intelligence,<br />amplified.
+              </h2>
+              <p className="text-[12px] text-[#6B7280]">© 2026 Mindacc. All rights reserved.</p>
+            </div>
+
+            {/* Right — explanatory text */}
+            <div className="col-span-5 col-start-8 text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-6">
+              <p>Atlas understands how people think and work across your organization — anticipating patterns, revealing misalignment, and helping you act with precision when it matters.</p>
+              <p>Always on. Always in context.</p>
+              <p>Built to support how work actually unfolds.</p>
+            </div>
+          </div>
         </div>
       </section>
     </div>
