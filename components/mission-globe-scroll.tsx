@@ -204,7 +204,7 @@ export default function MissionGlobeScroll() {
                   <h3 className="mb-4 font-sans text-sm font-semibold uppercase tracking-[0.18em] text-[#1a1a1a]/80">
                     {story.title}
                   </h3>
-                  <p className="text-[clamp(1.1rem,2.4vw,2.2rem)] leading-[1.2] text-[#111] [font-family:Georgia,Times,serif]">
+                  <p className="text-[24px] leading-[1.75] [font-family:Georgia,Times,serif]" style={{color: '#202426'}}>
                     {story.body}
                   </p>
                 </article>
