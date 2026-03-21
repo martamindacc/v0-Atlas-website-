@@ -90,16 +90,12 @@ export default function AtlasMission() {
 
       {/* Hero */}
       <section className="relative h-screen w-full overflow-hidden bg-[#e5e5e5]">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          className="absolute inset-0 w-full h-full object-cover z-0"
-        >
-          <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/board-CP9WmvjtOQ1EMUKe3EyIcWZVpp9V2N.mp4" type="video/mp4" />
-        </video>
+        <img
+          ref={heroImageRef}
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cog1-CmUG27pwNrSS461m6T1rwIV7KU7Tig.jpg"
+          alt="Mission"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <div className="absolute bottom-16 left-16 z-10 pointer-events-none">
           <h1 className="font-sans text-[88px] leading-[0.95] tracking-[-0.035em] font-semibold text-white">
             Mission
