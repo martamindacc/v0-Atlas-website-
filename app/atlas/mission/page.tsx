@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react';
 import SiteHeader from '@/components/site-header';
-import MissionGlobe from '@/components/mission-globe';
+import MissionGlobeScroll from '@/components/mission-globe-scroll';
 
 export default function AtlasMission() {
   const [heroVisible, setHeroVisible] = useState(false);
@@ -117,8 +117,8 @@ export default function AtlasMission() {
         </div>
       </section>
 
-      {/* Mission Globe */}
-      <MissionGlobe />
+      {/* Mission Globe Scroll */}
+      <MissionGlobeScroll />
 
       {/* Mission Editorial Section */}
       <section className="bg-[#fafafb] py-32">
