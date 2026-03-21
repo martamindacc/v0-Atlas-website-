@@ -149,11 +149,12 @@ export default function AtlasProfessional() {
       {/* Divider */}
       <div className="w-full bg-[#fafafb] py-16 md:py-20 lg:py-24">
         <div className="max-w-[1300px] mx-auto px-8">
-          <div className="relative flex items-center">
-            <div className="absolute left-0 right-1/2 h-px bg-neutral-300/40"></div>
-            <div className="relative flex w-1/2 justify-between px-0 text-xs text-neutral-400">
+          <div className="relative flex items-center justify-between">
+            <div className="absolute inset-x-0 h-px bg-neutral-300/40"></div>
+            <div className="relative flex justify-between w-full px-0 text-xs text-neutral-400">
               <span>0.1</span>
               <span>[0.2]</span>
+              <span>0.3</span>
             </div>
           </div>
         </div>
