@@ -94,27 +94,27 @@ export default function AtlasTeams() {
         <div className="absolute inset-0 flex items-center justify-end pr-12 z-10 pointer-events-none">
           <div className="flex flex-col gap-4 max-w-[420px] md:max-w-[420px] w-[90%] md:w-auto">
             {/* Bubble 1 - Atlas */}
-            <div className="bg-white/12 backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4">
+            <div className="bg-white/[0.45] backdrop-blur-lg border border-white/5 rounded-[18px] px-5 py-4">
               <div className="flex items-center gap-2 mb-1">
                 <div className="w-2 h-2 rounded-full backdrop-blur-sm" style={{ backgroundColor: 'rgba(56, 94, 113, 0.7)' }}></div>
                 <p className="text-xs font-medium text-white/70">Atlas</p>
               </div>
-              <p className="text-white/95 text-[15px] leading-relaxed">How do you feel about your high-stakes meeting tomorrow?</p>
+              <p className="text-white/95 text-[15px] leading-relaxed">Kris, how is the new team member integrating so far?</p>
             </div>
 
             {/* Bubble 2 - User */}
-            <div className="bg-white/12 backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4 ml-8">
-              <p className="text-xs font-medium text-white/70 mb-1">You</p>
-              <p className="text-white/95 text-[15px] leading-relaxed">My idea is solid, but I'm not sure the presentation will land. I expect pushback from Ana.</p>
+            <div className="bg-white/[0.45] backdrop-blur-lg border border-white/5 rounded-[18px] px-5 py-4 ml-8">
+              <p className="text-xs font-medium text-white/70 mb-1">Kris</p>
+              <p className="text-white/95 text-[15px] leading-relaxed">Strong on paper, but I'm not sure how well they're aligning with the team yet.</p>
             </div>
 
             {/* Bubble 3 - Atlas */}
-            <div className="bg-white/12 backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4">
+            <div className="bg-white/[0.45] backdrop-blur-lg border border-white/5 rounded-[18px] px-5 py-4">
               <div className="flex items-center gap-2 mb-1">
                 <div className="w-2 h-2 rounded-full backdrop-blur-sm" style={{ backgroundColor: 'rgba(56, 94, 113, 0.7)' }}></div>
                 <p className="text-xs font-medium text-white/70">Atlas</p>
               </div>
-              <p className="text-white/95 text-[15px] leading-relaxed">Your profile shows you hold many options open under pressure — it's an asset, but Ana may read it as hesitation. Can I share talking points that leverage your strengths so you feel more confident in the discussion?</p>
+              <p className="text-white/95 text-[15px] leading-relaxed">Their profile shows a preference for independent execution, while your team operates with frequent alignment loops — this can create early friction. Want me to suggest ways to integrate them faster?</p>
             </div>
           </div>
         </div>
