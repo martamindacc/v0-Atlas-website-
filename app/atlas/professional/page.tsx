@@ -114,7 +114,10 @@ export default function AtlasProfessional() {
           <div className="flex flex-col gap-4 max-w-[420px] md:max-w-[420px] w-[90%] md:w-auto">
             {/* Bubble 1 - Atlas */}
             <div className="bg-white/12 backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4">
-              <p className="text-xs font-medium text-white/70 mb-1">Atlas</p>
+              <div className="flex items-center gap-2 mb-1">
+                <p className="text-xs font-medium text-white/70">Atlas</p>
+                <div className="w-2 h-2 rounded-full backdrop-blur-sm" style={{ backgroundColor: 'rgba(56, 94, 113, 0.7)' }}></div>
+              </div>
               <p className="text-white/95 text-[15px] leading-relaxed">You have two new team members joining. Want to align on how to onboard them?</p>
             </div>
 
@@ -126,7 +129,10 @@ export default function AtlasProfessional() {
 
             {/* Bubble 3 - Atlas */}
             <div className="bg-white/12 backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4">
-              <p className="text-xs font-medium text-white/70 mb-1">Atlas</p>
+              <div className="flex items-center gap-2 mb-1">
+                <p className="text-xs font-medium text-white/70">Atlas</p>
+                <div className="w-2 h-2 rounded-full backdrop-blur-sm" style={{ backgroundColor: 'rgba(56, 94, 113, 0.7)' }}></div>
+              </div>
               <p className="text-white/95 text-[15px] leading-relaxed">You're approaching them the same way, but they operate differently. Want to adjust your approach?</p>
             </div>
           </div>
