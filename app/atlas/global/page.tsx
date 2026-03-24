@@ -91,30 +91,30 @@ export default function AtlasGlobal() {
         </div>
 
         {/* Chat Bubbles Overlay */}
-        <div className="absolute inset-0 flex items-end justify-end pb-24 pr-[28px] z-10 pointer-events-none md:pb-24 md:pr-[28px] sm:pb-6 sm:pr-4 sm:bottom-0 sm:left-0 sm:right-0 sm:flex sm:flex-col sm:items-center sm:justify-center">
-          <div className="flex flex-col gap-4 max-w-[420px] md:max-w-[420px] sm:w-[95%] sm:max-w-none">
+        <div className="absolute inset-0 flex items-end justify-end pb-24 pr-[28px] z-10 pointer-events-none">
+          <div className="flex flex-col gap-4 max-w-[420px]">
             {/* Bubble 1 - Atlas */}
-            <div className="bg-white/[0.06] backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4 md:px-5 md:py-4 sm:px-4 sm:py-3">
+            <div className="bg-white/[0.06] backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4">
               <div className="flex items-center gap-2 mb-1">
                 <div className="w-2 h-2 rounded-full backdrop-blur-sm" style={{ backgroundColor: 'rgba(56, 94, 113, 0.7)' }}></div>
-                <p className="text-xs font-medium text-white/70 sm:text-[12px]">Atlas</p>
+                <p className="text-xs font-medium text-white/70">Atlas</p>
               </div>
-              <p className="text-white/95 text-[15px] leading-relaxed md:text-[15px] sm:text-[14px]">Jane, how do you feel going into the global restructuring?</p>
+              <p className="text-white/95 text-[15px] leading-relaxed">Jane, how do you feel going into the global restructuring?</p>
             </div>
 
             {/* Bubble 2 - User */}
-            <div className="bg-white/[0.06] backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4 ml-8 md:ml-8 sm:ml-0 sm:px-4 sm:py-3">
-              <p className="text-xs font-medium text-white/70 mb-1 sm:text-[12px]">Jane</p>
-              <p className="text-white/95 text-[15px] leading-relaxed md:text-[15px] sm:text-[14px]">We're ready, but I'm worried about the impact on the global product teams.</p>
+            <div className="bg-white/[0.06] backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4 ml-8">
+              <p className="text-xs font-medium text-white/70 mb-1">Jane</p>
+              <p className="text-white/95 text-[15px] leading-relaxed">We're ready, but I'm worried about the impact on the global product teams.</p>
             </div>
 
             {/* Bubble 3 - Atlas */}
-            <div className="bg-white/[0.06] backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4 md:px-5 md:py-4 sm:px-4 sm:py-3">
+            <div className="bg-white/[0.06] backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4">
               <div className="flex items-center gap-2 mb-1">
                 <div className="w-2 h-2 rounded-full backdrop-blur-sm" style={{ backgroundColor: 'rgba(56, 94, 113, 0.7)' }}></div>
-                <p className="text-xs font-medium text-white/70 sm:text-[12px]">Atlas</p>
+                <p className="text-xs font-medium text-white/70">Atlas</p>
               </div>
-              <p className="text-white/95 text-[15px] leading-relaxed md:text-[15px] sm:text-[14px]">Based on recent stress patterns, teams in Germany and China are most overloaded. Do you want me to map where restructuring pressure will hit execution first — and where it's likely to stall?</p>
+              <p className="text-white/95 text-[15px] leading-relaxed">Based on recent stress patterns, teams in Germany and China are most overloaded. Do you want me to map where restructuring pressure will hit execution first — and where it's likely to stall?</p>
             </div>
           </div>
         </div>
