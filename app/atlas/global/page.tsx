@@ -91,7 +91,7 @@ export default function AtlasGlobal() {
         </div>
 
         {/* Chat Bubbles Overlay */}
-        <div className="absolute inset-0 flex items-center justify-end pr-12 z-10 pointer-events-none">
+        <div className="absolute inset-0 flex items-end justify-end pb-24 pr-12 z-10 pointer-events-none">
           <div className="flex flex-col gap-4 max-w-[420px] md:max-w-[420px] w-[90%] md:w-auto">
             {/* Bubble 1 - Atlas */}
             <div className="bg-white/[0.06] backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4">
