@@ -54,7 +54,7 @@ export default function Home() {
     }
   }, [parallaxOffset]);
   return (
-    <main style={{ backgroundColor: "#fafafb" }}>
+    <main className="overflow-x-hidden" style={{ backgroundColor: "#fafafb" }}>
       <SiteHeader />
 
       {/* Section 1 — Full-screen hero */}
@@ -74,10 +74,10 @@ export default function Home() {
         {/* Text overlay */}
         <div className="absolute inset-0 flex items-center justify-center z-10">
           <div className="text-center max-w-3xl px-6">
-            <h1 className="text-[clamp(2.5rem,6vw,5rem)] font-semibold leading-[1.1] tracking-tight text-white mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
+            <h1 className="text-[clamp(2rem,6vw,5rem)] font-semibold leading-[1.1] tracking-tight text-white mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
               People Intelligence for Every Decision
             </h1>
-            <p className="text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-2xl mx-auto" style={{ fontFamily: "Inter, sans-serif" }}>
+            <p className="text-[clamp(0.875rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-2xl mx-auto" style={{ fontFamily: "Inter, sans-serif" }}>
               Atlas models how people think, decide, and collaborate — supporting teamwork and organizational change at scale.
             </p>
           </div>
@@ -86,7 +86,7 @@ export default function Home() {
 
       {/* Section 2 — Big central statement */}
       <section
-        className="w-full flex items-center justify-center px-6 pt-24 pb-6"
+        className="w-full flex items-center justify-center px-4 md:px-6 pt-16 md:pt-24 pb-6"
         style={{ backgroundColor: "#fafafb" }}
       >
         <div
@@ -96,7 +96,7 @@ export default function Home() {
           }`}
         >
           <h2
-            className="font-sans text-[86px] leading-[1.02] tracking-[-0.045em] font-semibold"
+            className="font-sans text-[clamp(2rem,8vw,86px)] leading-[1.02] tracking-[-0.045em] font-semibold"
             style={{
               color: "#1d1f2b",
               fontFamily: "Inter, sans-serif",
@@ -105,7 +105,7 @@ export default function Home() {
             Better decisions start with better inputs
           </h2>
           <p
-            className="mt-6 mb-12 text-lg md:text-xl text-[#475569] max-w-2xl mx-auto leading-relaxed"
+            className="mt-4 md:mt-6 mb-8 md:mb-12 text-base md:text-xl text-[#475569] max-w-2xl mx-auto leading-relaxed"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
             Atlas powers real-time, AI-driven people decisions across your organization — from strategic planning to day-to-day execution.
@@ -114,8 +114,8 @@ export default function Home() {
       </section>
 
       {/* Section 4 — ATLAS system */}
-      <section className="bg-[#fafafb] pt-0 pb-[160px]">
-        <div className="w-full px-6">
+      <section className="bg-[#fafafb] pt-0 pb-20 md:pb-[160px]">
+        <div className="w-full px-4 md:px-6">
 
           {/* Atlas System Label */}
           <div
@@ -124,21 +124,21 @@ export default function Home() {
               atlasSystemVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
             }`}
           >
-            <div className="w-full flex flex-wrap justify-center items-center gap-x-3 gap-y-2 mt-6 mb-40 text-[15px] tracking-[-0.01em] text-[#374151] font-medium">
-              <span className="px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Leadership Modeling</span>
-              <span className="text-[#D1D5DB]">—</span>
-              <span className="px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Team Dynamics</span>
-              <span className="text-[#D1D5DB]">—</span>
-              <span className="px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Execution Support</span>
-              <span className="text-[#D1D5DB]">—</span>
-              <span className="px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Talent Composition</span>
-              <span className="text-[#D1D5DB]">—</span>
-              <span className="px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Decision Flow</span>
-              <span className="text-[#D1D5DB]">—</span>
-              <span className="px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Succession Planning</span>
+            <div className="w-full flex flex-wrap justify-center items-center gap-x-2 md:gap-x-3 gap-y-2 mt-6 mb-16 md:mb-40 text-[13px] md:text-[15px] tracking-[-0.01em] text-[#374151] font-medium">
+              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Leadership Modeling</span>
+              <span className="text-[#D1D5DB] hidden md:inline">—</span>
+              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Team Dynamics</span>
+              <span className="text-[#D1D5DB] hidden md:inline">—</span>
+              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Execution Support</span>
+              <span className="text-[#D1D5DB] hidden md:inline">—</span>
+              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Talent Composition</span>
+              <span className="text-[#D1D5DB] hidden md:inline">—</span>
+              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Decision Flow</span>
+              <span className="text-[#D1D5DB] hidden md:inline">—</span>
+              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Succession Planning</span>
             </div>
             <h3
-              className="text-[28px] font-medium tracking-tight text-neutral-900 mb-6"
+              className="text-[22px] md:text-[28px] font-medium tracking-tight text-neutral-900 mb-6"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
               The Atlas System
@@ -164,15 +164,15 @@ export default function Home() {
             },
           ].map((module) => (
             <Link href={module.href} key={module.title} className="block">
-              <div className="mx-4 h-px bg-black/10 opacity-60" />
+              <div className="mx-2 md:mx-4 h-px bg-black/10 opacity-60" />
               <div
-                className="group -mx-[16px] px-[16px] cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7]"
+                className="group -mx-[8px] md:-mx-[16px] px-[8px] md:px-[16px] cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7]"
               >
-                <div className="max-w-[1200px] mx-auto py-[80px] grid grid-cols-12 gap-x-12">
+                <div className="max-w-[1200px] mx-auto py-10 md:py-[80px] flex flex-col md:grid md:grid-cols-12 gap-4 md:gap-x-12">
                   {/* Left — description */}
-                  <div className="col-span-5">
+                  <div className="md:col-span-5 order-2 md:order-1">
                     <p
-                      className="text-[20px] leading-relaxed max-w-[520px] whitespace-pre-line"
+                      className="text-[16px] md:text-[20px] leading-relaxed max-w-[520px] whitespace-pre-line"
                       style={{ fontFamily: "Inter, sans-serif", color: "#383838" }}
                     >
                       {module.description}
@@ -180,9 +180,9 @@ export default function Home() {
                   </div>
 
                   {/* Right — product name */}
-                  <div className="col-span-7 flex items-center justify-end overflow-hidden">
+                  <div className="md:col-span-7 flex items-center md:justify-end overflow-hidden order-1 md:order-2">
                     <span
-                      className="inline-block text-[72px] font-medium tracking-tight text-right transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em] will-change-transform"
+                      className="inline-block text-[32px] md:text-[72px] font-medium tracking-tight md:text-right transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em] will-change-transform"
                       style={{ color: "#1e1f2b", fontFamily: "Inter, sans-serif" }}
                     >
                       {module.title}
@@ -194,30 +194,32 @@ export default function Home() {
           ))}
 
           {/* Last row bottom border */}
-          <div className="mx-4 h-px bg-black/10 opacity-60" />
+          <div className="mx-2 md:mx-4 h-px bg-black/10 opacity-60" />
         </div>
       </section>
       {/* Section 3 — Human intelligence, understood by machines */}
-      <section className="w-full bg-[#efefef] py-[140px]">
-        <div className="max-w-[1200px] mx-auto px-6">
-          <div className="grid grid-cols-12 gap-x-12 items-start">
+      <section className="w-full bg-[#efefef] py-16 md:py-[140px]">
+        <div className="max-w-[1200px] mx-auto px-4 md:px-6">
+          <div className="flex flex-col md:grid md:grid-cols-12 gap-8 md:gap-x-12 items-start">
             {/* Left — headline */}
-            <div className="col-span-6 flex flex-col justify-between">
+            <div className="md:col-span-6 flex flex-col justify-between">
               <h2
-                className="text-[52px] font-medium tracking-tight text-neutral-900 max-w-[520px]"
+                className="text-[32px] md:text-[52px] font-medium tracking-tight text-neutral-900 max-w-[520px]"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
                 Human intelligence,<br />amplified.
               </h2>
-              <p className="text-[12px] text-[#6B7280]">© 2026 Mindacc. All rights reserved.</p>
+              <p className="text-[12px] text-[#6B7280] mt-8 md:mt-0 hidden md:block">© 2026 Mindacc. All rights reserved.</p>
             </div>
 
             {/* Right — explanatory text */}
-            <div className="col-span-5 col-start-8 text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-6">
+            <div className="md:col-span-5 md:col-start-8 text-[16px] md:text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-4 md:space-y-6">
               <p>Atlas understands how people think and work across your organization — anticipating patterns, revealing misalignment, and helping you act with precision when it matters.</p>
               <p>Always on. Always in context.</p>
               <p>Built to support how work actually unfolds.</p>
             </div>
+            
+            <p className="text-[12px] text-[#6B7280] md:hidden">© 2026 Mindacc. All rights reserved.</p>
           </div>
         </div>
       </section>
