@@ -114,35 +114,20 @@ export default function AtlasProfessional() {
           <div className="flex flex-col gap-4 max-w-[420px] md:max-w-[420px] w-[90%] md:w-auto">
             {/* Bubble 1 - Atlas */}
             <div className="bg-white/12 backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4">
-              <div className="flex gap-3 items-start">
-                <div className="w-8 h-8 rounded-full flex-shrink-0" style={{ backgroundColor: '#385e71' }}></div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-xs font-medium text-white/70 mb-1">Atlas</p>
-                  <p className="text-white/95 text-[15px] leading-relaxed">You have two new team members joining. Want to align on how to onboard them?</p>
-                </div>
-              </div>
+              <p className="text-xs font-medium text-white/70 mb-1">Atlas</p>
+              <p className="text-white/95 text-[15px] leading-relaxed">You have two new team members joining. Want to align on how to onboard them?</p>
             </div>
 
             {/* Bubble 2 - User */}
             <div className="bg-white/12 backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4 ml-8">
-              <div className="flex gap-3 items-start">
-                <div className="w-8 h-8 rounded-full flex-shrink-0 bg-white/30"></div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-xs font-medium text-white/70 mb-1">You</p>
-                  <p className="text-white/95 text-[15px] leading-relaxed">One is ramping well, but the other isn't clicking. I'm not sure what's off.</p>
-                </div>
-              </div>
+              <p className="text-xs font-medium text-white/70 mb-1">You</p>
+              <p className="text-white/95 text-[15px] leading-relaxed">One is ramping well, but the other isn't clicking. I'm not sure what's off.</p>
             </div>
 
             {/* Bubble 3 - Atlas */}
             <div className="bg-white/12 backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4">
-              <div className="flex gap-3 items-start">
-                <div className="w-8 h-8 rounded-full flex-shrink-0" style={{ backgroundColor: '#385e71' }}></div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-xs font-medium text-white/70 mb-1">Atlas</p>
-                  <p className="text-white/95 text-[15px] leading-relaxed">You're approaching them the same way, but they operate differently. Want to adjust your approach?</p>
-                </div>
-              </div>
+              <p className="text-xs font-medium text-white/70 mb-1">Atlas</p>
+              <p className="text-white/95 text-[15px] leading-relaxed">You're approaching them the same way, but they operate differently. Want to adjust your approach?</p>
             </div>
           </div>
         </div>
