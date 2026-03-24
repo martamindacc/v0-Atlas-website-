@@ -113,7 +113,7 @@ export default function AtlasProfessional() {
         <div className="absolute inset-0 flex items-center justify-end pr-12 z-10 pointer-events-none">
           <div className="flex flex-col gap-4 max-w-[420px] md:max-w-[420px] w-[90%] md:w-auto">
             {/* Bubble 1 - Atlas */}
-            <div className="bg-white/[0.45] backdrop-blur-lg border border-white/5 rounded-[18px] px-5 py-4">
+            <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4">
               <div className="flex items-center gap-2 mb-1">
                 <div className="w-2 h-2 rounded-full backdrop-blur-sm" style={{ backgroundColor: 'rgba(56, 94, 113, 0.7)' }}></div>
                 <p className="text-xs font-medium text-white/70">Atlas</p>
@@ -122,13 +122,13 @@ export default function AtlasProfessional() {
             </div>
 
             {/* Bubble 2 - User */}
-            <div className="bg-white/[0.45] backdrop-blur-lg border border-white/5 rounded-[18px] px-5 py-4 ml-8">
+            <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4 ml-8">
               <p className="text-xs font-medium text-white/70 mb-1">You</p>
               <p className="text-white/95 text-[15px] leading-relaxed">My idea is solid, but I'm not sure the presentation will land. I expect pushback from Ana.</p>
             </div>
 
             {/* Bubble 3 - Atlas */}
-            <div className="bg-white/[0.45] backdrop-blur-lg border border-white/5 rounded-[18px] px-5 py-4">
+            <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4">
               <div className="flex items-center gap-2 mb-1">
                 <div className="w-2 h-2 rounded-full backdrop-blur-sm" style={{ backgroundColor: 'rgba(56, 94, 113, 0.7)' }}></div>
                 <p className="text-xs font-medium text-white/70">Atlas</p>
