@@ -263,18 +263,18 @@ export default function SiteHeader() {
 
           {/* Right — Controls cluster */}
           <div className="flex items-center gap-3">
-            {/* Get Started CTA */}
+            {/* Get Started CTA - hidden on mobile */}
             <button
               onClick={() => setIsContactOpen(true)}
-              className="flex items-center justify-center min-w-[190px] border border-black/30 bg-white/80 text-[#1e1f2b] text-[15px] font-normal tracking-tight px-8 h-[40px] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
+              className="hidden md:flex items-center justify-center min-w-[190px] border border-black/30 bg-white/80 text-[#1e1f2b] text-[15px] font-normal tracking-tight px-8 h-[40px] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
             >
               Get Started
             </button>
 
-            {/* Search icon */}
+            {/* Search icon - hidden on mobile */}
             <button
               onClick={() => setIsSearchOpen(true)}
-              className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
+              className="hidden md:flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
               aria-label="Search"
             >
               <svg
@@ -350,12 +350,9 @@ export default function SiteHeader() {
 
       {/* Navigation drawer */}
       <div
-        className={`fixed right-0 top-0 z-50 h-screen bg-[#fafafb] shadow-[-8px_0_24px_rgba(0,0,0,0.06)] transition-transform duration-220 ease-out ${
+        className={`fixed right-0 top-0 z-50 h-screen w-full md:w-[45vw] bg-[#fafafb] shadow-[-8px_0_24px_rgba(0,0,0,0.06)] transition-transform duration-220 ease-out ${
           isDrawerOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
-        style={{
-          width: '45vw',
-        }}
       >
         {/* Drawer header controls */}
         <div className="flex items-center justify-end gap-3 h-[67px] px-8">
