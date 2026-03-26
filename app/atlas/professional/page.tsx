@@ -100,17 +100,17 @@ export default function AtlasProfessional() {
         >
           <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/product_pro-ijCm9qkPopmgIfPyr8zbDEWDSnZLFR.mp4" type="video/mp4" />
         </video>
-        <div className="absolute bottom-16 left-16 z-20 pointer-events-none md:bottom-16 md:left-16 sm:bottom-8 sm:left-6">
-          <h1 className="font-sans text-[88px] leading-[0.95] tracking-[-0.035em] font-semibold text-white md:text-[88px] sm:text-[48px] xs:text-[36px]">
+        <div className="absolute bottom-8 left-4 md:bottom-16 md:left-16 z-20 pointer-events-none">
+          <h1 className="font-sans text-[36px] md:text-[88px] leading-[0.95] tracking-[-0.035em] font-semibold text-white">
             Atlas Professional
           </h1>
-          <p className="text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-2xl md:text-[clamp(1rem,2vw,1.25rem)] sm:text-[14px]" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
+          <p className="text-[14px] md:text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-[280px] md:max-w-2xl" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
             Make better people decisions — with clarity on how others think, respond, and work.
           </p>
         </div>
 
-        {/* Chat Bubbles Overlay */}
-        <div className="absolute inset-0 flex items-end justify-end pb-24 pr-[28px] z-10 pointer-events-none">
+        {/* Chat Bubbles Overlay - hidden on mobile */}
+        <div className="hidden md:flex absolute inset-0 items-end justify-end pb-24 pr-[28px] z-10 pointer-events-none">
           <div className="flex flex-col gap-4 max-w-[420px]">
             {/* Bubble 1 - Atlas */}
             <div className="bg-white/[0.06] backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4">
