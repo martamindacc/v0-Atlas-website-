@@ -476,13 +476,12 @@ export default function SiteHeader() {
 
       {/* Contact Form drawer */}
       <div
-        className={`fixed right-0 top-0 z-50 h-screen overflow-y-auto bg-[#fafafb] shadow-[-8px_0_24px_rgba(0,0,0,0.06)] transition-transform duration-220 ease-out ${
+        className={`fixed right-0 top-0 z-50 h-screen w-full md:w-[clamp(460px,45vw,640px)] overflow-y-auto bg-[#fafafb] shadow-[-8px_0_24px_rgba(0,0,0,0.06)] transition-transform duration-220 ease-out ${
           isContactOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
-        style={{ width: 'clamp(460px, 45vw, 640px)' }}
       >
         {/* Drawer header controls */}
-        <div className="flex items-center justify-between h-[67px] px-8">
+        <div className="flex items-center justify-between h-[67px] px-4 md:px-8">
           <div
             className="text-[12px] uppercase tracking-[0.11em] text-[#7B8087]"
             style={{ fontFamily: "Inter, sans-serif" }}
@@ -498,9 +497,9 @@ export default function SiteHeader() {
         </div>
 
         {/* Form container */}
-        <div className="px-[48px] pt-6 md:pt-8 pb-12">
+        <div className="px-6 md:px-[48px] pt-6 md:pt-8 pb-12">
           <h2
-            className="text-[34px] font-medium tracking-tight text-neutral-900 mb-[48px]"
+            className="text-[24px] md:text-[34px] font-medium tracking-tight text-neutral-900 mb-8 md:mb-[48px]"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
             Interested in solving your problems with Atlas?
@@ -602,10 +601,9 @@ export default function SiteHeader() {
 
       {/* Search drawer */}
       <div
-        className={`fixed right-0 top-0 z-50 h-screen bg-[#fafafb] shadow-[-8px_0_24px_rgba(0,0,0,0.06)] transition-transform duration-220 ease-out ${
+        className={`fixed right-0 top-0 z-50 h-screen w-full md:w-[clamp(460px,45vw,640px)] bg-[#fafafb] shadow-[-8px_0_24px_rgba(0,0,0,0.06)] transition-transform duration-220 ease-out ${
           isSearchOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
-        style={{ width: 'clamp(460px, 45vw, 640px)' }}
       >
         {/* Drawer header */}
         <div className="flex items-center justify-end gap-3 h-[67px] px-8">
@@ -627,7 +625,7 @@ export default function SiteHeader() {
         </div>
 
         {/* Search content */}
-        <div className="px-[48px] pt-6 pb-12">
+        <div className="px-6 md:px-[48px] pt-6 pb-12">
           <input
             type="text"
             placeholder="Search..."
