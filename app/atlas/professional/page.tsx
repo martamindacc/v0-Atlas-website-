@@ -139,35 +139,6 @@ export default function AtlasProfessional() {
         </div>
       </section>
 
-      {/* Mobile Chat Bubbles - shown only on mobile, below hero */}
-      <section className="md:hidden bg-[#1e2124] py-8 px-4">
-        <div className="flex flex-col gap-4 max-w-full">
-          {/* Bubble 1 - Atlas */}
-          <div className="bg-white/[0.06] backdrop-blur-md border border-white/10 rounded-[18px] px-4 py-3">
-            <div className="flex items-center gap-2 mb-1">
-              <div className="w-2 h-2 rounded-full" style={{ backgroundColor: 'rgba(56, 94, 113, 0.7)' }}></div>
-              <p className="text-xs font-medium text-white/70">Atlas</p>
-            </div>
-            <p className="text-white/95 text-[14px] leading-relaxed">How do you feel about your high-stakes meeting tomorrow?</p>
-          </div>
-
-          {/* Bubble 2 - User */}
-          <div className="bg-white/[0.06] backdrop-blur-md border border-white/10 rounded-[18px] px-4 py-3 ml-4">
-            <p className="text-xs font-medium text-white/70 mb-1">You</p>
-            <p className="text-white/95 text-[14px] leading-relaxed">My idea is solid, but I'm not sure the presentation will land. I expect pushback from Ana.</p>
-          </div>
-
-          {/* Bubble 3 - Atlas */}
-          <div className="bg-white/[0.06] backdrop-blur-md border border-white/10 rounded-[18px] px-4 py-3">
-            <div className="flex items-center gap-2 mb-1">
-              <div className="w-2 h-2 rounded-full" style={{ backgroundColor: 'rgba(56, 94, 113, 0.7)' }}></div>
-              <p className="text-xs font-medium text-white/70">Atlas</p>
-            </div>
-            <p className="text-white/95 text-[14px] leading-relaxed">Your profile shows you hold many options open under pressure — it's an asset, but Ana may read it as hesitation. Can I share talking points that leverage your strengths so you feel more confident in the discussion?</p>
-          </div>
-        </div>
-      </section>
-
       {/* Section 2 — Editorial product section */}
       <section className="bg-[#fafafb] pb-[60px] md:pb-[100px] pt-16 md:pt-32 lg:pt-36">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-24 overflow-x-clip">
