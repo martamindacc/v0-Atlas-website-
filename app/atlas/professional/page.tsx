@@ -139,15 +139,44 @@ export default function AtlasProfessional() {
         </div>
       </section>
 
+      {/* Mobile Chat Bubbles - shown only on mobile, below hero */}
+      <section className="md:hidden bg-[#1e2124] py-8 px-4">
+        <div className="flex flex-col gap-4 max-w-full">
+          {/* Bubble 1 - Atlas */}
+          <div className="bg-white/[0.06] backdrop-blur-md border border-white/10 rounded-[18px] px-4 py-3">
+            <div className="flex items-center gap-2 mb-1">
+              <div className="w-2 h-2 rounded-full" style={{ backgroundColor: 'rgba(56, 94, 113, 0.7)' }}></div>
+              <p className="text-xs font-medium text-white/70">Atlas</p>
+            </div>
+            <p className="text-white/95 text-[14px] leading-relaxed">How do you feel about your high-stakes meeting tomorrow?</p>
+          </div>
+
+          {/* Bubble 2 - User */}
+          <div className="bg-white/[0.06] backdrop-blur-md border border-white/10 rounded-[18px] px-4 py-3 ml-4">
+            <p className="text-xs font-medium text-white/70 mb-1">You</p>
+            <p className="text-white/95 text-[14px] leading-relaxed">My idea is solid, but I'm not sure the presentation will land. I expect pushback from Ana.</p>
+          </div>
+
+          {/* Bubble 3 - Atlas */}
+          <div className="bg-white/[0.06] backdrop-blur-md border border-white/10 rounded-[18px] px-4 py-3">
+            <div className="flex items-center gap-2 mb-1">
+              <div className="w-2 h-2 rounded-full" style={{ backgroundColor: 'rgba(56, 94, 113, 0.7)' }}></div>
+              <p className="text-xs font-medium text-white/70">Atlas</p>
+            </div>
+            <p className="text-white/95 text-[14px] leading-relaxed">Your profile shows you hold many options open under pressure — it's an asset, but Ana may read it as hesitation. Can I share talking points that leverage your strengths so you feel more confident in the discussion?</p>
+          </div>
+        </div>
+      </section>
+
       {/* Section 2 — Editorial product section */}
-      <section className="bg-[#fafafb] pb-[100px] pt-24 md:pt-32 lg:pt-36">
-        <div className="max-w-[1300px] mx-auto px-8 grid grid-cols-2 gap-24 overflow-x-clip">
+      <section className="bg-[#fafafb] pb-[60px] md:pb-[100px] pt-16 md:pt-32 lg:pt-36">
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-24 overflow-x-clip">
 
           {/* LEFT COLUMN (HEADER) */}
           <div
-            className={`sticky top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
+            className={`md:sticky md:top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
           >
-            <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
+            <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
               <span
                 data-text="Meet your thinking partner"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
@@ -156,14 +185,14 @@ export default function AtlasProfessional() {
           </div>
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
-          <div className="min-h-[140vh] min-w-0">
-            <div className="text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
+          <div className="md:min-h-[140vh] min-w-0">
+            <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
                 Atlas helps you think through high-stakes problems that don't have obvious answers — from strategic choices and tough trade-offs to difficult conversations and career-defining moves.
               </p>
             </div>
 
-            <div className="mt-16">
+            <div className="mt-8 md:mt-16">
               <img
                 src="/images/atlas_individual_outcomes.svg"
                 alt="Atlas thinking partner"
@@ -190,14 +219,14 @@ export default function AtlasProfessional() {
       </div>
 
       {/* Section 3 — Editorial product section */}
-      <section className="bg-[#fafafb] pt-[100px] pb-48">
-        <div className="max-w-[1300px] mx-auto px-8 grid grid-cols-2 gap-24 overflow-x-clip">
+      <section className="bg-[#fafafb] pt-16 md:pt-[100px] pb-24 md:pb-48">
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-24 overflow-x-clip">
 
           {/* LEFT COLUMN (HEADER) */}
           <div
-            className={`sticky top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
+            className={`md:sticky md:top-32 self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
           >
-            <h3 className="font-sans text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
+            <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
               <span
                 data-text="Surface your competitive edge — in the moments that matter most"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
@@ -206,8 +235,8 @@ export default function AtlasProfessional() {
           </div>
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
-          <div className="min-h-[140vh] min-w-0">
-            <div className="text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
+          <div className="md:min-h-[140vh] min-w-0">
+            <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
                 Atlas adapts to how you naturally reason, anticipate your next question, and sharpen your judgment — so every decision lands with greater clarity, confidence, and speed.
               </p>
@@ -225,7 +254,7 @@ export default function AtlasProfessional() {
               </p>
             </div>
 
-            <div className="mt-16">
+            <div className="mt-8 md:mt-16">
               <img
                 src="/images/atlas_capability_colleagues.svg"
                 alt="Atlas competitive edge"
@@ -238,43 +267,45 @@ export default function AtlasProfessional() {
       </section>
 
       {/* CTA Section */}
-      <section className="w-full bg-[#fafafb] py-[100px] md:py-[140px]">
-        <div className="max-w-[1300px] mx-auto px-8 flex flex-col items-center text-center">
-          <h2 className="font-sans text-[56px] md:text-[64px] leading-[1.1] tracking-[-0.03em] font-medium text-[#202426] mb-6">
+      <section className="w-full bg-[#fafafb] py-16 md:py-[140px]">
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col items-center text-center">
+          <h2 className="font-sans text-[32px] md:text-[64px] leading-[1.1] tracking-[-0.03em] font-medium text-[#202426] mb-4 md:mb-6">
             Start making better people decisions
           </h2>
-          <p className="text-[20px] leading-[1.6] text-[#4f4f4f] max-w-[600px] mb-12">
+          <p className="text-[16px] md:text-[20px] leading-[1.6] text-[#4f4f4f] max-w-[600px] mb-8 md:mb-12">
             Orient. Adapt. Act — with clarity.
           </p>
           <a
             href="/get-started"
-            className="inline-block px-8 py-4 bg-[#202426] text-white font-medium rounded-md hover:bg-[#1a1b22] transition-colors"
+            className="inline-block px-6 md:px-8 py-3 md:py-4 bg-[#202426] text-white font-medium rounded-md hover:bg-[#1a1b22] transition-colors"
           >
             Get started
           </a>
         </div>
       </section>
 
-      <section className="w-full bg-[#efefef] py-[140px]">
-        <div className="max-w-[1200px] mx-auto px-6">
-          <div className="grid grid-cols-12 gap-x-12 items-start">
+      <section className="w-full bg-[#efefef] py-16 md:py-[140px]">
+        <div className="max-w-[1200px] mx-auto px-4 md:px-6">
+          <div className="flex flex-col md:grid md:grid-cols-12 gap-8 md:gap-x-12 items-start">
             {/* Left — headline */}
-            <div className="col-span-6 flex flex-col justify-between">
+            <div className="md:col-span-6 flex flex-col justify-between">
               <h2
-                className="text-[52px] font-medium tracking-tight text-neutral-900 max-w-[520px]"
+                className="text-[32px] md:text-[52px] font-medium tracking-tight text-neutral-900 max-w-[520px]"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
                 Human intelligence,<br />amplified.
               </h2>
-              <p className="text-[12px] text-[#6B7280]">© 2026 Mindacc. All rights reserved.</p>
+              <p className="text-[12px] text-[#6B7280] mt-8 hidden md:block">© 2026 Mindacc. All rights reserved.</p>
             </div>
 
             {/* Right — explanatory text */}
-            <div className="col-span-5 col-start-8 text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-6">
+            <div className="md:col-span-5 md:col-start-8 text-[16px] md:text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-4 md:space-y-6">
               <p>Atlas understands how people think and work across your organization — anticipating patterns, revealing misalignment, and helping you act with precision when it matters.</p>
               <p>Always on. Always in context.</p>
               <p>Built to support how work actually unfolds.</p>
             </div>
+            
+            <p className="text-[12px] text-[#6B7280] md:hidden">© 2026 Mindacc. All rights reserved.</p>
           </div>
         </div>
       </section>
