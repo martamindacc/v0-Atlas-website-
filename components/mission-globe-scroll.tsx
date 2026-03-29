@@ -141,7 +141,7 @@ export default function MissionGlobeScroll() {
           if (!Number.isNaN(idx)) setActiveIndex(idx);
         }
       },
-      { threshold: 0.62 }
+      { threshold: [0.1, 0.3, 0.5, 0.62] }
     );
 
     stepRefs.current.forEach((el) => el && observer.observe(el));
@@ -222,7 +222,7 @@ export default function MissionGlobeScroll() {
               stepRefs.current[i] = el;
             }}
             data-index={i}
-            className="h-[50vh] md:h-[88vh] w-full"
+            className="h-[40vh] md:h-[88vh] w-full"
           />
         ))}
       </div>
