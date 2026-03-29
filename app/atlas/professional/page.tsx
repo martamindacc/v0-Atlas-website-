@@ -104,8 +104,12 @@ export default function AtlasProfessional() {
           <h1 className="font-sans text-[36px] md:text-[88px] leading-[0.95] tracking-[-0.035em] font-semibold text-white">
             Atlas Professional
           </h1>
+          <p className="block md:hidden text-[13px] leading-[1.5] text-white/80 max-w-[280px] font-semibold" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.5rem" }}>
+            Decisions break where understanding of people is incomplete.
+          </p>
           <p className="text-[14px] md:text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-[280px] md:max-w-2xl" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
-            Make better people decisions — with clarity on how others think, respond, and work.
+            <span className="hidden md:inline">Make better people decisions — with clarity on how others think, respond, and work.</span>
+            <span className="block md:hidden">Atlas maps how people think, respond, and execute — in real time.</span>
           </p>
         </div>
 
