@@ -89,14 +89,14 @@ export default function AtlasMission() {
       <SiteHeader />
 
       {/* Hero */}
-      <section className="relative h-screen w-full overflow-hidden bg-[#e5e5e5]">
+      <section className="relative h-[60vh] md:h-screen w-full overflow-hidden bg-[#e5e5e5]">
         <img
           ref={heroImageRef}
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cog1-CmUG27pwNrSS461m6T1rwIV7KU7Tig.jpg"
           alt="Mission"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute bottom-8 left-4 md:bottom-16 md:left-16 z-10 pointer-events-none">
+        <div className="absolute bottom-6 left-4 md:bottom-16 md:left-16 z-10 pointer-events-none">
           <h1 className="font-sans text-[36px] md:text-[88px] leading-[0.95] tracking-[-0.035em] font-semibold text-white">
             Mission
           </h1>
