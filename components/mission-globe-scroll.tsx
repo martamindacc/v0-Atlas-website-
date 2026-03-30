@@ -197,14 +197,14 @@ export default function MissionGlobeScroll() {
               return (
                 <article
                   key={story.title}
-                  className={`absolute max-w-[760px] text-center transition-all duration-500 ease-out ${
+                  className={`absolute max-w-[380px] md:max-w-[760px] text-center transition-all duration-500 ease-out px-4 md:px-7 ${
                     active ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-6 scale-[0.985]"
                   }`}
                 >
-                  <h3 className="mb-4 font-sans text-sm font-semibold uppercase tracking-[0.18em] text-[#1a1a1a]/80">
+                  <h3 className="mb-2 md:mb-4 font-sans text-xs md:text-sm font-semibold uppercase tracking-[0.18em] text-[#1a1a1a]/80">
                     {story.title}
                   </h3>
-                  <p className="text-[24px] leading-[1.75]" style={{color: '#202426'}}>
+                  <p className="text-[16px] md:text-[24px] leading-[1.6] md:leading-[1.75]" style={{color: '#202426'}}>
                     {story.body}
                   </p>
                 </article>
