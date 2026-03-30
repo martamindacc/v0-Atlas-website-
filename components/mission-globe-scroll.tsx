@@ -150,7 +150,7 @@ export default function MissionGlobeScroll() {
 
   return (
     <section className="relative w-full bg-[#fafafb]">
-      <div className="sticky top-0 z-0 flex h-screen md:h-screen items-center justify-center">
+      <div className="sticky top-0 z-0 flex h-[60vh] md:h-screen items-center justify-center">
         <div className="relative aspect-square w-[min(78vw,980px)]">
           <svg viewBox="0 0 1000 1000" className="h-full w-full" aria-hidden="true">
             <defs>
