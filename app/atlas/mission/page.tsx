@@ -106,7 +106,7 @@ export default function AtlasMission() {
       {/* Section 1 — Concept hero text */}
       <section
         ref={heroRef}
-        className="bg-[#fafafb] py-16 md:py-40 flex items-center justify-center"
+        className="bg-[#fafafb] py-12 md:py-40 flex items-center justify-center"
       >
         <div className="max-w-[1100px] mx-auto px-4 md:px-8 text-center">
           <h2 className={`font-sans text-[28px] md:text-[68px] leading-[1.1] md:leading-[1.03] tracking-[-0.04em] font-medium text-[#111] transition-all duration-[900ms] ease-out ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}>
