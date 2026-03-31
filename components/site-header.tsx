@@ -263,34 +263,19 @@ export default function SiteHeader() {
 
           {/* Right — Controls cluster */}
           <div className="flex items-center gap-3">
+            {/* Log In - hidden on mobile */}
+            <button
+              className="hidden md:flex items-center justify-center min-w-[120px] border border-black/30 bg-white/80 text-[#1e1f2b] text-[15px] font-normal tracking-tight px-8 h-[40px] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
+            >
+              Log in
+            </button>
+
             {/* Get Started CTA - hidden on mobile */}
             <button
               onClick={() => setIsContactOpen(true)}
               className="hidden md:flex items-center justify-center min-w-[190px] border border-black/30 bg-white/80 text-[#1e1f2b] text-[15px] font-normal tracking-tight px-8 h-[40px] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
             >
               Get Started
-            </button>
-
-            {/* Search icon - hidden on mobile */}
-            <button
-              onClick={() => setIsSearchOpen(true)}
-              className="hidden md:flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
-              aria-label="Search"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <circle cx="11" cy="11" r="8" />
-                <line x1="21" y1="21" x2="16.65" y2="16.65" />
-              </svg>
             </button>
 
             {/* Menu icon */}
