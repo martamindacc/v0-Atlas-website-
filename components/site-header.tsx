@@ -265,7 +265,7 @@ export default function SiteHeader() {
           <div className="flex items-center gap-3">
             {/* Log In - hidden on mobile */}
             <button
-              className="hidden md:flex items-center justify-center min-w-[120px] bg-transparent text-black/70 text-[15px] font-normal tracking-tight px-8 h-[40px] hover:bg-black/5 hover:text-black/100 transition-colors cursor-pointer"
+              className="hidden md:flex items-center justify-center min-w-[120px] border border-black/15 bg-transparent text-black/70 text-[15px] font-normal tracking-tight px-8 h-[40px] hover:bg-black/5 hover:border-black/25 hover:text-black/100 transition-colors cursor-pointer"
             >
               Log in
             </button>
