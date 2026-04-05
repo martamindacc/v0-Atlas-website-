@@ -353,7 +353,7 @@ export default function SiteHeader() {
           </button>
 
           <button
-            className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
+            className="hidden flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
             aria-label="Search"
           >
             <svg
@@ -581,52 +581,6 @@ export default function SiteHeader() {
                 Submit
               </button>
             </div>
-        </div>
-      </div>
-
-      {/* Search drawer */}
-      <div
-        className={`fixed right-0 top-0 z-50 h-screen w-full md:w-[clamp(460px,45vw,640px)] bg-[#fafafb] shadow-[-8px_0_24px_rgba(0,0,0,0.06)] transition-transform duration-220 ease-out ${
-          isSearchOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
-      >
-        {/* Drawer header */}
-        <div className="flex items-center justify-end gap-3 h-[67px] px-8">
-          <button
-            onClick={() => {
-              setIsSearchOpen(false);
-              setIsContactOpen(true);
-            }}
-            className="flex items-center justify-center min-w-[190px] border border-black/30 bg-white/80 text-[#1e1f2b] text-[15px] font-normal tracking-tight px-8 h-[40px] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
-          >
-            Get Started
-          </button>
-          <button
-            onClick={() => setIsSearchOpen(false)}
-            className="flex items-center justify-center w-[40px] h-[40px] border border-black/30 bg-white/80 text-[#1e1f2b] hover:bg-[#1e2124] hover:text-white hover:border-[#1e2124] transition-colors cursor-pointer"
-          >
-            X
-          </button>
-        </div>
-
-        {/* Search content */}
-        <div className="px-6 md:px-[48px] pt-6 pb-12">
-          <input
-            type="text"
-            placeholder="Search..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full border-b border-black/30 bg-transparent h-[40px] outline-none placeholder-neutral-400"
-          />
-
-          {/* Search results container */}
-          <div className="mt-8">
-            {searchQuery && (
-              <div className="text-[14px] text-neutral-500">
-                Results for "{searchQuery}"
-              </div>
-            )}
-          </div>
         </div>
       </div>
     </>
