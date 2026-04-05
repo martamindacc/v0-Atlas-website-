@@ -219,7 +219,7 @@ export default function AtlasGlobal() {
       </section>
 
       {/* CTA Section */}
-      <section className="w-full bg-[#fafafb] py-8 md:py-[50px] lg:py-[70px]">
+      <section className="w-full bg-[#fafafb] py-8 md:py-[70px]">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col items-center text-center">
           <h2 className="font-sans text-[32px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.03em] font-medium text-[#202426] mb-4 md:mb-6">
             Start making better people decisions
