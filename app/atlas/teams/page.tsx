@@ -157,7 +157,7 @@ export default function AtlasTeams() {
       </section>
 
       {/* Divider */}
-      <div className="w-full bg-[#fafafb] py-8 md:py-16 lg:py-20">
+      <div className="w-full bg-[#fafafb] py-8 md:py-10 lg:py-12">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8">
           <div className="relative flex items-center justify-between">
             <div className="absolute inset-x-0 h-px bg-neutral-300/40"></div>
