@@ -121,7 +121,7 @@ export default function AtlasGlobal() {
       </section>
 
       {/* Section 2 — Editorial product section */}
-      <section className="bg-[#fafafb] pb-[60px] md:pb-[100px] pt-16 md:pt-24 lg:pt-36">
+      <section className="bg-[#fafafb] pb-[60px] md:pb-[100px] pt-8 md:pt-16 lg:pt-[72px]">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-24 overflow-x-clip">
 
           {/* LEFT COLUMN (HEADER) */}
@@ -227,12 +227,14 @@ export default function AtlasGlobal() {
           <p className="text-[16px] md:text-[20px] leading-[1.6] text-[#4f4f4f] max-w-[600px] mb-8 md:mb-12">
             Orient. Adapt. Act — with clarity.
           </p>
-          <a
-            href="/get-started"
-            className="inline-block px-6 md:px-8 py-3 md:py-4 bg-[#202426] text-white font-medium rounded-md hover:bg-[#1a1b22] transition-colors"
+          <button
+            onClick={() => {
+              window.dispatchEvent(new CustomEvent('openContactDrawer'));
+            }}
+            className="inline-block px-6 md:px-8 py-3 md:py-4 bg-[#202426] text-white font-medium rounded-md hover:bg-[#1a1b22] transition-colors cursor-pointer"
           >
             Get started
-          </a>
+          </button>
         </div>
       </section>
 

@@ -227,6 +227,10 @@ export default function SiteHeader() {
       }
     };
 
+    const handleOpenContact = () => {
+      setIsContactOpen(true);
+    };
+
     if (isDrawerOpen || isSearchOpen) {
       document.addEventListener('keydown', handleEsc);
       document.body.style.overflow = 'hidden';
@@ -234,9 +238,12 @@ export default function SiteHeader() {
       document.body.style.overflow = '';
     }
 
+    window.addEventListener('openContactDrawer', handleOpenContact);
+
     return () => {
       document.removeEventListener('keydown', handleEsc);
       document.body.style.overflow = '';
+      window.removeEventListener('openContactDrawer', handleOpenContact);
     };
   }, [isDrawerOpen, isSearchOpen]);
 
