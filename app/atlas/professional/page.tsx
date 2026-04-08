@@ -108,8 +108,7 @@ export default function AtlasProfessional() {
             Decisions break where understanding of people is incomplete.
           </p>
           <p className="text-[14px] md:text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-[280px] md:max-w-2xl" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
-            <span className="hidden md:inline">Make better people decisions — with clarity on how others think, respond, and work.</span>
-            <span className="block md:hidden">Atlas maps how people think, respond, and execute — in real time.</span>
+            <span className="block">Make smarter decisions about people — with deep clarity on how they think, respond, and work.</span>
           </p>
         </div>
 
