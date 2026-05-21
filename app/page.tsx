@@ -102,7 +102,7 @@ export default function Home() {
               fontFamily: "Inter, sans-serif",
             }}
           >
-            Better teamwork starts with better communication
+            Better teamwork starts with better understanding
           </h2>
           <p
             className="mt-4 md:mt-6 mb-8 md:mb-12 text-base md:text-xl text-[#475569] max-w-2xl mx-auto leading-relaxed"
@@ -133,7 +133,7 @@ export default function Home() {
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
               <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Talent Composition</span>
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
-              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Decision Flow</span>
+              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Performance Reviews</span>
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
               <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Succession Planning</span>
             </div>
@@ -141,19 +141,19 @@ export default function Home() {
               className="text-[22px] md:text-[28px] font-medium tracking-tight text-neutral-900 mb-6"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
-              The Atlas System
+              Atlas AI Coach
             </h3>
           </div>
 
           {/* Module rows */}
           {[
             {
-              description: "Individual Intelligence\nGet support in your own work situations- conversations, decisions, conflicts",
+              description: "Individual Intelligence — Get support in your own work situations- conversations, decisions, conflicts",
               title: "Atlas Professional",
               href: "/atlas/professional",
             },
             {
-              description: "Team Intelligence\nUnderstand how people work together — improve communication, coordination, and decision dynamics",
+              description: "Team Intelligence — Understand how people work together — improve communication, coordination, and decision dynamics",
               title: "Atlas Teams",
               href: "/atlas/teams",
             },
@@ -214,9 +214,9 @@ export default function Home() {
 
             {/* Right — explanatory text */}
             <div className="md:col-span-5 md:col-start-8 text-[16px] md:text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-4 md:space-y-6">
-              <p>Atlas understands how people think and work across your organization — anticipating patterns, revealing misalignment, and helping you act with precision when it matters.</p>
-              <p>Always on. Always in context.</p>
-              <p>Built to support how work actually unfolds.</p>
+              <p>Atlas supports communication, collaboration, and day-to-day teamwork across your organization. It helps employees and managers navigate real work situations — from feedback conversations and coordination challenges to conflict resolution and team support.</p>
+              <p>Always available. Always in context.</p>
+              <p>Built for how work actually happens.</p>
             </div>
             
             <p className="text-[12px] text-[#6B7280] md:hidden">© 2026 Mindacc. All rights reserved.</p>
