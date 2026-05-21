@@ -75,10 +75,10 @@ export default function Home() {
         <div className="absolute inset-0 flex items-center justify-center z-10">
           <div className="text-center max-w-3xl px-6">
             <h1 className="text-[clamp(2rem,6vw,5rem)] font-semibold leading-[1.1] tracking-tight text-white mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
-              People Intelligence for Every Decision
+              AI Coach for Every Team
             </h1>
             <p className="text-[clamp(0.875rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-2xl mx-auto" style={{ fontFamily: "Inter, sans-serif" }}>
-              Atlas models how people think, decide, and collaborate — supporting teamwork and organizational change at scale.
+              Atlas supports communication, teamwork and organizational change at scale.
             </p>
           </div>
         </div>
@@ -102,13 +102,13 @@ export default function Home() {
               fontFamily: "Inter, sans-serif",
             }}
           >
-            Better decisions start with better inputs
+            Better teamwork starts with better communication
           </h2>
           <p
             className="mt-4 md:mt-6 mb-8 md:mb-12 text-base md:text-xl text-[#475569] max-w-2xl mx-auto leading-relaxed"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
-            Atlas powers real-time, AI-driven people decisions across your organization — from strategic planning to day-to-day execution.
+            Atlas helps teams navigate collaboration, resolve conflict, and improve performance
           </p>
         </div>
       </section>
@@ -148,7 +148,7 @@ export default function Home() {
           {/* Module rows */}
           {[
             {
-              description: "Individual Intelligence\nLead sharper. Think clearer. Your reasoning partner — tuned precisely to how you think",
+              description: "Individual Intelligence\nGet support in your own work situations- conversations, decisions, conflicts",
               title: "Atlas Professional",
               href: "/atlas/professional",
             },
@@ -158,7 +158,7 @@ export default function Home() {
               href: "/atlas/teams",
             },
             {
-              description: "Organizational Intelligence\nA continous view of how your organization operates — spot risk patterns, align faster, act with precision",
+              description: "Organizational Intelligence\nRoll out AI coaching across teams with shared context and insights",
               title: "Atlas Global",
               href: "/atlas/global",
             },
