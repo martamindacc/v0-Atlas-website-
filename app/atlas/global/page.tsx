@@ -86,7 +86,7 @@ export default function AtlasGlobal() {
             Atlas Global
           </h1>
           <p className="text-[14px] md:text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-[280px] md:max-w-2xl" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
-            Support teamwork and organizational change at enterprise scale.
+            AI coach for global teams and organizational change
           </p>
         </div>
 
@@ -105,7 +105,7 @@ export default function AtlasGlobal() {
             {/* Bubble 2 - User */}
             <div className="bg-white/[0.06] backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4 ml-8">
               <p className="text-xs font-medium text-white/70 mb-1">Jane</p>
-              <p className="text-white/95 text-[15px] leading-relaxed">We're ready, but I'm worried about the impact on the global product teams.</p>
+              <p className="text-white/95 text-[15px] leading-relaxed">We're ready, but I'm worried about the impact on the product teams.</p>
             </div>
 
             {/* Bubble 3 - Atlas */}
@@ -130,7 +130,7 @@ export default function AtlasGlobal() {
           >
             <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
               <span
-                data-text="Understand your organization at scale"
+                data-text="Keep global teams aligned at scale"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
@@ -140,7 +140,7 @@ export default function AtlasGlobal() {
           <div className="md:min-h-[140vh] min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas makes patterns across teams visible — from how decisions form and leadership emerges to where alignment breaks down at enterprise level.
+                Atlas helps global organizations stay coordinated, aligned, and effective across teams, regions, and organizational change.
               </p>
             </div>
 
@@ -180,7 +180,7 @@ export default function AtlasGlobal() {
           >
             <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
               <span
-                data-text="See what's forming — before it becomes a problem"
+                data-text="Improve execution across regions and teams"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
@@ -222,7 +222,7 @@ export default function AtlasGlobal() {
       <section className="w-full bg-[#fafafb] py-8 md:py-[70px]">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col items-center text-center">
           <h2 className="font-sans text-[32px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.03em] font-medium text-[#202426] mb-4 md:mb-6">
-            Start making better people decisions
+            Work Smarter
           </h2>
           <p className="text-[16px] md:text-[20px] leading-[1.6] text-[#4f4f4f] max-w-[600px] mb-8 md:mb-12">
             Orient. Adapt. Act — with clarity.

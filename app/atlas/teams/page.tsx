@@ -86,7 +86,7 @@ export default function AtlasTeams() {
             Atlas Teams
           </h1>
           <p className="text-[14px] md:text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-[280px] md:max-w-2xl" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
-            Align how teams think, decide, and work — with clarity across roles, dynamics, and execution.
+            Help teams work better together — with clearer communication, stronger alignment, and practical AI support.
           </p>
         </div>
 
@@ -130,7 +130,7 @@ export default function AtlasTeams() {
           >
             <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
               <span
-                data-text="A shared reasoning layer for teams"
+                data-text="Better teamwork starts with better understanding"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
@@ -140,7 +140,7 @@ export default function AtlasTeams() {
           <div className="md:min-h-[140vh] min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas creates a shared layer that surfaces how perspectives converge — or clash — across a team.
+                Help employees and managers communicate better, resolve challenges faster, and work more effectively together.
               </p>
             </div>
 
@@ -180,7 +180,7 @@ export default function AtlasTeams() {
           >
             <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
               <span
-                data-text="Align thinking before it turns into friction"
+                data-text="Stronger teams. Better execution."
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
@@ -190,16 +190,16 @@ export default function AtlasTeams() {
           <div className="md:min-h-[140vh] min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas surfaces differences in how people work, interpret situations, and make decisions — so teams catch misalignment early, before it becomes conflict or wasted effort.
+                Atlas helps teams stay aligned, reduce friction, and work through challenges faster.
               </p>
               <p className="font-medium">
                 This means:
               </p>
               <ul className="space-y-3">
-                <li>Resolve conflict faster — spot where perspectives diverge and why</li>
-                <li>Coordinate more smoothly — turn scattered views into shared understanding</li>
-                <li>Move forward with confidence — even in complex, high-stakes projects</li>
-                <li>Execute as one — reduce rework, delays, and hidden roadblocks</li>
+                <li>Faster conflict resolution</li>
+                <li>Smoother cross-team collaboration</li>
+                <li>Better decisions under pressure</li>
+                <li>Less rework and fewer delays</li>
               </ul>
             </div>
 
@@ -219,7 +219,7 @@ export default function AtlasTeams() {
       <section className="w-full bg-[#fafafb] py-8 md:py-[70px]">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col items-center text-center">
           <h2 className="font-sans text-[32px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.03em] font-medium text-[#202426] mb-4 md:mb-6">
-            Start making better people decisions
+            Work Smarter
           </h2>
           <p className="text-[16px] md:text-[20px] leading-[1.6] text-[#4f4f4f] max-w-[600px] mb-8 md:mb-12">
             Orient. Adapt. Act — with clarity.
