@@ -152,7 +152,7 @@ export default function AtlasProfessional() {
           >
             <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
               <span
-                data-text="Your AI coach for modern work."
+                data-text="Your AI coach for modern work"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
@@ -220,8 +220,7 @@ export default function AtlasProfessional() {
               <ul className="space-y-2">
                 <li>Navigate difficult workplace situations faster</li>
                 <li>Communicate more effectively across teams</li>
-                <li>Handle feedback, conflict, and pressure with greater confidence</li>
-                <li>Make better day-to-day decisions at work</li>
+                <li>Handle feedback, conflict, and pressure with confidence</li>
               </ul>
               <p>
                 Always available. Always in context. Built to support how modern work actually happens.
@@ -244,7 +243,8 @@ export default function AtlasProfessional() {
       <section className="w-full bg-[#fafafb] py-8 md:py-[70px]">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col items-center text-center">
           <h2 className="font-sans text-[32px] md:text-[64px] leading-[1.1] tracking-[-0.03em] font-medium text-[#202426] mb-4 md:mb-6">
-            Start making better people decisions
+            <span className="block">Work Smarter</span>
+            <span className="text-[20px] md:text-[40px] font-normal">AI Coach for communication, collaboration, and workplace challenges.</span>
           </h2>
           <p className="text-[16px] md:text-[20px] leading-[1.6] text-[#4f4f4f] max-w-[600px] mb-8 md:mb-12">
             Orient. Adapt. Act — with clarity.
