@@ -108,8 +108,7 @@ export default function AtlasProfessional() {
             Decisions break where understanding of people is incomplete.
           </p>
           <p className="text-[14px] md:text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-[280px] md:max-w-2xl" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
-            <span className="hidden md:inline">Make better people decisions — with clarity on how others think, respond, and work.</span>
-            <span className="block md:hidden">Atlas maps how people think, respond, and execute — in real time.</span>
+            <span className="block">Make smarter decisions about people — with deep clarity on how they think, respond, and work.</span>
           </p>
         </div>
 
@@ -122,12 +121,12 @@ export default function AtlasProfessional() {
                 <div className="w-2 h-2 rounded-full backdrop-blur-sm" style={{ backgroundColor: 'rgba(56, 94, 113, 0.7)' }}></div>
                 <p className="text-xs font-medium text-white/70">Atlas</p>
               </div>
-              <p className="text-white/95 text-[15px] leading-relaxed">How do you feel about your high-stakes meeting tomorrow?</p>
+              <p className="text-white/95 text-[15px] leading-relaxed">Alex, how are you approaching your meeting with Ana tomorrow?</p>
             </div>
 
             {/* Bubble 2 - User */}
             <div className="bg-white/[0.06] backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4 ml-8">
-              <p className="text-xs font-medium text-white/70 mb-1">You</p>
+              <p className="text-xs font-medium text-white/70 mb-1">Alex</p>
               <p className="text-white/95 text-[15px] leading-relaxed">My idea is solid, but I'm not sure the presentation will land. I expect pushback from Ana.</p>
             </div>
 
