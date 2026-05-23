@@ -152,7 +152,7 @@ export default function AtlasProfessional() {
           >
             <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
               <span
-                data-text="Meet your thinking partner"
+                data-text="Your AI coach for modern work."
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
@@ -162,7 +162,7 @@ export default function AtlasProfessional() {
           <div className="min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas helps you think through high-stakes problems that don't have obvious answers — from strategic choices and tough trade-offs to difficult conversations and career-defining moves.
+                Atlas helps you navigate difficult decisions, workplace pressure, and career challenges — from everyday situations to high-stakes moments at work.
               </p>
             </div>
 
@@ -212,19 +212,19 @@ export default function AtlasProfessional() {
           <div className="min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas adapts to how you naturally reason, anticipate your next question, and sharpen your judgment — so every decision lands with greater clarity, confidence, and speed.
+                Atlas adapts to how you naturally reason — so every decision lands with greater clarity, confidence, and speed.
               </p>
               <p className="font-medium">
                 Atlas helps you:
               </p>
               <ul className="space-y-2">
-                <li>Prepare for critical meetings with precise insight into stakeholders</li>
-                <li>Navigate hard choices without second-guessing</li>
-                <li>Handle feedback and conflict with calm precision</li>
-                <li>Move forward faster, knowing you've seen the full picture</li>
+                <li>Navigate difficult workplace situations faster</li>
+                <li>Communicate more effectively across teams</li>
+                <li>Handle feedback, conflict, and pressure with greater confidence</li>
+                <li>Make better day-to-day decisions at work</li>
               </ul>
               <p>
-                Always on. Always in your context. Built for the way real work — and real thinking — actually happens.
+                Always available. Always in context. Built to support how modern work actually happens.
               </p>
             </div>
 
