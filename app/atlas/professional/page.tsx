@@ -108,7 +108,7 @@ export default function AtlasProfessional() {
             Decisions break where understanding of people is incomplete.
           </p>
           <p className="text-[14px] md:text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-[280px] md:max-w-2xl" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
-            <span className="block">Make smarter decisions about people — with deep clarity on how they think, respond, and work.</span>
+            <span className="block">Your AI coach for conversations, decisions, and workplace challenges.</span>
           </p>
         </div>
 
@@ -136,7 +136,7 @@ export default function AtlasProfessional() {
                 <div className="w-2 h-2 rounded-full backdrop-blur-sm" style={{ backgroundColor: 'rgba(56, 94, 113, 0.7)' }}></div>
                 <p className="text-xs font-medium text-white/70">Atlas</p>
               </div>
-              <p className="text-white/95 text-[15px] leading-relaxed">Your profile shows you hold many options open under pressure — it's an asset, but Ana may read it as hesitation. Can I share talking points that leverage your strengths so you feel more confident in the discussion?</p>
+              <p className="text-white/95 text-[15px] leading-relaxed">You hold many options open under pressure — it's an asset, but Ana may read it as hesitation. Can I share talking points that lead with strengths so you feel more confident in the conversation?</p>
             </div>
           </div>
         </div>
@@ -276,9 +276,9 @@ export default function AtlasProfessional() {
 
             {/* Right — explanatory text */}
             <div className="md:col-span-5 md:col-start-8 text-[16px] md:text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-4 md:space-y-6">
-              <p>Atlas understands how people think and work across your organization — anticipating patterns, revealing misalignment, and helping you act with precision when it matters.</p>
-              <p>Always on. Always in context.</p>
-              <p>Built to support how work actually unfolds.</p>
+              <p>Atlas supports communication, collaboration, and day-to-day teamwork across your organization. It helps employees and managers navigate real work situations — from feedback conversations and coordination challenges to conflict resolution and team support.</p>
+              <p>Always available. Always in context.</p>
+              <p>Built for how work actually happens.</p>
             </div>
             
             <p className="text-[12px] text-[#6B7280] md:hidden">© 2026 Mindacc. All rights reserved.</p>
