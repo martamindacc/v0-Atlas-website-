@@ -78,7 +78,7 @@ export default function Home() {
               AI Coach for Every Team
             </h1>
             <p className="text-[clamp(0.875rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-2xl mx-auto" style={{ fontFamily: "Inter, sans-serif" }}>
-              Atlas supports communication, teamwork and organizational change at scale.
+              Atlas supports communication, teamwork and performance at scale.
             </p>
           </div>
         </div>
@@ -148,12 +148,12 @@ export default function Home() {
           {/* Module rows */}
           {[
             {
-              description: "Individual Intelligence — Get support in your own work situations- conversations, decisions, conflicts",
+              description: "Individual Intelligence\nGet support in your own work situations- conversations, decisions, conflicts",
               title: "Atlas Professional",
               href: "/atlas/professional",
             },
             {
-              description: "Team Intelligence — Understand how people work together — improve communication, coordination, and decision dynamics",
+              description: "Team Intelligence\nUnderstand how people work together — improve communication, coordination, and decision dynamics",
               title: "Atlas Teams",
               href: "/atlas/teams",
             },
