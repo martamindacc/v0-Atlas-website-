@@ -162,7 +162,7 @@ export default function AtlasProfessional() {
           <div className="min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas helps you navigate difficult decisions, workplace pressure, and career challenges — from everyday situations to high-stakes moments at work.
+                Atlas helps leaders, managers, and employees navigate difficult decisions, workplace pressure, and career challenges — from everyday situations to high-stakes moments at work.
               </p>
             </div>
 
@@ -246,9 +246,6 @@ export default function AtlasProfessional() {
             <span className="block">Work Smarter</span>
             <span className="text-[20px] md:text-[40px] font-normal">AI Coach for communication, collaboration, and workplace challenges.</span>
           </h2>
-          <p className="text-[16px] md:text-[20px] leading-[1.6] text-[#4f4f4f] max-w-[600px] mb-8 md:mb-12">
-            Orient. Adapt. Act — with clarity.
-          </p>
           <button
             onClick={() => {
               window.dispatchEvent(new CustomEvent('openContactDrawer'));

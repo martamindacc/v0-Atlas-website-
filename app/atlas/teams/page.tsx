@@ -86,7 +86,7 @@ export default function AtlasTeams() {
             Atlas Teams
           </h1>
           <p className="text-[14px] md:text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-[280px] md:max-w-2xl" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
-            Help teams work better together — with clearer communication, stronger alignment, and practical AI support.
+            AI coach for team performance, productivity, and wellbeing
           </p>
         </div>
 
@@ -180,7 +180,7 @@ export default function AtlasTeams() {
           >
             <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
               <span
-                data-text="Stronger teams. Better execution."
+                data-text="Stronger teams, better execution"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
@@ -190,7 +190,7 @@ export default function AtlasTeams() {
           <div className="md:min-h-[140vh] min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas helps teams stay aligned, reduce friction, and work through challenges faster.
+                Atlas helps teams understand each other's work styles, improve performance, and support well-being.
               </p>
               <p className="font-medium">
                 This means:
@@ -219,11 +219,9 @@ export default function AtlasTeams() {
       <section className="w-full bg-[#fafafb] py-8 md:py-[70px]">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col items-center text-center">
           <h2 className="font-sans text-[32px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.03em] font-medium text-[#202426] mb-4 md:mb-6">
-            Work Smarter
+            <span className="block">Work Smarter</span>
+            <span className="text-[20px] md:text-[40px] font-normal">AI Coach for communication, collaboration, and workplace challenges.</span>
           </h2>
-          <p className="text-[16px] md:text-[20px] leading-[1.6] text-[#4f4f4f] max-w-[600px] mb-8 md:mb-12">
-            Orient. Adapt. Act — with clarity.
-          </p>
           <button
             onClick={() => {
               window.dispatchEvent(new CustomEvent('openContactDrawer'));
