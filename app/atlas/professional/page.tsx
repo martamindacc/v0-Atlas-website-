@@ -244,7 +244,7 @@ export default function AtlasProfessional() {
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col items-center text-center">
           <h2 className="font-sans text-[32px] md:text-[64px] leading-[1.1] tracking-[-0.03em] font-medium text-[#202426] mb-4 md:mb-6">
             <span className="block">Work Smarter</span>
-            <span className="text-[20px] md:text-[40px] font-normal">AI Coach for communication, collaboration, and workplace challenges.</span>
+            <span className="text-[20px] md:text-[40px] font-normal">AI Coach for performance, productivity, and workplace challenges.</span>
           </h2>
           <button
             onClick={() => {
@@ -273,7 +273,7 @@ export default function AtlasProfessional() {
 
             {/* Right — explanatory text */}
             <div className="md:col-span-5 md:col-start-8 text-[16px] md:text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-4 md:space-y-6">
-              <p>Atlas supports communication, collaboration, and day-to-day teamwork across your organization. It helps employees and managers navigate real work situations — from feedback conversations and coordination challenges to conflict resolution and team support.</p>
+              <p>Atlas supports performance, collaboration, and day-to-day teamwork across your organization. It helps employees and managers navigate real work situations — from feedback conversations and coordination challenges to conflict resolution and team support.</p>
               <p>Always available. Always in context.</p>
               <p>Built for how work actually happens.</p>
             </div>

@@ -140,7 +140,7 @@ export default function AtlasTeams() {
           <div className="md:min-h-[140vh] min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Help employees and managers communicate better, resolve challenges faster, and work more effectively together.
+                Atlas helps teams improve performance, increase productivity, resolve challenges faster, and work more effectively together.
               </p>
             </div>
 
@@ -190,7 +190,7 @@ export default function AtlasTeams() {
           <div className="md:min-h-[140vh] min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas helps teams understand each other's work styles, improve performance, and support well-being.
+                Atlas helps teams understand each other's work styles, improve productivity, and support well-being.
               </p>
               <p className="font-medium">
                 This means:
@@ -220,7 +220,7 @@ export default function AtlasTeams() {
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col items-center text-center">
           <h2 className="font-sans text-[32px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.03em] font-medium text-[#202426] mb-4 md:mb-6">
             <span className="block">Work Smarter</span>
-            <span className="text-[20px] md:text-[40px] font-normal">AI Coach for communication, collaboration, and workplace challenges.</span>
+            <span className="text-[20px] md:text-[40px] font-normal">AI Coach for performance, productivity, and workplace challenges.</span>
           </h2>
           <button
             onClick={() => {
@@ -250,7 +250,7 @@ export default function AtlasTeams() {
 
             {/* Right — explanatory text */}
             <div className="md:col-span-5 md:col-start-8 text-[16px] md:text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-4 md:space-y-6">
-              <p>Atlas supports communication, collaboration, and day-to-day teamwork across your organization. It helps employees and managers navigate real work situations — from feedback conversations and coordination challenges to conflict resolution and team support.</p>
+              <p>Atlas supports performance, collaboration, and day-to-day teamwork across your organization. It helps employees and managers navigate real work situations — from feedback conversations and coordination challenges to conflict resolution and team support.</p>
               <p>Always available. Always in context.</p>
               <p>Built for how work actually happens.</p>
             </div>
