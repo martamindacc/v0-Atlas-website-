@@ -75,7 +75,7 @@ export default function Home() {
         <div className="absolute inset-0 flex items-center justify-center z-10">
           <div className="text-center max-w-3xl px-6">
             <h1 className="text-[clamp(2rem,6vw,5rem)] font-semibold leading-[1.1] tracking-tight text-white mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
-              Atlas the AI Coach for Every Team
+              AI Coach for Every Team
             </h1>
             <p className="text-[clamp(0.875rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-2xl mx-auto" style={{ fontFamily: "Inter, sans-serif" }}>
               Atlas supports communication, teamwork and organizational performance at scale.
@@ -153,7 +153,7 @@ export default function Home() {
               href: "/atlas/professional",
             },
             {
-              description: "Team Intelligence\nUnderstand how people work together — improve performance, communication, and decision dynamics",
+              description: "Team Intelligence\nUnderstand how people work together — improve team performance, communication, and decision-making",
               title: "Atlas Teams",
               href: "/atlas/teams",
             },

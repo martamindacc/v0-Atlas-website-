@@ -140,7 +140,7 @@ export default function AtlasGlobal() {
           <div className="md:min-h-[140vh] min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas helps global organizations stay coordinated, aligned, and effective across teams, regions, and organizational change.
+                Atlas helps enterprise organizations coordinate cross-functional teams more effectively across regions, departments, and leadership structures.
               </p>
             </div>
 
@@ -196,10 +196,10 @@ export default function AtlasGlobal() {
                 This means:
               </p>
               <ul className="space-y-3 list-none">
-                <li>Faster communication across distributed teams</li>
-                <li>Better coordination during organizational change</li>
-                <li>Reduced friction between teams and functions</li>
-                <li>More consistent execution across global operations</li>
+                <li>Faster coordination across cross-functional and global teams</li>
+                <li>Fewer communication issues between regions and departments</li>
+                <li>Better alignment during growth, restructuring, and transformation</li>
+                <li>More consistent execution across enterprise operations</li>
               </ul>
               <p>
                 Always in context. Always up to date. Built for modern enterprise operations.
@@ -223,7 +223,7 @@ export default function AtlasGlobal() {
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col items-center text-center">
           <h2 className="font-sans text-[32px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.03em] font-medium text-[#202426] mb-4 md:mb-6">
             <span className="block">Work Smarter</span>
-            <span className="text-[20px] md:text-[40px] font-normal">Atlas the AI Coach for performance, collaboration, and workplace challenges.</span>
+            <span className="text-[20px] md:text-[40px] font-normal">AI Coach for performance, productivity, and workplace challenges.</span>
           </h2>
           <button
             onClick={() => {
