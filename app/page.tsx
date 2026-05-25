@@ -197,6 +197,57 @@ export default function Home() {
           <div className="mx-2 md:mx-4 h-px bg-black/10 opacity-60" />
         </div>
       </section>
+
+      {/* Section — Visual Explanation */}
+      <section className="w-full bg-[#fafafb] py-16 md:py-24 px-4 md:px-6">
+        <div className="max-w-[1200px] mx-auto space-y-16 md:space-y-24">
+          {/* Row 1: Text (left) | Image (right) */}
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            {/* Text Card */}
+            <div className="flex items-center">
+              <p
+                className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] max-w-[420px]"
+                style={{ fontFamily: "Inter, sans-serif" }}
+              >
+                Most organizations still rely on surveys, reviews, and static reports to understand performance. But these systems are slow, generic, and disconnected from how work actually happens. By the time problems surface, teams have already lost time, alignment, and momentum.
+              </p>
+            </div>
+            {/* Image */}
+            <div className="w-full md:w-auto flex items-center justify-center">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cycle_diagram_fixed-2vUC894dOB7Cj5PDsCgcL5CrxnEo7J.svg"
+                alt="Survey and performance review cycle"
+                className="w-full md:w-[450px] h-[450px] object-contain"
+              />
+            </div>
+          </div>
+
+          {/* Row 2: Image (left) | Text (right) */}
+          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            {/* Image */}
+            <div className="w-full md:w-auto flex items-center justify-center">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/atlas_network_scattered-qDnGy6QYlJ6tHF9730GtU5avMfFVW7.svg"
+                alt="Atlas organizational network diagram"
+                className="w-full md:w-[450px] h-[450px] object-contain"
+              />
+            </div>
+            {/* Text Card */}
+            <div className="flex items-center">
+              <p
+                className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] max-w-[420px]"
+                style={{ fontFamily: "Inter, sans-serif" }}
+              >
+                What actually drives performance are the thousands of conversations, decisions, and interactions happening across the organization every day.
+                <br />
+                <br />
+                Atlas operationalizes these signals in real time — connecting people, organizational context, and workplace situations to provide coaching and support no survey or human process realistically could at scale.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Section 3 — Human intelligence, understood by machines */}
       <section className="w-full bg-[#efefef] py-16 md:py-[140px]">
         <div className="max-w-[1200px] mx-auto px-4 md:px-6">
