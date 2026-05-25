@@ -148,7 +148,7 @@ export default function Home() {
           {/* Module rows */}
           {[
             {
-              description: "Individual Intelligence\nGet support in your own work situations — conversations, decisions, conflicts",
+              description: "Individual Intelligence\nGet support in your own work situations — feedback, decisions, conflicts",
               title: "Atlas Professional",
               href: "/atlas/professional",
             },

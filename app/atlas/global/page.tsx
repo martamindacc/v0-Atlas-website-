@@ -140,7 +140,7 @@ export default function AtlasGlobal() {
           <div className="md:min-h-[140vh] min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas helps enterprise organizations coordinate cross-functional teams more effectively across regions, departments, and leadership structures.
+                Atlas helps enterprise organizations operate more effectively across complex, distributed teams and fast-moving environments.
               </p>
             </div>
 

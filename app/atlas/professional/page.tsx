@@ -162,7 +162,7 @@ export default function AtlasProfessional() {
           <div className="min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas helps leaders, managers, and employees improve performance, productivity, and well-being.
+                Atlas helps leaders, managers, and employees navigate difficult decisions, workplace pressure, and career challenges — from everyday situations to high-stakes moments at work.
               </p>
             </div>
 
@@ -218,12 +218,11 @@ export default function AtlasProfessional() {
                 Atlas helps you:
               </p>
               <ul className="space-y-2">
-                <li>Prepare for high-stakes meetings</li>
-                <li>Navigate feedback conversations</li>
-                <li>Communicate more effectively across teams</li>
-                <li>Handle conflict and challenging situations at work</li>
-                <li>Prevent burnout</li>
-                <li>Make better day-to-day decisions with confidence</li>
+                <li>• Prepare for high-stakes meetings</li>
+                <li>• Navigate difficult workplace situations faster</li>
+                <li>• Communicate more effectively across teams</li>
+                <li>• Handle feedback, conflict, and pressure with confidence</li>
+                <li>• Prevent burnout</li>
               </ul>
               <p>
                 Always available. Always in context. Built to support how modern work actually happens.
