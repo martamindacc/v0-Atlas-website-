@@ -78,7 +78,7 @@ export default function Home() {
               AI Coach for Every Team
             </h1>
             <p className="text-[clamp(0.875rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-2xl mx-auto" style={{ fontFamily: "Inter, sans-serif" }}>
-              Atlas supports communication, teamwork and organizational performance at scale.
+              Atlas supports communication, teamwork and organizational change at scale.
             </p>
           </div>
         </div>
@@ -102,7 +102,7 @@ export default function Home() {
               fontFamily: "Inter, sans-serif",
             }}
           >
-            Better teamwork starts with better understanding
+            Better teamwork starts with better communication
           </h2>
           <p
             className="mt-4 md:mt-6 mb-8 md:mb-12 text-base md:text-xl text-[#475569] max-w-2xl mx-auto leading-relaxed"
@@ -125,15 +125,15 @@ export default function Home() {
             }`}
           >
             <div className="w-full flex flex-wrap justify-center items-center gap-x-2 md:gap-x-3 gap-y-2 mt-6 mb-16 md:mb-40 text-[13px] md:text-[15px] tracking-[-0.01em] text-[#374151] font-medium">
-              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Team Dynamics</span>
+              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Leadership Modeling</span>
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
-              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Communication Support</span>
+              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Team Dynamics</span>
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
               <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Execution Support</span>
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
               <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Talent Composition</span>
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
-              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Performance Reviews</span>
+              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Development Plans</span>
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
               <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Succession Planning</span>
             </div>
@@ -141,24 +141,24 @@ export default function Home() {
               className="text-[22px] md:text-[28px] font-medium tracking-tight text-neutral-900 mb-6"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
-              Atlas AI Coach
+              The Atlas System
             </h3>
           </div>
 
           {/* Module rows */}
           {[
             {
-              description: "Individual Intelligence\nGet support in your own work situations — conversations, decisions, conflicts",
+              description: "Individual Intelligence\nGet support in your own work situations- conversations, decisions, conflicts",
               title: "Atlas Professional",
               href: "/atlas/professional",
             },
             {
-              description: "Team Intelligence\nUnderstand how people work together — improve team performance, communication, and decision-making",
+              description: "Team Intelligence\nUnderstand how people work together — improve communication, coordination, and decision dynamics",
               title: "Atlas Teams",
               href: "/atlas/teams",
             },
             {
-              description: "Organizational Intelligence\nRoll out AI coaching across global teams with shared context and insights",
+              description: "Organizational Intelligence\nRoll out AI coaching across teams with shared context and insights",
               title: "Atlas Global",
               href: "/atlas/global",
             },
@@ -214,9 +214,9 @@ export default function Home() {
 
             {/* Right — explanatory text */}
             <div className="md:col-span-5 md:col-start-8 text-[16px] md:text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-4 md:space-y-6">
-              <p>Atlas supports performance, collaboration, and day-to-day teamwork across your organization. It helps employees and managers navigate real work situations — from feedback conversations and coordination challenges to conflict resolution and team support.</p>
-              <p>Always available. Always in context.</p>
-              <p>Built for how work actually happens.</p>
+              <p>Atlas understands how people think and work across your organization — anticipating patterns, revealing misalignment, and helping you act with precision when it matters.</p>
+              <p>Always on. Always in context.</p>
+              <p>Built to support how work actually unfolds.</p>
             </div>
             
             <p className="text-[12px] text-[#6B7280] md:hidden">© 2026 Mindacc. All rights reserved.</p>

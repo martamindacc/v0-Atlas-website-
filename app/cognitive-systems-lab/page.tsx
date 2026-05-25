@@ -94,9 +94,9 @@ export default function CognitiveSystemsLab() {
 
             {/* Right — explanatory text */}
             <div className="col-span-5 col-start-8 text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-6">
-              <p>Atlas supports performance, collaboration, and day-to-day teamwork across your organization. It helps employees and managers navigate real work situations — from feedback conversations and coordination challenges to conflict resolution and team support.</p>
-              <p>Always available. Always in context.</p>
-              <p>Built for how work actually happens.</p>
+              <p>Atlas understands how people think and work across your organization — anticipating patterns, revealing misalignment, and helping you act with precision when it matters.</p>
+              <p>Always on. Always in context.</p>
+              <p>Built to support how work actually unfolds.</p>
             </div>
           </div>
         </div>

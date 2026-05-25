@@ -10,11 +10,11 @@ type Dot = { x: number; y: number; r: number; o: number };
 const stories: Story[] = [
   {
     title: "Atlas Changes That",
-    body: "AI's greatest power is unlocking insight at scale — and we're using it to reveal how people, teams, and organizations actually work together. Until now, that kind of visibility was rare — limited to intuition, occasional feedback, or expensive consultants who could only be in one place at a time. Atlas changes that.",
+    body: "AI's greatest power is unlocking insight at scale — and we're using it to reveal how people, teams, and organizations actually think and work together. Until now, that kind of visibility was rare — limited to intuition, occasional feedback, or expensive consultants who could only be in one place at a time. Atlas changes that.",
   },
   {
     title: "Clarity for Every Level",
-    body: "Every leader, team, and organization deserves better visibility into how work is progressing across the company. Atlas helps organizations improve communication, coordination, and alignment — from everyday teamwork to enterprise-wide operations.",
+    body: "Every leader, every team, every company deserves to understand what's really happening beneath the surface. Atlas brings clear, real-time visibility into patterns of thinking and alignment — from individual judgment to team dynamics to enterprise-wide flow — right when and where it matters most.",
   },
   {
     title: "Real Patterns, Not Reports",
