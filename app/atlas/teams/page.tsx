@@ -86,7 +86,7 @@ export default function AtlasTeams() {
             Atlas Teams
           </h1>
           <p className="text-[14px] md:text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-[280px] md:max-w-2xl" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
-            Align how teams think, decide, and work — with clarity across roles, dynamics, and execution.
+            AI coach for team performance, productivity, and wellbeing
           </p>
         </div>
 
@@ -130,7 +130,7 @@ export default function AtlasTeams() {
           >
             <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
               <span
-                data-text="A shared reasoning layer for teams"
+                data-text="Better teamwork starts with better understanding"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
@@ -140,7 +140,7 @@ export default function AtlasTeams() {
           <div className="md:min-h-[140vh] min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas helps teams improve performance, productivity, and communication.
+                Atlas helps teams improve performance, increase productivity, resolve challenges faster, and work more effectively together.
               </p>
             </div>
 
@@ -180,7 +180,7 @@ export default function AtlasTeams() {
           >
             <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
               <span
-                data-text="Align thinking before it turns into friction"
+                data-text="Stronger teams, better execution"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
@@ -190,18 +190,16 @@ export default function AtlasTeams() {
           <div className="md:min-h-[140vh] min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas helps teams understand each other's work styles — so they can work more effectively together.
+                Atlas helps teams understand each other's work styles, improve productivity, and support well-being.
               </p>
               <p className="font-medium">
-                Atlas helps teams:
+                This means:
               </p>
               <ul className="space-y-3">
-                <li>Improve cross-team communication</li>
-                <li>Reduce delays and execution bottlenecks</li>
-                <li>Improve onboarding and integration of new employees</li>
-                <li>Prepare development plans and feedback</li>
-                <li>Support better decisions in high-pressure situations</li>
-                <li>Prevent burnout</li>
+                <li>Faster conflict resolution</li>
+                <li>Smoother cross-team collaboration</li>
+                <li>Better decisions under pressure</li>
+                <li>Less rework and fewer delays</li>
               </ul>
             </div>
 
@@ -222,11 +220,8 @@ export default function AtlasTeams() {
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col items-center text-center">
           <h2 className="font-sans text-[32px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.03em] font-medium text-[#202426] mb-4 md:mb-6">
             <span className="block">Work Smarter</span>
-            <span className="text-[20px] md:text-[40px] font-normal">AI Coach for performance, productivity, and wellbeing.</span>
+            <span className="text-[20px] md:text-[40px] font-normal">AI Coach for performance, productivity, and workplace challenges.</span>
           </h2>
-          <p className="text-[16px] md:text-[20px] leading-[1.6] text-[#4f4f4f] max-w-[600px] mb-8 md:mb-12">
-            Orient. Adapt. Act — with clarity.
-          </p>
           <button
             onClick={() => {
               window.dispatchEvent(new CustomEvent('openContactDrawer'));
@@ -255,9 +250,9 @@ export default function AtlasTeams() {
 
             {/* Right — explanatory text */}
             <div className="md:col-span-5 md:col-start-8 text-[16px] md:text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-4 md:space-y-6">
-              <p>Atlas understands how people think and work across your organization — anticipating patterns, revealing misalignment, and helping you act with precision when it matters.</p>
-              <p>Always on. Always in context.</p>
-              <p>Built to support how work actually unfolds.</p>
+              <p>Atlas supports performance, collaboration, and day-to-day teamwork across your organization. It helps employees and managers navigate real work situations — from feedback conversations and coordination challenges to conflict resolution and team support.</p>
+              <p>Always available. Always in context.</p>
+              <p>Built for how work actually happens.</p>
             </div>
             
             <p className="text-[12px] text-[#6B7280] md:hidden">© 2026 Mindacc. All rights reserved.</p>
