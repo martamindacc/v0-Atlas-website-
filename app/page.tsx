@@ -133,7 +133,7 @@ export default function Home() {
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
               <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Talent Composition</span>
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
-              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Performance Reviews</span>
+              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Development Plans</span>
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
               <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Succession Planning</span>
             </div>

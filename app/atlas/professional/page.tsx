@@ -108,7 +108,7 @@ export default function AtlasProfessional() {
             Decisions break where understanding of people is incomplete.
           </p>
           <p className="text-[14px] md:text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-[280px] md:max-w-2xl" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
-            <span className="block">Your AI coach for conversations, decisions, and workplace challenges.</span>
+            <span className="block">Your AI coach for meetings, feedback, and workplace performance.</span>
           </p>
         </div>
 
@@ -162,7 +162,7 @@ export default function AtlasProfessional() {
           <div className="min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas helps leaders, managers, and employees navigate difficult decisions, workplace pressure, and career challenges — from everyday situations to high-stakes moments at work.
+                Atlas helps leaders, managers, and employees improve performance, productivity, and well-being.
               </p>
             </div>
 
@@ -212,15 +212,18 @@ export default function AtlasProfessional() {
           <div className="min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas adapts to how you naturally reason — so every decision lands with greater clarity, confidence, and speed.
+                Atlas adapts to your work style — so you can perform at your best in modern work environments.
               </p>
               <p className="font-medium">
                 Atlas helps you:
               </p>
               <ul className="space-y-2">
-                <li>Navigate difficult workplace situations faster</li>
+                <li>Prepare for high-stakes meetings</li>
+                <li>Navigate feedback conversations</li>
                 <li>Communicate more effectively across teams</li>
-                <li>Handle feedback, conflict, and pressure with confidence</li>
+                <li>Handle conflict and challenging situations at work</li>
+                <li>Prevent burnout</li>
+                <li>Make better day-to-day decisions with confidence</li>
               </ul>
               <p>
                 Always available. Always in context. Built to support how modern work actually happens.
@@ -244,7 +247,7 @@ export default function AtlasProfessional() {
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col items-center text-center">
           <h2 className="font-sans text-[32px] md:text-[64px] leading-[1.1] tracking-[-0.03em] font-medium text-[#202426] mb-4 md:mb-6">
             <span className="block">Work Smarter</span>
-            <span className="text-[20px] md:text-[40px] font-normal">AI Coach for performance, productivity, and workplace challenges.</span>
+            <span className="text-[20px] md:text-[40px] font-normal">AI Coach for performance, productivity, and wellbeing.</span>
           </h2>
           <button
             onClick={() => {
