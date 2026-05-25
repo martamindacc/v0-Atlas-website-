@@ -108,8 +108,7 @@ export default function AtlasProfessional() {
             Decisions break where understanding of people is incomplete.
           </p>
           <p className="text-[14px] md:text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-[280px] md:max-w-2xl" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
-            <span className="hidden md:inline">Make better people decisions — with clarity on how others think, respond, and work.</span>
-            <span className="block md:hidden">Atlas maps how people think, respond, and execute — in real time.</span>
+            <span className="block">Your AI coach for conversations, decisions, and workplace challenges.</span>
           </p>
         </div>
 
@@ -122,12 +121,12 @@ export default function AtlasProfessional() {
                 <div className="w-2 h-2 rounded-full backdrop-blur-sm" style={{ backgroundColor: 'rgba(56, 94, 113, 0.7)' }}></div>
                 <p className="text-xs font-medium text-white/70">Atlas</p>
               </div>
-              <p className="text-white/95 text-[15px] leading-relaxed">How do you feel about your high-stakes meeting tomorrow?</p>
+              <p className="text-white/95 text-[15px] leading-relaxed">Alex, how are you approaching your meeting with Ana tomorrow?</p>
             </div>
 
             {/* Bubble 2 - User */}
             <div className="bg-white/[0.06] backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4 ml-8">
-              <p className="text-xs font-medium text-white/70 mb-1">You</p>
+              <p className="text-xs font-medium text-white/70 mb-1">Alex</p>
               <p className="text-white/95 text-[15px] leading-relaxed">My idea is solid, but I'm not sure the presentation will land. I expect pushback from Ana.</p>
             </div>
 
@@ -137,7 +136,7 @@ export default function AtlasProfessional() {
                 <div className="w-2 h-2 rounded-full backdrop-blur-sm" style={{ backgroundColor: 'rgba(56, 94, 113, 0.7)' }}></div>
                 <p className="text-xs font-medium text-white/70">Atlas</p>
               </div>
-              <p className="text-white/95 text-[15px] leading-relaxed">Your profile shows you hold many options open under pressure — it's an asset, but Ana may read it as hesitation. Can I share talking points that leverage your strengths so you feel more confident in the discussion?</p>
+              <p className="text-white/95 text-[15px] leading-relaxed">You hold many options open under pressure — it's an asset, but Ana may read it as hesitation. Can I share talking points that lead with strengths so you feel more confident in the conversation?</p>
             </div>
           </div>
         </div>
@@ -153,7 +152,7 @@ export default function AtlasProfessional() {
           >
             <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
               <span
-                data-text="Meet your thinking partner"
+                data-text="Your AI coach for modern work"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
@@ -163,7 +162,7 @@ export default function AtlasProfessional() {
           <div className="min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas helps you think through high-stakes problems that don't have obvious answers — from strategic choices and tough trade-offs to difficult conversations and career-defining moves.
+                Atlas helps leaders, managers, and employees navigate difficult decisions, workplace pressure, and career challenges — from everyday situations to high-stakes moments at work.
               </p>
             </div>
 
@@ -213,19 +212,18 @@ export default function AtlasProfessional() {
           <div className="min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas adapts to how you naturally reason, anticipate your next question, and sharpen your judgment — so every decision lands with greater clarity, confidence, and speed.
+                Atlas adapts to how you naturally reason — so every decision lands with greater clarity, confidence, and speed.
               </p>
               <p className="font-medium">
                 Atlas helps you:
               </p>
               <ul className="space-y-2">
-                <li>Prepare for critical meetings with precise insight into stakeholders</li>
-                <li>Navigate hard choices without second-guessing</li>
-                <li>Handle feedback and conflict with calm precision</li>
-                <li>Move forward faster, knowing you've seen the full picture</li>
+                <li>Navigate difficult workplace situations faster</li>
+                <li>Communicate more effectively across teams</li>
+                <li>Handle feedback, conflict, and pressure with confidence</li>
               </ul>
               <p>
-                Always on. Always in your context. Built for the way real work — and real thinking — actually happens.
+                Always available. Always in context. Built to support how modern work actually happens.
               </p>
             </div>
 
@@ -245,11 +243,9 @@ export default function AtlasProfessional() {
       <section className="w-full bg-[#fafafb] py-8 md:py-[70px]">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col items-center text-center">
           <h2 className="font-sans text-[32px] md:text-[64px] leading-[1.1] tracking-[-0.03em] font-medium text-[#202426] mb-4 md:mb-6">
-            Start making better people decisions
+            <span className="block">Work Smarter</span>
+            <span className="text-[20px] md:text-[40px] font-normal">AI Coach for performance, productivity, and workplace challenges.</span>
           </h2>
-          <p className="text-[16px] md:text-[20px] leading-[1.6] text-[#4f4f4f] max-w-[600px] mb-8 md:mb-12">
-            Orient. Adapt. Act — with clarity.
-          </p>
           <button
             onClick={() => {
               window.dispatchEvent(new CustomEvent('openContactDrawer'));
@@ -277,9 +273,9 @@ export default function AtlasProfessional() {
 
             {/* Right — explanatory text */}
             <div className="md:col-span-5 md:col-start-8 text-[16px] md:text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-4 md:space-y-6">
-              <p>Atlas understands how people think and work across your organization — anticipating patterns, revealing misalignment, and helping you act with precision when it matters.</p>
-              <p>Always on. Always in context.</p>
-              <p>Built to support how work actually unfolds.</p>
+              <p>Atlas supports performance, collaboration, and day-to-day teamwork across your organization. It helps employees and managers navigate real work situations — from feedback conversations and coordination challenges to conflict resolution and team support.</p>
+              <p>Always available. Always in context.</p>
+              <p>Built for how work actually happens.</p>
             </div>
             
             <p className="text-[12px] text-[#6B7280] md:hidden">© 2026 Mindacc. All rights reserved.</p>

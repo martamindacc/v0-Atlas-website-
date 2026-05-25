@@ -86,7 +86,7 @@ export default function AtlasGlobal() {
             Atlas Global
           </h1>
           <p className="text-[14px] md:text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-[280px] md:max-w-2xl" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
-            Support teamwork and organizational change at enterprise scale.
+            AI coach for global teams and organizational change
           </p>
         </div>
 
@@ -105,7 +105,7 @@ export default function AtlasGlobal() {
             {/* Bubble 2 - User */}
             <div className="bg-white/[0.06] backdrop-blur-md border border-white/10 rounded-[18px] px-5 py-4 ml-8">
               <p className="text-xs font-medium text-white/70 mb-1">Jane</p>
-              <p className="text-white/95 text-[15px] leading-relaxed">We're ready, but I'm worried about the impact on the global product teams.</p>
+              <p className="text-white/95 text-[15px] leading-relaxed">We're ready, but I'm worried about the impact on the product teams.</p>
             </div>
 
             {/* Bubble 3 - Atlas */}
@@ -121,7 +121,7 @@ export default function AtlasGlobal() {
       </section>
 
       {/* Section 2 — Editorial product section */}
-      <section className="bg-[#fafafb] pb-[60px] md:pb-[100px] pt-8 md:pt-16 lg:pt-[72px]">
+      <section className="bg-[#fafafb] pb-[60px] md:pb-[100px] pt-16 md:pt-32 lg:pt-36">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-24 overflow-x-clip">
 
           {/* LEFT COLUMN (HEADER) */}
@@ -130,7 +130,7 @@ export default function AtlasGlobal() {
           >
             <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
               <span
-                data-text="Understand your organization at scale"
+                data-text="Keep global teams aligned at scale"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
@@ -140,7 +140,7 @@ export default function AtlasGlobal() {
           <div className="md:min-h-[140vh] min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas makes patterns across teams visible — from how decisions form and leadership emerges to where alignment breaks down at enterprise level.
+                Atlas helps enterprise organizations coordinate cross-functional teams more effectively across regions, departments, and leadership structures.
               </p>
             </div>
 
@@ -180,7 +180,7 @@ export default function AtlasGlobal() {
           >
             <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
               <span
-                data-text="See what's forming — before it becomes a problem"
+                data-text="Improve execution across regions and teams"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
@@ -190,19 +190,19 @@ export default function AtlasGlobal() {
           <div className="md:min-h-[140vh] min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas surfaces patterns in how people work, interpret situations, and make decisions across teams, regions, and levels — so leaders catch misalignment, risk, and bottlenecks early, before they cascade into enterprise-wide problems.
+                Atlas helps enterprise organizations coordinate teams more effectively across regions, departments, and leadership structures.
               </p>
               <p className="font-medium">
                 This means:
               </p>
               <ul className="space-y-3 list-none">
-                <li>Spot risks early — identify where thinking diverges or leadership gaps emerge before they scale</li>
-                <li>Align faster — turn fragmented perspectives into coherent organization-wide understanding</li>
-                <li>Execute at speed — reduce delays, rework, and hidden friction across global operations</li>
-                <li>Build resilience — strengthen leadership pipelines and decision quality so the enterprise moves as one powerful system</li>
+                <li>Faster coordination across cross-functional and global teams</li>
+                <li>Fewer communication issues between regions and departments</li>
+                <li>Better alignment during growth, restructuring, and transformation</li>
+                <li>More consistent execution across enterprise operations</li>
               </ul>
               <p>
-                Always in context. Always up to date. Built for how large organizations actually work — so scale becomes your greatest advantage, not your biggest liability.
+                Always in context. Always up to date. Built for modern enterprise operations.
               </p>
             </div>
 
@@ -222,11 +222,9 @@ export default function AtlasGlobal() {
       <section className="w-full bg-[#fafafb] py-8 md:py-[70px]">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col items-center text-center">
           <h2 className="font-sans text-[32px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.03em] font-medium text-[#202426] mb-4 md:mb-6">
-            Start making better people decisions
+            <span className="block">Work Smarter</span>
+            <span className="text-[20px] md:text-[40px] font-normal">AI Coach for performance, productivity, and workplace challenges.</span>
           </h2>
-          <p className="text-[16px] md:text-[20px] leading-[1.6] text-[#4f4f4f] max-w-[600px] mb-8 md:mb-12">
-            Orient. Adapt. Act — with clarity.
-          </p>
           <button
             onClick={() => {
               window.dispatchEvent(new CustomEvent('openContactDrawer'));
@@ -255,9 +253,9 @@ export default function AtlasGlobal() {
 
             {/* Right — explanatory text */}
             <div className="md:col-span-5 md:col-start-8 text-[16px] md:text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-4 md:space-y-6">
-              <p>Atlas understands how people think and work across your organization — anticipating patterns, revealing misalignment, and helping you act with precision when it matters.</p>
-              <p>Always on. Always in context.</p>
-              <p>Built to support how work actually unfolds.</p>
+              <p>Atlas supports performance, collaboration, and day-to-day teamwork across your organization. It helps employees and managers navigate real work situations — from feedback conversations and coordination challenges to conflict resolution and team support.</p>
+              <p>Always available. Always in context.</p>
+              <p>Built for how work actually happens.</p>
             </div>
             
             <p className="text-[12px] text-[#6B7280] md:hidden">© 2026 Mindacc. All rights reserved.</p>
