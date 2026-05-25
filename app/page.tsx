@@ -197,6 +197,31 @@ export default function Home() {
           <div className="mx-2 md:mx-4 h-px bg-black/10 opacity-60" />
         </div>
       </section>
+
+      {/* Section — Atlas Global Images */}
+      <section className="w-full bg-[#fafafb] pt-[75px] pb-[75px]">
+        <div className="max-w-[1200px] mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            {/* Left image — Surveys */}
+            <div className="flex items-center justify-center bg-white rounded-lg overflow-hidden">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ai_marta_morawska-o5OXAVu9Ef1vO4DTz40RCYlOhqc6qk.jpg"
+                alt="Survey workflow diagram"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            {/* Right image — Network nodes */}
+            <div className="flex items-center justify-center bg-white rounded-lg overflow-hidden">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ai-t6R70MOioiKpUBdHU5V2Wbgj4Yeu60.jpg"
+                alt="Organizational network diagram"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Section 3 — Human intelligence, understood by machines */}
       <section className="w-full bg-[#efefef] py-16 md:py-[140px]">
         <div className="max-w-[1200px] mx-auto px-4 md:px-6">
