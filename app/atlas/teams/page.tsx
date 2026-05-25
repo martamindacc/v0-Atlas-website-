@@ -199,7 +199,7 @@ export default function AtlasTeams() {
                 <li>• Improve cross-team communication</li>
                 <li>• Reduce delays and execution bottlenecks</li>
                 <li>• Improve onboarding and integration of new employees</li>
-                <li>• Prepare development plans and feedback</li>
+                <li>• Prepare development plans, performance reviews, and feedback conversations</li>
                 <li>• Support better decisions in high-pressure situations</li>
                 <li>• Prevent burnout</li>
               </ul>

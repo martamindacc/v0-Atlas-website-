@@ -140,7 +140,7 @@ export default function AtlasGlobal() {
           <div className="md:min-h-[140vh] min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas helps enterprise organizations operate more effectively across complex, distributed teams and fast-moving environments.
+                Atlas helps enterprise organizations coordinate teams more effectively across regions, departments, and leadership structures.
               </p>
             </div>
 
@@ -190,16 +190,16 @@ export default function AtlasGlobal() {
           <div className="md:min-h-[140vh] min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas helps enterprise organizations coordinate teams more effectively across regions, departments, and leadership structures.
+                Modern enterprise work is increasingly cross-functional, and constantly changing. Atlas helps global teams manage that complexity at scale.
               </p>
               <p className="font-medium">
                 This means:
               </p>
               <ul className="space-y-3 list-none">
-                <li>Faster coordination across cross-functional and global teams</li>
-                <li>Fewer communication issues between regions and departments</li>
-                <li>Better alignment during growth, restructuring, and transformation</li>
-                <li>More consistent execution across enterprise operations</li>
+                <li>• Faster coordination across cross-functional and global teams</li>
+                <li>• Fewer communication issues between regions and departments</li>
+                <li>• Better alignment during growth, restructuring, and transformation</li>
+                <li>• More consistent execution across enterprise operations</li>
               </ul>
               <p>
                 Always in context. Always up to date. Built for modern enterprise operations.
