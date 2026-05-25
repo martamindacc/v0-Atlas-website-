@@ -161,36 +161,63 @@ export default function Home() {
               description: "Organizational Intelligence\nRoll out AI coaching across global teams with shared context and insights",
               title: "Atlas Global",
               href: "/atlas/global",
+              showImages: true,
             },
           ].map((module) => (
-            <Link href={module.href} key={module.title} className="block">
-              <div className="mx-2 md:mx-4 h-px bg-black/10 opacity-60" />
-              <div
-                className="group -mx-[8px] md:-mx-[16px] px-[8px] md:px-[16px] cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7]"
-              >
-                <div className="max-w-[1200px] mx-auto py-10 md:py-[80px] flex flex-col md:grid md:grid-cols-12 gap-4 md:gap-x-12">
-                  {/* Left — description */}
-                  <div className="md:col-span-5 order-2 md:order-1">
-                    <p
-                      className="text-[16px] md:text-[20px] leading-relaxed max-w-[520px] whitespace-pre-line"
-                      style={{ fontFamily: "Inter, sans-serif", color: "#383838" }}
-                    >
-                      {module.description}
-                    </p>
-                  </div>
+            <div key={module.title}>
+              <Link href={module.href} className="block">
+                <div className="mx-2 md:mx-4 h-px bg-black/10 opacity-60" />
+                <div
+                  className="group -mx-[8px] md:-mx-[16px] px-[8px] md:px-[16px] cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7]"
+                >
+                  <div className="max-w-[1200px] mx-auto py-10 md:py-[80px] flex flex-col md:grid md:grid-cols-12 gap-4 md:gap-x-12">
+                    {/* Left — description */}
+                    <div className="md:col-span-5 order-2 md:order-1">
+                      <p
+                        className="text-[16px] md:text-[20px] leading-relaxed max-w-[520px] whitespace-pre-line"
+                        style={{ fontFamily: "Inter, sans-serif", color: "#383838" }}
+                      >
+                        {module.description}
+                      </p>
+                    </div>
 
-                  {/* Right — product name */}
-                  <div className="md:col-span-7 flex items-center md:justify-end overflow-hidden order-1 md:order-2">
-                    <span
-                      className="inline-block text-[32px] md:text-[72px] font-medium tracking-tight md:text-right transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em] will-change-transform"
-                      style={{ color: "#1e1f2b", fontFamily: "Inter, sans-serif" }}
-                    >
-                      {module.title}
-                    </span>
+                    {/* Right — product name */}
+                    <div className="md:col-span-7 flex items-center md:justify-end overflow-hidden order-1 md:order-2">
+                      <span
+                        className="inline-block text-[32px] md:text-[72px] font-medium tracking-tight md:text-right transition-all duration-[380ms] ease-out group-hover:translate-x-[2px] group-hover:tracking-[0.005em] will-change-transform"
+                        style={{ color: "#1e1f2b", fontFamily: "Inter, sans-serif" }}
+                      >
+                        {module.title}
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+              {module.showImages && (
+                <div className="mx-2 md:mx-4 py-10 md:py-16" style={{ backgroundColor: "#fafafb" }}>
+                  <div className="max-w-[1200px] mx-auto px-0 md:px-0">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                      {/* Left image — Surveys */}
+                      <div className="flex items-center justify-center bg-white rounded-lg overflow-hidden">
+                        <img
+                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20May%2025%2C%202026%20at%2007_47_48%20PM-bzXmUW5budETHPRiA568m9288XTnM0.png"
+                          alt="Survey workflow diagram"
+                          className="w-full h-auto object-cover"
+                        />
+                      </div>
+                      {/* Right image — Network nodes */}
+                      <div className="flex items-center justify-center bg-white rounded-lg overflow-hidden">
+                        <img
+                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20May%2025%2C%202026%20at%2008_45_51%20PM-Xj24Z492aHPHMMsc52kNmUIM9esLox.png"
+                          alt="Organizational network diagram"
+                          className="w-full h-auto object-cover"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
           ))}
 
           {/* Last row bottom border */}
