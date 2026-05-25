@@ -144,11 +144,11 @@ export default function AtlasProfessional() {
 
       {/* Section 2 — Editorial product section */}
       <section className="bg-[#fafafb] pb-[60px] md:pb-[100px] pt-16 md:pt-32 lg:pt-36">
-        <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-24 overflow-x-clip md:min-h-[140vh]">
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-24 overflow-x-clip md:h-screen md:overflow-hidden">
 
           {/* LEFT COLUMN (HEADER) */}
           <div
-            className={`md:sticky md:top-32 md:h-fit self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
+            className={`md:sticky md:top-0 md:h-screen md:flex md:items-center self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
           >
             <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
               <span
@@ -159,7 +159,7 @@ export default function AtlasProfessional() {
           </div>
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
-          <div className="min-w-0">
+          <div className="min-w-0 md:h-screen md:overflow-y-auto md:pr-4">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
                 Atlas helps leaders, managers, and employees navigate difficult decisions, workplace pressure, and career challenges — from everyday situations to high-stakes moments at work.
