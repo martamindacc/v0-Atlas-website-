@@ -66,7 +66,7 @@ export default function CognitiveSystemsLab() {
           <h2 className={`font-sans text-[68px] leading-[1.03] tracking-[-0.04em] font-medium text-[#111] transition-all duration-[900ms] ease-out ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}>
             Computational model
             <br />
-            of your reasoning patterns
+            of how modern organizations work
           </h2>
           <p
             className={`mt-10 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed transition-all duration-[900ms] ease-out ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}

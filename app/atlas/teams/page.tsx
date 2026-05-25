@@ -140,7 +140,7 @@ export default function AtlasTeams() {
           <div className="md:min-h-[140vh] min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas helps teams improve performance, increase productivity, resolve challenges faster, and work more effectively together.
+                Atlas helps teams improve performance, productivity, and communication.
               </p>
             </div>
 
@@ -190,16 +190,18 @@ export default function AtlasTeams() {
           <div className="md:min-h-[140vh] min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas helps teams understand each other's work styles, improve productivity, and support well-being.
+                Atlas helps teams understand each other's work styles — so they can work more effectively together.
               </p>
               <p className="font-medium">
-                This means:
+                Atlas helps teams:
               </p>
               <ul className="space-y-3">
-                <li>Faster conflict resolution</li>
-                <li>Smoother cross-team collaboration</li>
-                <li>Better decisions under pressure</li>
-                <li>Less rework and fewer delays</li>
+                <li>• Improve cross-team communication</li>
+                <li>• Reduce delays and execution bottlenecks</li>
+                <li>• Improve onboarding and integration of new employees</li>
+                <li>• Prepare development plans, performance reviews, and feedback conversations</li>
+                <li>• Support better decisions in high-pressure situations</li>
+                <li>• Prevent burnout</li>
               </ul>
             </div>
 
@@ -220,7 +222,7 @@ export default function AtlasTeams() {
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col items-center text-center">
           <h2 className="font-sans text-[32px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.03em] font-medium text-[#202426] mb-4 md:mb-6">
             <span className="block">Work Smarter</span>
-            <span className="text-[20px] md:text-[40px] font-normal">AI Coach for performance, productivity, and workplace challenges.</span>
+            <span className="text-[20px] md:text-[40px] font-normal">AI Coach for performance, productivity, and wellbeing.</span>
           </h2>
           <button
             onClick={() => {

@@ -140,7 +140,7 @@ export default function AtlasGlobal() {
           <div className="md:min-h-[140vh] min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas helps enterprise organizations coordinate cross-functional teams more effectively across regions, departments, and leadership structures.
+                Atlas helps enterprise organizations coordinate teams more effectively across regions, departments, and leadership structures.
               </p>
             </div>
 
@@ -190,16 +190,16 @@ export default function AtlasGlobal() {
           <div className="md:min-h-[140vh] min-w-0">
             <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
               <p>
-                Atlas helps enterprise organizations coordinate teams more effectively across regions, departments, and leadership structures.
+                Modern enterprise work is increasingly cross-functional, and constantly changing. Atlas helps global teams manage that complexity at scale.
               </p>
               <p className="font-medium">
                 This means:
               </p>
               <ul className="space-y-3 list-none">
-                <li>Faster coordination across cross-functional and global teams</li>
-                <li>Fewer communication issues between regions and departments</li>
-                <li>Better alignment during growth, restructuring, and transformation</li>
-                <li>More consistent execution across enterprise operations</li>
+                <li>• Faster coordination across cross-functional and global teams</li>
+                <li>• Fewer communication issues between regions and departments</li>
+                <li>• Better alignment during growth, restructuring, and transformation</li>
+                <li>• More consistent execution across enterprise operations</li>
               </ul>
               <p>
                 Always in context. Always up to date. Built for modern enterprise operations.
@@ -223,7 +223,7 @@ export default function AtlasGlobal() {
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col items-center text-center">
           <h2 className="font-sans text-[32px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.03em] font-medium text-[#202426] mb-4 md:mb-6">
             <span className="block">Work Smarter</span>
-            <span className="text-[20px] md:text-[40px] font-normal">AI Coach for performance, productivity, and workplace challenges.</span>
+            <span className="text-[20px] md:text-[40px] font-normal">AI Coach for performance, productivity, and wellbeing.</span>
           </h2>
           <button
             onClick={() => {
