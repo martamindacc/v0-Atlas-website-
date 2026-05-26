@@ -231,7 +231,7 @@ export default function Home() {
           </div>
 
           {/* Row 2: Image (left) | Text (right) */}
-          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center -mt-[100px]">
+          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center -mt-[140px]">
             {/* Image */}
             <div className="w-full md:w-auto flex items-center justify-center">
               <img
