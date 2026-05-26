@@ -199,8 +199,8 @@ export default function Home() {
       </section>
 
       {/* Section — Visual Explanation */}
-      <section className="w-full bg-[#fafafb] py-8 md:py-12 px-4 md:px-6">
-        <div className="max-w-[1200px] mx-auto space-y-16 md:space-y-24">
+      <section className="w-full bg-[#fafafb] py-6 md:py-8 px-4 md:px-6">
+        <div className="max-w-[1200px] mx-auto space-y-13 md:space-y-20">
           {/* Row 1: Text (left) | Image (right) */}
           <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Text Card */}
