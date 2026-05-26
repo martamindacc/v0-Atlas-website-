@@ -225,7 +225,7 @@ export default function Home() {
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cycle_diagram_fixed-2vUC894dOB7Cj5PDsCgcL5CrxnEo7J.svg"
                 alt="Survey and performance review cycle"
-                className="w-full md:w-[585px] h-[585px] object-contain"
+                className="w-full md:w-[643px] h-[643px] object-contain"
               />
             </div>
           </div>
@@ -237,11 +237,11 @@ export default function Home() {
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/atlas_network_scattered-qDnGy6QYlJ6tHF9730GtU5avMfFVW7.svg"
                 alt="Atlas organizational network diagram"
-                className="w-full md:w-[585px] h-[585px] object-contain"
+                className="w-full md:w-[643px] h-[643px] object-contain"
               />
             </div>
             {/* Text Card */}
-            <div className="flex items-center">
+            <div className="flex items-center pl-0 md:pl-6">
               <div className="max-w-[420px]">
                 <h3
                   className="text-[18px] md:text-[20px] font-semibold leading-[1.4] text-[#383838] mb-4"
