@@ -199,7 +199,7 @@ export default function Home() {
       </section>
 
       {/* Section — Visual Explanation */}
-      <section className="w-full bg-[#fafafb] py-6 md:py-8 px-4 md:px-6 -mt-[300px]">
+      <section className="w-full bg-[#fafafb] py-6 md:py-8 px-4 md:px-6 -mt-[150px]">
         <div className="max-w-[1200px] mx-auto space-y-13 md:space-y-20">
           {/* Row 1: Text (left) | Image (right) */}
           <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -231,7 +231,7 @@ export default function Home() {
           </div>
 
           {/* Row 2: Image (left) | Text (right) */}
-          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center -mt-[250px]">
+          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center -mt-[100px]">
             {/* Image */}
             <div className="w-full md:w-auto flex items-center justify-center">
               <img
