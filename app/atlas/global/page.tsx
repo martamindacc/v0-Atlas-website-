@@ -81,13 +81,18 @@ export default function AtlasGlobal() {
         >
           <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/board-CP9WmvjtOQ1EMUKe3EyIcWZVpp9V2N.mp4" type="video/mp4" />
         </video>
-        <div className="absolute bottom-8 left-4 md:bottom-16 md:left-16 z-10 pointer-events-none">
-          <h1 className="font-sans text-[36px] md:text-[88px] leading-[0.95] tracking-[-0.035em] font-semibold text-white">
-            Atlas Global
-          </h1>
-          <p className="text-[14px] md:text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-[280px] md:max-w-2xl" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
-            AI coach for global teams and organizational change
-          </p>
+        <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none px-4">
+          <div className="text-center max-w-[900px]">
+            <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-white/70 mb-4 md:mb-6">
+              ATLAS BY MINDACC
+            </p>
+            <h1 className="font-sans text-[36px] md:text-[72px] lg:text-[84px] leading-[1.1] tracking-[-0.02em] font-bold text-[#212527] mb-4 md:mb-6">
+              The future of work belongs to organizations that bet on <span style={{ color: "#f4a4d2" }}>people and AI.</span>
+            </h1>
+            <p className="text-[14px] md:text-[16px] leading-[1.6] text-[#212527]/70 max-w-[520px] mx-auto" style={{ fontFamily: "Inter, sans-serif" }}>
+              AI coaching powered by organizational context and workplace dynamics.
+            </p>
+          </div>
         </div>
 
         {/* Chat Bubbles Overlay - hidden on mobile */}
