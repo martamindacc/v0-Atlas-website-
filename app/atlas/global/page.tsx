@@ -225,7 +225,7 @@ export default function AtlasGlobal() {
             <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#6B7280] mb-4 md:mb-6">
               ATLAS BY MINDACC
             </p>
-            <h2 className="font-sans text-[36px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] font-bold text-[#212527] mb-4 md:mb-6">
+            <h2 className="font-serif text-[36px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] font-bold text-[#212527] mb-4 md:mb-6">
               The future of work belongs to organizations that bet on <span style={{ color: "#f4a4d2" }}>people and AI.</span>
             </h2>
             <p className="text-[14px] md:text-[16px] leading-[1.6] text-[#212527]/70" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -244,7 +244,7 @@ export default function AtlasGlobal() {
       </section>
 
       {/* Footer */}
-      <section className="w-full bg-[#efefef] py-16 md:py-[140px]">
+      <section className="w-full bg-[#efefef] py-16 md:py-[140px] -mt-[80px]">
         <div className="max-w-[1200px] mx-auto px-4 md:px-6">
           <div className="flex flex-col md:grid md:grid-cols-12 gap-8 md:gap-x-12 items-start">
             {/* Left — headline */}
