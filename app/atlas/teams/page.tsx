@@ -220,10 +220,17 @@ export default function AtlasTeams() {
       {/* CTA Section */}
       <section className="w-full bg-[#fafafb] py-8 md:py-[70px]">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col items-center text-center">
-          <h2 className="font-sans text-[32px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.03em] font-medium text-[#202426] mb-4 md:mb-6">
-            <span className="block">Work Smarter</span>
-            <span className="text-[20px] md:text-[40px] font-normal">AI Coach for performance, productivity, and wellbeing.</span>
-          </h2>
+          <div className="mb-4 md:mb-6">
+            <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#6B7280] mb-4 md:mb-6">
+              ATLAS BY MINDACC
+            </p>
+            <h2 className="font-sans text-[36px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] font-bold text-[#212527] mb-4 md:mb-6">
+              The future of work belongs to organizations that bet on <span style={{ color: "#f4a4d2" }}>people and AI.</span>
+            </h2>
+            <p className="text-[14px] md:text-[16px] leading-[1.6] text-[#212527]/70" style={{ fontFamily: "Inter, sans-serif" }}>
+              AI coaching powered by organizational context and workplace dynamics.
+            </p>
+          </div>
           <button
             onClick={() => {
               window.dispatchEvent(new CustomEvent('openContactDrawer'));
