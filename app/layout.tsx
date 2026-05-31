@@ -8,7 +8,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Mindacc',
-  description: 'People Intelligence Platform',
+  description: 'Team Intelligence Platform',
   generator: 'Mindacc',
   icons: {
     icon: [
