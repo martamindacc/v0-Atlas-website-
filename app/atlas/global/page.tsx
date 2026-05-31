@@ -219,7 +219,7 @@ export default function AtlasGlobal() {
       </section>
 
       {/* CTA Section */}
-      <section className="w-full bg-[#fafafb] py-8 md:py-[70px]">
+      <section className="w-full bg-[#fafafb] -mt-[40px] md:mt-0 py-8 md:py-[70px]">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col items-center text-center">
           <div className="mb-4 md:mb-6">
             <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#6B7280] mb-4 md:mb-6">
@@ -261,8 +261,8 @@ export default function AtlasGlobal() {
             {/* Right — explanatory text */}
             <div className="md:col-span-5 md:col-start-8 text-[16px] md:text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-4 md:space-y-6">
               <p>Atlas supports performance, collaboration, and day-to-day teamwork across your organization. It helps employees and managers navigate real work situations — from feedback conversations and coordination challenges to conflict resolution and team support.</p>
-              <p>Always available. Always in context.</p>
-              <p>Built for how work actually happens.</p>
+              <p className="font-semibold">Always available. Always in context.</p>
+              <p className="font-semibold">Built for how work actually happens.</p>
             </div>
             
             <p className="text-[12px] text-[#6B7280] md:hidden">© 2026 Mindacc. All rights reserved.</p>

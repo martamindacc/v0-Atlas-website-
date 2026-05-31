@@ -342,7 +342,7 @@ export default function SiteHeader() {
 
       {/* Navigation drawer */}
       <div
-        className={`fixed right-0 top-0 z-50 h-screen w-full md:w-[45vw] bg-[#fafafb] shadow-[-8px_0_24px_rgba(0,0,0,0.06)] transition-transform duration-220 ease-out ${
+        className={`fixed right-0 top-0 z-50 h-screen w-full md:w-[45vw] bg-[#fafafb] shadow-[-8px_0_24px_rgba(0,0,0,0.06)] transition-transform duration-220 ease-out overflow-y-auto ${
           isDrawerOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
