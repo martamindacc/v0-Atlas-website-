@@ -125,17 +125,17 @@ export default function Home() {
             }`}
           >
             <div className="w-full flex flex-wrap justify-center items-center gap-x-2 md:gap-x-3 gap-y-2 mt-6 mb-16 md:mb-40 text-[13px] md:text-[15px] tracking-[-0.01em] text-[#374151] font-medium">
-              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Team Dynamics</span>
+              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-gradient-to-b from-[#fde4f5] to-[#f8cae6]">Team Dynamics</span>
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
-              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Communication Support</span>
+              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-gradient-to-b from-[#fde4f5] to-[#f8cae6]">Communication Support</span>
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
-              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Execution Support</span>
+              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-gradient-to-b from-[#fde4f5] to-[#f8cae6]">Execution Support</span>
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
-              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Talent Composition</span>
+              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-gradient-to-b from-[#fde4f5] to-[#f8cae6]">Talent Composition</span>
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
-              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Development Plans</span>
+              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-gradient-to-b from-[#fde4f5] to-[#f8cae6]">Development Plans</span>
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
-              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-white">Succession Planning</span>
+              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-gradient-to-b from-[#fde4f5] to-[#f8cae6]">Succession Planning</span>
             </div>
             <h3
               className="text-[22px] md:text-[28px] font-medium tracking-tight text-neutral-900 mb-6"
@@ -199,10 +199,10 @@ export default function Home() {
       </section>
 
       {/* Section — Visual Explanation */}
-      <section className="w-full bg-[#fafafb] py-6 md:py-8 px-4 md:px-6 -mt-[150px]">
+      <section className="w-full bg-[#fafafb] py-6 md:py-8 px-4 md:px-6 mt-2 md:-mt-[150px]">
         <div className="max-w-[1200px] mx-auto space-y-13 md:space-y-20">
-          {/* Row 1: Text (left) | Image (right) */}
-          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+          {/* Row 1: Text (left) | Image (right) — on mobile: image first, then text */}
+          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Text Card */}
             <div className="flex items-center">
               <div className="max-w-[420px]">
@@ -225,23 +225,23 @@ export default function Home() {
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cycle_diagram_fixed-2vUC894dOB7Cj5PDsCgcL5CrxnEo7J.svg"
                 alt="Survey and performance review cycle"
-                className="w-full md:w-[643px] h-[643px] object-contain"
+                className="w-full h-auto md:w-[709px] md:h-[709px] object-contain"
               />
             </div>
           </div>
 
-          {/* Row 2: Image (left) | Text (right) */}
-          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center -mt-[140px]">
+          {/* Row 2: Image (left) | Text (right) — on mobile: image first, then text */}
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center mt-0 md:-mt-[230px]">
             {/* Image */}
-            <div className="w-full md:w-auto flex items-center justify-center">
+            <div className="w-full md:w-auto flex items-center justify-center order-first md:order-none">
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/atlas_network_scattered-qDnGy6QYlJ6tHF9730GtU5avMfFVW7.svg"
                 alt="Atlas organizational network diagram"
-                className="w-full md:w-[643px] h-[643px] object-contain"
+                className="w-full h-auto md:w-[709px] md:h-[709px] object-contain"
               />
             </div>
             {/* Text Card */}
-            <div className="flex items-center md:ml-auto">
+            <div className="flex items-center md:ml-auto order-last md:order-none">
               <div className="max-w-[420px]">
                 <h3
                   className="text-[18px] md:text-[20px] font-semibold leading-[1.4] text-[#383838] mb-4"
