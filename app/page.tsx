@@ -199,7 +199,7 @@ export default function Home() {
       </section>
 
       {/* Section — Visual Explanation */}
-      <section className="w-full bg-[#fafafb] py-6 md:py-8 px-4 md:px-6 -mt-[150px]">
+      <section className="w-full bg-[#fafafb] py-6 md:py-8 px-4 md:px-6 mt-8 md:-mt-[150px]">
         <div className="max-w-[1200px] mx-auto space-y-13 md:space-y-20">
           {/* Row 1: Text (left) | Image (right) */}
           <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -225,19 +225,19 @@ export default function Home() {
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cycle_diagram_fixed-2vUC894dOB7Cj5PDsCgcL5CrxnEo7J.svg"
                 alt="Survey and performance review cycle"
-                className="w-full md:w-[709px] h-[709px] object-contain"
+                className="w-full h-auto md:w-[709px] md:h-[709px] object-contain"
               />
             </div>
           </div>
 
           {/* Row 2: Image (left) | Text (right) */}
-          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center -mt-[230px]">
+          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center mt-0 md:-mt-[230px]">
             {/* Image */}
             <div className="w-full md:w-auto flex items-center justify-center">
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/atlas_network_scattered-qDnGy6QYlJ6tHF9730GtU5avMfFVW7.svg"
                 alt="Atlas organizational network diagram"
-                className="w-full md:w-[709px] h-[709px] object-contain"
+                className="w-full h-auto md:w-[709px] md:h-[709px] object-contain"
               />
             </div>
             {/* Text Card */}
