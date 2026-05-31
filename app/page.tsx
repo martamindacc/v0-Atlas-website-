@@ -230,8 +230,9 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Row 2: Image (left) | Text (right) — on mobile: image first, then text */}
-          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center mt-0 md:-mt-[230px]">
+<<<<<<< HEAD
+          {/* Row 2: Image (left) | Text (right) */}
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center mt-0 md:-mt-[130px]">
             {/* Image */}
             <div className="w-full md:w-auto flex items-center justify-center order-first md:order-none">
               <img
