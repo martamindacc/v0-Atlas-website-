@@ -146,7 +146,7 @@ export default function AtlasTeams() {
 
             <div className="mt-8 md:mt-16">
               <img
-                src="/images/atlas_team_workstyles.svg"
+                src="/images/atlas_team_workstyles_v2.png"
                 alt="Team work styles visualization"
                 className="w-full"
               />
