@@ -148,11 +148,11 @@ export default function AtlasTeams() {
 
         </div>
 
-        {/* Team Work Styles Diagram - Centered Full Width */}
+        {/* Team System Flow - Centered Full Width */}
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20 w-full flex items-center justify-center">
           <img
-            src="/images/atlas_team_workstyles_v2.png"
-            alt="Team work styles visualization"
+            src="/images/atlas_teams_system_flow.jpg"
+            alt="Atlas team system flow: People, Work Styles, Team Dynamics, Execution Quality, Business Outcomes"
             className="w-full h-auto max-w-[1100px] object-contain"
           />
         </div>
@@ -189,7 +189,7 @@ export default function AtlasTeams() {
           </div>
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
-          <div className="md:min-h-[140vh] min-w-0">
+          <div className="min-w-0">
             <div className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] space-y-6 max-w-[520px]" style={{fontFamily: "Inter, sans-serif"}}>
               <p className="font-semibold">
                 Atlas helps teams understand each other's work styles — so they can work more effectively together.
@@ -205,9 +205,21 @@ export default function AtlasTeams() {
                 <li>• Support better decisions in high-pressure situations</li>
                 <li>• Prevent burnout</li>
               </ul>
+              <p className="font-semibold">
+                Always available. Built to support how modern work actually happens.
+              </p>
             </div>
           </div>
 
+        </div>
+
+        {/* Teams Workflow Diagram - Centered Full Width */}
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20 w-full flex items-center justify-center">
+          <img
+            src="/images/atlas_teams_diagram_final.jpg"
+            alt="Connect. Coordinate. Perform."
+            className="w-full h-auto max-w-[1210px] object-contain"
+          />
         </div>
       </section>
 
