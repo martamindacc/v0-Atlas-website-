@@ -139,8 +139,8 @@ export default function AtlasTeams() {
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
           <div className="md:min-h-[140vh] min-w-0">
             <div className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] space-y-6 max-w-[520px]" style={{fontFamily: "Inter, sans-serif"}}>
-              <p>
-                Atlas helps teams improve performance, productivity, and communication.
+              <p className="font-semibold">
+                Atlas helps teams strengthen communication, reduce friction, and execute more effectively together. It helps teams understand how they work, where collaboration breaks down, and how to perform better under pressure.
               </p>
             </div>
 
@@ -189,7 +189,7 @@ export default function AtlasTeams() {
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
           <div className="md:min-h-[140vh] min-w-0">
             <div className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] space-y-6 max-w-[520px]" style={{fontFamily: "Inter, sans-serif"}}>
-              <p>
+              <p className="font-semibold">
                 Atlas helps teams understand each other's work styles — so they can work more effectively together.
               </p>
               <p className="font-medium">
