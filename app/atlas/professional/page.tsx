@@ -160,25 +160,24 @@ export default function AtlasProfessional() {
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
           <div className="min-w-0">
-            <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-              {/* Image */}
-              <div className="w-full md:w-auto flex items-center justify-center">
-                <img
-                  src="/images/atlas_horizontal_diagram_pink.svg"
-                  alt="Atlas capabilities diagram"
-                  className="w-full h-auto md:w-[509px] md:h-[509px] object-contain"
-                />
-              </div>
-              {/* Text */}
-              <div className="flex items-center">
-                <div className="max-w-[420px]">
-                  <p
-                    className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838]"
-                    style={{ fontFamily: "Inter, sans-serif" }}
-                  >
-                    Atlas helps leaders, managers, and employees navigate difficult decisions, workplace pressure, and career challenges — from everyday situations to high-stakes moments at work.
-                  </p>
-                </div>
+            {/* Image - full width under header */}
+            <div className="w-full md:w-auto flex items-center justify-center mb-12 md:mb-16">
+              <img
+                src="/images/atlas_horizontal_diagram_pink.svg"
+                alt="Atlas capabilities diagram"
+                className="w-full h-auto md:max-w-[509px] object-contain"
+              />
+            </div>
+            
+            {/* Text section */}
+            <div className="flex items-center">
+              <div className="max-w-[420px]">
+                <p
+                  className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838]"
+                  style={{ fontFamily: "Inter, sans-serif" }}
+                >
+                  Atlas helps leaders, managers, and employees navigate difficult decisions, workplace pressure, and career challenges — from everyday situations to high-stakes moments at work.
+                </p>
               </div>
             </div>
           </div>
