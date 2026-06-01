@@ -231,17 +231,17 @@ export default function AtlasProfessional() {
                 Always available. Always in context. Built to support how modern work actually happens.
               </p>
             </div>
-
-            {/* Feature Diagram - Centered */}
-            <div className="mt-12 md:mt-20 w-full flex items-center justify-center md:col-span-2">
-              <img
-                src="/images/atlas_anticipate_adapt_advance.jpg"
-                alt="Atlas Anticipate Adapt Advance diagram"
-                className="w-full h-auto max-w-[1000px] object-contain"
-              />
-            </div>
           </div>
 
+        </div>
+
+        {/* Feature Diagram - Centered Full Width */}
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20 w-full flex items-center justify-center">
+          <img
+            src="/images/atlas_anticipate_adapt_advance.jpg"
+            alt="Atlas Anticipate Adapt Advance diagram"
+            className="w-full h-auto max-w-[1000px] object-contain"
+          />
         </div>
       </section>
 
