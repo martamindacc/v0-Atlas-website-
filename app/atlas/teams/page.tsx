@@ -143,16 +143,17 @@ export default function AtlasTeams() {
                 Atlas helps teams strengthen communication, reduce friction, and execute more effectively together. It helps teams understand how they work, where collaboration breaks down, and how to perform better under pressure.
               </p>
             </div>
-
-            <div className="mt-8 md:mt-16">
-              <img
-                src="/images/atlas_team_workstyles_v2.png"
-                alt="Team work styles visualization"
-                className="w-full"
-              />
-            </div>
           </div>
 
+        </div>
+
+        {/* Team Work Styles Diagram - Centered Full Width */}
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20 w-full flex items-center justify-center">
+          <img
+            src="/images/atlas_team_workstyles_v2.png"
+            alt="Team work styles visualization"
+            className="w-full h-auto max-w-[1100px] object-contain"
+          />
         </div>
       </section>
 
