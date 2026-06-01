@@ -38,8 +38,9 @@ export default function AtlasTeams() {
             el.textContent = "";
 
             const type = () => {
+              if (!typingState.get(el)) return; // stop if animation was cancelled
               if (i < fullText.length) {
-                el.textContent += fullText.charAt(i);
+                el.textContent = fullText.substring(0, i + 1);
                 i++;
                 setTimeout(type, 35);
               } else {
