@@ -231,14 +231,6 @@ export default function AtlasProfessional() {
                 Always available. Always in context. Built to support how modern work actually happens.
               </p>
             </div>
-
-            <div className="mt-8 md:mt-16">
-              <img
-                src="/images/atlas_capability_colleagues.svg"
-                alt="Atlas competitive edge"
-                className="w-full"
-              />
-            </div>
           </div>
 
         </div>
