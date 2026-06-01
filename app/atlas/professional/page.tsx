@@ -144,12 +144,10 @@ export default function AtlasProfessional() {
 
       {/* Section 2 — Editorial product section */}
       <section className="bg-[#fafafb] pb-[60px] md:pb-[100px] pt-16 md:pt-32 lg:pt-36">
-        <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-24 overflow-x-clip md:min-h-[140vh]">
-
-          {/* LEFT COLUMN (HEADER) */}
-          <div
-            className={`md:sticky md:top-32 md:h-fit self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
-          >
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8">
+          
+          {/* Headline */}
+          <div className="mb-12 md:mb-16">
             <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
               <span
                 data-text="Your AI coach for modern work"
@@ -158,10 +156,20 @@ export default function AtlasProfessional() {
             </h3>
           </div>
 
-          {/* RIGHT COLUMN (SCROLL CONTENT) */}
-          <div className="min-w-0">
-            {/* Text section - first on mobile and desktop */}
-            <div className="flex items-center mb-8 md:mb-10">
+          {/* Content Grid - Image on left, text on right */}
+          <div className="flex flex-col md:grid md:grid-cols-[auto_1fr] gap-8 md:gap-16 items-start">
+            
+            {/* LEFT - Image */}
+            <div className="w-full md:w-auto flex items-start justify-start">
+              <img
+                src="/images/atlas_horizontal_diagram_pink.svg"
+                alt="Atlas capabilities diagram"
+                className="w-full h-auto md:w-[509px] object-contain"
+              />
+            </div>
+
+            {/* RIGHT - Text (vertically centered on desktop) */}
+            <div className="w-full md:w-auto flex items-center">
               <div className="max-w-[420px]">
                 <p
                   className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838]"
@@ -171,17 +179,7 @@ export default function AtlasProfessional() {
                 </p>
               </div>
             </div>
-            
-            {/* Image - below text */}
-            <div className="w-full md:w-auto flex items-center justify-center">
-              <img
-                src="/images/atlas_horizontal_diagram_pink.svg"
-                alt="Atlas capabilities diagram"
-                className="w-full h-auto md:max-w-[509px] object-contain"
-              />
-            </div>
           </div>
-
         </div>
       </section>
 
