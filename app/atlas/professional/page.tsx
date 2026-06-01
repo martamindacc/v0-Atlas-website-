@@ -147,7 +147,7 @@ export default function AtlasProfessional() {
         <div className="max-w-[1300px] mx-auto px-4 md:px-8">
           
           {/* Top Row - Headline on left, text on right */}
-          <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-16 items-start mb-[60px]">
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-16 items-start mb-[120px]">
             {/* LEFT - Animated Header */}
             <div>
               <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
