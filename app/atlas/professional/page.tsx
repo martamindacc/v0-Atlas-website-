@@ -147,7 +147,7 @@ export default function AtlasProfessional() {
         <div className="max-w-[1300px] mx-auto px-4 md:px-8">
           
           {/* Top Row - Headline on left, text on right */}
-          <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-16 mb-12 md:mb-16 items-start">
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-16 items-start">
             {/* LEFT - Animated Header */}
             <div>
               <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
@@ -161,7 +161,7 @@ export default function AtlasProfessional() {
             <div className="flex items-start md:items-center md:pt-4">
               <div className="max-w-[420px]">
                 <p
-                  className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838]"
+                  className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] font-semibold"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   Atlas helps leaders, managers, and employees navigate difficult decisions, workplace pressure, and career challenges — from everyday situations to high-stakes moments at work.
@@ -171,9 +171,9 @@ export default function AtlasProfessional() {
           </div>
 
           {/* Image Row - Centered */}
-          <div className="w-full flex items-center justify-center">
+          <div className="w-full flex items-center justify-center mt-[60px]">
             <img
-              src="/images/atlas_network_pink.png"
+              src="/images/atlas_network_pink_v2.png"
               alt="Atlas capabilities diagram"
               className="w-full h-auto max-w-[900px] object-contain"
             />
