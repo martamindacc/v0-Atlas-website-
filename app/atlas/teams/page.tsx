@@ -153,7 +153,7 @@ export default function AtlasTeams() {
           <img
             src="/images/atlas_teams_connect_coordinate.png"
             alt="Connect. Coordinate. Perform. - Team coordination network"
-            className="w-full h-auto max-w-[1100px] object-contain"
+            className="w-full h-auto max-w-[1210px] object-contain"
           />
         </div>
       </section>
