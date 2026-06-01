@@ -40,6 +40,7 @@ export default function AtlasProfessional() {
 
   useEffect(() => {
     const typingState = new WeakMap();
+    const timeoutIds = new WeakMap();
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -50,23 +51,42 @@ export default function AtlasProfessional() {
           if (entry.isIntersecting) {
             if (typingState.get(el)) return; // prevent duplicate loops
 
+            // Clear any existing timeout
+            const existingTimeout = timeoutIds.get(el);
+            if (existingTimeout) {
+              clearTimeout(existingTimeout);
+              timeoutIds.delete(el);
+            }
+
             typingState.set(el, true);
 
             let i = 0;
             el.textContent = "";
 
             const type = () => {
+              // Check if animation was cancelled
+              if (!typingState.get(el)) {
+                return;
+              }
               if (i < fullText.length) {
-                el.textContent += fullText.charAt(i);
+                el.textContent = fullText.substring(0, i + 1);
                 i++;
-                setTimeout(type, 35);
+                const timeoutId = setTimeout(type, 35);
+                timeoutIds.set(el, timeoutId);
               } else {
                 typingState.set(el, false);
+                timeoutIds.delete(el);
               }
             };
 
             type();
           } else {
+            // Clear timeout when element leaves viewport
+            const existingTimeout = timeoutIds.get(el);
+            if (existingTimeout) {
+              clearTimeout(existingTimeout);
+              timeoutIds.delete(el);
+            }
             el.textContent = "";
             typingState.set(el, false);
           }
@@ -233,6 +253,15 @@ export default function AtlasProfessional() {
             </div>
           </div>
 
+        </div>
+
+        {/* Feature Diagram - Centered Full Width */}
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20 w-full flex items-center justify-center -mb-[100px]">
+          <img
+            src="/images/atlas_anticipate_adapt_advance_v2.jpg"
+            alt="Atlas Anticipate Adapt Advance diagram"
+            className="w-full h-auto max-w-[1100px] object-contain"
+          />
         </div>
       </section>
 
