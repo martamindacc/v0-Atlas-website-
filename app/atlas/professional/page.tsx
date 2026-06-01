@@ -221,6 +221,19 @@ export default function AtlasProfessional() {
               <p className="font-semibold">
                 Atlas adapts to your work style — so you can perform at your best in modern work environments.
               </p>
+              <p className="font-medium">
+                Atlas helps you:
+              </p>
+              <ul className="space-y-2">
+                <li>• Prepare for high-stakes meetings</li>
+                <li>• Navigate difficult workplace situations faster</li>
+                <li>• Communicate more effectively across teams</li>
+                <li>• Handle feedback, conflict, and pressure with confidence</li>
+                <li>• Prevent burnout</li>
+              </ul>
+              <p className="font-semibold">
+                Always available. Always in context. Built to support how modern work actually happens.
+              </p>
             </div>
 
             <div className="mt-8 md:mt-16">
