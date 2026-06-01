@@ -213,8 +213,8 @@ export default function AtlasTeams() {
         {/* Teams Workflow Diagram - Centered Full Width */}
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20 w-full flex items-center justify-center">
           <img
-            src="/images/atlas_teams_workflow.jpg"
-            alt="Atlas helps teams work better together"
+            src="/images/atlas_teams_workflow_v2.jpg"
+            alt="Connect. Coordinate. Perform."
             className="w-full h-auto max-w-[1100px] object-contain"
           />
         </div>
