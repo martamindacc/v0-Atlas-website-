@@ -137,7 +137,7 @@ export default function AtlasTeams() {
           </div>
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
-          <div className="md:min-h-[140vh] min-w-0">
+          <div className="min-w-0">
             <div className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] space-y-6 max-w-[520px]" style={{fontFamily: "Inter, sans-serif"}}>
               <p className="font-semibold">
                 Atlas helps teams strengthen communication, reduce friction, and execute more effectively together. It helps teams understand how they work, where collaboration breaks down, and how to perform better under pressure.
@@ -148,7 +148,7 @@ export default function AtlasTeams() {
         </div>
 
         {/* Team Work Styles Diagram - Centered Full Width */}
-        <div className="max-w-[1300px] mx-auto px-4 md:px-8 -mt-[1400px] w-full flex items-center justify-center">
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20 w-full flex items-center justify-center">
           <img
             src="/images/atlas_team_workstyles_v2.png"
             alt="Team work styles visualization"
