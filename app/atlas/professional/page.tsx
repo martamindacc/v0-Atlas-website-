@@ -146,30 +146,34 @@ export default function AtlasProfessional() {
       <section className="bg-[#fafafb] pb-[60px] md:pb-[100px] pt-16 md:pt-32 lg:pt-36">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8">
           
-          {/* Headline */}
-          <div className="mb-12 md:mb-16">
-            <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
-              <span
-                data-text="Your AI coach for modern work"
-                className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
-              ></span>
-            </h3>
+          {/* Headline Row - Two column grid, headline on left */}
+          <div className="md:grid md:grid-cols-2 gap-8 md:gap-16 mb-12 md:mb-16">
+            <div>
+              <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
+                <span
+                  data-text="Your AI coach for modern work"
+                  className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
+                ></span>
+              </h3>
+            </div>
+            {/* Empty right column on desktop */}
+            <div className="hidden md:block"></div>
           </div>
 
           {/* Content Grid - Image on left, text on right */}
-          <div className="flex flex-col md:grid md:grid-cols-[auto_1fr] gap-8 md:gap-16 items-start">
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-16 items-center">
             
             {/* LEFT - Image */}
-            <div className="w-full md:w-auto flex items-start justify-start">
+            <div className="w-full flex items-center justify-center">
               <img
                 src="/images/atlas_horizontal_diagram_pink.svg"
                 alt="Atlas capabilities diagram"
-                className="w-full h-auto md:w-[509px] object-contain"
+                className="w-full h-auto max-w-[500px] object-contain"
               />
             </div>
 
-            {/* RIGHT - Text (vertically centered on desktop) */}
-            <div className="w-full md:w-auto flex items-center">
+            {/* RIGHT - Text */}
+            <div className="w-full flex items-center">
               <div className="max-w-[420px]">
                 <p
                   className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838]"
