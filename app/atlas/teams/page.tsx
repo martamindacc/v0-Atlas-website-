@@ -158,6 +158,20 @@ export default function AtlasTeams() {
         </div>
       </section>
 
+      {/* Divider */}
+      <div className="w-full bg-[#fafafb] py-8 md:py-10 lg:py-12">
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8">
+          <div className="relative flex items-center justify-between">
+            <div className="absolute inset-x-0 h-px bg-neutral-300/40"></div>
+            <div className="relative flex justify-between w-full px-0 text-xs text-neutral-400">
+              <span>0.1</span>
+              <span>[0.2]</span>
+              <span>0.3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Section 3 — Editorial product section */}
       <section className="bg-[#fafafb] pt-16 md:pt-[100px] pb-24 md:pb-48">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-24 overflow-x-clip">
@@ -194,6 +208,15 @@ export default function AtlasTeams() {
             </div>
           </div>
 
+        </div>
+
+        {/* Teams Workflow Diagram - Centered Full Width */}
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20 w-full flex items-center justify-center">
+          <img
+            src="/images/atlas_teams_workflow.jpg"
+            alt="Atlas helps teams work better together"
+            className="w-full h-auto max-w-[1100px] object-contain"
+          />
         </div>
       </section>
 
