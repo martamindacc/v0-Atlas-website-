@@ -231,6 +231,15 @@ export default function AtlasProfessional() {
                 Always available. Always in context. Built to support how modern work actually happens.
               </p>
             </div>
+
+            {/* Feature Diagram - Centered */}
+            <div className="mt-12 md:mt-20 w-full flex items-center justify-center md:col-span-2">
+              <img
+                src="/images/atlas_features_diagram.png"
+                alt="Atlas features diagram"
+                className="w-full h-auto max-w-[1000px] object-contain"
+              />
+            </div>
           </div>
 
         </div>
