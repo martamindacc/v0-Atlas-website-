@@ -148,7 +148,7 @@ export default function AtlasTeams() {
         </div>
 
         {/* Team Work Styles Diagram - Centered Full Width */}
-        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20 w-full flex items-center justify-center">
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-6 md:mt-8 w-full flex items-center justify-center">
           <img
             src="/images/atlas_team_workstyles_v2.png"
             alt="Team work styles visualization"
@@ -204,14 +204,6 @@ export default function AtlasTeams() {
                 <li>• Support better decisions in high-pressure situations</li>
                 <li>• Prevent burnout</li>
               </ul>
-            </div>
-
-            <div className="mt-8 md:mt-16">
-              <img
-                src="/images/atlas_early_signal.svg"
-                alt="Early signal detection"
-                className="w-full"
-              />
             </div>
           </div>
 
