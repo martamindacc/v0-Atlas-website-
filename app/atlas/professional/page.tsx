@@ -146,8 +146,9 @@ export default function AtlasProfessional() {
       <section className="bg-[#fafafb] pb-[60px] md:pb-[100px] pt-16 md:pt-32 lg:pt-36">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8">
           
-          {/* Headline Row - Two column grid, headline on left */}
-          <div className="md:grid md:grid-cols-2 gap-8 md:gap-16 mb-12 md:mb-16">
+          {/* Top Row - Headline on left, text on right */}
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-16 mb-12 md:mb-16 items-start">
+            {/* LEFT - Animated Header */}
             <div>
               <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
                 <span
@@ -156,24 +157,8 @@ export default function AtlasProfessional() {
                 ></span>
               </h3>
             </div>
-            {/* Empty right column on desktop */}
-            <div className="hidden md:block"></div>
-          </div>
-
-          {/* Content Grid - Image on left, text on right */}
-          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-            
-            {/* LEFT - Image */}
-            <div className="w-full flex items-center justify-center">
-              <img
-                src="/images/atlas_horizontal_diagram_pink.svg"
-                alt="Atlas capabilities diagram"
-                className="w-full h-auto max-w-[500px] object-contain"
-              />
-            </div>
-
             {/* RIGHT - Text */}
-            <div className="w-full flex items-center">
+            <div className="flex items-start md:items-center md:pt-4">
               <div className="max-w-[420px]">
                 <p
                   className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838]"
@@ -183,6 +168,15 @@ export default function AtlasProfessional() {
                 </p>
               </div>
             </div>
+          </div>
+
+          {/* Image Row - Centered */}
+          <div className="w-full flex items-center justify-center">
+            <img
+              src="/images/atlas_network_pink.png"
+              alt="Atlas capabilities diagram"
+              className="w-full h-auto max-w-[900px] object-contain"
+            />
           </div>
         </div>
       </section>
