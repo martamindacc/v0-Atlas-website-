@@ -148,7 +148,7 @@ export default function AtlasTeams() {
         </div>
 
         {/* Team Work Styles Diagram - Centered Full Width */}
-        <div className="max-w-[1300px] mx-auto px-4 md:px-8 -mt-[500px] w-full flex items-center justify-center">
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 -mt-[950px] w-full flex items-center justify-center">
           <img
             src="/images/atlas_team_workstyles_v2.png"
             alt="Team work styles visualization"
