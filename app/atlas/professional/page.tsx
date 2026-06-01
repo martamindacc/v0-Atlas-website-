@@ -171,7 +171,7 @@ export default function AtlasProfessional() {
           </div>
 
           {/* Image Row - Centered */}
-          <div className="w-full flex items-center justify-center mt-[60px] mb-[60px]">
+          <div className="w-full flex items-center justify-center mt-[60px]">
             <img
               src="/images/atlas_network_pink_v2.png"
               alt="Atlas capabilities diagram"
