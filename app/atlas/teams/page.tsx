@@ -218,7 +218,7 @@ export default function AtlasTeams() {
           <img
             src="/images/atlas_teams_diagram_final.jpg"
             alt="Connect. Coordinate. Perform."
-            className="w-full h-auto max-w-[1100px] object-contain"
+            className="w-full h-auto max-w-[1210px] object-contain"
           />
         </div>
       </section>
