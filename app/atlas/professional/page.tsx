@@ -160,18 +160,26 @@ export default function AtlasProfessional() {
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
           <div className="min-w-0">
-            <div className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] space-y-6 max-w-[520px]" style={{fontFamily: "Inter, sans-serif"}}>
-              <p>
-                Atlas helps leaders, managers, and employees navigate difficult decisions, workplace pressure, and career challenges — from everyday situations to high-stakes moments at work.
-              </p>
-            </div>
-
-            <div className="mt-8 md:mt-16">
-              <img
-                src="/images/atlas_individual_outcomes.svg"
-                alt="Atlas thinking partner"
-                className="w-full"
-              />
+            <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+              {/* Image */}
+              <div className="w-full md:w-auto flex items-center justify-center">
+                <img
+                  src="/images/atlas_horizontal_diagram_pink.svg"
+                  alt="Atlas capabilities diagram"
+                  className="w-full h-auto md:w-[509px] md:h-[509px] object-contain"
+                />
+              </div>
+              {/* Text */}
+              <div className="flex items-center">
+                <div className="max-w-[420px]">
+                  <p
+                    className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838]"
+                    style={{ fontFamily: "Inter, sans-serif" }}
+                  >
+                    Atlas helps leaders, managers, and employees navigate difficult decisions, workplace pressure, and career challenges — from everyday situations to high-stakes moments at work.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -211,21 +219,8 @@ export default function AtlasProfessional() {
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
           <div className="min-w-0">
             <div className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] space-y-6 max-w-[520px]" style={{fontFamily: "Inter, sans-serif"}}>
-              <p>
+              <p className="font-semibold">
                 Atlas adapts to your work style — so you can perform at your best in modern work environments.
-              </p>
-              <p className="font-medium">
-                Atlas helps you:
-              </p>
-              <ul className="space-y-2">
-                <li>• Prepare for high-stakes meetings</li>
-                <li>• Navigate difficult workplace situations faster</li>
-                <li>• Communicate more effectively across teams</li>
-                <li>• Handle feedback, conflict, and pressure with confidence</li>
-                <li>• Prevent burnout</li>
-              </ul>
-              <p>
-                Always available. Always in context. Built to support how modern work actually happens.
               </p>
             </div>
 
