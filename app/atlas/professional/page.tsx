@@ -160,7 +160,7 @@ export default function AtlasProfessional() {
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
           <div className="min-w-0">
-            <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
+            <div className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] space-y-6 max-w-[520px]" style={{fontFamily: "Inter, sans-serif"}}>
               <p>
                 Atlas helps leaders, managers, and employees navigate difficult decisions, workplace pressure, and career challenges — from everyday situations to high-stakes moments at work.
               </p>
@@ -210,7 +210,7 @@ export default function AtlasProfessional() {
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
           <div className="min-w-0">
-            <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
+            <div className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] space-y-6 max-w-[520px]" style={{fontFamily: "Inter, sans-serif"}}>
               <p>
                 Atlas adapts to your work style — so you can perform at your best in modern work environments.
               </p>
@@ -251,7 +251,7 @@ export default function AtlasProfessional() {
             <h2 className="font-sans text-[36px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] font-bold text-[#212527] mb-4 md:mb-6">
               The future of work belongs to organizations that bet on <span style={{ color: "#f4a4d2" }}>people and AI.</span>
             </h2>
-            <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
+            <p className="text-[14px] md:text-[16px] leading-[1.6] text-[#212527]/70" style={{ fontFamily: "Inter, sans-serif" }}>
               AI coaching powered by organizational context and workplace dynamics.
             </p>
           </div>
