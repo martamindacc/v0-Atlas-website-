@@ -144,37 +144,40 @@ export default function AtlasProfessional() {
 
       {/* Section 2 — Editorial product section */}
       <section className="bg-[#fafafb] pb-[60px] md:pb-[100px] pt-16 md:pt-32 lg:pt-36">
-        <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-24 overflow-x-clip md:min-h-[140vh]">
-
-          {/* LEFT COLUMN (HEADER) */}
-          <div
-            className={`md:sticky md:top-32 md:h-fit self-start min-w-0 transition-transform duration-[900ms] ease-out translate-y-0`}
-          >
-            <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
-              <span
-                data-text="Your AI coach for modern work"
-                className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
-              ></span>
-            </h3>
-          </div>
-
-          {/* RIGHT COLUMN (SCROLL CONTENT) */}
-          <div className="min-w-0">
-            <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
-              <p>
-                Atlas helps leaders, managers, and employees navigate difficult decisions, workplace pressure, and career challenges — from everyday situations to high-stakes moments at work.
-              </p>
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8">
+          
+          {/* Top Row - Headline on left, text on right */}
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-16 items-start mb-[120px]">
+            {/* LEFT - Animated Header */}
+            <div>
+              <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
+                <span
+                  data-text="Your AI coach for modern work"
+                  className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
+                ></span>
+              </h3>
             </div>
-
-            <div className="mt-8 md:mt-16">
-              <img
-                src="/images/atlas_individual_outcomes.svg"
-                alt="Atlas thinking partner"
-                className="w-full"
-              />
+            {/* RIGHT - Text */}
+            <div className="flex items-start md:items-center md:pt-4">
+              <div className="max-w-[420px]">
+                <p
+                  className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] font-semibold"
+                  style={{ fontFamily: "Inter, sans-serif" }}
+                >
+                  Atlas helps leaders, managers, and employees navigate difficult decisions, workplace pressure, and career challenges — from everyday situations to high-stakes moments at work.
+                </p>
+              </div>
             </div>
           </div>
 
+          {/* Image Row - Centered */}
+          <div className="w-full flex items-center justify-center">
+            <img
+              src="/images/atlas_network_pink_v2.png"
+              alt="Atlas capabilities diagram"
+              className="w-full h-auto max-w-[900px] object-contain"
+            />
+          </div>
         </div>
       </section>
 
@@ -210,8 +213,8 @@ export default function AtlasProfessional() {
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
           <div className="min-w-0">
-            <div className="text-[18px] md:text-[24px] leading-[1.75] space-y-6 max-w-[520px]" style={{color: '#4f4f4f'}}>
-              <p>
+            <div className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] space-y-6 max-w-[520px]" style={{fontFamily: "Inter, sans-serif"}}>
+              <p className="font-semibold">
                 Atlas adapts to your work style — so you can perform at your best in modern work environments.
               </p>
               <p className="font-medium">
@@ -224,7 +227,7 @@ export default function AtlasProfessional() {
                 <li>• Handle feedback, conflict, and pressure with confidence</li>
                 <li>• Prevent burnout</li>
               </ul>
-              <p>
+              <p className="font-semibold">
                 Always available. Always in context. Built to support how modern work actually happens.
               </p>
             </div>
@@ -280,7 +283,7 @@ export default function AtlasProfessional() {
               <p className="text-[12px] text-[#6B7280] mt-8 hidden md:block">© 2026 Mindacc. All rights reserved.</p>
             </div>
 
-            {/* Right — explanatory text */}
+            {/* Right �� explanatory text */}
             <div className="md:col-span-5 md:col-start-8 text-[16px] md:text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-4 md:space-y-6">
               <p>Atlas supports performance, collaboration, and day-to-day teamwork across your organization. It helps employees and managers navigate real work situations — from feedback conversations and coordination challenges to conflict resolution and team support.</p>
               <p className="font-semibold">Always available. Always in context.</p>
