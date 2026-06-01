@@ -160,17 +160,8 @@ export default function AtlasProfessional() {
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
           <div className="min-w-0">
-            {/* Image - full width under header */}
-            <div className="w-full md:w-auto flex items-center justify-center mb-12 md:mb-16">
-              <img
-                src="/images/atlas_horizontal_diagram_pink.svg"
-                alt="Atlas capabilities diagram"
-                className="w-full h-auto md:max-w-[509px] object-contain"
-              />
-            </div>
-            
-            {/* Text section */}
-            <div className="flex items-center">
+            {/* Text section - first on mobile and desktop */}
+            <div className="flex items-center mb-8 md:mb-10">
               <div className="max-w-[420px]">
                 <p
                   className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838]"
@@ -179,6 +170,15 @@ export default function AtlasProfessional() {
                   Atlas helps leaders, managers, and employees navigate difficult decisions, workplace pressure, and career challenges — from everyday situations to high-stakes moments at work.
                 </p>
               </div>
+            </div>
+            
+            {/* Image - below text */}
+            <div className="w-full md:w-auto flex items-center justify-center">
+              <img
+                src="/images/atlas_horizontal_diagram_pink.svg"
+                alt="Atlas capabilities diagram"
+                className="w-full h-auto md:max-w-[509px] object-contain"
+              />
             </div>
           </div>
 
