@@ -171,7 +171,7 @@ export default function AtlasProfessional() {
           </div>
 
           {/* Image Row - Centered */}
-          <div className="w-full flex items-center justify-center mt-[60px]">
+          <div className="w-full flex items-center justify-center mt-[60px] mb-[60px]">
             <img
               src="/images/atlas_network_pink_v2.png"
               alt="Atlas capabilities diagram"
@@ -283,7 +283,7 @@ export default function AtlasProfessional() {
               <p className="text-[12px] text-[#6B7280] mt-8 hidden md:block">© 2026 Mindacc. All rights reserved.</p>
             </div>
 
-            {/* Right — explanatory text */}
+            {/* Right �� explanatory text */}
             <div className="md:col-span-5 md:col-start-8 text-[16px] md:text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-4 md:space-y-6">
               <p>Atlas supports performance, collaboration, and day-to-day teamwork across your organization. It helps employees and managers navigate real work situations — from feedback conversations and coordination challenges to conflict resolution and team support.</p>
               <p className="font-semibold">Always available. Always in context.</p>
