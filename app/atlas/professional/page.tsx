@@ -163,7 +163,7 @@ export default function AtlasProfessional() {
       </section>
 
       {/* Section 2 — Editorial product section */}
-      <section className="bg-[#fafafb] pb-[60px] md:pb-[100px] pt-16 md:pt-32 lg:pt-36">
+      <section className="bg-[#fafafb] pb-[200px] md:pb-[280px] pt-16 md:pt-32 lg:pt-36">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8">
           
           {/* Top Row - Headline on left, text on right */}
