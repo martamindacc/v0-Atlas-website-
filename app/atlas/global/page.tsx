@@ -232,6 +232,7 @@ export default function AtlasGlobal() {
             </div>
           </div>
         </div>
+      </div>
 
       {/* CTA Section */}
       <section className="w-full bg-[#fafafb] -mt-[40px] md:mt-0 py-8 md:py-[70px]">
