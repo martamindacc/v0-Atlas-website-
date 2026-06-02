@@ -259,13 +259,13 @@ export default function AtlasProfessional() {
               <div className="text-center">
                 <h2 className="mb-3 md:mb-5">
                   <span className="text-[36px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] font-bold">
-                    <span style={{ color: "#5736D3" }}>Connect.</span>{" "}
-                    <span style={{ color: "#0066FF" }}>Coordinate.</span>{" "}
-                    <span style={{ color: "#FF1B6D" }}>Perform.</span>
+                    <span style={{ color: "#5736D3" }}>Anticipate.</span>{" "}
+                    <span style={{ color: "#0066FF" }}>Adapt.</span>{" "}
+                    <span style={{ color: "#FF1B6D" }}>Advance.</span>
                   </span>
                 </h2>
                 <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] font-medium" style={{fontFamily: "Inter, sans-serif"}}>
-                  Atlas uses predictive intelligence to surface friction early, strengthen collaboration, and help teams perform at their best.
+                  Atlas uses predictive intelligence to help you stay ahead, make better decisions, and drive results in complex environments.
                 </p>
               </div>
             </div>
