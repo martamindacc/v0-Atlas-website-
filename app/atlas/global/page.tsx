@@ -137,7 +137,7 @@ export default function AtlasGlobal() {
           </div>
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
-          <div className="md:min-h-[40vh] min-w-0">
+          <div className="md:min-h-[38vh] min-w-0">
             <div className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] space-y-6 max-w-[520px]" style={{fontFamily: "Inter, sans-serif"}}>
               <p className="font-semibold">
                 Atlas helps enterprise organizations coordinate teams more effectively across regions, departments, and leadership structures.
