@@ -198,27 +198,40 @@ export default function AtlasGlobal() {
               <p className="font-semibold">
                 Always in context. Always up to date. Built for modern enterprise operations.
               </p>
-
-              <div className="mt-12 md:mt-20 flex flex-col items-center text-center">
-                <h2 className="mb-6 md:mb-8">
-                  <span className="text-[36px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] font-bold">
-                    <span style={{ color: "#5736D3" }}>Connect.</span>{" "}
-                    <span style={{ color: "#0066FF" }}>Coordinate.</span>{" "}
-                    <span style={{ color: "#FF1B6D" }}>Perform.</span>
-                  </span>
-                </h2>
-                <p className="text-[14px] md:text-[16px] leading-[1.6] text-[#383838] max-w-[560px]" style={{fontFamily: "Inter, sans-serif"}}>
-                  Atlas uses predictive intelligence to surface friction early, strengthen collaboration, and help teams perform at their best.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-8 md:mt-16">
             </div>
           </div>
+        </div>
 
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20">
+          <div className="flex flex-row items-center justify-center text-center">
+            <div>
+              <h2 className="mb-6 md:mb-8">
+                <span className="text-[36px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] font-bold">
+                  <span style={{ color: "#5736D3" }}>Connect.</span>{" "}
+                  <span style={{ color: "#0066FF" }}>Coordinate.</span>{" "}
+                  <span style={{ color: "#FF1B6D" }}>Perform.</span>
+                </span>
+              </h2>
+              <p className="text-[14px] md:text-[16px] leading-[1.6] text-[#383838] max-w-[560px] mx-auto" style={{fontFamily: "Inter, sans-serif"}}>
+                Atlas uses predictive intelligence to surface friction early, strengthen collaboration, and help teams perform at their best.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+
+      {/* Divider */}
+      <div className="w-full bg-[#fafafb] py-8 md:py-10 lg:py-12">
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8">
+          <div className="relative flex items-center justify-between">
+            <div className="absolute inset-x-0 h-px bg-neutral-300/40"></div>
+            <div className="relative flex justify-between w-full px-0 text-xs text-neutral-400">
+              <span>0.1</span>
+              <span>[0.2]</span>
+              <span>0.3</span>
+            </div>
+          </div>
+        </div>
 
       {/* CTA Section */}
       <section className="w-full bg-[#fafafb] -mt-[40px] md:mt-0 py-8 md:py-[70px]">
