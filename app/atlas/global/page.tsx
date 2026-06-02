@@ -137,16 +137,23 @@ export default function AtlasGlobal() {
           </div>
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
-          <div className="md:min-h-[140vh] min-w-0">
+          <div className="md:min-h-[37vh] min-w-0">
             <div className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] space-y-6 max-w-[520px]" style={{fontFamily: "Inter, sans-serif"}}>
               <p className="font-semibold">
                 Atlas helps enterprise organizations coordinate teams more effectively across regions, departments, and leadership structures.
               </p>
             </div>
-
-
           </div>
 
+        </div>
+
+        {/* Global Coordination Diagram - Centered */}
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20 w-full flex items-center justify-center">
+          <img
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ai_atlas_mindacc_marta_morawska-5lhWarcKTMeILEvq6IIa7rwNRcy4Zh.jpg"
+            alt="Atlas global coordination diagram showing regional teams and organizational alignment"
+            className="w-full h-auto max-w-[1100px] object-contain"
+          />
         </div>
       </section>
 
@@ -207,13 +214,13 @@ export default function AtlasGlobal() {
             <div className="text-center">
               <h2 className="mb-3 md:mb-5">
                 <span className="text-[36px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] font-bold">
-                  <span style={{ color: "#5736D3" }}>Connect.</span>{" "}
-                  <span style={{ color: "#0066FF" }}>Coordinate.</span>{" "}
-                  <span style={{ color: "#FF1B6D" }}>Perform.</span>
+                  <span style={{ color: "#5736D3" }}>Align.</span>{" "}
+                  <span style={{ color: "#0066FF" }}>Execute.</span>{" "}
+                  <span style={{ color: "#FF1B6D" }}>Scale.</span>
                 </span>
               </h2>
               <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] font-medium" style={{fontFamily: "Inter, sans-serif"}}>
-                Atlas uses predictive intelligence to surface friction early, strengthen collaboration, and help teams perform at their best.
+                Atlas uses predictive intelligence to help teams anticipate challenges, improve collaboration, and execute more effectively across the organization.
               </p>
             </div>
           </div>
