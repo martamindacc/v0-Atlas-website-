@@ -220,20 +220,6 @@ export default function AtlasGlobal() {
         </div>
       </section>
 
-      {/* Divider */}
-      <div className="w-full bg-[#fafafb] py-8 md:py-10 lg:py-12">
-        <div className="max-w-[1300px] mx-auto px-4 md:px-8">
-          <div className="relative flex items-center justify-between">
-            <div className="absolute inset-x-0 h-px bg-neutral-300/40"></div>
-            <div className="relative flex justify-between w-full px-0 text-xs text-neutral-400">
-              <span>0.1</span>
-              <span>[0.2]</span>
-              <span>0.3</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* CTA Section */}
       <section className="w-full bg-[#fafafb] -mt-[40px] md:mt-0 py-8 md:py-[70px]">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col items-center text-center">
