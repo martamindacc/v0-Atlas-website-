@@ -253,21 +253,22 @@ export default function AtlasProfessional() {
             </div>
           </div>
 
-          {/* Connect. Coordinate. Perform. Header - Centered */}
-          <div className="col-span-1 md:col-span-2 max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20 w-full">
-            <div className="w-full flex items-center justify-center">
-              <div className="text-center">
-                <h2 className="mb-3 md:mb-5">
-                  <span className="text-[36px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] font-bold">
-                    <span style={{ color: "#5736D3" }}>Anticipate.</span>{" "}
-                    <span style={{ color: "#0066FF" }}>Adapt.</span>{" "}
-                    <span style={{ color: "#FF1B6D" }}>Advance.</span>
-                  </span>
-                </h2>
-                <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] font-medium" style={{fontFamily: "Inter, sans-serif"}}>
-                  Atlas uses predictive intelligence to help you stay ahead, make better decisions, and drive results in complex environments.
-                </p>
-              </div>
+        </div>
+
+        {/* Anticipate. Adapt. Advance. Header - Centered */}
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20">
+          <div className="w-full flex items-center justify-center">
+            <div className="text-center">
+              <h2 className="mb-3 md:mb-5">
+                <span className="text-[36px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] font-bold">
+                  <span style={{ color: "#5736D3" }}>Anticipate.</span>{" "}
+                  <span style={{ color: "#0066FF" }}>Adapt.</span>{" "}
+                  <span style={{ color: "#FF1B6D" }}>Advance.</span>
+                </span>
+              </h2>
+              <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] font-medium" style={{fontFamily: "Inter, sans-serif"}}>
+                Atlas uses predictive intelligence to help you stay ahead, make better decisions, and drive results in complex environments.
+              </p>
             </div>
           </div>
         </div>
@@ -283,7 +284,7 @@ export default function AtlasProfessional() {
       </section>
 
       {/* CTA Section */}
-      <section className="w-full bg-[#fafafb] -mt-[40px] md:mt-0 py-8 md:py-[70px]">
+      <section className="w-full bg-[#fafafb] py-8 md:py-[70px]">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col items-center text-center">
           <div className="mb-4 md:mb-6">
             <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#6B7280] mb-4 md:mb-6">
