@@ -213,13 +213,22 @@ export default function AtlasTeams() {
 
         </div>
 
-        {/* Teams Workflow Diagram - Centered Full Width */}
-        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20 w-full flex items-center justify-center">
-          <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/xxxxx-X1kvEPFevAT6WFKS9Y7HLjiJKnSMgF.jpg"
-            alt="Connect. Coordinate. Perform."
-            className="w-full h-auto max-w-[1210px] object-contain"
-          />
+        {/* Connect. Coordinate. Perform. Header - Centered */}
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20">
+          <div className="w-full flex items-center justify-center">
+            <div className="text-center">
+              <h2 className="mb-6 md:mb-8">
+                <span className="text-[36px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] font-bold">
+                  <span style={{ color: "#5736D3" }}>Connect.</span>{" "}
+                  <span style={{ color: "#0066FF" }}>Coordinate.</span>{" "}
+                  <span style={{ color: "#FF1B6D" }}>Perform.</span>
+                </span>
+              </h2>
+              <p className="text-[14px] md:text-[16px] leading-[1.6] text-[#383838]" style={{fontFamily: "Inter, sans-serif"}}>
+                Atlas uses predictive intelligence to surface friction early, strengthen collaboration, and help teams perform at their best.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
