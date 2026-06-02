@@ -150,7 +150,7 @@ export default function AtlasGlobal() {
         {/* Global Coordination Diagram - Centered */}
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20 w-full flex items-center justify-center">
           <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/atlas_ai_mindacc_marta_morawska-UARCnieznTPbX5ie8obJwEGkW8oZ9l.jpg"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ai_atlas_mindacc_marta_morawska-5lhWarcKTMeILEvq6IIa7rwNRcy4Zh.jpg"
             alt="Atlas global coordination diagram showing regional teams and organizational alignment"
             className="w-full h-auto max-w-[1100px] object-contain"
           />
