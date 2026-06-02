@@ -143,10 +143,17 @@ export default function AtlasGlobal() {
                 Atlas helps enterprise organizations coordinate teams more effectively across regions, departments, and leadership structures.
               </p>
             </div>
-
-
           </div>
 
+        </div>
+
+        {/* Global Coordination Diagram - Centered */}
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20 w-full flex items-center justify-center">
+          <img
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mindacc_atlas_global_ai_marta_morawska-cwe7r0mrVb01DQHfKq9cjtRpFpKGCn.jpg"
+            alt="Atlas global coordination diagram showing regional teams and organizational alignment"
+            className="w-full h-auto max-w-[1100px] object-contain"
+          />
         </div>
       </section>
 
