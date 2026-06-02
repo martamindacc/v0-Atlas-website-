@@ -273,7 +273,7 @@ export default function AtlasProfessional() {
         </div>
 
         {/* Feature Diagram - Centered Full Width */}
-        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20 w-full flex items-center justify-center -mb-[100px]">
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-2 md:mt-10 w-full flex items-center justify-center -mb-[100px]">
           <img
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/wwww-vohqmT9Ra62sSRYFa50K5YX70vGpGc.jpg"
             alt="Atlas Anticipate Adapt Advance diagram"
