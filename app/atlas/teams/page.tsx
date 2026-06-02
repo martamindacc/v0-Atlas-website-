@@ -213,12 +213,30 @@ export default function AtlasTeams() {
 
         </div>
 
-        {/* Teams Workflow Diagram - Centered Full Width */}
+        {/* Connect. Coordinate. Perform. Header - Centered */}
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20">
+          <div className="w-full flex items-center justify-center">
+            <div className="text-center">
+              <h2 className="mb-3 md:mb-5">
+                <span className="text-[36px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] font-bold">
+                  <span style={{ color: "#5736D3" }}>Connect.</span>{" "}
+                  <span style={{ color: "#0066FF" }}>Coordinate.</span>{" "}
+                  <span style={{ color: "#FF1B6D" }}>Perform.</span>
+                </span>
+              </h2>
+              <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] font-medium" style={{fontFamily: "Inter, sans-serif"}}>
+                Atlas uses predictive intelligence to surface friction early, strengthen collaboration, and help teams perform at their best.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Team Collaboration Diagram */}
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20 w-full flex items-center justify-center">
           <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/xxxxx-X1kvEPFevAT6WFKS9Y7HLjiJKnSMgF.jpg"
-            alt="Connect. Coordinate. Perform."
-            className="w-full h-auto max-w-[1210px] object-contain"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Jun%202%2C%202026%2C%2012_51_58%20AM-W2qAIi4MBDsysWWTWTsbn6CPMsEw2v.png"
+            alt="Team collaboration diagram showing department connections and alignment"
+            className="w-full h-auto max-w-[1100px] object-contain"
           />
         </div>
       </section>

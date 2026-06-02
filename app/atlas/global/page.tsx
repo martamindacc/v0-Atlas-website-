@@ -144,13 +144,7 @@ export default function AtlasGlobal() {
               </p>
             </div>
 
-            <div className="mt-8 md:mt-16">
-              <img
-                src="/images/atlas_org_scale.svg"
-                alt="Atlas interface"
-                className="w-full"
-              />
-            </div>
+
           </div>
 
         </div>
@@ -187,7 +181,7 @@ export default function AtlasGlobal() {
           </div>
 
           {/* RIGHT COLUMN (SCROLL CONTENT) */}
-          <div className="md:min-h-[140vh] min-w-0">
+          <div className="md:min-h-[80vh] min-w-0">
             <div className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] space-y-6 max-w-[520px]" style={{fontFamily: "Inter, sans-serif"}}>
               <p className="font-semibold">
                 Modern enterprise work is increasingly cross-functional, and constantly changing. Atlas helps global teams manage that complexity at scale.
@@ -205,18 +199,40 @@ export default function AtlasGlobal() {
                 Always in context. Always up to date. Built for modern enterprise operations.
               </p>
             </div>
+          </div>
+        </div>
 
-            <div className="mt-8 md:mt-16">
-              <img
-                src="/images/atlas_enterprise_signal.svg"
-                alt="Atlas interface"
-                className="w-full"
-              />
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8">
+          <div className="w-full flex items-center justify-center">
+            <div className="text-center">
+              <h2 className="mb-3 md:mb-5">
+                <span className="text-[36px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] font-bold">
+                  <span style={{ color: "#5736D3" }}>Connect.</span>{" "}
+                  <span style={{ color: "#0066FF" }}>Coordinate.</span>{" "}
+                  <span style={{ color: "#FF1B6D" }}>Perform.</span>
+                </span>
+              </h2>
+              <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] font-medium" style={{fontFamily: "Inter, sans-serif"}}>
+                Atlas uses predictive intelligence to surface friction early, strengthen collaboration, and help teams perform at their best.
+              </p>
             </div>
           </div>
-
         </div>
       </section>
+
+      {/* Divider */}
+      <div className="w-full bg-[#fafafb] py-8 md:py-10 lg:py-12">
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8">
+          <div className="relative flex items-center justify-between">
+            <div className="absolute inset-x-0 h-px bg-neutral-300/40"></div>
+            <div className="relative flex justify-between w-full px-0 text-xs text-neutral-400">
+              <span>0.1</span>
+              <span>[0.2]</span>
+              <span>0.3</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* CTA Section */}
       <section className="w-full bg-[#fafafb] -mt-[40px] md:mt-0 py-8 md:py-[70px]">
