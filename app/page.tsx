@@ -199,7 +199,7 @@ export default function Home() {
       </section>
 
       {/* Section — Visual Explanation */}
-      <section className="w-full bg-[#fafafb] py-6 md:py-8 px-4 md:px-6 -mt-[38px] md:-mt-[190px]">
+      <section className="w-full bg-[#fafafb] py-6 md:py-8 px-4 md:px-6 -mt-[78px] md:-mt-[230px]">
         <div className="max-w-[1200px] mx-auto space-y-13 md:space-y-20">
           {/* Row 1: Text (left) | Image (right) — on mobile: image first, then text */}
           <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -231,7 +231,7 @@ export default function Home() {
           </div>
 
           {/* Row 2: Image (left) | Text (right) — on mobile: image first, then text */}
-          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center mt-0 md:-mt-[230px]">
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center mt-0 md:-mt-[270px]">
             {/* Image */}
             <div className="w-full md:w-auto flex items-center justify-center order-first md:order-none">
               <img
@@ -262,7 +262,7 @@ export default function Home() {
       </section>
 
       {/* Section 3 — Human intelligence, understood by machines */}
-      <section className="w-full bg-[#efefef] py-16 md:py-[140px]">
+      <section className="w-full bg-[#efefef] py-16 md:py-[100px]">
         <div className="max-w-[1200px] mx-auto px-4 md:px-6">
           <div className="flex flex-col md:grid md:grid-cols-12 gap-8 md:gap-x-12 items-start">
             {/* Left — headline */}
