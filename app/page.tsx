@@ -163,7 +163,7 @@ export default function Home() {
               href: "/atlas/global",
             },
           ].map((module) => (
-            <Link href={module.href} key={module.title} className="block">
+            <Link href={module.href} key={module.title} className="relative z-10 block">
               <div className="mx-2 md:mx-4 h-px bg-black/10 opacity-60" />
               <div
                 className="group -mx-2 md:-mx-4 px-2 md:px-4 cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7]"
@@ -194,12 +194,12 @@ export default function Home() {
           ))}
 
           {/* Last row bottom border */}
-          <div className="mx-2 md:mx-4 h-px bg-black/10 opacity-60" />
+          <div className="relative z-20 mx-2 md:mx-4 h-px bg-black/10 opacity-60" />
         </div>
       </section>
 
       {/* Section — Visual Explanation */}
-      <section className="relative z-0 w-full bg-[#fafafb] py-6 md:py-8 px-4 md:px-6 -mt-[78px] md:-mt-[230px] pb-0 md:pb-0">
+      <section className="w-full bg-[#fafafb] py-6 md:py-8 px-4 md:px-6 -mt-[78px] md:-mt-[230px] pb-0 md:pb-0">
         <div className="max-w-[1200px] mx-auto space-y-13 md:space-y-20">
           {/* Row 1: Text (left) | Image (right) — on mobile: image first, then text */}
           <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -262,7 +262,7 @@ export default function Home() {
       </section>
 
       {/* Section 3 — Human intelligence, understood by machines */}
-      <section className="relative z-10 w-full bg-[#efefef] py-12 md:py-[60px]">
+      <section className="w-full bg-[#efefef] py-12 md:py-[60px]">
         <div className="max-w-[1200px] mx-auto px-4 md:px-6">
           <div className="flex flex-col md:grid md:grid-cols-12 gap-8 md:gap-x-12 items-start">
             {/* Left — headline */}
