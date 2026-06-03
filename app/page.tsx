@@ -247,13 +247,15 @@ export default function Home() {
                   className="text-[18px] md:text-[20px] font-semibold leading-[1.4] text-[#383838] mb-4"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
-                  What actually drives performance in organizations are the thousands of conversations, decisions, and interactions happening every day.
+                  What actually drives performance are the thousands of conversations, decisions, and interactions happening across the organization every day.
                 </h3>
                 <p
                   className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838]"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
-                  Atlas operationalizes these signals in real time — connecting people, organizational context, and workplace situations to provide coaching and support no survey or human process realistically could at scale.
+                  Atlas helps organizations understand how people work, communicate, and collaborate — turning everyday workplace dynamics into better hiring, talent development, team effectiveness, and organizational performance.
+
+No survey, review process, or static report can realistically provide that level of understanding, guidance, and support at scale.
                 </p>
               </div>
             </div>
