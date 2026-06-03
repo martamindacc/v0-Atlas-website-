@@ -166,7 +166,7 @@ export default function Home() {
             <Link href={module.href} key={module.title} className="block">
               <div className="mx-6 md:mx-10 h-px bg-black/10 opacity-60" />
               <div
-                className="group w-full cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7]"
+                className="group w-full cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7] pb-12 md:pb-20"
               >
                 <div className="max-w-[1200px] mx-auto px-4 md:px-6 py-10 md:py-[80px] flex flex-col md:grid md:grid-cols-12 gap-4 md:gap-x-12">
                   {/* Left — description */}
