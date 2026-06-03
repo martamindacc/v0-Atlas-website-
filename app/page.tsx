@@ -78,7 +78,7 @@ export default function Home() {
               People Intelligence for Modern Teams
             </h1>
             <p className="text-[clamp(0.875rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-2xl mx-auto" style={{ fontFamily: "Inter, sans-serif" }}>
-              Atlas helps organizations improve hiring, talent development, team effectiveness, and organizational performance through AI-powered people intelligence.
+              Atlas helps organizations improve hiring, talent development, team effectiveness, and organizational performance.
             </p>
           </div>
         </div>
