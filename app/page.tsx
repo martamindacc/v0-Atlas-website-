@@ -75,10 +75,10 @@ export default function Home() {
         <div className="absolute inset-0 flex items-center justify-center z-10">
           <div className="text-center max-w-3xl px-6">
             <h1 className="text-[clamp(2rem,6vw,5rem)] font-semibold leading-[1.1] tracking-tight text-white mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
-              AI Coach for Every Team
+              People Intelligence for Modern Teams
             </h1>
             <p className="text-[clamp(0.875rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-2xl mx-auto" style={{ fontFamily: "Inter, sans-serif" }}>
-              Atlas supports communication, teamwork and organizational performance at scale.
+              Atlas helps organizations improve hiring, talent development, team effectiveness, and organizational performance.
             </p>
           </div>
         </div>
@@ -108,7 +108,7 @@ export default function Home() {
             className="mt-4 md:mt-6 mb-8 md:mb-12 text-base md:text-xl text-[#475569] max-w-2xl mx-auto leading-relaxed"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
-            Atlas helps teams navigate collaboration, resolve conflict, and improve performance
+            Atlas helps teams better understand how people work, communicate, and collaborate.
           </p>
         </div>
       </section>
@@ -131,9 +131,9 @@ export default function Home() {
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
               <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-gradient-to-b from-[#fde4f5] to-[#f8cae6]">Execution Support</span>
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
-              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-gradient-to-b from-[#fde4f5] to-[#f8cae6]">Talent Composition</span>
+              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-gradient-to-b from-[#fde4f5] to-[#f8cae6]">Talent Mapping</span>
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
-              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-gradient-to-b from-[#fde4f5] to-[#f8cae6]">Development Plans</span>
+              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-gradient-to-b from-[#fde4f5] to-[#f8cae6]">Leadership Development</span>
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
               <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-gradient-to-b from-[#fde4f5] to-[#f8cae6]">Succession Planning</span>
             </div>
@@ -141,7 +141,7 @@ export default function Home() {
               className="text-[22px] md:text-[28px] font-medium tracking-tight text-neutral-900 mb-6"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
-              Atlas AI Coach
+              Atlas
             </h3>
           </div>
 
@@ -158,15 +158,15 @@ export default function Home() {
               href: "/atlas/teams",
             },
             {
-              description: "Organizational Intelligence\nRoll out AI coaching across global teams with shared context and insights",
+              description: "Organizational Intelligence\nImprove hiring, talent development, and organizational effectiveness at scale",
               title: "Atlas Global",
               href: "/atlas/global",
             },
           ].map((module) => (
-            <Link href={module.href} key={module.title} className="block">
+            <Link href={module.href} key={module.title} className="relative z-10 block">
               <div className="mx-2 md:mx-4 h-px bg-black/10 opacity-60" />
               <div
-                className="group -mx-[8px] md:-mx-[16px] px-[8px] md:px-[16px] cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7]"
+                className="group -mx-2 md:-mx-4 px-2 md:px-4 cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7]"
               >
                 <div className="max-w-[1200px] mx-auto py-10 md:py-[80px] flex flex-col md:grid md:grid-cols-12 gap-4 md:gap-x-12">
                   {/* Left — description */}
@@ -194,13 +194,13 @@ export default function Home() {
           ))}
 
           {/* Last row bottom border */}
-          <div className="mx-2 md:mx-4 h-px bg-black/10 opacity-60" />
+          <div className="relative z-20 mx-2 md:mx-4 h-px bg-black/10 opacity-60" />
         </div>
       </section>
 
       {/* Section — Visual Explanation */}
-      <section className="w-full bg-[#fafafb] py-6 md:py-8 px-4 md:px-6 -mt-[78px] md:-mt-[230px]">
-        <div className="max-w-[1200px] mx-auto space-y-13 md:space-y-20">
+      <section className="w-full bg-[#fafafb] py-6 md:py-8 px-4 md:px-6 -mt-[98px] md:-mt-[250px] pb-0 md:pb-0">
+        <div className="max-w-[1200px] mx-auto space-y-[32px] md:space-y-[60px]">
           {/* Row 1: Text (left) | Image (right) — on mobile: image first, then text */}
           <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Text Card */}
@@ -247,13 +247,16 @@ export default function Home() {
                   className="text-[18px] md:text-[20px] font-semibold leading-[1.4] text-[#383838] mb-4"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
-                  What actually drives performance in organizations are the thousands of conversations, decisions, and interactions happening every day.
+                  What actually drives performance are the thousands of conversations, decisions, and interactions happening across the organization every day.
                 </h3>
                 <p
                   className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838]"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
-                  Atlas operationalizes these signals in real time — connecting people, organizational context, and workplace situations to provide coaching and support no survey or human process realistically could at scale.
+                  Atlas helps organizations understand how people work, communicate, and collaborate — turning everyday workplace dynamics into better hiring, talent development, team effectiveness, and organizational performance.
+                </p>
+                <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] font-semibold" style={{ fontFamily: "Inter, sans-serif" }}>
+                  No survey, review process, or static report can realistically provide that level of understanding, guidance, and support at scale.
                 </p>
               </div>
             </div>
@@ -262,7 +265,7 @@ export default function Home() {
       </section>
 
       {/* Section 3 — Human intelligence, understood by machines */}
-      <section className="w-full bg-[#efefef] py-16 md:py-[100px]">
+      <section className="w-full bg-[#efefef] py-12 md:py-[60px]">
         <div className="max-w-[1200px] mx-auto px-4 md:px-6">
           <div className="flex flex-col md:grid md:grid-cols-12 gap-8 md:gap-x-12 items-start">
             {/* Left — headline */}
@@ -271,14 +274,14 @@ export default function Home() {
                 className="text-[32px] md:text-[52px] font-medium tracking-tight text-neutral-900 max-w-[520px]"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
-                Human intelligence,<br />amplified.
+                People Intelligence for Modern Teams
               </h2>
               <p className="text-[12px] text-[#6B7280] mt-8 md:mt-0 hidden md:block">© 2026 Mindacc. All rights reserved.</p>
             </div>
 
             {/* Right — explanatory text */}
             <div className="md:col-span-5 md:col-start-8 text-[16px] md:text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-4 md:space-y-6">
-              <p>Atlas supports performance, collaboration, and day-to-day teamwork across your organization. It helps employees and managers navigate real work situations — from feedback conversations and coordination challenges to conflict resolution and team support.</p>
+              <p>Atlas helps organizations understand how people work, communicate, and collaborate — turning people intelligence into better decisions and stronger teams.</p>
               <p className="font-semibold">Always available. Always in context.</p>
               <p className="font-semibold">Built for how work actually happens.</p>
             </div>
