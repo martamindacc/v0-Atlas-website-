@@ -115,12 +115,12 @@ export default function Home() {
 
       {/* Section 4 — ATLAS system */}
       <section className="bg-[#fafafb] pt-0 pb-20 md:pb-[160px]">
-        <div className="w-full px-4 md:px-6">
+        <div className="w-full">
 
           {/* Atlas System Label */}
           <div
             ref={atlasSystemRef}
-            className={`max-w-[1200px] mx-auto mb-[24px] transition-all duration-[700ms] ease-out ${
+            className={`max-w-[1200px] mx-auto px-4 md:px-6 mb-[24px] transition-all duration-[700ms] ease-out ${
               atlasSystemVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
             }`}
           >
@@ -164,11 +164,11 @@ export default function Home() {
             },
           ].map((module) => (
             <Link href={module.href} key={module.title} className="block">
-              <div className="mx-2 md:mx-4 h-px bg-black/10 opacity-60" />
+              <div className="mx-6 md:mx-10 h-px bg-black/10 opacity-60" />
               <div
-                className="group -mx-4 md:-mx-6 px-4 md:px-6 cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7]"
+                className="group w-full cursor-pointer transition-colors duration-200 hover:bg-[#f7f7f7]"
               >
-                <div className="max-w-[1200px] mx-auto py-10 md:py-[80px] flex flex-col md:grid md:grid-cols-12 gap-4 md:gap-x-12">
+                <div className="max-w-[1200px] mx-auto px-4 md:px-6 py-10 md:py-[80px] flex flex-col md:grid md:grid-cols-12 gap-4 md:gap-x-12">
                   {/* Left — description */}
                   <div className="md:col-span-5 order-2 md:order-1">
                     <p
@@ -194,7 +194,7 @@ export default function Home() {
           ))}
 
           {/* Last row bottom border */}
-          <div className="mx-2 md:mx-4 h-px bg-black/10 opacity-60" />
+          <div className="mx-6 md:mx-10 h-px bg-black/10 opacity-60" />
         </div>
       </section>
 
