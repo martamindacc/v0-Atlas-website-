@@ -254,8 +254,9 @@ export default function Home() {
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   Atlas helps organizations understand how people work, communicate, and collaborate — turning everyday workplace dynamics into better hiring, talent development, team effectiveness, and organizational performance.
-
-No survey, review process, or static report can realistically provide that level of understanding, guidance, and support at scale.
+                </p>
+                <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] font-semibold" style={{ fontFamily: "Inter, sans-serif" }}>
+                  No survey, review process, or static report can realistically provide that level of understanding, guidance, and support at scale.
                 </p>
               </div>
             </div>
@@ -273,14 +274,14 @@ No survey, review process, or static report can realistically provide that level
                 className="text-[32px] md:text-[52px] font-medium tracking-tight text-neutral-900 max-w-[520px]"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
-                Human intelligence,<br />amplified.
+                People Intelligence for Modern Teams
               </h2>
               <p className="text-[12px] text-[#6B7280] mt-8 md:mt-0 hidden md:block">© 2026 Mindacc. All rights reserved.</p>
             </div>
 
             {/* Right — explanatory text */}
             <div className="md:col-span-5 md:col-start-8 text-[16px] md:text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-4 md:space-y-6">
-              <p>Atlas supports performance, collaboration, and day-to-day teamwork across your organization. It helps employees and managers navigate real work situations — from feedback conversations and coordination challenges to conflict resolution and team support.</p>
+              <p>Atlas helps organizations understand how people work, communicate, and collaborate — turning people intelligence into better decisions and stronger teams.</p>
               <p className="font-semibold">Always available. Always in context.</p>
               <p className="font-semibold">Built for how work actually happens.</p>
             </div>
