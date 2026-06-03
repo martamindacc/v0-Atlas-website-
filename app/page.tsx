@@ -108,7 +108,7 @@ export default function Home() {
             className="mt-4 md:mt-6 mb-8 md:mb-12 text-base md:text-xl text-[#475569] max-w-2xl mx-auto leading-relaxed"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
-            Atlas helps teams navigate collaboration, resolve conflict, and improve performance
+            Atlas helps teams better understand how people work, communicate, and collaborate.
           </p>
         </div>
       </section>
@@ -131,9 +131,9 @@ export default function Home() {
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
               <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-gradient-to-b from-[#fde4f5] to-[#f8cae6]">Execution Support</span>
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
-              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-gradient-to-b from-[#fde4f5] to-[#f8cae6]">Talent Composition</span>
+              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-gradient-to-b from-[#fde4f5] to-[#f8cae6]">Talent Mapping</span>
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
-              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-gradient-to-b from-[#fde4f5] to-[#f8cae6]">Development Plans</span>
+              <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-gradient-to-b from-[#fde4f5] to-[#f8cae6]">Leadership Development</span>
               <span className="text-[#D1D5DB] hidden md:inline">—</span>
               <span className="px-2 md:px-2.5 py-[4px] border border-[#D1D5DB] rounded-md bg-gradient-to-b from-[#fde4f5] to-[#f8cae6]">Succession Planning</span>
             </div>
@@ -141,7 +141,7 @@ export default function Home() {
               className="text-[22px] md:text-[28px] font-medium tracking-tight text-neutral-900 mb-6"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
-              Atlas AI Coach
+              Atlas
             </h3>
           </div>
 
@@ -158,7 +158,7 @@ export default function Home() {
               href: "/atlas/teams",
             },
             {
-              description: "Organizational Intelligence\nRoll out AI coaching across global teams with shared context and insights",
+              description: "Organizational Intelligence\nImprove hiring, talent development, and organizational effectiveness at scale",
               title: "Atlas Global",
               href: "/atlas/global",
             },
