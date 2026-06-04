@@ -153,7 +153,7 @@ export default function Home() {
               href: "/atlas/professional",
             },
             {
-              description: "Team Intelligence\nUnderstand how people work together — improve team performance, communication, and decision-making",
+              description: "Team Intelligence\nUnderstand how people work together — improve team performance, productivity, and collaboration",
               title: "Atlas Teams",
               href: "/atlas/teams",
             },
@@ -255,7 +255,7 @@ export default function Home() {
                 >
                   Atlas helps organizations understand how people work, communicate, and collaborate — turning everyday workplace dynamics into better hiring, talent development, team effectiveness, and organizational performance.
                 </p>
-                <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] font-semibold" style={{ fontFamily: "Inter, sans-serif" }}>
+                <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] font-semibold mt-4" style={{ fontFamily: "Inter, sans-serif" }}>
                   No survey, review process, or static report can realistically provide that level of understanding, guidance, and support at scale.
                 </p>
               </div>
@@ -265,7 +265,7 @@ export default function Home() {
       </section>
 
       {/* Section 3 — Human intelligence, understood by machines */}
-      <section className="w-full bg-[#efefef] py-12 md:py-[60px]">
+      <section className="w-full bg-[#efefef] py-12 md:py-[60px] pt-16 md:pt-24">
         <div className="max-w-[1200px] mx-auto px-4 md:px-6">
           <div className="flex flex-col md:grid md:grid-cols-12 gap-8 md:gap-x-12 items-start">
             {/* Left — headline */}

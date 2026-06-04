@@ -87,7 +87,7 @@ export default function AtlasTeams() {
             Atlas Teams
           </h1>
           <p className="text-[14px] md:text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-[280px] md:max-w-2xl" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
-            AI coach for team performance, productivity, and wellbeing
+            Understand and improve team performance, productivity, and collaboration
           </p>
         </div>
 
@@ -122,7 +122,7 @@ export default function AtlasTeams() {
       </section>
 
       {/* Section 2 — Editorial product section */}
-      <section className="bg-[#fafafb] pb-[60px] md:pb-[100px] pt-16 md:pt-24 lg:pt-36">
+      <section className="bg-[#fafafb] pb-[23px] md:pb-[63px] pt-16 md:pt-24 lg:pt-36">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-24 overflow-x-clip">
 
           {/* LEFT COLUMN (HEADER) */}
@@ -131,7 +131,7 @@ export default function AtlasTeams() {
           >
             <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
               <span
-                data-text="Better teamwork starts with better understanding"
+                data-text="Stronger teams, better execution"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
@@ -149,7 +149,7 @@ export default function AtlasTeams() {
         </div>
 
         {/* Team Flow Diagram - Centered Full Width */}
-        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20 w-full flex items-center justify-center">
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-0 md:mt-[30px] w-full flex items-center justify-center">
           <img
             src="/images/atlas_teams_flow_diagram.png"
             alt="People, Work Styles, Team Dynamics, Execution Quality, Business Outcomes flow"
@@ -159,7 +159,7 @@ export default function AtlasTeams() {
       </section>
 
       {/* Divider */}
-      <div className="w-full bg-[#fafafb] py-8 md:py-10 lg:py-12">
+      <div className="w-full bg-[#fafafb] py-2 md:py-3 lg:py-5">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8">
           <div className="relative flex items-center justify-between">
             <div className="absolute inset-x-0 h-px bg-neutral-300/40"></div>
@@ -182,7 +182,7 @@ export default function AtlasTeams() {
           >
             <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
               <span
-                data-text="Stronger teams, better execution"
+                data-text="Better teamwork starts with better understanding"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
@@ -251,9 +251,6 @@ export default function AtlasTeams() {
             <h2 className="font-sans text-[36px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] font-bold text-[#212527] mb-4 md:mb-6">
               The future of work belongs to organizations that bet on <span style={{ color: "#f4a4d2" }}>people and AI.</span>
             </h2>
-            <p className="text-[14px] md:text-[16px] leading-[1.6] text-[#212527]/70" style={{ fontFamily: "Inter, sans-serif" }}>
-              AI coaching powered by organizational context and workplace dynamics.
-            </p>
           </div>
           <button
             onClick={() => {
@@ -261,13 +258,13 @@ export default function AtlasTeams() {
             }}
             className="inline-block px-6 md:px-8 py-3 md:py-4 bg-[#202426] text-white font-medium rounded-md hover:bg-[#1a1b22] transition-colors cursor-pointer"
           >
-            Get started
+            Book a Demo
           </button>
         </div>
       </section>
 
       {/* Footer */}
-      <section className="w-full bg-[#efefef] py-16 md:py-[140px]">
+      <section className="w-full bg-[#efefef] py-12 md:py-[60px] pt-16 md:pt-24">
         <div className="max-w-[1200px] mx-auto px-4 md:px-6">
           <div className="flex flex-col md:grid md:grid-cols-12 gap-8 md:gap-x-12 items-start">
             {/* Left — headline */}
@@ -276,14 +273,14 @@ export default function AtlasTeams() {
                 className="text-[32px] md:text-[52px] font-medium tracking-tight text-neutral-900 max-w-[520px]"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
-                Human intelligence,<br />amplified.
+                People Intelligence for Modern Teams
               </h2>
               <p className="text-[12px] text-[#6B7280] mt-8 hidden md:block">© 2026 Mindacc. All rights reserved.</p>
             </div>
 
             {/* Right — explanatory text */}
             <div className="md:col-span-5 md:col-start-8 text-[16px] md:text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-4 md:space-y-6">
-              <p>Atlas supports performance, collaboration, and day-to-day teamwork across your organization. It helps employees and managers navigate real work situations — from feedback conversations and coordination challenges to conflict resolution and team support.</p>
+              <p>Atlas helps organizations understand how people work, communicate, and collaborate — turning people intelligence into better decisions and stronger teams.</p>
               <p className="font-semibold">Always available. Always in context.</p>
               <p className="font-semibold">Built for how work actually happens.</p>
             </div>

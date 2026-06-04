@@ -128,7 +128,7 @@ export default function AtlasProfessional() {
             Decisions break where understanding of people is incomplete.
           </p>
           <p className="text-[14px] md:text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-[280px] md:max-w-2xl" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
-            <span className="block">Your AI coach for meetings, feedback, and workplace performance.</span>
+            <span className="block">Support for meetings, feedback, and workplace performance.</span>
           </p>
         </div>
 
@@ -172,7 +172,7 @@ export default function AtlasProfessional() {
             <div>
               <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
                 <span
-                  data-text="Your AI coach for modern work"
+                  data-text="Perform at your best at work"
                   className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
                 ></span>
               </h3>
@@ -293,9 +293,6 @@ export default function AtlasProfessional() {
             <h2 className="font-sans text-[36px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] font-bold text-[#212527] mb-4 md:mb-6">
               The future of work belongs to organizations that bet on <span style={{ color: "#f4a4d2" }}>people and AI.</span>
             </h2>
-            <p className="text-[14px] md:text-[16px] leading-[1.6] text-[#212527]/70" style={{ fontFamily: "Inter, sans-serif" }}>
-              AI coaching powered by organizational context and workplace dynamics.
-            </p>
           </div>
           <button
             onClick={() => {
@@ -303,12 +300,12 @@ export default function AtlasProfessional() {
             }}
             className="inline-block px-6 md:px-8 py-3 md:py-4 bg-[#202426] text-white font-medium rounded-md hover:bg-[#1a1b22] transition-colors cursor-pointer"
           >
-            Get started
+            Book a Demo
           </button>
         </div>
       </section>
 
-      <section className="w-full bg-[#efefef] py-16 md:py-[140px]">
+      <section className="w-full bg-[#efefef] py-12 md:py-[60px] pt-16 md:pt-24">
         <div className="max-w-[1200px] mx-auto px-4 md:px-6">
           <div className="flex flex-col md:grid md:grid-cols-12 gap-8 md:gap-x-12 items-start">
             {/* Left — headline */}
@@ -317,14 +314,14 @@ export default function AtlasProfessional() {
                 className="text-[32px] md:text-[52px] font-medium tracking-tight text-neutral-900 max-w-[520px]"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
-                Human intelligence,<br />amplified.
+                People Intelligence for Modern Teams
               </h2>
               <p className="text-[12px] text-[#6B7280] mt-8 hidden md:block">© 2026 Mindacc. All rights reserved.</p>
             </div>
 
-            {/* Right �� explanatory text */}
+            {/* Right — explanatory text */}
             <div className="md:col-span-5 md:col-start-8 text-[16px] md:text-[18px] leading-[1.6] text-[#383838] max-w-[420px] space-y-4 md:space-y-6">
-              <p>Atlas supports performance, collaboration, and day-to-day teamwork across your organization. It helps employees and managers navigate real work situations — from feedback conversations and coordination challenges to conflict resolution and team support.</p>
+              <p>Atlas helps organizations understand how people work, communicate, and collaborate — turning people intelligence into better decisions and stronger teams.</p>
               <p className="font-semibold">Always available. Always in context.</p>
               <p className="font-semibold">Built for how work actually happens.</p>
             </div>
