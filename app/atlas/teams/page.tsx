@@ -251,9 +251,6 @@ export default function AtlasTeams() {
             <h2 className="font-sans text-[36px] md:text-[56px] lg:text-[64px] leading-[1.1] tracking-[-0.02em] font-bold text-[#212527] mb-4 md:mb-6">
               The future of work belongs to organizations that bet on <span style={{ color: "#f4a4d2" }}>people and AI.</span>
             </h2>
-            <p className="text-[14px] md:text-[16px] leading-[1.6] text-[#212527]/70" style={{ fontFamily: "Inter, sans-serif" }}>
-              AI coaching powered by organizational context and workplace dynamics.
-            </p>
           </div>
           <button
             onClick={() => {
