@@ -153,7 +153,7 @@ export default function Home() {
               href: "/atlas/professional",
             },
             {
-              description: "Team Intelligence\nUnderstand how people work together — improve team performance, communication, and decision-making",
+              description: "Team Intelligence\nUnderstand how people work together — improve team performance, productivity, and collaboration",
               title: "Atlas Teams",
               href: "/atlas/teams",
             },
