@@ -86,7 +86,7 @@ export default function AtlasGlobal() {
             Atlas Global
           </h1>
           <p className="text-[14px] md:text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-[280px] md:max-w-2xl" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
-            AI coach for global teams and organizational change
+            Improve leadership development, succession planning, and organizational effectiveness
           </p>
         </div>
 
@@ -140,7 +140,7 @@ export default function AtlasGlobal() {
           <div className="md:min-h-[37vh] min-w-0">
             <div className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] space-y-6 max-w-[520px]" style={{fontFamily: "Inter, sans-serif"}}>
               <p className="font-semibold">
-                Atlas helps enterprise organizations coordinate teams more effectively across regions, departments, and leadership structures.
+                Atlas helps enterprise organizations coordinate teams more effectively across regions, departments, and leadership structures. Helping organizations scale talent and leadership practices without losing alignment.
               </p>
             </div>
           </div>
