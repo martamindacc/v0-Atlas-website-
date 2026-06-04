@@ -131,7 +131,7 @@ export default function AtlasTeams() {
           >
             <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
               <span
-                data-text="Better teamwork starts with better understanding"
+                data-text="Stronger teams, better execution"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
@@ -182,7 +182,7 @@ export default function AtlasTeams() {
           >
             <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
               <span
-                data-text="Stronger teams, better execution"
+                data-text="Better teamwork starts with better understanding"
                 className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
               ></span>
             </h3>
