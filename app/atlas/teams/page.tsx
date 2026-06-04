@@ -122,7 +122,7 @@ export default function AtlasTeams() {
       </section>
 
       {/* Section 2 — Editorial product section */}
-      <section className="bg-[#fafafb] pb-[60px] md:pb-[100px] pt-16 md:pt-24 lg:pt-36">
+      <section className="bg-[#fafafb] pb-[53px] md:pb-[93px] pt-16 md:pt-24 lg:pt-36">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-24 overflow-x-clip">
 
           {/* LEFT COLUMN (HEADER) */}
@@ -149,7 +149,7 @@ export default function AtlasTeams() {
         </div>
 
         {/* Team Flow Diagram - Centered Full Width */}
-        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-12 md:mt-20 w-full flex items-center justify-center">
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-0 md:mt-[30px] w-full flex items-center justify-center">
           <img
             src="/images/atlas_teams_flow_diagram.png"
             alt="People, Work Styles, Team Dynamics, Execution Quality, Business Outcomes flow"
