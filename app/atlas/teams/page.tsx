@@ -261,7 +261,7 @@ export default function AtlasTeams() {
             }}
             className="inline-block px-6 md:px-8 py-3 md:py-4 bg-[#202426] text-white font-medium rounded-md hover:bg-[#1a1b22] transition-colors cursor-pointer"
           >
-            Get started
+            Book a Demo
           </button>
         </div>
       </section>
