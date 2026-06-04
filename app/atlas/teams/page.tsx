@@ -87,7 +87,7 @@ export default function AtlasTeams() {
             Atlas Teams
           </h1>
           <p className="text-[14px] md:text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-[280px] md:max-w-2xl" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
-            AI coach for team performance, productivity, and wellbeing
+            Understand and improve team performance, productivity, and collaboration
           </p>
         </div>
 

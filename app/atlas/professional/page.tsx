@@ -128,7 +128,7 @@ export default function AtlasProfessional() {
             Decisions break where understanding of people is incomplete.
           </p>
           <p className="text-[14px] md:text-[clamp(1rem,2vw,1.25rem)] leading-[1.6] text-white/85 max-w-[280px] md:max-w-2xl" style={{ fontFamily: "Inter, sans-serif", marginTop: "0.75rem" }}>
-            <span className="block">Your AI coach for meetings, feedback, and workplace performance.</span>
+            <span className="block">Support for meetings, feedback, and workplace performance.</span>
           </p>
         </div>
 
@@ -172,7 +172,7 @@ export default function AtlasProfessional() {
             <div>
               <h3 className="font-sans text-[32px] md:text-[64px] leading-[1.05] tracking-[-0.03em] font-medium" style={{color: '#202426'}}>
                 <span
-                  data-text="Your AI coach for modern work"
+                  data-text="Perform at your best at work"
                   className="typed-header after:content-['|'] after:ml-1 after:animate-pulse"
                 ></span>
               </h3>
