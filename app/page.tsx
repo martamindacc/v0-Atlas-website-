@@ -285,12 +285,12 @@ export default function Home() {
               }}
             >
               <div>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 mb-3">
                 <img
                   src="/images/oslo-kommune-logo.png"
                   alt=""
                   aria-hidden="true"
-                  className="h-8 w-8 shrink-0 object-contain grayscale brightness-0"
+                  className="h-7 w-7 shrink-0 object-contain grayscale brightness-0"
                 />
                 <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
                   OSLO KOMMUNE
@@ -320,12 +320,12 @@ export default function Home() {
               }}
             >
               <div>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 mb-3">
                 <img
                   src="/images/nasa-logo.png"
                   alt=""
                   aria-hidden="true"
-                  className="h-8 w-8 shrink-0 object-contain grayscale brightness-0"
+                  className="h-7 w-7 shrink-0 object-contain grayscale brightness-0"
                 />
                 <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
                   NASA
@@ -355,12 +355,12 @@ export default function Home() {
               }}
             >
               <div>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 mb-3">
                 <img
-                  src="/images/tomra-logo.png"
+                  src="/images/tomra-symbol.png"
                   alt=""
                   aria-hidden="true"
-                  className="h-6 w-auto max-w-[88px] shrink-0 object-contain grayscale brightness-0"
+                  className="h-7 w-7 shrink-0 object-contain grayscale brightness-0"
                 />
                 <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
                   TOMRA
