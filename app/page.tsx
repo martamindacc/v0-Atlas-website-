@@ -265,7 +265,7 @@ export default function Home() {
       </section>
 
       {/* Section — Results */}
-      <section className="w-full bg-[#fafafb] pt-9 pb-24 md:pt-[68px] md:pb-32">
+      <section className="w-full bg-[#fafafb] pt-9 pb-24 md:pt-[68px] md:pb-32 -mt-[40px]">
         <div className="max-w-[1200px] mx-auto px-4 md:px-6">
           {/* Results Heading */}
           <h3
@@ -276,43 +276,27 @@ export default function Home() {
           </h3>
 
           {/* Cards Row */}
-          <div className="flex flex-nowrap gap-6 overflow-x-auto overscroll-x-contain pb-2 pr-4 md:pr-8 mt-12 md:mt-16 md:hover:pause-animation md:[animation:slide-loop_60s_linear_infinite]" style={{animation: "slide-loop 60s linear infinite"}}>
-            <style>{`
-              @keyframes slide-loop {
-                0% { transform: translateX(0); }
-                50% { transform: translateX(calc(-360px * 3 - 24px * 2)); }
-                100% { transform: translateX(0); }
-              }
-              @media (max-width: 768px) {
-                @keyframes slide-loop {
-                  0% { transform: translateX(0); }
-                  100% { transform: translateX(0); }
-                }
-              }
-              .md\:hover\:pause-animation:hover {
-                animation-play-state: paused !important;
-              }
-            `}</style>
+          <div className="flex flex-nowrap gap-6 overflow-x-auto overscroll-x-contain pb-2 pr-4 md:pr-8 mt-12 md:mt-16">
             {/* Card 1 */}
             <div
-              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[520px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
+              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[440px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
               style={{
                 clipPath: "polygon(0 0, calc(100% - 56px) 0, 100% 56px, 100% 100%, 0 100%)",
               }}
             >
               <div>
-                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#777777] mb-3">
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
                   KOMMUNE
                 </p>
-                <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#2f3033] mb-6">
+                <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
                   "Atlas helped us structure development conversations and identify strengths, development areas, and team dynamics more clearly."
                 </p>
               </div>
               <div className="mt-auto">
-                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#777777] mb-3">
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
                   Key Outcomes
                 </p>
-                <ul className="space-y-2 text-[14px] md:text-[16px] leading-[1.5] text-[#2f3033]">
+                <ul className="space-y-2 text-[16px] md:text-[18px] leading-[1.6] text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
                   <li>• Faster preparation</li>
                   <li>• Clearer development priorities</li>
                   <li>• Better visibility into team dynamics</li>
@@ -322,24 +306,24 @@ export default function Home() {
 
             {/* Card 2 */}
             <div
-              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[520px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
+              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[440px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
               style={{
                 clipPath: "polygon(0 0, calc(100% - 56px) 0, 100% 56px, 100% 100%, 0 100%)",
               }}
             >
               <div>
-                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#777777] mb-3">
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
                   ENTERPRISE PILOT
                 </p>
-                <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#2f3033] mb-6">
+                <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
                   "Atlas made it easier to translate people insights into practical development actions."
                 </p>
               </div>
               <div className="mt-auto">
-                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#777777] mb-3">
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
                   Key Outcomes
                 </p>
-                <ul className="space-y-2 text-[14px] md:text-[16px] leading-[1.5] text-[#2f3033]">
+                <ul className="space-y-2 text-[16px] md:text-[18px] leading-[1.6] text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
                   <li>• More focused development planning</li>
                   <li>• Stronger leadership visibility</li>
                   <li>• Better decision support</li>
@@ -349,24 +333,24 @@ export default function Home() {
 
             {/* Card 3 */}
             <div
-              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[520px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
+              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[440px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
               style={{
                 clipPath: "polygon(0 0, calc(100% - 56px) 0, 100% 56px, 100% 100%, 0 100%)",
               }}
             >
               <div>
-                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#777777] mb-3">
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
                   CLINICAL TESTING
                 </p>
-                <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#2f3033] mb-6">
+                <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
                   "Atlas helped surface patterns that supported clearer reflection, decision-making, and personal development."
                 </p>
               </div>
               <div className="mt-auto">
-                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#777777] mb-3">
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
                   Key Outcomes
                 </p>
-                <ul className="space-y-2 text-[14px] md:text-[16px] leading-[1.5] text-[#2f3033]">
+                <ul className="space-y-2 text-[16px] md:text-[18px] leading-[1.6] text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
                   <li>• Improved self-awareness</li>
                   <li>• More structured insight</li>
                   <li>• Faster clarity around next steps</li>
