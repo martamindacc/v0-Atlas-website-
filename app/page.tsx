@@ -265,7 +265,7 @@ export default function Home() {
       </section>
 
       {/* Section — Results */}
-      <section className="w-full bg-[#fafafb] pt-9 pb-24 md:pt-[68px] md:pb-32 -mt-[40px]">
+      <section className="w-full bg-[#fafafb] pt-9 pb-24 md:pt-[68px] md:pb-32 -mt-[80px]">
         <div className="max-w-[1200px] mx-auto px-4 md:px-6">
           {/* Results Heading */}
           <h3
@@ -286,7 +286,7 @@ export default function Home() {
             >
               <div>
                 <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
-                  KOMMUNE
+                  OSLO KOMMUNE
                 </p>
                 <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
                   "Atlas helped us structure development conversations and identify strengths, development areas, and team dynamics more clearly."
@@ -313,7 +313,7 @@ export default function Home() {
             >
               <div>
                 <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
-                  ENTERPRISE PILOT
+                  NASA
                 </p>
                 <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
                   "Atlas made it easier to translate people insights into practical development actions."
@@ -340,7 +340,7 @@ export default function Home() {
             >
               <div>
                 <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
-                  CLINICAL TESTING
+                  TOMRA
                 </p>
                 <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
                   "Atlas helped surface patterns that supported clearer reflection, decision-making, and personal development."
