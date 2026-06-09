@@ -264,6 +264,103 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Section — Results */}
+      <section className="w-full bg-[#f3f3f3] py-24 md:py-32">
+        <div className="max-w-[1200px] mx-auto px-4 md:px-6">
+          {/* Results Heading */}
+          <h3
+            className="text-[22px] md:text-[28px] font-medium tracking-tight text-neutral-900 mb-6"
+            style={{ fontFamily: "Inter, sans-serif" }}
+          >
+            Results
+          </h3>
+
+          {/* Cards Row */}
+          <div className="flex flex-nowrap gap-6 overflow-x-auto overscroll-x-contain pb-2 pr-4 md:pr-8 mt-12 md:mt-16">
+            {/* Card 1 */}
+            <div
+              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[520px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
+              style={{
+                clipPath: "polygon(0 0, calc(100% - 56px) 0, 100% 56px, 100% 100%, 0 100%)",
+              }}
+            >
+              <div>
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#777777] mb-3">
+                  KOMMUNE
+                </p>
+                <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#2f3033] mb-6">
+                  "Atlas helped us structure development conversations and identify strengths, development areas, and team dynamics more clearly."
+                </p>
+              </div>
+              <div className="mt-auto">
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#777777] mb-3">
+                  Key Outcomes
+                </p>
+                <ul className="space-y-2 text-[14px] md:text-[16px] leading-[1.5] text-[#2f3033]">
+                  <li>• Faster preparation</li>
+                  <li>• Clearer development priorities</li>
+                  <li>• Better visibility into team dynamics</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div
+              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[520px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
+              style={{
+                clipPath: "polygon(0 0, calc(100% - 56px) 0, 100% 56px, 100% 100%, 0 100%)",
+              }}
+            >
+              <div>
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#777777] mb-3">
+                  ENTERPRISE PILOT
+                </p>
+                <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#2f3033] mb-6">
+                  "Atlas made it easier to translate people insights into practical development actions."
+                </p>
+              </div>
+              <div className="mt-auto">
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#777777] mb-3">
+                  Key Outcomes
+                </p>
+                <ul className="space-y-2 text-[14px] md:text-[16px] leading-[1.5] text-[#2f3033]">
+                  <li>• More focused development planning</li>
+                  <li>• Stronger leadership visibility</li>
+                  <li>• Better decision support</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div
+              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[520px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
+              style={{
+                clipPath: "polygon(0 0, calc(100% - 56px) 0, 100% 56px, 100% 100%, 0 100%)",
+              }}
+            >
+              <div>
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#777777] mb-3">
+                  CLINICAL TESTING
+                </p>
+                <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#2f3033] mb-6">
+                  "Atlas helped surface patterns that supported clearer reflection, decision-making, and personal development."
+                </p>
+              </div>
+              <div className="mt-auto">
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#777777] mb-3">
+                  Key Outcomes
+                </p>
+                <ul className="space-y-2 text-[14px] md:text-[16px] leading-[1.5] text-[#2f3033]">
+                  <li>• Improved self-awareness</li>
+                  <li>• More structured insight</li>
+                  <li>• Faster clarity around next steps</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Section 3 — Human intelligence, understood by machines */}
       <section className="w-full bg-[#efefef] py-12 md:py-[60px] pt-16 md:pt-24">
         <div className="max-w-[1200px] mx-auto px-4 md:px-6">
