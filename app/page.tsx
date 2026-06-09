@@ -285,9 +285,17 @@ export default function Home() {
               }}
             >
               <div>
-                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
+              <div className="flex items-center gap-3">
+                <img
+                  src="/images/oslo-kommune-logo.png"
+                  alt=""
+                  aria-hidden="true"
+                  className="h-8 w-8 shrink-0 object-contain grayscale brightness-0"
+                />
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
                   OSLO KOMMUNE
                 </p>
+              </div>
                 <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
                   "Atlas helped us structure development conversations and identify strengths, development areas, and team dynamics more clearly."
                 </p>
@@ -312,9 +320,17 @@ export default function Home() {
               }}
             >
               <div>
-                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
+              <div className="flex items-center gap-3">
+                <img
+                  src="/images/nasa-logo.png"
+                  alt=""
+                  aria-hidden="true"
+                  className="h-8 w-8 shrink-0 object-contain grayscale brightness-0"
+                />
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
                   NASA
                 </p>
+              </div>
                 <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
                   "Atlas made it easier to translate people insights into practical development actions."
                 </p>
@@ -339,9 +355,17 @@ export default function Home() {
               }}
             >
               <div>
-                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
+              <div className="flex items-center gap-3">
+                <img
+                  src="/images/tomra-logo.png"
+                  alt=""
+                  aria-hidden="true"
+                  className="h-6 w-auto max-w-[88px] shrink-0 object-contain grayscale brightness-0"
+                />
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
                   TOMRA
                 </p>
+              </div>
                 <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
                   "Atlas helped surface patterns that supported clearer reflection, decision-making, and personal development."
                 </p>
