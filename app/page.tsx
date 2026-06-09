@@ -265,7 +265,7 @@ export default function Home() {
       </section>
 
       {/* Section — Results */}
-      <section className="w-full bg-[#f3f3f3] py-24 md:py-32">
+      <section className="w-full bg-[#fafafb] pt-9 pb-24 md:pt-[68px] md:pb-32">
         <div className="max-w-[1200px] mx-auto px-4 md:px-6">
           {/* Results Heading */}
           <h3
@@ -276,7 +276,23 @@ export default function Home() {
           </h3>
 
           {/* Cards Row */}
-          <div className="flex flex-nowrap gap-6 overflow-x-auto overscroll-x-contain pb-2 pr-4 md:pr-8 mt-12 md:mt-16">
+          <div className="flex flex-nowrap gap-6 overflow-x-auto overscroll-x-contain pb-2 pr-4 md:pr-8 mt-12 md:mt-16 md:hover:pause-animation md:[animation:slide-loop_60s_linear_infinite]" style={{animation: "slide-loop 60s linear infinite"}}>
+            <style>{`
+              @keyframes slide-loop {
+                0% { transform: translateX(0); }
+                50% { transform: translateX(calc(-360px * 3 - 24px * 2)); }
+                100% { transform: translateX(0); }
+              }
+              @media (max-width: 768px) {
+                @keyframes slide-loop {
+                  0% { transform: translateX(0); }
+                  100% { transform: translateX(0); }
+                }
+              }
+              .md\:hover\:pause-animation:hover {
+                animation-play-state: paused !important;
+              }
+            `}</style>
             {/* Card 1 */}
             <div
               className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[520px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
