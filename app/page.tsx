@@ -11,6 +11,10 @@ export default function Home() {
   const atlasSystemRef = useRef(null);
   const section2Ref = useRef(null);
   const heroImageRef = useRef(null);
+  const cardsRowRef = useRef(null);
+  const [isUserInteracting, setIsUserInteracting] = useState(false);
+  const animationFrameRef = useRef(null);
+  const [direction, setDirection] = useState(1);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -53,6 +57,58 @@ export default function Home() {
       heroImageRef.current.style.transform = `translateY(${parallaxOffset}px)`;
     }
   }, [parallaxOffset]);
+
+  // Mobile-only horizontal card row animation
+  useEffect(() => {
+    const cardsRow = cardsRowRef.current;
+    if (!cardsRow) return;
+
+    // Only run on mobile (check if window width is less than md breakpoint ~768px)
+    const isMobile = window.innerWidth < 768;
+    if (!isMobile) return;
+
+    // Respect prefers-reduced-motion
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReducedMotion) return;
+
+    const animate = () => {
+      if (isUserInteracting || !cardsRow) return;
+
+      const maxScroll = cardsRow.scrollWidth - cardsRow.clientWidth;
+      const currentScroll = cardsRow.scrollLeft;
+      let newScroll = currentScroll + (direction * 0.2);
+
+      // Reverse direction at boundaries
+      if (newScroll >= maxScroll) {
+        setDirection(-1);
+        newScroll = maxScroll - 0.2;
+      } else if (newScroll <= 0) {
+        setDirection(1);
+        newScroll = 0.2;
+      }
+
+      cardsRow.scrollLeft = newScroll;
+      animationFrameRef.current = requestAnimationFrame(animate);
+    };
+
+    animationFrameRef.current = requestAnimationFrame(animate);
+
+    const handleResize = () => {
+      const newIsMobile = window.innerWidth < 768;
+      if (!newIsMobile && animationFrameRef.current) {
+        cancelAnimationFrame(animationFrameRef.current);
+        if (cardsRow) cardsRow.scrollLeft = 0;
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      if (animationFrameRef.current) {
+        cancelAnimationFrame(animationFrameRef.current);
+      }
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [isUserInteracting, direction]);
   return (
     <main className="overflow-x-hidden" style={{ backgroundColor: "#fafafb" }}>
       <SiteHeader />
@@ -276,7 +332,14 @@ export default function Home() {
           </h3>
 
           {/* Cards Row */}
-          <div className="flex flex-nowrap gap-6 overflow-x-auto overscroll-x-contain pb-2 pr-4 md:pr-8 mt-12 md:mt-16">
+          <div 
+            ref={cardsRowRef}
+            className="flex flex-nowrap gap-6 overflow-x-auto overscroll-x-contain pb-2 pr-4 md:pr-8 mt-12 md:mt-16"
+            onMouseDown={() => setIsUserInteracting(true)}
+            onMouseUp={() => { setIsUserInteracting(true); setTimeout(() => setIsUserInteracting(false), 2000); }}
+            onTouchStart={() => setIsUserInteracting(true)}
+            onTouchEnd={() => { setIsUserInteracting(true); setTimeout(() => setIsUserInteracting(false), 2000); }}
+          >
             {/* Card 1 */}
             <div
               className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[440px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
@@ -286,12 +349,14 @@ export default function Home() {
             >
               <div className="h-[200px]">
               <div className="flex items-center gap-3 mb-3">
-                <img
-                  src="/images/oslo-kommune-badge-v2.png"
-                  alt=""
-                  aria-hidden="true"
-                  className="h-7 w-7 shrink-0 object-contain"
-                />
+                <div className="h-7 w-7 shrink-0 flex items-center justify-center">
+                  <img
+                    src="/images/oslo-kommune-badge-v2.png"
+                    alt=""
+                    aria-hidden="true"
+                    className="h-full w-full object-contain"
+                  />
+                </div>
                 <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
                   CITY OF OSLO
                 </p>
@@ -321,12 +386,14 @@ export default function Home() {
             >
               <div className="h-[200px]">
               <div className="flex items-center gap-3 mb-3">
-                <img
-                  src="/images/nasa-badge-v2.png"
-                  alt=""
-                  aria-hidden="true"
-                  className="h-7 w-7 shrink-0 object-contain"
-                />
+                <div className="h-7 w-7 shrink-0 flex items-center justify-center">
+                  <img
+                    src="/images/nasa-badge-v2.png"
+                    alt=""
+                    aria-hidden="true"
+                    className="h-full w-full object-contain"
+                  />
+                </div>
                 <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
                   NASA
                 </p>
@@ -356,12 +423,14 @@ export default function Home() {
             >
               <div className="h-[200px]">
               <div className="flex items-center gap-3 mb-3">
-                <img
-                  src="/images/tomra-wordmark-v2.png"
-                  alt=""
-                  aria-hidden="true"
-                  className="h-6 w-auto max-w-[96px] shrink-0 object-contain"
-                />
+                <div className="h-7 w-7 shrink-0 flex items-center justify-center">
+                  <img
+                    src="/images/tomra-wordmark-v2.png"
+                    alt=""
+                    aria-hidden="true"
+                    className="h-full w-full object-contain"
+                  />
+                </div>
                 <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
                   TOMRA
                 </p>
