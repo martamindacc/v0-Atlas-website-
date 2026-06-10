@@ -342,7 +342,7 @@ export default function Home() {
           >
             {/* Card 1 */}
             <div
-              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[440px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
+              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[500px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
               style={{
                 clipPath: "polygon(0 0, calc(100% - 56px) 0, 100% 56px, 100% 100%, 0 100%)",
               }}
@@ -357,29 +357,29 @@ export default function Home() {
                     className="h-full w-full object-contain"
                   />
                 </div>
-                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-bold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
                   CITY OF OSLO
                 </p>
               </div>
-                <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
-                  "Atlas helped us structure development conversations and identify strengths, development areas, and team dynamics more clearly."
+                <p className="text-[15px] md:text-[17px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
+                  "Atlas introduces a completely new way of working. The ability to ask questions and receive insights and recommended actions was particularly valuable."
                 </p>
               </div>
               <div className="mt-auto">
-                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
-                  Key Outcomes
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-bold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
+                  What Users Valued
                 </p>
-                <ul className="space-y-2 text-[16px] md:text-[18px] leading-[1.6] text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
-                  <li>• Faster preparation</li>
-                  <li>• Clearer development priorities</li>
-                  <li>• Better visibility into team dynamics</li>
+                <ul className="space-y-2 text-[15px] md:text-[17px] leading-[1.6] text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
+                  <li>Actionable guidance rather than static feedback</li>
+                  <li>A fresh approach to people and organizational development</li>
+                  <li>The ability to explore challenges through conversation</li>
                 </ul>
               </div>
             </div>
 
             {/* Card 2 */}
             <div
-              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[440px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
+              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[500px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
               style={{
                 clipPath: "polygon(0 0, calc(100% - 56px) 0, 100% 56px, 100% 100%, 0 100%)",
               }}
@@ -394,29 +394,19 @@ export default function Home() {
                     className="h-full w-full object-contain"
                   />
                 </div>
-                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-bold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
                   NASA
                 </p>
               </div>
-                <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
-                  "Atlas made it easier to translate people insights into practical development actions."
+                <p className="text-[15px] md:text-[17px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
+                  "As a Senior Engineer supporting NASA's Artemis Program, I see firsthand how structured intelligence drives high-stakes decisions with clarity and precision. MINDACC applies the same level of strategic insight to human potential—eliminating guesswork, optimizing decision-making, and enhancing performance at scale."
                 </p>
-              </div>
-              <div className="mt-auto">
-                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
-                  Key Outcomes
-                </p>
-                <ul className="space-y-2 text-[16px] md:text-[18px] leading-[1.6] text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
-                  <li>• More focused development planning</li>
-                  <li>• Stronger leadership visibility</li>
-                  <li>• Better decision support</li>
-                </ul>
               </div>
             </div>
 
             {/* Card 3 */}
             <div
-              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[440px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
+              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[500px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
               style={{
                 clipPath: "polygon(0 0, calc(100% - 56px) 0, 100% 56px, 100% 100%, 0 100%)",
               }}
@@ -431,11 +421,11 @@ export default function Home() {
                     className="h-full w-full object-contain"
                   />
                 </div>
-                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-bold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
                   TOMRA
                 </p>
               </div>
-                <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
+                <p className="text-[15px] md:text-[17px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
                   "Atlas helped surface patterns that supported clearer reflection, decision-making, and personal development."
                 </p>
               </div>
@@ -443,7 +433,7 @@ export default function Home() {
                 <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
                   Key Outcomes
                 </p>
-                <ul className="space-y-2 text-[16px] md:text-[18px] leading-[1.6] text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
+                <ul className="space-y-2 text-[15px] md:text-[17px] leading-[1.6] text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
                   <li>• Improved self-awareness</li>
                   <li>• More structured insight</li>
                   <li>• Faster clarity around next steps</li>
