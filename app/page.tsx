@@ -334,7 +334,7 @@ export default function Home() {
           {/* Cards Row */}
           <div 
             ref={cardsRowRef}
-            className="flex flex-nowrap gap-6 overflow-x-auto overscroll-x-contain pb-2 pr-4 md:pr-8 mt-12 md:mt-16"
+            className="flex flex-nowrap gap-6 overflow-x-hidden md:overflow-x-auto overscroll-x-contain pb-2 pr-4 md:pr-8 mt-12 md:mt-16 animate-resultsScroll md:animate-none"
             onMouseDown={() => setIsUserInteracting(true)}
             onMouseUp={() => { setIsUserInteracting(true); setTimeout(() => setIsUserInteracting(false), 2000); }}
             onTouchStart={() => setIsUserInteracting(true)}
