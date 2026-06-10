@@ -284,7 +284,7 @@ export default function Home() {
                 clipPath: "polygon(0 0, calc(100% - 56px) 0, 100% 56px, 100% 100%, 0 100%)",
               }}
             >
-              <div>
+              <div className="h-[200px]">
               <div className="flex items-center gap-3 mb-3">
                 <img
                   src="/images/oslo-kommune-logo.png"
@@ -319,7 +319,7 @@ export default function Home() {
                 clipPath: "polygon(0 0, calc(100% - 56px) 0, 100% 56px, 100% 100%, 0 100%)",
               }}
             >
-              <div>
+              <div className="h-[200px]">
               <div className="flex items-center gap-3 mb-3">
                 <img
                   src="/images/nasa-logo.png"
@@ -354,7 +354,7 @@ export default function Home() {
                 clipPath: "polygon(0 0, calc(100% - 56px) 0, 100% 56px, 100% 100%, 0 100%)",
               }}
             >
-              <div>
+              <div className="h-[200px]">
               <div className="flex items-center gap-3 mb-3">
                 <img
                   src="/images/tomra-logo.png"
