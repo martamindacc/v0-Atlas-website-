@@ -357,7 +357,7 @@ export default function Home() {
                     className="h-full w-full object-contain"
                   />
                 </div>
-                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-bold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
                   CITY OF OSLO
                 </p>
               </div>
@@ -366,7 +366,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="mt-auto">
-                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-bold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
                   What Users Valued
                 </p>
                 <ul className="space-y-2 text-[15px] md:text-[17px] leading-[1.6] text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -394,7 +394,7 @@ export default function Home() {
                     className="h-full w-full object-contain"
                   />
                 </div>
-                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-bold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
                   NASA
                 </p>
               </div>
@@ -431,7 +431,7 @@ export default function Home() {
                     className="h-full w-full object-contain"
                   />
                 </div>
-                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-bold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
                   TOMRA
                 </p>
               </div>
