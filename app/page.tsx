@@ -402,16 +402,6 @@ export default function Home() {
                   "As a Senior Engineer supporting NASA's Artemis Program, I see firsthand how structured intelligence drives high-stakes decisions with clarity and precision. MINDACC applies the same level of strategic insight to human potential—eliminating guesswork, optimizing decision-making, and enhancing performance at scale."
                 </p>
               </div>
-              <div className="mt-auto">
-                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
-                  Key Outcomes
-                </p>
-                <ul className="space-y-2 text-[15px] md:text-[17px] leading-[1.6] text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
-                  <li>• More focused development planning</li>
-                  <li>• Stronger leadership visibility</li>
-                  <li>• Better decision support</li>
-                </ul>
-              </div>
             </div>
 
             {/* Card 3 */}
