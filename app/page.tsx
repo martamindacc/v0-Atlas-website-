@@ -362,17 +362,17 @@ export default function Home() {
                 </p>
               </div>
                 <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
-                  "Atlas helped us structure development conversations and identify strengths, development areas, and team dynamics more clearly."
+                  "Atlas introduces a completely new way of working. The ability to ask questions and receive insights and recommended actions was particularly valuable."
                 </p>
               </div>
               <div className="mt-auto">
                 <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
-                  Key Outcomes
+                  What Users Valued
                 </p>
                 <ul className="space-y-2 text-[16px] md:text-[18px] leading-[1.6] text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
-                  <li>• Faster preparation</li>
-                  <li>• Clearer development priorities</li>
-                  <li>• Better visibility into team dynamics</li>
+                  <li>Actionable guidance rather than static feedback</li>
+                  <li>A fresh approach to people and organizational development</li>
+                  <li>The ability to explore challenges through conversation</li>
                 </ul>
               </div>
             </div>
