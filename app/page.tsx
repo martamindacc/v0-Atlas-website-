@@ -426,18 +426,12 @@ export default function Home() {
                 </p>
               </div>
                 <p className="text-[15px] md:text-[17px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
-                  "Atlas helped surface patterns that supported clearer reflection, decision-making, and personal development."
+                  "ATLAS provided tailored, data-driven insights into employee potential, enhancing individual and team performance while aligning our talent with strategic goals. <br />This alignment has allowed us to seize new opportunities and mitigate cognitive bias, promoting well-being and data-driven growth.
                 </p>
-              </div>
-              <div className="mt-auto">
-                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
-                  Key Outcomes
+                <p className="text-[15px] md:text-[17px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
+                  ATLAS is a great tool for any organization looking to develop and scale talent in an innovative, data-driven way."
                 </p>
-                <ul className="space-y-2 text-[15px] md:text-[17px] leading-[1.6] text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
-                  <li>• Improved self-awareness</li>
-                  <li>• More structured insight</li>
-                  <li>• Faster clarity around next steps</li>
-                </ul>
+
               </div>
             </div>
           </div>
