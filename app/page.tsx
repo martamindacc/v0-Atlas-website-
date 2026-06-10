@@ -426,7 +426,10 @@ export default function Home() {
                 </p>
               </div>
                 <p className="text-[15px] md:text-[17px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
-                  "ATLAS provided tailored, data-driven insights into employee potential, enhancing individual and team performance while aligning our talent with strategic goals. This alignment has allowed us to seize new opportunities and mitigate cognitive bias, promoting well-being and data-driven growth. ATLAS is a great tool for any organization looking to develop and scale talent in an innovative, data-driven way."
+                  "ATLAS provided tailored, data-driven insights into employee potential, enhancing individual and team performance while aligning our talent with strategic goals. This alignment has allowed us to seize new opportunities and mitigate cognitive bias, promoting well-being and data-driven growth.
+                </p>
+                <p className="text-[15px] md:text-[17px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
+                  ATLAS is a great tool for any organization looking to develop and scale talent in an innovative, data-driven way."
                 </p>
               </div>
             </div>
