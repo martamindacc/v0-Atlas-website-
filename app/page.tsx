@@ -293,7 +293,7 @@ export default function Home() {
                   className="h-7 w-7 shrink-0 object-contain"
                 />
                 <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
-                  OSLO KOMMUNE
+                  CITY OF OSLO
                 </p>
               </div>
                 <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
