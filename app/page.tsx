@@ -317,11 +317,11 @@ export default function Home() {
               className="text-[22px] md:text-[28px] font-medium tracking-tight text-neutral-900"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
-              Results
+              What Organizations Are Saying
             </h3>
 
             {/* Mobile-only Previous/Next Arrows */}
-            <div className="flex items-center gap-2 md:hidden">
+            <div className="flex items-center gap-2">
               <button
                 onClick={() => scrollResults("previous")}
                 disabled={!canScrollPrev}
@@ -348,7 +348,7 @@ export default function Home() {
           {/* Cards Row */}
           <div 
             ref={cardsRowRef}
-            className="flex flex-nowrap gap-6 overflow-x-auto overscroll-x-contain pb-2 pr-4 md:pr-8 mt-12 md:mt-16 snap-x snap-mandatory scroll-smooth"
+            className="flex flex-nowrap gap-6 overflow-x-auto md:overflow-x-hidden overscroll-x-contain pb-2 pr-4 md:pr-8 mt-12 md:mt-16 snap-x snap-mandatory scroll-smooth"
           >
             {/* Card 1 */}
             <div
@@ -377,7 +377,7 @@ export default function Home() {
               </div>
               <div className="mt-auto">
                 <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-bold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
-                  What Users Valued
+                  KEY OUTCOMES
                 </p>
                 <ul className="space-y-2 text-[15px] md:text-[17px] leading-[1.6] text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
                   <li>Actionable guidance rather than static feedback</li>
