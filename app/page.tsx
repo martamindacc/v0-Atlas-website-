@@ -287,7 +287,7 @@ export default function Home() {
               <div className="h-[200px]">
               <div className="flex items-center gap-3 mb-3">
                 <img
-                  src="/images/oslo-kommune-crest.png"
+                  src="/images/oslo-kommune-badge-v2.png"
                   alt=""
                   aria-hidden="true"
                   className="h-7 w-7 shrink-0 object-contain"
@@ -322,7 +322,7 @@ export default function Home() {
               <div className="h-[200px]">
               <div className="flex items-center gap-3 mb-3">
                 <img
-                  src="/images/nasa-insignia.png"
+                  src="/images/nasa-badge-v2.png"
                   alt=""
                   aria-hidden="true"
                   className="h-7 w-7 shrink-0 object-contain"
@@ -357,7 +357,7 @@ export default function Home() {
               <div className="h-[200px]">
               <div className="flex items-center gap-3 mb-3">
                 <img
-                  src="/images/tomra-mark.png"
+                  src="/images/tomra-wordmark-v2.png"
                   alt=""
                   aria-hidden="true"
                   className="h-6 w-auto max-w-[96px] shrink-0 object-contain"
