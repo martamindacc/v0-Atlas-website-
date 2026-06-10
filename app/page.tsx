@@ -12,9 +12,9 @@ export default function Home() {
   const section2Ref = useRef(null);
   const heroImageRef = useRef(null);
   const cardsRowRef = useRef(null);
-  const [isUserInteracting, setIsUserInteracting] = useState(false);
-  const animationFrameRef = useRef(null);
-  const [direction, setDirection] = useState(1);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [canScrollPrev, setCanScrollPrev] = useState(false);
+  const [canScrollNext, setCanScrollNext] = useState(true);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -58,57 +58,45 @@ export default function Home() {
     }
   }, [parallaxOffset]);
 
-  // Mobile-only horizontal card row animation
+  // Track scroll position for Results cards
   useEffect(() => {
     const cardsRow = cardsRowRef.current;
     if (!cardsRow) return;
 
-    // Only run on mobile (check if window width is less than md breakpoint ~768px)
-    const isMobile = window.innerWidth < 768;
-    if (!isMobile) return;
-
-    // Respect prefers-reduced-motion
-    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (prefersReducedMotion) return;
-
-    const animate = () => {
-      if (isUserInteracting || !cardsRow) return;
-
+    const handleScroll = () => {
+      const scrollLeft = cardsRow.scrollLeft;
       const maxScroll = cardsRow.scrollWidth - cardsRow.clientWidth;
-      const currentScroll = cardsRow.scrollLeft;
-      let newScroll = currentScroll + (direction * 0.2);
-
-      // Reverse direction at boundaries
-      if (newScroll >= maxScroll) {
-        setDirection(-1);
-        newScroll = maxScroll - 0.2;
-      } else if (newScroll <= 0) {
-        setDirection(1);
-        newScroll = 0.2;
-      }
-
-      cardsRow.scrollLeft = newScroll;
-      animationFrameRef.current = requestAnimationFrame(animate);
+      setScrollPosition(scrollLeft);
+      setCanScrollPrev(scrollLeft > 5);
+      setCanScrollNext(scrollLeft < maxScroll - 5);
     };
 
-    animationFrameRef.current = requestAnimationFrame(animate);
+    cardsRow.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll);
+    
+    // Initial check
+    setTimeout(handleScroll, 0);
 
-    const handleResize = () => {
-      const newIsMobile = window.innerWidth < 768;
-      if (!newIsMobile && animationFrameRef.current) {
-        cancelAnimationFrame(animationFrameRef.current);
-        if (cardsRow) cardsRow.scrollLeft = 0;
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
     return () => {
-      if (animationFrameRef.current) {
-        cancelAnimationFrame(animationFrameRef.current);
-      }
-      window.removeEventListener('resize', handleResize);
+      cardsRow.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
     };
-  }, [isUserInteracting, direction]);
+  }, []);
+  const scrollResults = (direction: "previous" | "next") => {
+    const row = cardsRowRef.current;
+    if (!row) return;
+
+    const firstCard = row.firstElementChild as HTMLElement | null;
+    if (!firstCard) return;
+
+    const distance = firstCard.offsetWidth + 24;
+
+    row.scrollBy({
+      left: direction === "next" ? distance : -distance,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <main className="overflow-x-hidden" style={{ backgroundColor: "#fafafb" }}>
       <SiteHeader />
@@ -321,28 +309,50 @@ export default function Home() {
       </section>
 
       {/* Section — Results */}
-      <section className="w-full bg-[#fafafb] pt-9 pb-24 md:pt-[68px] md:pb-32 -mt-[80px]">
+      <section className="w-full bg-[#fafafb] pt-9 pb-24 md:pt-[68px] md:pb-32 mt-0 md:-mt-[80px]">
         <div className="max-w-[1200px] mx-auto px-4 md:px-6">
-          {/* Results Heading */}
-          <h3
-            className="text-[22px] md:text-[28px] font-medium tracking-tight text-neutral-900 mb-6"
-            style={{ fontFamily: "Inter, sans-serif" }}
-          >
-            Results
-          </h3>
+          {/* Results Heading with Mobile Navigation */}
+          <div className="flex items-center justify-between mb-6">
+            <h3
+              className="text-[22px] md:text-[28px] font-medium tracking-tight text-neutral-900"
+              style={{ fontFamily: "Inter, sans-serif" }}
+            >
+              Results
+            </h3>
+
+            {/* Mobile-only Previous/Next Arrows */}
+            <div className="flex items-center gap-2 md:hidden">
+              <button
+                onClick={() => scrollResults("previous")}
+                disabled={!canScrollPrev}
+                aria-label="Previous result"
+                className="flex h-10 w-10 items-center justify-center border border-black/20 bg-transparent text-[#383838] transition-opacity disabled:cursor-not-allowed disabled:opacity-30"
+              >
+                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button
+                onClick={() => scrollResults("next")}
+                disabled={!canScrollNext}
+                aria-label="Next result"
+                className="flex h-10 w-10 items-center justify-center border border-black/20 bg-transparent text-[#383838] transition-opacity disabled:cursor-not-allowed disabled:opacity-30"
+              >
+                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
 
           {/* Cards Row */}
           <div 
             ref={cardsRowRef}
-            className="flex flex-nowrap gap-6 overflow-x-hidden md:overflow-x-auto overscroll-x-contain pb-2 pr-4 md:pr-8 mt-12 md:mt-16 animate-resultsScroll md:animate-none"
-            onMouseDown={() => setIsUserInteracting(true)}
-            onMouseUp={() => { setIsUserInteracting(true); setTimeout(() => setIsUserInteracting(false), 2000); }}
-            onTouchStart={() => setIsUserInteracting(true)}
-            onTouchEnd={() => { setIsUserInteracting(true); setTimeout(() => setIsUserInteracting(false), 2000); }}
+            className="flex flex-nowrap gap-6 overflow-x-auto overscroll-x-contain pb-2 pr-4 md:pr-8 mt-12 md:mt-16 snap-x snap-mandatory scroll-smooth"
           >
             {/* Card 1 */}
             <div
-              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[500px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
+              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[500px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col snap-start"
               style={{
                 clipPath: "polygon(0 0, calc(100% - 56px) 0, 100% 56px, 100% 100%, 0 100%)",
               }}
@@ -379,7 +389,7 @@ export default function Home() {
 
             {/* Card 2 */}
             <div
-              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[500px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
+              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[500px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col snap-start"
               style={{
                 clipPath: "polygon(0 0, calc(100% - 56px) 0, 100% 56px, 100% 100%, 0 100%)",
               }}
@@ -406,7 +416,7 @@ export default function Home() {
 
             {/* Card 3 */}
             <div
-              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[500px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
+              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[500px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col snap-start"
               style={{
                 clipPath: "polygon(0 0, calc(100% - 56px) 0, 100% 56px, 100% 100%, 0 100%)",
               }}

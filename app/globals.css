@@ -126,24 +126,9 @@
   }
 }
 
-@keyframes resultsScroll {
-  0%, 8% {
-    transform: translateX(0);
-  }
-  42%, 58% {
-    transform: translateX(calc(-1 * (100vw - 24px)));
-  }
-  92%, 100% {
-    transform: translateX(calc(-2 * (100vw - 24px)));
-  }
-}
-
 @layer utilities {
   .animate-fluidUp {
     animation: fluidUp 900ms ease-out forwards;
-  }
-  .animate-resultsScroll {
-    animation: resultsScroll 14s ease-in-out infinite alternate;
   }
 }
 
