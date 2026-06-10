@@ -410,7 +410,8 @@ export default function Home() {
               </div>
                 <p className="text-[15px] md:text-[17px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
                   "As a Senior Engineer supporting NASA&apos;s Artemis Program, I see firsthand how structured intelligence drives high-stakes decisions with clarity and precision.
-                  <span className="block my-3" />
+                </p>
+                <p className="text-[15px] md:text-[17px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
                   MINDACC applies the same level of strategic insight to human potential—eliminating guesswork, optimizing decision-making, and enhancing performance at scale."
                 </p>
               </div>
