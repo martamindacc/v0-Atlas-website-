@@ -11,6 +11,10 @@ export default function Home() {
   const atlasSystemRef = useRef(null);
   const section2Ref = useRef(null);
   const heroImageRef = useRef(null);
+  const cardsRowRef = useRef(null);
+  const [isUserInteracting, setIsUserInteracting] = useState(false);
+  const animationFrameRef = useRef(null);
+  const [direction, setDirection] = useState(1);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -53,6 +57,58 @@ export default function Home() {
       heroImageRef.current.style.transform = `translateY(${parallaxOffset}px)`;
     }
   }, [parallaxOffset]);
+
+  // Mobile-only horizontal card row animation
+  useEffect(() => {
+    const cardsRow = cardsRowRef.current;
+    if (!cardsRow) return;
+
+    // Only run on mobile (check if window width is less than md breakpoint ~768px)
+    const isMobile = window.innerWidth < 768;
+    if (!isMobile) return;
+
+    // Respect prefers-reduced-motion
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReducedMotion) return;
+
+    const animate = () => {
+      if (isUserInteracting || !cardsRow) return;
+
+      const maxScroll = cardsRow.scrollWidth - cardsRow.clientWidth;
+      const currentScroll = cardsRow.scrollLeft;
+      let newScroll = currentScroll + (direction * 0.2);
+
+      // Reverse direction at boundaries
+      if (newScroll >= maxScroll) {
+        setDirection(-1);
+        newScroll = maxScroll - 0.2;
+      } else if (newScroll <= 0) {
+        setDirection(1);
+        newScroll = 0.2;
+      }
+
+      cardsRow.scrollLeft = newScroll;
+      animationFrameRef.current = requestAnimationFrame(animate);
+    };
+
+    animationFrameRef.current = requestAnimationFrame(animate);
+
+    const handleResize = () => {
+      const newIsMobile = window.innerWidth < 768;
+      if (!newIsMobile && animationFrameRef.current) {
+        cancelAnimationFrame(animationFrameRef.current);
+        if (cardsRow) cardsRow.scrollLeft = 0;
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      if (animationFrameRef.current) {
+        cancelAnimationFrame(animationFrameRef.current);
+      }
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [isUserInteracting, direction]);
   return (
     <main className="overflow-x-hidden" style={{ backgroundColor: "#fafafb" }}>
       <SiteHeader />
@@ -258,6 +314,140 @@ export default function Home() {
                 <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] font-semibold mt-4" style={{ fontFamily: "Inter, sans-serif" }}>
                   No survey, review process, or static report can realistically provide that level of understanding, guidance, and support at scale.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section — Results */}
+      <section className="w-full bg-[#fafafb] pt-9 pb-24 md:pt-[68px] md:pb-32 -mt-[80px]">
+        <div className="max-w-[1200px] mx-auto px-4 md:px-6">
+          {/* Results Heading */}
+          <h3
+            className="text-[22px] md:text-[28px] font-medium tracking-tight text-neutral-900 mb-6"
+            style={{ fontFamily: "Inter, sans-serif" }}
+          >
+            Results
+          </h3>
+
+          {/* Cards Row */}
+          <div 
+            ref={cardsRowRef}
+            className="flex flex-nowrap gap-6 overflow-x-auto overscroll-x-contain pb-2 pr-4 md:pr-8 mt-12 md:mt-16"
+            onMouseDown={() => setIsUserInteracting(true)}
+            onMouseUp={() => { setIsUserInteracting(true); setTimeout(() => setIsUserInteracting(false), 2000); }}
+            onTouchStart={() => setIsUserInteracting(true)}
+            onTouchEnd={() => { setIsUserInteracting(true); setTimeout(() => setIsUserInteracting(false), 2000); }}
+          >
+            {/* Card 1 */}
+            <div
+              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[440px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
+              style={{
+                clipPath: "polygon(0 0, calc(100% - 56px) 0, 100% 56px, 100% 100%, 0 100%)",
+              }}
+            >
+              <div className="h-[200px]">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="h-7 w-7 shrink-0 flex items-center justify-center">
+                  <img
+                    src="/images/oslo-kommune-badge-v2.png"
+                    alt=""
+                    aria-hidden="true"
+                    className="h-full w-full object-contain"
+                  />
+                </div>
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
+                  CITY OF OSLO
+                </p>
+              </div>
+                <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
+                  "Atlas helped us structure development conversations and identify strengths, development areas, and team dynamics more clearly."
+                </p>
+              </div>
+              <div className="mt-auto">
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
+                  Key Outcomes
+                </p>
+                <ul className="space-y-2 text-[16px] md:text-[18px] leading-[1.6] text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
+                  <li>• Faster preparation</li>
+                  <li>• Clearer development priorities</li>
+                  <li>• Better visibility into team dynamics</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div
+              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[440px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
+              style={{
+                clipPath: "polygon(0 0, calc(100% - 56px) 0, 100% 56px, 100% 100%, 0 100%)",
+              }}
+            >
+              <div className="h-[200px]">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="h-7 w-7 shrink-0 flex items-center justify-center">
+                  <img
+                    src="/images/nasa-badge-v2.png"
+                    alt=""
+                    aria-hidden="true"
+                    className="h-full w-full object-contain"
+                  />
+                </div>
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
+                  NASA
+                </p>
+              </div>
+                <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
+                  "Atlas made it easier to translate people insights into practical development actions."
+                </p>
+              </div>
+              <div className="mt-auto">
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
+                  Key Outcomes
+                </p>
+                <ul className="space-y-2 text-[16px] md:text-[18px] leading-[1.6] text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
+                  <li>• More focused development planning</li>
+                  <li>• Stronger leadership visibility</li>
+                  <li>• Better decision support</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div
+              className="min-w-[calc(100vw-48px)] md:min-w-[360px] md:w-[360px] h-[440px] bg-[#eeeeee] text-[#2f3033] p-6 md:p-8 flex flex-col"
+              style={{
+                clipPath: "polygon(0 0, calc(100% - 56px) 0, 100% 56px, 100% 100%, 0 100%)",
+              }}
+            >
+              <div className="h-[200px]">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="h-7 w-7 shrink-0 flex items-center justify-center">
+                  <img
+                    src="/images/tomra-wordmark-v2.png"
+                    alt=""
+                    aria-hidden="true"
+                    className="h-full w-full object-contain"
+                  />
+                </div>
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
+                  TOMRA
+                </p>
+              </div>
+                <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#383838] mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
+                  "Atlas helped surface patterns that supported clearer reflection, decision-making, and personal development."
+                </p>
+              </div>
+              <div className="mt-auto">
+                <p className="text-[11px] md:text-[12px] uppercase tracking-[0.12em] font-semibold text-[#383838] mb-3" style={{ fontFamily: "Inter, sans-serif" }}>
+                  Key Outcomes
+                </p>
+                <ul className="space-y-2 text-[16px] md:text-[18px] leading-[1.6] text-[#383838]" style={{ fontFamily: "Inter, sans-serif" }}>
+                  <li>• Improved self-awareness</li>
+                  <li>• More structured insight</li>
+                  <li>• Faster clarity around next steps</li>
+                </ul>
               </div>
             </div>
           </div>
