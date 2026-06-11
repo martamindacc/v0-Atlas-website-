@@ -148,17 +148,17 @@ export default function AtlasGlobal() {
         </div>
 
         {/* Global Coordination Diagram - Centered */}
-        <div className="max-w-[1700px] mx-auto px-4 md:px-8 -mt-18 md:-mt-30 w-full flex items-center justify-center">
+        <div className="max-w-[1700px] mx-auto px-4 md:px-8 -mt-18 md:-mt-30 w-full overflow-hidden">
           <img
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/atlas_ai_global_mindacc_marta_morawska-OMwqk4pQzT51pFNwV9M1ehwTIAghxR.jpg"
             alt="Atlas global coordination diagram showing regional teams and organizational alignment"
-            className="w-full h-auto max-w-[1700px] object-contain"
+            className="w-full h-auto max-w-[1700px] mx-auto object-contain md:-mt-[40px]"
           />
         </div>
       </section>
 
       {/* Divider */}
-      <div className="w-full bg-[#fafafb] pb-8 md:pb-0 lg:pb-2 pt-0 -mt-16 md:-mt-12">
+      <div className="w-full bg-[#fafafb] pb-8 md:pb-0 lg:pb-2 pt-0">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8">
           <div className="relative flex items-center justify-between">
             <div className="absolute inset-x-0 h-px bg-neutral-300/40"></div>
