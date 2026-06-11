@@ -269,7 +269,7 @@ export default function Home() {
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cycle_diagram_fixed-2vUC894dOB7Cj5PDsCgcL5CrxnEo7J.svg"
                 alt="Survey and performance review cycle"
-                className="w-full h-auto md:w-[709px] md:h-[709px] object-contain"
+                className="w-full h-auto md:w-[709px] md:h-[709px] object-contain md:scale-[1.15] md:origin-center"
               />
             </div>
           </div>
