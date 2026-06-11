@@ -172,7 +172,7 @@ export default function AtlasGlobal() {
       </div>
 
       {/* Section 3 — Editorial product section */}
-      <section className="bg-[#fafafb] pt-16 md:pt-[100px] pb-24 md:pb-48">
+      <section className="bg-[#fafafb] pt-0 md:pt-[60px] pb-24 md:pb-48">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-24 overflow-x-clip">
 
           {/* LEFT COLUMN (HEADER) */}
