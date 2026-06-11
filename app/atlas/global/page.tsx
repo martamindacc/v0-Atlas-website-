@@ -148,11 +148,11 @@ export default function AtlasGlobal() {
         </div>
 
         {/* Global Coordination Diagram - Centered */}
-        <div className="max-w-[1300px] mx-auto px-4 md:px-8 -mt-8 md:-mt-20 w-full flex items-center justify-center">
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 -mt-18 md:-mt-30 w-full flex items-center justify-center">
           <img
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/atlas_ai_global_mindacc_marta_morawska-OMwqk4pQzT51pFNwV9M1ehwTIAghxR.jpg"
             alt="Atlas global coordination diagram showing regional teams and organizational alignment"
-            className="w-full h-auto max-w-[1210px] object-contain"
+            className="w-full h-auto max-w-[1452px] object-contain"
           />
         </div>
       </section>
@@ -227,11 +227,11 @@ export default function AtlasGlobal() {
         </div>
 
         {/* Align Execute Scale Diagram - Centered */}
-        <div className="max-w-[1300px] mx-auto px-4 md:px-8 -mt-16 md:-mt-28 w-full flex items-center justify-center">
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 -mt-26 md:-mt-38 w-full flex items-center justify-center">
           <img
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ai_atlas_mindacc_marta_morawska-q0z8it7uCPlgfBRcAwiIwoel8tQy84.jpg"
             alt="Atlas Align Execute Scale organizational flow diagram"
-            className="w-full h-auto max-w-[1210px] object-contain"
+            className="w-full h-auto max-w-[1452px] object-contain"
           />
         </div>
       </section>
