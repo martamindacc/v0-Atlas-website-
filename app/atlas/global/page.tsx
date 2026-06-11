@@ -121,7 +121,7 @@ export default function AtlasGlobal() {
       </section>
 
       {/* Section 2 — Editorial product section */}
-      <section className="bg-[#fafafb] pb-[15px] md:pb-[55px] pt-16 md:pt-32 lg:pt-36">
+      <section className="bg-[#fafafb] pb-0 md:pb-0 pt-16 md:pt-32 lg:pt-36">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-24 overflow-x-clip">
 
           {/* LEFT COLUMN (HEADER) */}
@@ -148,11 +148,11 @@ export default function AtlasGlobal() {
         </div>
 
         {/* Global Coordination Diagram - Centered */}
-        <div className="max-w-[1300px] mx-auto px-4 md:px-8 -mt-18 md:-mt-30 w-full flex items-center justify-center">
+        <div className="max-w-[1700px] mx-auto px-4 md:px-8 -mt-18 md:-mt-30 w-full flex items-center justify-center">
           <img
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/atlas_ai_global_mindacc_marta_morawska-OMwqk4pQzT51pFNwV9M1ehwTIAghxR.jpg"
             alt="Atlas global coordination diagram showing regional teams and organizational alignment"
-            className="w-full h-auto max-w-[1452px] object-contain"
+            className="w-full h-auto max-w-[1700px] object-contain"
           />
         </div>
       </section>
@@ -227,11 +227,11 @@ export default function AtlasGlobal() {
         </div>
 
         {/* Align Execute Scale Diagram - Centered */}
-        <div className="max-w-[1300px] mx-auto px-4 md:px-8 -mt-26 md:-mt-38 w-full flex items-center justify-center">
+        <div className="max-w-[1700px] mx-auto px-4 md:px-8 -mt-26 md:-mt-38 w-full flex items-center justify-center">
           <img
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ai_atlas_mindacc_marta_morawska-q0z8it7uCPlgfBRcAwiIwoel8tQy84.jpg"
             alt="Atlas Align Execute Scale organizational flow diagram"
-            className="w-full h-auto max-w-[1452px] object-contain"
+            className="w-full h-auto max-w-[1700px] object-contain"
           />
         </div>
       </section>
