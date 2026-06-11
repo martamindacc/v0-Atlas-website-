@@ -281,7 +281,7 @@ export default function Home() {
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/atlas_network_scattered-qDnGy6QYlJ6tHF9730GtU5avMfFVW7.svg"
                 alt="Atlas organizational network diagram"
-                className="w-full h-auto md:w-[709px] md:h-[709px] object-contain"
+                className="w-full h-auto md:w-[709px] md:h-[709px] object-contain md:scale-[1.15] md:origin-center"
               />
             </div>
             {/* Text Card */}
