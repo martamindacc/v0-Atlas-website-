@@ -246,7 +246,7 @@ export default function Home() {
       <section className="w-full bg-[#fafafb] py-6 md:py-8 px-4 md:px-6 -mt-[98px] md:-mt-[250px] pb-0 md:pb-0">
         <div className="max-w-[1200px] mx-auto space-y-[32px] md:space-y-[60px]">
           {/* Row 1: Text (left) | Image (right) — on mobile: image first, then text */}
-          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center md:pt-[30px]">
             {/* Text Card */}
             <div className="flex items-center">
               <div className="max-w-[420px]">
@@ -275,7 +275,7 @@ export default function Home() {
           </div>
 
           {/* Row 2: Image (left) | Text (right) — on mobile: image first, then text */}
-          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center mt-0 md:-mt-[270px]">
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center mt-0 md:-mt-[270px] md:mt-[30px]">
             {/* Image */}
             <div className="w-full md:w-auto flex items-center justify-center order-first md:order-none">
               <img
