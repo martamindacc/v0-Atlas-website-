@@ -158,7 +158,7 @@ export default function AtlasGlobal() {
       </section>
 
       {/* Divider */}
-      <div className="w-full bg-[#fafafb] pb-8 md:pb-10 lg:pb-12 pt-0">
+      <div className="w-full bg-[#fafafb] pb-8 md:pb-10 lg:pb-12 -mt-16 md:-mt-24">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8">
           <div className="relative flex items-center justify-between">
             <div className="absolute inset-x-0 h-px bg-neutral-300/40"></div>
@@ -172,7 +172,7 @@ export default function AtlasGlobal() {
       </div>
 
       {/* Section 3 — Editorial product section */}
-      <section className="bg-[#fafafb] pt-0 md:pt-[60px] pb-24 md:pb-48">
+      <section className="bg-[#fafafb] -mt-16 md:-mt-24 pb-24 md:pb-48">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8 flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-24 overflow-x-clip">
 
           {/* LEFT COLUMN (HEADER) */}
