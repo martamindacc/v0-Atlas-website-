@@ -158,7 +158,7 @@ export default function AtlasGlobal() {
       </section>
 
       {/* Divider */}
-      <div className="w-full bg-[#fafafb] pb-8 md:pb-0 lg:pb-2 pt-0">
+      <div className="w-full bg-[#fafafb] pb-8 md:pb-0 lg:pb-2 pt-0 -mt-16 md:-mt-12">
         <div className="max-w-[1300px] mx-auto px-4 md:px-8">
           <div className="relative flex items-center justify-between">
             <div className="absolute inset-x-0 h-px bg-neutral-300/40"></div>
