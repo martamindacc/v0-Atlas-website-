@@ -269,7 +269,7 @@ export default function Home() {
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cycle_diagram_fixed-2vUC894dOB7Cj5PDsCgcL5CrxnEo7J.svg"
                 alt="Survey and performance review cycle"
-                className="w-full h-auto md:w-[709px] md:h-[709px] object-contain"
+                className="w-full h-auto md:w-[759px] md:h-[759px] object-contain"
               />
             </div>
           </div>
@@ -281,7 +281,7 @@ export default function Home() {
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/atlas_network_scattered-qDnGy6QYlJ6tHF9730GtU5avMfFVW7.svg"
                 alt="Atlas organizational network diagram"
-                className="w-full h-auto md:w-[709px] md:h-[709px] object-contain"
+                className="w-full h-auto md:w-[759px] md:h-[759px] object-contain"
               />
             </div>
             {/* Text Card */}
