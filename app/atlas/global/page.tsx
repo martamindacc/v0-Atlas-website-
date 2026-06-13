@@ -227,7 +227,7 @@ export default function AtlasGlobal() {
         </div>
 
         {/* Align Execute Scale Diagram - Centered */}
-        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-4 md:mt-6 w-full flex items-center justify-center">
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-4 md:mt-0 w-full flex items-center justify-center">
           <img
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ai_atlas_mindacc_marta_morawska-q0z8it7uCPlgfBRcAwiIwoel8tQy84.jpg"
             alt="Atlas Align Execute Scale organizational flow diagram"
