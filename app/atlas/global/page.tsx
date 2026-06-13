@@ -209,7 +209,7 @@ export default function AtlasGlobal() {
           </div>
         </div>
 
-        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-2 md:mt-5">
+        <div className="max-w-[1300px] mx-auto px-4 md:px-8 mt-2 md:-mt-8">
           <div className="w-full flex items-center justify-center">
             <div className="text-center">
               <h2 className="mb-2 md:mb-3">
