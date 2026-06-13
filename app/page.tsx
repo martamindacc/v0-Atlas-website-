@@ -246,7 +246,7 @@ export default function Home() {
       <section className="w-full bg-[#fafafb] py-6 md:py-8 px-4 md:px-6 -mt-[98px] md:-mt-[250px] pb-0 md:pb-0">
         <div className="max-w-[1200px] mx-auto space-y-[32px] md:space-y-[60px]">
           {/* Row 1: Text (left) | Image (right) — on mobile: image first, then text */}
-          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center md:pt-[21px]">
             {/* Text Card */}
             <div className="flex items-center">
               <div className="max-w-[420px]">
@@ -269,19 +269,19 @@ export default function Home() {
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cycle_diagram_fixed-2vUC894dOB7Cj5PDsCgcL5CrxnEo7J.svg"
                 alt="Survey and performance review cycle"
-                className="w-full h-auto md:w-[709px] md:h-[709px] object-contain"
+                className="w-full h-auto md:w-[709px] md:h-[709px] object-contain md:scale-[1.15] md:origin-center"
               />
             </div>
           </div>
 
           {/* Row 2: Image (left) | Text (right) — on mobile: image first, then text */}
-          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center mt-0 md:-mt-[270px]">
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center mt-0 md:-mt-[193px]">
             {/* Image */}
             <div className="w-full md:w-auto flex items-center justify-center order-first md:order-none">
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/atlas_network_scattered-qDnGy6QYlJ6tHF9730GtU5avMfFVW7.svg"
                 alt="Atlas organizational network diagram"
-                className="w-full h-auto md:w-[709px] md:h-[709px] object-contain"
+                className="w-full h-auto md:w-[709px] md:h-[709px] object-contain md:scale-[1.15] md:origin-center"
               />
             </div>
             {/* Text Card */}
